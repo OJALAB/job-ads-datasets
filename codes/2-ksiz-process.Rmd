@@ -8,3 +8,12 @@ library(data.table)
 library(stringi)
 library(zoo)
 ```
+
+gr1 
+```{r}
+gr1 <- readLines("../data-raw/ksiz-desc-lev1.txt")
+gr1 <- gr1[28:length(gr1)]
+kod <- stri_extract_all_regex(gr1, "Kod.+\\d{1}", simplify = T)
+synteza <- stri_extract_all_regex(gr1, "Synteza", simplify = T)
+```
+
