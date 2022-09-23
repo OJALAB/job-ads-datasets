@@ -7,13 +7,41 @@ output: html_notebook
 library(data.table)
 library(docxtractr)
 library(snakecase)
+library(zoo)
 ```
+
+Grupa 2
 
 ```{r}
 gr2 <- read_docx("../data-raw/ksiz-desc-lev2.docx")
 gr2_tabs <- docx_extract_all_tbls(gr2, guess_header = F)
 gr2_tab <- data.table::rbindlist(gr2_tabs[-c(1:3)])
 gr2_tab[, V1 := snakecase::to_snake_case(V1)]
-
+gr2_tab[nchar(V1) ==0, V1 :=NA]
+gr2_tab[, V1:=na.locf(V1, na.rm = F)]
+gr2_tab[V1 == "kod",  kod:=V2]
+gr2_tab[, kod2:=shift(kod, n=-1)]
+gr2_tab[is.na(kod), kod:=kod2]
+gr2_tab[, kod:=na.locf(kod)]
+gr2_tab <- gr2_tab[V1 != "kod",.(opis = paste(V2, collapse = " ")), .(kod, nazwa = V1)]
+gr2_tab <- dcast(gr2_tab, kod ~ nazwa, value.var = "opis")
+fwrite(gr2_tab, file = "../data/ksiz-desc-level2.csv")
 ```
 
+Grupa 3
+
+```{r}
+gr3 <- read_docx("../data-raw/ksiz-desc-lev3.docx")
+gr3_tabs <- docx_extract_all_tbls(gr3, guess_header = F)
+gr3_tab <- data.table::rbindlist(gr3_tabs[-c(1:4)])
+gr3_tab[, V1 := snakecase::to_snake_case(V1)]
+gr3_tab[nchar(V1) ==0, V1 :=NA]
+gr3_tab[, V1:=na.locf(V1, na.rm = F)]
+gr3_tab[V1 == "kod",  kod:=V2]
+gr3_tab[, kod2:=shift(kod, n=-1)]
+gr3_tab[is.na(kod), kod:=kod2]
+gr3_tab[, kod:=na.locf(kod)]
+gr3_tab <- gr3_tab[V1 != "kod",.(opis = paste(V2, collapse = " ")), .(kod, nazwa = V1)]
+gr3_tab <- dcast(gr3_tab, kod ~ nazwa, value.var = "opis")
+fwrite(gr3_tab, file = "../data/ksiz-desc-level3.csv")
+```
