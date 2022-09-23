@@ -5,15 +5,15 @@ output: html_notebook
 
 ```{r}
 library(data.table)
-library(stringi)
-library(zoo)
+library(docxtractr)
+library(snakecase)
 ```
 
-gr1 
 ```{r}
-gr1 <- readLines("../data-raw/ksiz-desc-lev1.txt")
-gr1 <- gr1[28:length(gr1)]
-kod <- stri_extract_all_regex(gr1, "Kod.+\\d{1}", simplify = T)
-synteza <- stri_extract_all_regex(gr1, "Synteza", simplify = T)
+gr2 <- read_docx("../data-raw/ksiz-desc-lev2.docx")
+gr2_tabs <- docx_extract_all_tbls(gr2, guess_header = F)
+gr2_tab <- data.table::rbindlist(gr2_tabs[-c(1:3)])
+gr2_tab[, V1 := snakecase::to_snake_case(V1)]
+
 ```
 
