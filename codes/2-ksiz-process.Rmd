@@ -41,7 +41,29 @@ gr3_tab[V1 == "kod",  kod:=V2]
 gr3_tab[, kod2:=shift(kod, n=-1)]
 gr3_tab[is.na(kod), kod:=kod2]
 gr3_tab[, kod:=na.locf(kod)]
+gr3_tab[V1 %in% c("zadania", "zawodowe"), V1 := "zadania_zawodowe"]
 gr3_tab <- gr3_tab[V1 != "kod",.(opis = paste(V2, collapse = " ")), .(kod, nazwa = V1)]
 gr3_tab <- dcast(gr3_tab, kod ~ nazwa, value.var = "opis")
 fwrite(gr3_tab, file = "../data/ksiz-desc-level3.csv")
 ```
+
+Grupa 3
+
+```{r}
+gr4 <- read_docx("../data-raw/ksiz-desc-lev4_1.docx")
+gr4_tabs <- docx_extract_all_tbls(gr4, guess_header = F)
+gr4_tab <- data.table::rbindlist(gr4_tabs[-c(1:11)])
+gr4_tab[, V1 := snakecase::to_snake_case(V1)]
+gr4_tab[V1 %in% c("zadania", "zawodowe"), V1 := "zadania_zawodowe"]
+gr4_tab[nchar(V1) ==0, V1 :=NA]
+gr4_tab[, V1:=na.locf(V1, na.rm = F)]
+gr4_tab[V1 == "kod",  kod:=V2]
+gr4_tab[stri_detect_regex(kod, "\\d{4}",negate = T) & stri_detect_regex(V2, "\\d{4}",negate = F), kod:=V2]
+gr4_tab[, kod2:=shift(kod, n=-1)]
+gr4_tab[is.na(kod), kod:=kod2]
+gr4_tab[, kod:=na.locf(kod)]
+gr4_tab <- gr4_tab[V1 != "kod",.(opis = paste(V2, collapse = " ")), .(kod, nazwa = V1)]
+gr4_tab <- dcast(gr4_tab, kod ~ nazwa, value.var = "opis")
+#fwrite(gr3_tab, file = "../data/ksiz-desc-level3.csv")
+```
+
