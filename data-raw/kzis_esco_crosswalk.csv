@@ -1,0 +1,2432 @@
+;esco code;esco name;kzis code;kzis name
+0;3240.2;technik weterynarii;324002;Technik weterynarii
+1;7223.4;operator obrabiarki sterowanej numerycznie;722308;Operator obrabiarek sterowanych numerycznie
+2;2631.1;ekonomista;263102;Ekonomista
+3;2250.3;lekarz weterynarii;225101;Lekarz weterynarii
+4;2310.1.43;wykładowca akademicki w dziedzinie weterynarii;231016;Nauczyciel akademicki – nauki weterynaryjne
+5;9111.1;sprzątacz domowy/sprzątaczka domowa;911102;Sprzątaczka domowa
+6;9112.4;pokojowy/pokojowa;911203;Pokojowa
+7;9121.2;prasowacz/prasowaczka;912103;Prasowaczka ręczna
+8;9123.1;zmywacz okien;912301;Zmywacz okien (czyściciel szyb)
+9;9129.3;czyściciel basenów pływackich;912901;Czyściciel basenów pływackich
+10;9129.1;czyściciel dywanów;912902;Czyściciel dywanów
+11;9214.1;pomocniczy robotnik w ogrodnictwie;921401;Pomocniczy robotnik konserwacji terenów zieleni
+12;8111.5;górnik pracujący pod ziemią;931101;Robotnik górniczy dołowy
+13;8111.3;górnik pracujący na powierzchni;931102;Robotnik naziemny w górnictwie
+14;9312.1.1;pracownik melioracji;931203;Meliorant
+15;9312.1;robotnik wykonujący prace proste w budownictwie drogowym i wodnym;931205;Pomocniczy robotnik drogowy
+16;9313.1;pomocniczy robotnik budowlany;931301;Pomocniczy robotnik budowlany
+17;9321.2;pakowacz ręczny/pakowaczka ręczna;932101;Pakowacz ręczny
+18;7511.3;oprawiacz ryb;932904;Patroszacz ryb
+19;9333.3;robotnik magazynowy;933304;Robotnik magazynowy
+20;9333.8;pracownik magazynu;933304;Robotnik magazynowy
+21;4321.1;magazynier;933304;Robotnik magazynowy
+22;9333.6;robotnik portowy;933306;Robotnik portowy (doker)
+23;9333.4;pracownik przeprowadzkowy;933303;Pracownik przeprowadzkowy
+24;9334.1;pracownik rozkładający towar na półkach;933401;Pracownik rozkładający towar na półkach
+25;9411.2;pracownik restauracji szybkiej obsługi;941101;Pracownik przygotowujący posiłki typu fast food
+26;9412.2;pomocnik kuchenny;941201;Pomoc kuchenna
+27;9510.1;dystrybutor ulotek;951002;Dystrybutor ulotek
+28;9520.1;sprzedawca uliczny;952001;Uliczny sprzedawca produktów nieżywnościowych / żywności o długim terminie przydatności do spożycia
+29;9611.1;pracownik zbiórki odpadów;961103;Pracownik zbiórki odpadów
+30;9612.2;sortowacz surowców wtórnych;961201;Sortowacz surowców wtórnych
+31;9613.1;zamiatacz ulic;961303;Zamiatacz
+32;3435.7;statysta;962202;Statysta
+33;9623.2;wybieracz monet/żetonów z automatów;962302;Wybieracz monet / żetonów z automatów
+34;9623.1;odczytywacz liczników;962301;Odczytywacz liczników
+35;9629.7;bileter/bileterka;962901;Bileter
+36;9629.4;szatniarz/szatniarka;962905;Szatniarz
+37;8322.4;parkingowy;962903;Parkingowy
+38;8111.2;wiertacz;811305;Wiertacz
+39;8114.7;szlifierz kamienia;811409;Szlifierz kamienia
+40;8114.1;operator urządzeń do produkcji mas asfaltowych;811406;Operator urządzeń do produkcji mas asfaltobetonowych
+41;8121.1;operator maszyn odlewniczych;812107;Operator maszyn i urządzeń odlewniczych
+42;8122.8;operator urządzeń do emaliowania;812202;Operator urządzeń do emaliowania
+43;8122.7;operator urządzeń do nakładania powłok galwanicznych;812203;Operator urządzeń do nakładania powłok galwanicznych
+44;8122.6;operator urządzeń do zanurzeniowego nakładania powłok;812207;Operator urządzeń do zanurzeniowego nakładania powłok
+45;8131.2.1;operator urządzeń do produkcji nawozów sztucznych;813119;Operator urządzeń do produkcji nawozów sztucznych
+46;8131.4;operator urządzeń do produkcji wyrobów kosmetycznych;813127;Operator urządzeń do produkcji wyrobów kosmetycznych
+47;8160.3;technik filtracji napojów;813129;Operator urządzeń filtrujących
+48;8131.9;operator urządzeń granulujących;813130;Operator urządzeń granulujących
+49;8131.2;operator urządzeń mieszających do produkcji wyrobów chemicznych;813133;Operator urządzeń mieszających
+50;8141.1.5;operator urządzeń do produkcji wyrobów maczanych;814101;Aparatowy produkcji wyrobów maczanych
+51;8141.1.8;wulkanizator opon;814104;Wulkanizator
+52;8142.7;operator wtryskarki;814208;Operator wtryskarki
+53;8171.7;operator maszyn do produkcji papierowych artykułów piśmiennych;814303;Operator maszyn do produkcji papierowych artykułów piśmiennych
+54;8171.6;operator pras do formowania wyrobów z masy papierniczej;814308;Operator pras do formowania wyrobów z masy papierniczej
+55;8151.2;operator maszyn przędzalniczych;815102;Operator maszyn przędzalniczych
+56;8152.1;operator maszyn dziewiarskich;815201;Operator maszyn dziewiarskich
+57;8152.3;operator maszyn tkackich;815203;Operator maszyn tkackich
+58;8152.2;operator maszyn włókienniczych;815204;Operator maszyn w przemyśle włókienniczym
+59;8154.4;operator maszyn wykończalniczych wyrobów włókienniczych;815401;Operator maszyn wykończalniczych wyrobów włókienniczych
+60;8156.2.3;operator obuwniczych urządzeń szwalniczych;815601;Operator obuwniczych urządzeń szwalniczych
+61;8160.46;operator urządzeń do wytwarzania makaronów;816009;Operator urządzeń do produkcji makaronu
+62;8160.1;operator procesów produkcji pasz;816011;Operator urządzeń do produkcji pasz
+63;8171.5;operator maszyny papierniczej;817104;Operator maszyny papierniczej
+64;8172.5;tartacznik;817211;Tartacznik
+65;8181.8;operator automatów do formowania wyrobów szklanych;818101;Operator automatów do formowania wyrobów szklanych
+66;8181.7;operator odprężarek wyrobów szklanych;818103;Operator odprężarek wyrobów szklanych
+67;8181.11;operator urządzeń do formowania wyrobów ceramicznych;818106;Operator urządzeń do formowania wyrobów ceramicznych
+68;8181.9;maszynowy szlifierz-polerowacz szkła;818121;Maszynowy szlifierz-polerowacz szkła
+69;8182.1;maszynista kotła;818201;Maszynista kotła
+70;8182.2;palacz kotłów parowych;818206;Palacz kotłów parowych
+71;7311.2;monter aparatów i przyrządów optycznych;821101;Monter aparatów i przyrządów optycznych
+72;8211.7;monter maszyn i urządzeń okrętowych;821104;Monter maszyn i urządzeń okrętowych
+73;8211.2;monter maszyn i urządzeń przemysłowych;821105;Monter maszyn i urządzeń przemysłowych
+74;7311.4;monter urządzeń precyzyjnych;821106;Monter mechanizmów i przyrządów precyzyjnych
+75;8211.6;monter taboru szynowego;821112;Monter taboru szynowego
+76;8212.2.1;monter aparatury rozdzielczej i kontrolnej energii elektrycznej;821201;Monter aparatury rozdzielczej i kontrolnej energii elektrycznej
+77;8212.2.3;monter wiązek elektrycznych;821207;Monter wiązek elektrycznych
+78;8219.10;konfekcjoner wyrobów gumowych;821901;Konfekcjoner wyrobów gumowych
+79;8219.4;monter mebli;821902;Monter mebli
+80;8219.11;monter wyrobów z drewna;821905;Monter wyrobów z drewna
+81;8219.9;monter wyrobów z tworzyw sztucznych;821906;Monter wyrobów z tworzyw sztucznych
+82;8311.1;maszynista;831104;Maszynista
+83;8312.1;dróżnik przejazdowy;831201;Dróżnik przejazdowy
+84;8312.4;dyżurny ruchu;831204;Dyżurny ruchu
+85;8312.2;zwrotniczy;831211;Zwrotniczy
+86;8312.3;manewrowy;831205;Manewrowy
+87;8322.7;taksówkarz;832205;Taksówkarz
+88;8322.2;kierowca samochodu dostawczego;832202;Kierowca samochodu dostawczego
+89;8331.1;kierowca autobusu;833101;Kierowca autobusu
+90;8331.1.1;kierowca trolejbusu;833102;Kierowca trolejbusu
+91;8331.2;kierujący tramwajem;833103;Kierujący tramwajem (motorniczy)
+92;8332.2;kierowca samochodu ciężarowego;833203;Kierowca samochodu ciężarowego
+93;8341.1;operator maszyn leśnych;834105;Operator maszyn leśnych
+94;8341.2;operator maszyn rolniczych;834107;Operator maszyn rolniczych
+95;8342.1;operator spycharki;834208;Operator spycharki
+96;8343.3;operator dźwigu jezdnego;834316;Operator żurawia jezdniowego
+97;8343.5;operator żurawia wieżowego;834317;Operator żurawia wieżowego
+98;8343.1;maszynista kolei linowych, wyciągów narciarskich i zjeżdżalni grawitacyjnych;834303;Maszynista kolei linowych, wyciągów narciarskich i zjeżdżalni grawitacyjnych
+99;8344.1;operator wózka widłowego;834401;Kierowca operator wózków jezdniowych (widłowych)
+100;8350.7;marynarz statku morskiego;835003;Marynarz statku morskiego
+101;8350.5;marynarz żeglugi śródlądowej;835004;Marynarz żeglugi śródlądowej
+102;9622.1;konserwator;711101;Konserwator budynków i stanu technicznego pomieszczeń
+103;7112.1;murarz;711202;Murarz
+104;7113.1;kamieniarz;711301;Kamieniarz
+105;7114.1;betoniarz;711401;Betoniarz
+106;7214.2;szkutnik;711504;Szkutnik
+107;7115.1;cieśla;711501;Cieśla
+108;7119.2;pracownik rozbiórkowy;711904;Robotnik rozbiórki budowli
+109;3432.4;budowniczy dekoracji;711901;Montażysta dekoracji
+110;7119.1;monter rusztowań;711903;Monter rusztowań
+111;7121.1;dekarz;712101;Dekarz
+112;7122.4;glazurnik;712202;Glazurnik
+113;7123.2;tynkarz;712303;Tynkarz
+114;7124.1;monter izolacji budowlanych;712401;Monter izolacji budowlanych
+115;7125.1;szklarz;712502;Szklarz
+116;7115.5;monter okien;712501;Monter/składacz okien
+117;7126.8;hydraulik;712601;Hydraulik
+118;7126.3;monter instalacji gazowych;712603;Monter instalacji gazowych
+119;7126.1;monter instalacji i urządzeń sanitarnych;712604;Monter instalacji i urządzeń sanitarnych
+120;7126.2;monter sieci wodnych i kanalizacyjnych;712612;Monter sieci wodnych i kanalizacyjnych
+121;7131.2;tapeciarz;713105;Tapeciarz
+122;7132.1;lakiernik;713201;Lakiernik
+123;7132.3;lakiernik pojazdowy;713203;Lakiernik samochodowy
+124;7133.3;kominiarz;713303;Kominiarz
+125;7222.1;modelarz odlewniczy;721104;Modelarz odlewniczy
+126;7212.3;spawacz;721204;Spawacz
+127;7212.2;lutowacz;721201;Lutowacz
+128;7213.4;blacharz budowlany;721302;Blacharz budowlany
+129;8219.8;monter konstrukcji stalowych;721404;Monter konstrukcji stalowych
+130;7221.1;kowal;722101;Kowal
+131;7221.1.1;kowal podkuwacz koni;722104;Podkuwacz koni
+132;7222.3;ślusarz;722204;Ślusarz
+133;7222.5;ślusarz narzędziowy;722206;Ślusarz narzędziowy
+134;7222.2;rusznikarz;722203;Rusznikarz
+135;7223.12;operator strugarki;722311;Strugacz
+136;7223.4.6;frezer;722301;Frezer
+137;7223.4.4;operator maszyn do obróbki skrawaniem;722303;Operator maszyn do obróbki skrawaniem
+138;7224.1;szlifierz-polerowacz;722401;Docieracz-polerowacz
+139;7224.2;szlifierz-ostrzarz;722402;Szlifierz-ostrzarz
+140;7231.10;mechanik pojazdów samochodowych;723103;Mechanik pojazdów samochodowych
+141;8350.3;marynarz motorzysta żeglugi śródlądowej;723317;Marynarz motorzysta żeglugi śródlądowej
+142;7233.2;mechanik konserwator urządzeń dźwignicowych;723302;Mechanik / konserwator urządzeń dźwignicowych
+143;7233.7;mechanik urządzeń przemysłowych;723307;Mechanik maszyn i urządzeń przemysłowych
+144;7233.8.1;mechanik maszyn rolniczych;723308;Mechanik maszyn rolniczych
+145;7233.9;mechanik okrętowy;723311;Mechanik okrętowy
+146;7231.3;mechanik silników spalinowych;723312;Mechanik silników spalinowych
+147;7234.1;mechanik rowerowy;723401;Monter-mechanik rowerów / wózków
+148;7311.1;zegarmistrz;731106;Zegarmistrz
+149;7311.6;zegarmistrz specjalista naprawy zegarków i zegarów;731106;Zegarmistrz
+150;7311.3;mechanik konserwator sprzętu optycznego;731104;Optyk-mechanik
+151;7312.2;korektor instrumentów muzycznych;731208;Korektor (naprawiacz) instrumentów muzycznych
+152;7312.3.2;budowniczy organów;731207;Organomistrz
+153;7312.3.3;monter fortepianów i pianin;731202;Monter fortepianów i pianin
+154;7313.1.2;złotnik-jubiler;731305;Złotnik-jubiler
+155;8181.10;szkliwierz ceramiki;731409;Szkliwierz ceramiki
+156;7314.2;garncarz;731405;Garncarz
+157;7315.1;hutnik dmuchacz szkła;731502;Hutnik dmuchacz szkła
+158;7315.2;krajacz szkła;731503;Krajacz szkła
+159;7316.1.1;dekorator wyrobów ceramicznych;731609;Zdobnik ceramiki
+160;7316.4;szyldziarz;731608;Szyldziarz
+161;7316.2;specjalista grawerowania w szkle;731604;Grawer szkła
+162;7317.6;rzeźbiarz w drewnie;731705;Rzeźbiarz w drewnie
+163;7317.3;szczotkarz;731707;Szczotkarz
+164;7317.2;wyplatacz koszyków;731702;Koszykarz-plecionkarz
+165;7318.5;rękodzielnik wyrobów skórzanych;731810;Rękodzielnik wyrobów skórzanych
+166;7317.4;zabawkarz;731904;Zabawkarz
+167;7321.1.6;operator DTP;732108;Operator DTP
+168;7322.9;drukarz sitodrukowy;732202;Drukarz sitodrukowy
+169;7322.10;drukarz tkanin;732203;Drukarz tkanin
+170;7322.2;operator maszyn fleksograficznych;732204;Maszynista maszyn fleksograficznych
+171;7322.5;drukarz offsetowy;732205;Maszynista maszyn offsetowych
+172;7323.1;operator maszyn introligatorskich;732304;Operator maszyn introligatorskich
+173;7411.1;elektryk;741103;Elektryk
+174;7411.1.1;elektryk budowlany;741104;Elektryk budowlany
+175;7412.3;elektromechanik;741201;Elektromechanik
+176;7411.1.2;elektromechanik elektrycznych przyrządów pomiarowych;741202;Elektromechanik elektrycznych przyrządów pomiarowych
+177;7412.2;elektromechanik pojazdów samochodowych;741203;Elektromechanik pojazdów samochodowych
+178;7412.5;elektromechanik sprzętu gospodarstwa domowego;741204;Elektromechanik sprzętu gospodarstwa domowego
+179;7412.7;elektromonter okrętowy;741213;Elektromonter okrętowy
+180;7412.11;elektromonter taboru szynowego;741216;Elektromonter taboru szynowego
+181;7412.6;elektromonter urządzeń dźwignicowych / konserwator urządzeń dźwignicowych;741208;Elektromonter/konserwator urządzeń dźwignicowych
+182;7413.1.1;elektromonter linii kablowych;741301;Elektromonter linii kablowych
+183;8211.3;monter mechatronik;742114;Monter mechatronik
+184;8212.3.3;monter-elektronik - elektroniczne instrumenty muzyczne;742105;Monter-elektronik – elektroniczne instrumenty muzyczne
+185;7422.2;serwisant sprzętu komputerowego;742208;Serwisant sprzętu komputerowego
+186;7511.4;rozbieracz – wykrawacz;751104;Rozbieracz-wykrawacz
+187;7511.6;ubojowy;751106;Ubojowy
+188;7512.3;cukiernik;751201;Cukiernik
+189;7512.1;piekarz;751204;Piekarz
+190;8160.45;młynarz;751401;Młynarz
+191;7521.2;impregnator drewna;752101;Impregnator drewna
+192;7521.1;suszarniowy drewna;752106;Suszarniowy drewna
+193;7522.3;bednarz;752201;Bednarz
+194;7522.6;renowator mebli;752204;Renowator mebli artystycznych
+195;7522.2;stolarz meblowy;752208;Stolarz meblowy
+196;7523.6;tokarz w drewnie;752310;Tokarz w drewnie
+197;7523.2;wiertacz w drewnie;752312;Wiertacz w drewnie
+198;7523.5;polerowacz wyrobów z drewna;752306;Polerowacz wyrobów z drewna
+199;7533.3;rękawicznik;753108;Rękawicznik
+200;7531.4;kapelusznik-czapnik;753103;Kapelusznik-czapnik
+201;7532.7;konstruktor odzieży;753201;Konstruktor odzieży
+202;7532.2;krojczy;753202;Krojczy
+203;7533.2;hafciarz/hafciarka;753301;Hafciarka
+204;7534.3;tapicer;753402;Tapicer
+205;7534.3.1;tapicer meblowy;753403;Tapicer meblowy
+206;8155.1.3;garbarz;753501;Garbarz skór
+207;7531.3;klasyfikator skór;753503;Klasyfikator skór
+208;7536.2.7;szewc;753606;Szewc
+209;7536.2;obuwnik;753602;Obuwnik
+210;7536.2.1;obuwnik miarowy;753603;Obuwnik miarowy
+211;7536.2.6;obuwnik ortopedyczny;753604;Obuwnik ortopedyczny
+212;7541.3;płetwonurek ratownik;754105;Płetwonurek ratownik
+213;7542.1;strzałowy;754201;Strzałowy (górnik strzałowy)
+214;7543.8;klasyfikator wyrobów przemysłowych;754301;Klasyfikator wyrobów przemysłowych
+215;7544.1;pracownik deratyzacji, dezynfekcji i dezynsekcji;754401;Pracownik deratyzacji, dezynfekcji i dezynsekcji
+216;7544.1.1;pracownik ochrony roślin;754402;Pracownik ochrony roślin
+217;6112.3;rolnik chmielarz;611202;Rolnik chmielarz
+218;6112.1;sadownik;611203;Sadownik
+219;6112.2;kierownik gospodarstwa sadowniczego;611201;Kierownik gospodarstwa sadowniczego
+220;6113.7;chirurg pielęgniarz drzew;611301;Chirurg pielęgniarz drzew
+221;6113.6;ogrodnik/ogrodniczka;611303;Ogrodnik
+222;6114.1;zarządca produkcji rolnej;611401;Kierownik gospodarstwa upraw mieszanych
+223;6121.1;hodowca bydła;612102;Hodowca bydła
+224;6121.3;hodowca koni;612103;Hodowca koni
+225;6121.5;hodowca owiec;612104;Hodowca owiec
+226;6121.4;hodowca trzody chlewnej;612105;Hodowca trzody chlewnej
+227;6129.1;hodowca zwierząt futerkowych;612107;Hodowca zwierząt futerkowych
+228;6122.1;hodowca drobiu;612201;Hodowca drobiu
+229;6123.1;pszczelarz;612302;Pszczelarz
+230;6130.2;rolnik produkcji roślinnej i zwierzęcej;613003;Rolnik
+231;6130.1;zarządca gospodarstwa rolnego;613002;Kierownik gospodarstwa produkcji roślinnej i zwierzęcej
+232;6114.1;zarządca produkcji rolnej;613002;Kierownik gospodarstwa produkcji roślinnej i zwierzęcej
+233;9215.1;robotnik leśny;621002;Robotnik leśny
+234;5111.2.2;steward statku / stewardesa statku;511102;Steward statku morskiego
+235;5111.2;steward/stewardessa;511101;Stewardesa / Steward
+236;5112.1;kierownik pociągu;511201;Kierownik pociągu
+237;5112.3;konduktor;511202;Konduktor
+238;5112.3.1;kontroler biletów;511204;Kontroler biletów
+239;3423.4;przewodnik górski;511302;Przewodnik turystyczny górski
+240;5120.1;kucharz/kucharka;512001;Kucharz
+241;5131.2;kelner/kelnerka;513101;Kelner
+242;5132.1.1;barista;513201;Barista
+243;5132.1;barman/barmanka;513202;Barman
+244;5131.2.2.3;sommelier win / sommelière win;513203;Sommelier
+245;5131.2.2;sommelier/sommelière;513203;Sommelier
+246;5141.1;fryzjer/fryzjerka;514101;Fryzjer
+247;5141.1.1;fryzjer męski / fryzjerka męska;514101;Fryzjer
+248;5141.1;fryzjer/fryzjerka;514102;Fryzjer damski
+249;5141.1.1;fryzjer męski / fryzjerka męska;514103;Fryzjer męski
+250;5142.5;charakteryzator/charakteryzatorka;514201;Charakteryzator
+251;5142.1;kosmetyczka;514202;Kosmetyczka
+252;5142.6;manikiurzysta/manikiurzystka;514203;Manikiurzystka
+253;5142.8;pedikiurzysta/pedikiurzystka;514204;Pedikiurzystka
+254;5152.2;organizator usług domowych / organizatorka usług domowych;515202;Organizator usług domowych
+255;5153.1;gospodarz domu;515301;Gospodarz domu
+256;5153.1.3;kościelny;515302;Kościelny
+257;5161.1;astrolog;516101;Astrolog
+258;5161.2;wróżbita/wróżbiarka;516102;Wróżbita
+259;5169.3;osoba do towarzystwa;516201;Osoba do towarzystwa
+260;5163.2;tanatoprakser;516303;Tanatoprakser (balsamista)
+261;5164.2.1.1;trener psów / trenerka psów;516405;Treser psów
+262;2264.2;zoofizjoterapeuta;516406;Zoofizjoterapeuta
+263;5164.1.3;opiekun dzikich zwierząt;516402;Opiekun dzikich zwierząt
+264;5164.9;opiekun zwierząt domowych;516403;Opiekun zwierząt domowych
+265;5165.1;instruktor nauki jazdy;516502;Instruktor nauki jazdy
+266;5169.1;host/hostessa;516903;Hostessa
+267;5223.3;osobisty doradca ds. wizerunku i zakupów;516904;Osobisty doradca do spraw zakupów (personal shooper)
+268;5211.1;sprzedawca na targowisku i bazarze;521101;Sprzedawca na targowisku / bazarze
+269;5212.1;sprzedawca uliczny żywności;521201;Uliczny sprzedawca żywności o krótkim terminie przydatności do spożycia
+270;5222.1.1;kierownik kas;522203;Kierownik kas
+271;5223.4;sprzedawca/sprzedawczyni;522301;Sprzedawca
+272;5223.7.23;sprzedawca mięsa i produktów mięsnych;522302;Sprzedawca w branży mięsnej
+273;5230.3;kasjer biletowy;523001;Kasjer biletowy
+274;5241.2;model/modelka;524101;Model / modelka
+275;5242.1;demonstrator wyrobów;524201;Demonstrator wyrobów
+276;5245.1;sprzedawca na stacji paliw;524502;Sprzedawca w stacji paliw
+277;5311.1.3;dzienny opiekun małego dziecka / dzienna opiekunka małego dziecka;531108;Dzienny opiekun małego dziecka
+278;5311.1.4;niania;531104;Opiekunka dziecięca domowa (niania)
+279;5312.1;asystent nauczyciela w przedszkolu;531202;Asystent nauczyciela przedszkola
+280;5312.2;asystent nauczyciela w szkole podstawowej;531204;Asystent nauczyciela w szkole
+281;5321.1;opiekun medyczny;532102;Opiekun medyczny
+282;5322.1;opiekunka domowa / opiekun domowy;532201;Opiekunka domowa
+283;5329.1;sanitariusz szpitalny;532904;Sanitariusz szpitalny
+284;5411.1;strażak;541101;Strażak
+285;5413.1;strażnik w zakładzie dla nieletnich;541201;Strażnik w zakładzie dla nieletnich
+286;5414.1.3;pracownik ochrony osobistej;541307;Pracownik ochrony fizycznej
+287;5411.1.3;ratownik górniczy;541902;Ratownik górniczy
+288;5419.6;ratownik wodny;541906;Ratownik wodny
+289;6210.1;strażnik leśny;541907;Strażnik leśny
+290;4110.1;technik prac biurowych;411004;Technik prac biurowych
+291;3334.1;administrator nieruchomości;411001;Administrator nieruchomości
+292;4120.1;sekretarka;412001;Sekretarka
+293;4131.1;maszynistka;413103;Operator edytorów tekstu
+294;4131.1;maszynistka;413101;Maszynistka
+295;4211.2;asystent usług pocztowych;421101;Asystent usług pocztowych
+296;4211.1;kasjer bankowy;421103;Kasjer bankowy
+297;4312.3;kasjer walutowy / kasjerka walutowa;421104;Kasjer walutowy
+298;4212.2;bukmacher;421201;Bukmacher
+299;4212.6;pracownik kolektury;421203;Pracownik kolektury
+300;4213.1;pracownik lombardu;421302;Pracownik lombardu
+301;4214.1;windykator;421403;Windykator
+302;4221.6;pracownik biura podróży;422101;Pracownik biura podróży
+303;4223.1;operator centrali telefonicznej;422301;Operator centrali telefonicznej
+304;4224.1;recepcjonista w placówce hotelarskiej / recepcjonistka w placówce hotelarskiej;422401;Recepcjonista hotelowy
+305;4221.3;pracownik informacji turystycznej;422502;Pracownik informacji turystycznej
+306;4226.2;recepcjonista/recepcjonistka;422602;Recepcjonista
+307;3252.1;rejestrator medyczny / rejestratorka medyczna;422603;Rejestratorka medyczna
+308;4227.2;ankieter;422701;Ankieter
+309;3313.1;asystent / asystentka ds. księgowości;431101;Asystent do spraw księgowości
+310;4311.1;fakturzysta;431102;Fakturzystka
+311;4312.4;pracownik ds. ubezpieczeń;431202;Pracownik do spraw ubezpieczeń
+312;4313.1;pracownik obsługi płacowej;431301;Pracownik obsługi płacowej
+313;5249.2;pracownik obsługi wypożyczalni;432101;Ekspedient wypożyczalni
+314;4321.1;magazynier;432103;Magazynier
+315;4322.1;planista produkcyjny;432201;Planista produkcyjny
+316;4323.6;ekspedytor;432303;Ekspedytor
+317;4323.17;dyspozytor taxi;432301;Dyspozytor radiotaxi
+318;4323.4;dyspozytor transportu samochodowego;432302;Dyspozytor transportu samochodowego
+319;4411.1;pomocnik biblioteczny;441101;Pomocnik biblioteczny
+320;4412.1;ekspedient pocztowy;441201;Ekspedient pocztowy
+321;4412.2;listonosz;441203;Listonosz
+322;4413.1;korektor tekstu;441302;Korektor tekstu
+323;2635.3.12;pracownik ds. socjalnych;441502;Pracownik do spraw socjalnych
+324;3112.9;technik geodeta;311104;Technik geodeta
+325;3111.4;technik geolog;311106;Technik geolog
+326;3111.5;technik hydrolog;311107;Technik hydrolog
+327;3111.8;technik meteorolog;311108;Technik meteorolog
+328;3111.9;technik metrolog;311109;Technik metrolog
+329;3111.1;laborant chemiczny;311101;Laborant chemiczny
+330;2146.1;probierz;311102;Probierz
+331;3112.1.2;inspektor nadzoru budowlanego;311211;Inspektor budowlany
+332;3112.1.1;inspektor budowy mostów;311213;Inspektor budowy mostów
+333;3112.1.6;inspektor ochrony przeciwpożarowej;311214;Inspektor ochrony przeciwpożarowej
+334;3113.1;technik elektryk;311303;Technik elektryk
+335;7422.5;instalator systemów alarmowych;311402;Instalator systemów alarmowych
+336;3114.1;technik elektronik;311408;Technik elektronik
+337;3115.1.10;technik mechatronik;311410;Technik mechatronik
+338;3115.1;technik mechanik;311504;Technik mechanik
+339;3115.1.15;technik mechanik urządzeń przemysłowych;311511;Technik mechanik urządzeń przemysłowych
+340;3115.1.4;technik pojazdów samochodowych;311513;Technik pojazdów samochodowych
+341;3116.1;technik technologii chemicznej;311603;Technik technologii chemicznej
+342;3118.3.5;operator CAD;311803;Operator CAD
+343;3119.2;technik automatyk;311909;Technik automatyk
+344;7312.5;technik instrumentów muzycznych;311914;Technik instrumentów muzycznych
+345;3119.7;technik obuwnik;311916;Technik obuwnik
+346;3131.1.6;operator reaktora jądrowego;311905;Operator reaktora
+347;3122.4.2;mistrz produkcji w przemyśle chemicznym;312201;Mistrz produkcji w przemyśle chemicznym
+348;3122.4.18;mistrz produkcji w przemyśle drzewnym;312202;Mistrz produkcji w przemyśle drzewnym
+349;3122.4.5;mistrz produkcji w przemyśle elektronicznym;312204;Mistrz produkcji w przemyśle elektronicznym
+350;3122.4.11;mistrz produkcji w przemyśle metalurgicznym;312206;Mistrz produkcji w przemyśle metalurgicznym
+351;3122.4.17;mistrz produkcji w przemyśle włókienniczym;312209;Mistrz produkcji w przemyśle włókienniczym
+352;3123.1.20;mistrz produkcji w budownictwie drogowym;312301;Mistrz produkcji w budownictwie drogowym
+353;3123.1.19;mistrz produkcji w budownictwie kolejowym;312302;Mistrz produkcji w budownictwie kolejowym
+354;3123.1.2;mistrz produkcji w budownictwie mostowym;312303;Mistrz produkcji w budownictwie mostowym
+355;3123.1;mistrz produkcji w budownictwie;312304;Mistrz produkcji w budownictwie ogólnym
+356;3123.1.26;mistrz produkcji w budownictwie wodnym;312306;Mistrz produkcji w budownictwie wodnym
+357;3131.1.3;elektroenergetyk elektrowni wykorzystujących paliwa kopalne;313101;Elektroenergetyk elektrowni cieplnych
+358;3131.1.5;elektroenergetyk elektrowni wodnych;313102;Elektroenergetyk elektrowni wodnych
+359;3131.1.7;elektroenergetyk nastawni;313103;Elektroenergetyk nastawni
+360;3131.1.9;maszynista turbozespołu parowego;313106;Maszynista turbozespołu parowego
+361;3132.1;operator spalarni odpadów komunalnych;313206;Operator spalarni odpadów komunalnych
+362;3132.4;operator urządzeń oczyszczania ścieków;313208;Operator urządzeń oczyszczania ścieków
+363;3132.7;operator urządzeń uzdatniania wody;313209;Operator urządzeń uzdatniania i demineralizacji wody
+364;8131.3;kontroler urządzeń koksowniczych;313307;Kontroler (sterowniczy) urządzeń koksowniczych
+365;3135.1;kontroler urządzeń do wytopu metali;313502;Kontroler (sterowniczy) urządzeń do wytopu metali
+366;3139.2;kontroler robotów przemysłowych;313901;Kontroler (sterowniczy) robotów przemysłowych
+367;3139.1;operator zautomatyzowanej linii produkcyjnej;313904;Operator zautomatyzowanej linii produkcyjnej
+368;6121.3;hodowca koni;314203;Technik hodowca koni
+369;3142.1;technik rolnik;314207;Technik rolnik
+370;3143.1;technik leśnik;314301;Technik leśnik
+371;3434.1.2;mistrz cukiernictwa;314405;Technik technologii żywności – produkcja cukiernicza
+372;3122.1;technik przetwórstwa nabiału;314412;Technik technologii żywności – przetwórstwo mleczarskie
+373;3152.2;stermotorzysta żeglugi śródlądowej;315104;Stermotorzysta żeglugi śródlądowej
+374;3151.2;oficer mechanik;315103;Oficer mechanik
+375;3152.3;pilot morski;315214;Technik nawigator morski
+376;6223.2;technik rybołówstwa;315215;Technik rybołówstwa morskiego
+377;6223.2.1;szyper;315217;Szyper
+378;3152.4;kapitan statku morskiego;315205;Kapitan statku morskiego
+379;3152.5;kapitan żeglugi śródlądowej;315206;Kapitan żeglugi śródlądowej
+380;3152.1;oficer pokładowy;315208;Oficer pokładowy
+381;3152.3;pilot morski;315211;Pilot morski
+382;7421.2;technik awionik;315316;Technik awionik
+383;3153.1;technik mechanik lotniczy;315317;Technik mechanik lotniczy
+384;8332.1;kierowca - operator tankowania statków powietrznych;315305;Operator tankowania statków powietrznych
+385;3153.2.6;mechanik pokładowy;315301;Mechanik pokładowy
+386;3153.2.2.1;pilot samolotowy liniowy;315308;Pilot samolotowy zawodowy / liniowy
+387;3153.2.2;pilot samolotowy zawodowy;315308;Pilot samolotowy zawodowy / liniowy
+388;3153.2.4;pilot śmigłowcowy;315311;Pilot śmigłowcowy zawodowy / liniowy
+389;3154.1.2;informator służby informacji powietrznej;315402;Informator służby informacji powietrznej
+390;3119.1;technik lotniskowych służb operacyjnych;315406;Technik lotniskowych służb operacyjnych
+391;4323.2;dyspozytor lotniczy;315401;Dyspozytor lotniczy
+392;3154.1;kontroler ruchu lotniczego;315403;Kontroler ruchu lotniczego
+393;3155.1;technik urządzeń ruchu lotniczego;315501;Technik urządzeń ruchu lotniczego
+394;2269.8;technik elektroradiolog;321103;Technik elektroradiolog
+395;5329.3;technik sterylizacji medycznej;321104;Technik sterylizacji medycznej
+396;3211.1;perfuzjonista / perfuzjonistka;321102;Perfuzjonista
+397;3212.1;technik analityki medycznej;321201;Technik analityki medycznej
+398;3213.2;technik farmaceutyczny;321301;Technik farmaceutyczny
+399;3214.2;technik dentystyczny;321402;Technik dentystyczny
+400;3214.3.1;technik ortopeda;321403;Technik ortopeda
+401;2230.1.2;homeopata;323005;Homeopata
+402;3230.1;terapeuta ziołolecznictwa;323012;Zielarz-fitoterapeuta
+403;2230.1.1;akupunkturzysta/akupunkturzystka;323001;Akupunkturzysta
+404;3259.4;osteopata;323010;Osteopata
+405;2269.9.4;muzykoterapeuta;323008;Muzykoterapeuta
+406;3251.2;higienista stomatologiczny / higienistka stomatologiczna;325102;Higienistka stomatologiczna
+407;3251.1;asystent stomatologiczny / asystentka stomatologiczna;325101;Asystentka stomatologiczna
+408;3254.1.1;technik optyk;325302;Technik optyk
+409;3254.1;optyk okularowy;325301;Optyk okularowy
+410;3255.3;technik masażysta;325402;Technik masażysta
+411;3257.5;inspektor bezpieczeństwa i higieny pracy;325502;Inspektor bezpieczeństwa i higieny pracy
+412;2263.4;inspektor ochrony radiologicznej;325503;Inspektor ochrony radiologicznej
+413;2133.4;inspektor ochrony środowiska;325504;Inspektor ochrony środowiska
+414;3257.5.1;inspektor sanitarny;325514;Inspektor sanitarny
+415;3111.2;technik ochrony środowiska;325508;Technik analizy i monitoringu środowiska
+416;3122.5;technik gospodarki odpadami;325515;Technik gospodarki odpadami
+417;3111.2;technik ochrony środowiska;325511;Technik ochrony środowiska
+418;3258.2;ratownik medyczny;325601;Ratownik medyczny
+419;5311.1;opiekun dziecięcy / opiekunka dziecięca;325905;Opiekunka dziecięca
+420;3311.2;pośrednik finansowy;331103;Pośrednik finansowy
+421;3312.5;pracownik do spraw pożyczek;331202;Pracownik do spraw pożyczek
+422;2411.1;księgowy/księgowa;331301;Księgowy
+423;3314.2;asystent / asystentka ds. statystyki;331401;Asystent do spraw statystyki
+424;3315.6;rzeczoznawca;331503;Rzeczoznawca
+425;3315.5;likwidator szkód;331502;Likwidator szkód
+426;3315.2;gemmolog;331501;Gemmolog
+427;3321.1;broker ubezpieczeniowy;332104;Broker ubezpieczeniowy
+428;3321.3;agent ubezpieczeniowy;332101;Agent ubezpieczeniowy
+429;3432.2;merchandiser;332201;Ekspozytor towarów (merchandiser)
+430;3322.1;przedstawiciel handlowy;332203;Przedstawiciel handlowy
+431;3323.2;zaopatrzeniowiec;332302;Zaopatrzeniowiec
+432;3324.2;makler giełd towarowych;332401;Makler giełd towarowych
+433;3324.1.1;makler morski;332402;Makler morski
+434;3331.2;spedytor;333105;Spedytor
+435;3331.1;agent celny;333101;Agent celny
+436;3331.2.2;agent klarujący;333102;Agent klarujący
+437;3332.2.2;organizator imprez ślubnych;333202;Organizator imprez ślubnych
+438;3333.1;pośrednik pracy;333301;Pośrednik pracy
+439;3339.2;licytator;333902;Licytator
+440;3339.8;menedżer artystyczny;333901;Menedżer artystyczny
+441;2431.4;menedżer marki;333903;Promotor marki (trendsetter)
+442;3341.8;kierownik biura;334101;Kierownik biura
+443;3343.1;technik administracji;334306;Technik administracji
+444;3343.1.1;stenograf-protokolant;334307;Stenograf-protokolant
+445;3343.4;asystent dyrektora;334302;Asystent dyrektora
+446;2422.9;asystent posła;334303;Asystent parlamentarny
+447;3343.3;asystent zarządu;334304;Asystent zarządu
+448;3344.2;sekretarz medyczny / sekretarka medyczna;334402;Sekretarka medyczna
+449;3351.3;urzędnik do spraw imigracji;335103;Urzędnik do spraw imigracji
+450;3351.1;funkcjonariusz celny;335101;Funkcjonariusz celny
+451;3352.1;urzędnik podatkowy;335203;Urzędnik podatkowy
+452;3352.2;kontroler rozliczeń podatkowych;335201;Kontroler rozliczeń podatkowych
+453;3353.2;urzędnik ds. ubezpieczeń społecznych;335301;Urzędnik ubezpieczeń społecznych
+454;3354.2;urzędnik do spraw licencji;335401;Urzędnik do spraw licencji
+455;3354.3;urzędnik do spraw paszportów;335402;Urzędnik do spraw paszportów
+456;3355.1;policjant służby kryminalnej;335502;Policjant służby kryminalnej
+457;3359.8;inspektor do spraw miar i wag;335907;Inspektor do spraw miar i wag
+458;3411.8;detektyw prywatny;341101;Detektyw prywatny
+459;3411.1;sekretarz sądowy;341103;Sekretarz sądowy
+460;3412.4.4;opiekun osób niepełnosprawnych;341201;Asystent osoby niepełnosprawnej
+461;3412.4.5;asystent rodziny;341207;Asystent rodziny
+462;3412.4.9;opiekun w domu pomocy społecznej;341203;Opiekun w domu pomocy społecznej
+463;3413.2;świecki krzewiciel wiary;341302;Świecki krzewiciel wiary
+464;3422.5;instruktor sportu;342201;Instruktor sportu
+465;3422.4;trener sportu;342207;Trener sportu
+466;3423.2;instruktor fitness;342301;Instruktor fitness
+467;3423.3;instruktor jazdy konnej;342303;Instruktor jazdy konnej
+468;3423.1.2;instruktor rekreacji ruchowej;342305;Instruktor rekreacji ruchowej
+469;3422.3;pracownik do spraw kultury fizycznej i sportu;342310;Pracownik do spraw kultury fizycznej i sportu
+470;3431.1;fotograf;343101;Fotograf
+471;3431.2;fotoreporter;343102;Fotoreporter
+472;3432.1.1;dekorator wnętrz;343202;Dekorator wnętrz
+473;2622.2;bibliotekarz;343301;Bibliotekarz
+474;3119.5;technik żywności;343404;Technik żywienia i usług gastronomicznych
+475;3434.1;szef kuchni;343402;Szef kuchni (kuchmistrz)
+476;2659.2.1;aktor cyrkowy / aktorka cyrkowa;343502;Aktor cyrkowy
+477;3435.19;inspicjent;343904;Inspicjent
+478;3435.11;realizator światła;343912;Realizator światła
+479;3435.16;rekwizytor;343913;Rekwizytor
+480;3435.14;sufler;343915;Sufler
+481;3435.6;garderobiany/garderobiana;343903;Garderobiana
+482;3435.22;kaskader;343905;Kaskader filmowy
+483;3435.20;kierownik planu filmowego;343907;Kierownik planu filmowego
+484;3435.18;pirotechnik;343910;Pirotechnik
+485;3514.1;administrator stron internetowych;351401;Administrator stron internetowych
+486;2513.5;twórca stron internetowych;351404;Projektant stron internetowych (webmaster)
+487;3521.1.1;technik realizacji dźwięku;352119;Technik dźwięku
+488;3521.1.1;technik realizacji dźwięku;352120;Technik realizacji dźwięku
+489;3521.1.7;technik realizacji nagrań i nagłośnień;352122;Technik realizacji nagrań i nagłośnień
+490;3521.1;technik urządzeń audiowizualnych;352121;Technik urządzeń audiowizualnych
+491;3521.1.12;realizator filmu wideo;352117;Realizator filmu wideo (wideofilmowiec)
+492;3521.1.2;asystent operatora dźwięku;352101;Asystent operatora dźwięku
+493;3521.1.1;technik realizacji dźwięku;352103;Asystent techniczny realizatora dźwięku
+494;3521.1.6;kinooperator;352106;Kinooperator
+495;3521.1.11;operator dźwięku;352111;Operator dźwięku
+496;3521.1.3;operator kamery;352112;Operator kamery
+497;3521.1.10;montażysta dźwięku;352109;Montażysta dźwięku
+498;3522.1;technik telekomunikacji;352203;Technik telekomunikacji
+499;2111.1;astronom;211102;Astronom
+500;2111.3;fizyk;211103;Fizyk
+501;2112.1.3;synoptyk;211203;Synoptyk
+502;2112.1.2;klimatolog;211204;Klimatolog
+503;2112.1;meteorolog;211202;Meteorolog
+504;2113.1;chemik;211301;Chemik
+505;2113.1.5;perfumiarz;211304;Perfumiarz
+506;2114.1.5;hydrolog;211405;Hydrolog
+507;2114.2;geofizyk;211401;Geofizyk
+508;2632.5;geograf;211402;Geograf
+509;2114.1;geolog;211403;Geolog
+510;2114.1.8;oceanolog;211406;Oceanolog
+511;2120.2;demograf;212003;Demograf
+512;2120.6;statystyk;212004;Statystyk
+513;2120.1;aktuariusz;212001;Aktuariusz
+514;2120.5;matematyk;212002;Matematyk
+515;2131.4.2;biochemik;213102;Biochemik
+516;2131.4.4;biofizyk;213103;Biofizyk
+517;2131.3;bioinformatyk;213109;Bioinformatyk
+518;2149.4;bioinżynier;213104;Bioinżynier
+519;2131.4;biolog;213105;Biolog
+520;2131.4.8;genetyk;213107;Genetyk
+521;2131.4.9;mikrobiolog;213108;Mikrobiolog
+522;2132.4;inżynier rybactwa;213206;Inżynier rybactwa
+523;2132.2;doradca rolniczy;213201;Doradca rolniczy
+524;2133.11;gleboznawca;213202;Gleboznawca
+525;2133.5;ekolog;213302;Ekolog
+526;2143.2;specjalista ochrony środowiska;213303;Specjalista ochrony środowiska
+527;2141.3.2;inżynier organizacji i planowania produkcji;214102;Inżynier organizacji i planowania produkcji
+528;2142.1.11;inżynier budownictwa wodnego;214201;Inżynier budownictwa – budowle i drogi wodne
+529;2142.1.2;inżynier budownictwa - budownictwo ogólne;214202;Inżynier budownictwa – budownictwo ogólne
+530;2142.1.3;inżynier inżynierii środowiska - melioracje;214304;Inżynier inżynierii środowiska – melioracje
+531;2143.1.4;inżynier inżynierii środowiska - oczyszczanie miast i gospodarka odpadami;214305;Inżynier inżynierii środowiska – oczyszczanie miast i gospodarka odpadami
+532;2144.1.14;inżynier budownictwa okrętowego;214412;Inżynier budownictwa okrętowego
+533;2144.1.9;inżynier mechanik - maszyny i urządzenia przemysłowe;214404;Inżynier mechanik – maszyny i urządzenia przemysłowe
+534;2144.1.17;inżynier mechanik - mechanika precyzyjna;214405;Inżynier mechanik – mechanika precyzyjna
+535;2144.1.2.1;inżynier mechanizacji rolnictwa;214409;Inżynier mechanizacji rolnictwa
+536;2144.1.22;inżynier spawalnik;214410;Inżynier spawalnik
+537;2114.1.4;inżynier geolog - hydrologia górnicza;214610;Inżynier geolog - hydrologia górnicza
+538;2146.11;inżynier górnik - górnictwo odkrywkowe;214602;Inżynier górnik – górnictwo odkrywkowe
+539;2146.2;inżynier górnik - wiertnictwo;214604;Inżynier górnik – wiertnictwo
+540;2149.1;inżynier akustyk;214927;Inżynier akustyk
+541;2141.3.2.1;inżynier automatyki i robotyki;214903;Inżynier automatyki i robotyki
+542;2149.4.1;inżynier biocybernetyki i inżynierii biomedycznej;214905;Inżynier biocybernetyki i inżynierii biomedycznej
+543;2149.7;inżynier energetyki;214906;Inżynier energetyki
+544;2149.9;inżynier inżynierii materiałowej;214932;Inżynier inżynierii materiałowej
+545;2149.8.1;inżynier pożarnictwa;214910;Inżynier pożarnictwa
+546;2149.9.2;inżynier technologii drewna;214914;Inżynier technologii drewna
+547;2141.5;inżynier technologii przetwórstwa skóry;214915;Inżynier technologii przetwórstwa skóry
+548;2142.1.8;inżynier transportu kolejowego;214918;Inżynier transportu kolejowego
+549;2141.10;inżynier włókiennik;214919;Inżynier włókiennik
+550;1349.12;kierownik ds. energii;214933;Zarządca energii
+551;2141.8;specjalista ds. pakowania i opakowań;214925;Specjalista do spraw pakowania i opakowań
+552;3112.1.5.1;audytor energetyczny;214901;Audytor energetyczny
+553;2149.9.1;nanotechnolog;214923;Nanotechnolog (inżynier nanostruktur)
+554;2112.2;metrolog;214922;Metrolog
+555;2151.1.1;inżynier elektroenergetyk;215101;Inżynier elektroenergetyk
+556;2151.1;inżynier elektryk;215103;Inżynier elektryk
+557;2149.7.3;inżynier urządzeń i systemów energetyki odnawialnej;215106;Inżynier urządzeń i systemów energetyki odnawialnej
+558;2152.1;inżynier elektronik;215201;Inżynier elektronik
+559;2144.1.11;inżynier mechatronik;215202;Inżynier mechatronik
+560;2152.1.8;inżynier optoelektronik;215204;Optoelektronik
+561;2523.3;inżynier sieci informacyjno-telekomunikacyjnej;215303;Inżynier teleinformatyk
+562;2161.1;architekt;216101;Architekt
+563;2161.1.1;architekt wnętrz;216102;Architekt wnętrz
+564;2162.1;architekt krajobrazu;216201;Architekt krajobrazu
+565;2163.1.2;kostiumograf;216302;Kostiumograf
+566;2163.1.5;projektant biżuterii/ projektantka biżuterii;216301;Projektant biżuterii
+567;3432.6;projektant ekspozycji towarów i usług;216305;Projektant ekspozycji towarów i usług (visual merchandiser)
+568;2163.1.3;projektant mody/projektantka mody;216303;Projektant mody
+569;2163.1;projektant wzornictwa przemysłowego;216304;Projektant wzornictwa przemysłowego
+570;2164.3;urbanista;216403;Urbanista
+571;2165.4.2;inżynier geodeta - geodezja górnicza;216502;Inżynier geodeta – geodezja górnicza
+572;2165.3;inżynier geodeta – geomatyka;216506;Inżynier geodeta – geomatyka
+573;2165.1;inżynier geodeta - kataster i gospodarka nieruchomościami;216507;Inżynier geodeta – kataster i gospodarka nieruchomościami
+574;2165.2;kartograf;216508;Kartograf
+575;2166.11;ilustrator;216603;Ilustrator
+576;2166.3;specjalista do spraw animacji multimedialnej;216606;Specjalista do spraw animacji multimedialnej
+577;2166.5;grafik komputerowy DTP;216601;Grafik komputerowy DTP
+578;2166.10;projektant grafiki;216604;Projektant grafiki
+579;2222.1;położny/położna;223101;Położna
+580;2261.1;lekarz dentysta;226101;Lekarz dentysta
+581;2262.1;farmaceuta;228101;Farmaceuta
+582;2262.1.2.2;farmaceuta – specjalista farmacji przemysłowej;228205;Farmaceuta – specjalista farmacji przemysłowej
+583;2262.1.2.1;farmaceuta – specjalista farmacji szpitalnej;228206;Farmaceuta – specjalista farmacji szpitalnej
+584;2263.3;specjalista bezpieczeństwa i higieny pracy;229103;Specjalista bezpieczeństwa i higieny pracy
+585;2422.10.12;specjalista ds. polityki zdrowia publicznego;229104;Specjalista zdrowia publicznego
+586;2264.3;fizjoterapeuta;229201;Fizjoterapeuta
+587;2264.1;główny fizjoterapeuta;229202;Specjalista fizjoterapii
+588;2265.1;specjalista ds. dietetyki;229301;Specjalista do spraw dietetyki
+589;2266.1;lekarz – specjalista audiologii i foniatrii;221204;Lekarz – specjalista audiologii i foniatrii
+590;2266.2;logopeda;229402;Logopeda
+591;2267.1;optometrysta;229501;Optometrysta
+592;2131.4.12;toksykolog;229908;Toksykolog
+593;2269.8;technik elektroradiolog;229913;Elektroradiolog
+594;2131.4.7;epidemiolog;229901;Epidemiolog
+595;2634.2.4;psychoterapeuta;229905;Psychoterapeuta
+596;2310.1.6;wykładowca akademicki w dziedzinie nauk biologicznych;231001;Nauczyciel akademicki – nauki biologiczne
+597;2310.1.8;wykładowca akademicki w dziedzinie chemii;231002;Nauczyciel akademicki – nauki chemiczne
+598;2310.1.14;wykładowca akademicki z dziedziny ekonomii;231003;Nauczyciel akademicki – nauki ekonomiczne
+599;2310.1.31;wykładowca akademicki w dziedzinie farmacji;231004;Nauczyciel akademicki – nauki farmaceutyczne
+600;2310.1.33;wykładowca akademicki w dziedzinie fizyki;231005;Nauczyciel akademicki – nauki fizyczne
+601;2310.1.25;wykładowca akademicki w dziedzinie medycyny;231009;Nauczyciel akademicki – nauki medyczne
+602;2310.1.24;wykładowca akademicki w dziedzinie nauk matematycznych;231008;Nauczyciel akademicki – nauki matematyczne
+603;2310.1.13;wykładowca akademicki z dziedziny nauki o ziemi;231011;Nauczyciel akademicki – nauki o Ziemi
+604;2310.1.22;wykładowca akademicki w dziedzinie nauk prawnych;231012;Nauczyciel akademicki – nauki prawne
+605;2310.1.16;wykładowca akademicki w dziedzinie inżynierii;231014;Nauczyciel akademicki – nauki techniczne
+606;2320.1;nauczyciel kształcenia zawodowego/nauczycielka kształcenia zawodowego;232001;Nauczyciel / instruktor praktycznej nauki zawodu
+607;2320.1.7;nauczyciel kształcenia zawodowego w zakresie biznesu i marketingu;232003;Nauczyciel przedmiotów zawodowych ekonomicznych
+608;2330.1.9;nauczyciel informatyki w szkole ponadpodstawowej/nauczycielka informatyki w szkole ponadpodstawowej;233007;Nauczyciel informatyki / technologii informacyjnej
+609;2330.1.8;nauczyciel historii w szkole ponadpodstawowej/nauczycielka historii w szkole ponadpodstawowej;233006;Nauczyciel historii
+610;2330.1.17;nauczyciel religii w szkole ponadpodstawowej/nauczycielka religii w szkole ponadpodstawowej;233020;Nauczyciel religii
+611;2330.1.16;nauczyciel fizyki i astronomii w szkole ponadpodstawowej/nauczycielka fizyki i astronomii w szkole ponadpodstawowej;233004;Nauczyciel fizyki i astronomii
+612;2330.1.13;nauczyciel muzyki w szkole ponadpodstawowej/nauczycielka muzyki w szkole ponadpodstawowej;233016;Nauczyciel muzyki
+613;2330.1.3;nauczyciel przedmiotu biznes i ekonomia w szkole ponadpodstawowej/nauczycielka przedmiotu biznes i ekonomia w szkole ponadpodstawowej;233018;Nauczyciel przedsiębiorczości
+614;2330.1.7;nauczyciel geografii w szkole ponadpodstawowej/nauczycielka geografii w szkole ponadpodstawowej;233005;Nauczyciel geografii
+615;2330.1.2;nauczyciel biologii w szkole ponadpodstawowej/nauczycielka biologii w szkole ponadpodstawowej;233001;Nauczyciel biologii
+616;2330.1.15;nauczyciel wychowania fizycznego w szkole ponadpodstawowej/nauczycielka wychowania fizycznego w szkole ponadpodstawowej;233025;Nauczyciel wychowania fizycznego
+617;2330.1.11;nauczyciel matematyki w szkole ponadpodstawowej/nauczycielka matematyki w szkole ponadpodstawowej;233015;Nauczyciel matematyki
+618;2330.1.12;nauczyciel języków nowożytnych w szkole ponadpodstawowej/nauczycielka języków nowożytnych w szkole ponadpodstawowej;233008;Nauczyciel języka obcego
+619;2330.1.4;nauczyciel chemii w szkole ponadpodstawowej/nauczycielka chemii w szkole ponadpodstawowej;233002;Nauczyciel chemii
+620;2342.1;nauczyciel przedszkola/nauczycielka przedszkola;234201;Nauczyciel przedszkola
+621;2351.2;doradca do spraw doskonalenia procesów edukacyjnych;235105;Nauczyciel doradca metodyczny
+622;2351.3;wizytator;235109;Wizytator
+623;2353.1;lektor w szkole języków obcych/lektorka w szkole języków obcych;235301;Lektor języka obcego
+624;3412.3;trener osobisty;235920;Trener osobisty (coach, mentor, tutor)
+625;2652.4;korepetytor;235917;Korepetytor
+626;2635.3.10;pedagog szkolny;235912;Pedagog szkolny
+627;2411.1.8;kontroler finansowy;241102;Specjalista do spraw controllingu
+628;2411.1.8;kontroler finansowy;241107;Kontroler finansowy
+629;2412.5;doradca inwestycyjny;241203;Doradca inwestycyjny
+630;2411.1.12;doradca podatkowy;241204;Doradca podatkowy
+631;2413.1;analityk finansowy;241306;Analityk finansowy
+632;2413.1.3;analityk inwestycyjny;241311;Analityk inwestycyjny
+633;3312.2.1;analityk kredytowy;241302;Analityk kredytowy
+634;2141.6;specjalista ds. logistyki;242108;Specjalista do spraw logistyki
+635;2432.3;specjalista ds. pozyskiwania funduszy;242109;Specjalista do spraw pozyskiwania funduszy (fundraiser)
+636;2421.1;analityk biznesowy;242112;Analityk biznesowy
+637;2262.1.1;inspektor farmaceutyczny;242208;Inspektor farmaceutyczny
+638;3112.1.2;inspektor nadzoru budowlanego;242211;Inspektor nadzoru budowlanego
+639;3359.7;inspektor pracy;242214;Inspektor pracy
+640;2422.1;specjalista ds. administracyjnych w administracji publicznej;242217;Specjalista administracji publicznej
+641;1213.2.2;kierownik ds. planowania strategicznego;242223;Specjalista do spraw planowania strategicznego
+642;2422.8;specjalista ds. stosunków międzynarodowych;242224;Specjalista do spraw stosunków międzynarodowych
+643;2422.5;specjalista organizacji i zarządzania w ochronie zdrowia;242226;Specjalista organizacji i zarządzania w ochronie zdrowia
+644;2423.1;doradca zawodowy;242304;Doradca zawodowy
+645;2423.3;specjalista ds. kadr;242307;Specjalista do spraw kadr
+646;2423.7;specjalista ds. rekrutacji pracowników;242309;Specjalista do spraw rekrutacji pracowników
+647;2432.4;specjalista ds. komunikacji międzykulturowej;242312;Specjalista integracji międzykulturowej
+648;2423.5;analityk pracy;242301;Analityk pracy
+649;2431.3;specjalista ds. reklamy;243107;Specjalista do spraw reklamy
+650;2431.1;autor tekstów i sloganów reklamowych;243102;Autor tekstów i sloganów reklamowych (copywriter)
+651;2431.4;menedżer marki;243104;Menedżer marki (brand manager)
+652;2432.9;specjalista ds. public relations;243203;Specjalista do spraw public relations
+653;2432.8;lobbysta;243202;Lobbysta
+654;2433.4;inżynier sprzedaży;243301;Inżynier sprzedaży
+655;2433.1;specjalista ds. obsługi posprzedażowej;243307;Specjalista do spraw obsługi posprzedażowej
+656;1420.3;opiekun klienta;243302;Opiekun klienta
+657;2433.2;przedstawiciel medyczny;243303;Przedstawiciel medyczny
+658;2511.12;analityk systemów informacyjno-telekomunikacyjnych;251101;Analityk systemów teleinformatycznych
+659;2511.13;projektant systemów informacyjno-telekomunikacyjnych;251103;Projektant / architekt systemów teleinformatycznych
+660;2519.6;tester oprogramowania;251903;Tester oprogramowania komputerowego
+661;2519.6.4;tester systemów informacyjno-telekomunikacyjnych;251904;Tester systemów teleinformatycznych
+662;2521.1;administrator baz danych;252101;Administrator baz danych
+663;2521.2;projektant baz danych;252103;Projektant baz danych
+664;2611.1.1;radca prawny;261103;Radca prawny
+665;2612.1;sędzia;261201;Sędzia
+666;2619.8;notariusz;261905;Notariusz
+667;2621.1;archiwista;262101;Archiwista
+668;2621.8;muzealnik;262102;Muzealnik
+669;2636.4;religioznawca;263207;Religioznawca
+670;2632.6;socjolog;263204;Socjolog
+671;2632.1;antropolog;263205;Antropolog
+672;2632.2;archeolog;263201;Archeolog
+673;2632.4;kryminolog;263206;Kryminolog
+674;2633.1;historyk;263302;Historyk
+675;2422.10.15;specjalista ds. polityki społecznej;263305;Specjalista polityki społecznej
+676;2633.2;filozof;263301;Filozof
+677;2633.3;politolog;263304;Politolog
+678;2634.2;psycholog;263401;Psycholog
+679;2634.2.1;psycholog kliniczny;263403;Psycholog kliniczny
+680;2634.2.2;psycholog wychowawczy;263406;Psycholog wychowawczy
+681;1344.1;specjalista pracy socjalnej;263504;Specjalista pracy socjalnej
+682;2635.3.21;kurator sądowy;263501;Kurator sądowy
+683;2619.7;mediator;263502;Mediator
+684;3413.1;zakonnik/zakonnica;263606;Zakonnik (bez święceń kapłańskich)
+685;2641.1;redaktor wydawniczy;264104;Redaktor wydawniczy
+686;2641.4.2;scenarzysta;264105;Scenarzysta
+687;2641.4;pisarz / pisarka;264102;Pisarz
+688;2642.1;dziennikarz;264201;Dziennikarz
+689;2642.1.14;fotoedytor;264202;Fotoedytor
+690;2643.5;tłumacz języka migowego;264310;Tłumacz języka migowego
+691;3432.5;scenograf;265106;Scenograf
+692;2651.1;artysta malarz;265103;Artysta malarz
+693;2651.10;artysta rzeźbiarz;265104;Artysta rzeźbiarz
+694;2651.2;konserwator dzieł sztuki;265105;Konserwator dzieł sztuki
+695;2652.3.1;dyrygent;265203;Dyrygent
+696;2652.3.2;wokalista;265202;Wokalista
+697;2652.1;kompozytor;265204;Kompozytor
+698;2653.1;choreograf;265301;Choreograf
+699;2166.4.8;reżyser filmowy;265407;Reżyser filmowy
+700;3435.2;asystent reżysera filmowego;265401;Asystent reżysera filmowego
+701;2166.4.3;operator obrazu;265402;Operator obrazu
+702;2655.1;aktor / aktorka;265501;Aktor
+703;2659.2.2;prezenter muzyczny;265604;Prezenter muzyczny (DJ / didżej)
+704;2642.1.1;bloger / blogerka;265902;Bloger / vloger
+705;1111.4;parlamentarzysta;111101;Parlamentarzysta
+706;1112.6;wyższy urzędnik państwowy;111201;Wyższy urzędnik państwowy
+707;1112.3;wyższy urzędnik placówki dyplomatycznej;111202;Wyższy urzędnik placówki dyplomatycznej
+708;1120.3;dyrektor generalny;112007;Dyrektor generalny
+709;1120.2;dyrektor przedsiębiorstwa;112007;Dyrektor generalny
+710;1120.2;dyrektor przedsiębiorstwa;112017;Prezes
+711;1120.3;dyrektor generalny;112017;Prezes
+712;1120.2;dyrektor przedsiębiorstwa;112018;Rektor
+713;1120.3;dyrektor generalny;112018;Rektor
+714;1120.4;dyrektor operacyjny;112011;Dyrektor operacyjny
+715;1120.4;dyrektor operacyjny;112016;Dyrektor wykonawczy
+716;1211.1.1;główny księgowy;121101;Główny księgowy
+717;2424.3;menedżer szkoleń;121202;Kierownik działu szkoleń
+718;1212.1;kierownik działu zarządzania zasobami ludzkimi;121203;Kierownik działu zarządzania zasobami ludzkimi
+719;1213.2;kierownik do spraw strategii i planowania;121302;Kierownik do spraw strategii i planowania
+720;1213.2.2;kierownik ds. planowania strategicznego;121302;Kierownik do spraw strategii i planowania
+721;1219.6;kierownik projektu;121904;Kierownik projektu
+722;1221.3.2;kierownik ds. marketingu;122101;Kierownik do spraw marketingu
+723;1221.3.2.1;kierownik ds. sprzedaży;122102;Kierownik do spraw sprzedaży
+724;1222.1.1;kierownik ds. reklamy;122202;Kierownik działu reklamy / promocji / public relations
+725;1223.2.1;kierownik ds. rozwoju produktu;122301;Kierownik do spraw rozwoju produktu
+726;1223.2;kierownik ds. badań i rozwoju;122302;Kierownik działu badawczo-rozwojowego
+727;1311.1;kierownik w gospodarce leśnej;131103;Kierownik w gospodarce leśnej
+728;6113.2;kierownik produkcji w przedsiębiorstwie ogrodniczym;131104;Kierownik produkcji w  przedsiębiorstwie ogrodniczym
+729;6114.1;zarządca produkcji rolnej;131101;Kierownik produkcji w przedsiębiorstwie rolnym
+730;1312.3;kierownik akwakultury ds. produkcji;131201;Kierownik produkcji w zakładzie akwakultury
+731;1219.7;kierownik ds. jakości;132102;Kierownik do spraw kontroli jakości
+732;1321.1;kierownik ds. produkcji;132103;Kierownik produkcji w przemyśle
+733;1321.1.1;kierownik ds. produkcji przemysłowej;132103;Kierownik produkcji w przemyśle
+734;1323.1;kierownik budowy;132301;Kierownik budowy
+735;1324.3.4.2;kierownik ds. zakupów;132403;Kierownik działu zakupów
+736;1324.3.5;kierownik magazynu;132404;Kierownik magazynu
+737;1341.2;kierownik placówki wsparcia dziennego;134105;Kierownik placówki wsparcia dziennego
+738;1341.3;kierownik przedszkola;134102;Kierownik przedszkola
+739;1343.1;kierownik domu spokojnej starości;134301;Kierownik domu spokojnej starości
+740;1345.1;dyrektor szkoły;134501;Dyrektor szkoły
+741;1345.1.1;dziekan;134502;Dziekan
+742;1346.4;kierownik agencji ubezpieczeniowej;134602;Kierownik agencji ubezpieczeniowej
+743;1349.3;dyrektor archiwum;134907;Kierownik archiwum
+744;1349.16;kierownik biblioteki;134908;Kierownik biblioteki
+745;1349.9;dyrektor komercyjnej galerii sztuki;134909;Kierownik galerii sztuki
+746;1349.18;dyrektor muzeum;134910;Kierownik muzeum
+747;1112.5;komendant policji;134911;Komendant policji (powiatowej,miejskiej, rejonowej, komisariatu)
+748;1112.4;komendant straży pożarnej;134913;Komendant powiatowy / miejski państwowej straży pożarnej
+749;1412.1;kierownik restauracji;141202;Kierownik lokalu gastronomicznego
+750;1420.4.30;kierownik apteki;142005;Kierownik apteki
+751;1420.5;dyrektor supermarketu;142004;Kierownik sklepu / supermarketu
+752;5222.1;kierownik w sklepie;142004;Kierownik sklepu / supermarketu
+753;1431.1.1;kierownik domu kultury;143105;Kierownik domu kultury
+754;1420.4.24;kierownik stacji benzynowej;143910;Kierownik / właściciel stacji paliw
+755;1439.6;kierownik biura podróży;143901;Kierownik biura podroży
+756;3341.2;kierownik call centre;143905;Kierownik centrum obsługi telefonicznej (kierownik call center)
+757;1439.1;zarządca terenu kempingowego;143908;Kierownik kempingu
+758;3240.2.1;technik unasieniania zwierząt;225215;Lekarz weterynarii – specjalista rozrodu zwierząt
+759;9111.1;sprzątacz domowy/sprzątaczka domowa;911101;Pomoc domowa
+760;9112.2;sprzątacz budynków/sprzątaczka budynków;911206;Salowa
+761;9112.2;sprzątacz budynków/sprzątaczka budynków;911208;Sprzątacz pojazdów
+762;9112.1;sprzątacz samolotów/sprzątaczka samolotów;911207;Sprzątaczka biurowa
+763;9112.5;sprzątacz toalet/sprzątaczka toalet;911205;Pracownik pomocniczy obsługi hotelowej
+764;9121.1;opiekun pralni;912101;Maglarz
+765;9121.1;opiekun pralni;912102;Praczka
+766;9129.3;czyściciel basenów pływackich;912903;Zmywacz graffiti
+767;8182.2;palacz kotłów parowych;911202;Palacz pieców zwykłych
+768;3212.2;asystent / asystentka w laboratorium medycznym;911204;Pomoc laboratoryjna
+769;9214.1;pomocniczy robotnik w ogrodnictwie;921403;Pomocniczy robotnik w gospodarstwie sadowniczym
+770;9216.1;pracownik akwakultury ds. cumowania sadzów;921601;Pomocniczy robotnik w gospodarstwie rybackim
+771;5163.1;pracownik cmentarza;931201;Grabarz
+772;9312.1;robotnik wykonujący prace proste w budownictwie drogowym i wodnym;931202;Kopacz
+773;9312.1.5;monter znaków drogowych;931206;Pomocniczy robotnik mostowy
+774;9312.1.5;monter znaków drogowych;931207;Pomocniczy robotnik torowy
+775;9321.1;pracownik do wykańczania odzieży;932102;Ręczny znakowacz wyrobów
+776;9329.1;pracownik porządkowy w fabryce;932912;Robotnik myjący części i zespoły
+777;9329.1;pracownik porządkowy w fabryce;932913;Sortowacz
+778;9329.1;pracownik porządkowy w fabryce;932901;Konserwator części / sprzętu
+779;8160.25;pracownik wytwórni produktów nabiałowych;932911;Pomocniczy robotnik w przemyśle przetwórczym
+780;9412.2;pomocnik kuchenny;932906;Pomocnik ciastkarza
+781;7231.7;mechanik oponiarz;932908;Pomocnik mechanika
+782;7513.2;operator odbioru mleka;932909;Pomocnik mleczarski
+783;9412.2;pomocnik kuchenny;932910;Pomocnik piekarza
+784;9331.1;kurier rowerowy;933101;Rykszarz
+785;9333.1;pracownik sortowni bagażu;933308;Tragarz
+786;9333.1;pracownik sortowni bagażu;933305;Robotnik pracujący na rampie
+787;9333.1;pracownik sortowni bagażu;933307;Sztauer-trymer
+788;9333.3;robotnik magazynowy;933301;Ładowacz
+789;9333.6;robotnik portowy;933309;Wagowy
+790;9333.8;pracownik magazynu;933302;Napełniający zbiorniki przenośne
+791;9510.1;dystrybutor ulotek;951003;Rozlepiacz afiszy
+792;9123.1;zmywacz okien;951004;Uliczny zmywacz szyb samochodowych
+793;7126.9;konserwator urządzeń oczyszczania ścieków;961101;Ładowacz nieczystości płynnych
+794;5153.1.1;sprzątacz wesołych miasteczek;961301;Robotnik oczyszczania miasta
+795;9613.1;zamiatacz ulic;961302;Robotnik placowy
+796;9621.2;portier hotelowy;962101;Bagażowy
+797;9621.2;portier hotelowy;962102;Boy hotelowy
+798;8322.2;kierowca samochodu dostawczego;962103;Dostawca potraw
+799;9621.2;portier hotelowy;962104;Dźwigowy (windziarz)
+800;9622.1;konserwator;962201;Pracownik prac dorywczych
+801;9629.4;szatniarz/szatniarka;962902;Dozorca
+802;9129.2;osoba do czyszczenia i udrażniania kanalizacji;962904;Szaleciarz
+803;9629.6;pracownik przechowalni bagażu;962906;Woźny
+804;8111.3;górnik pracujący na powierzchni;811103;Sygnalista szybowy
+805;8113.1;pracownik wiertni;811304;Wiertacz studni
+806;8113.1;pracownik wiertni;811301;Górnik eksploatacji otworowej
+807;8113.4;operator pompy do rurociągu;811302;Operator urządzeń do obróbki odwiertów wydobywczych
+808;8114.5;odlewacz form betonowych;811401;Hartowacz betonów i sylikatów
+809;8114.1;operator urządzeń do produkcji mas asfaltowych;811407;Operator urządzeń wytwórczych mieszanek betonowych
+810;7113.1.1;kamieniarz grawer;811408;Pilarz kamienia
+811;8121.2;operator wytłaczarki;812118;Tłoczarz w metalu
+812;8121.3;operator wyżarzarki;812102;Hartownik
+813;8121.5;operator walcarki;812101;Ciągacz rur
+814;7213.3;specjalista obróbki metali nieżelaznych;812119;Wytapiacz metali nieżelaznych
+815;7211.1.1;odlewnik wyrobów metalowych;812120;Wytapiacz stali, surówki i żelazostopów
+816;8142.10;operator urządzeń do obróbki cieplnej tworzyw sztucznych;812103;Operator agregatów do obróbki cieplnej
+817;8121.7;operator maszyn do produkcji siatek metalowych;812104;Operator maszyn do produkcji drutów i prętów
+818;8121.4;operator ciągarki;812105;Operator maszyn i urządzeń do obróbki plastycznej
+819;8122.3;operator maszyn do powlekania metalu;812111;Operator urządzeń do elektrolitycznego uzyskiwania metali
+820;8121.5;operator walcarki;812115;Piecowy nagrzewania wsadu w walcowni
+821;8121.1;operator maszyn odlewniczych;812116;Piecowy pieca łukowego
+822;8121.1;operator maszyn odlewniczych;812117;Pulpitowy wielkich pieców
+823;8122.12;operator maszyn do obróbki wibrościernej;812201;Operator urządzeń do elektroforetycznego nakładania powłok
+824;8122.8;operator urządzeń do emaliowania;812204;Operator urządzeń do natryskowego nakładania powłok
+825;8122.8;operator urządzeń do emaliowania;812205;Operator urządzeń do platerowania
+826;8122.3;operator maszyn do powlekania metalu;812206;Operator urządzeń do przygotowania powierzchni do nakładania powłok
+827;8131.8;kontroler procesów przeróbki ropy naftowej;813101;Aparatowy procesów chemicznych
+828;8131.2.5;operator urządzeń do produkcji mieszanek zapalających;813104;Operator maszyn zapałczanych
+829;8131.14;operator separatora grawitacyjnego nitrogliceryny;813105;Operator reaktorów i autoklawów
+830;8131.8;kontroler procesów przeróbki ropy naftowej;813106;Operator urządzeń destylacyjnych
+831;8160.48;operator urządzeń rafineryjnych;813107;Operator urządzeń do ekstrakcji
+832;8131.9;operator urządzeń granulujących;813108;Operator urządzeń do krystalizacji
+833;8131.6;pracownik obsługi suszarni materiałów pirotechnicznych;813109;Operator urządzeń do obróbki cieplnej chemikaliów
+834;8131.10;operator pieca do wypalania wapna;813110;Operator urządzeń do produkcji cementu
+835;8131.2.2;operator urządzeń do produkcji lakierów syntetycznych;813111;Operator urządzeń do produkcji chemikaliów nieorganicznych
+836;8131.12;operator aparatu nitracyjnego;813112;Operator urządzeń do produkcji chemikaliów organicznych
+837;8131.9;operator urządzeń granulujących;813113;Operator urządzeń do produkcji dezynfektantów
+838;4323.8;pracownik systemu przesyłowego gazu ziemnego;813114;Operator urządzeń do produkcji gazów technicznych
+839;8131.9;operator urządzeń granulujących;813115;Operator urządzeń do produkcji katalizatorów
+840;8131.2.5;operator urządzeń do produkcji mieszanek zapalających;813118;Operator urządzeń do produkcji materiałów wybuchowych i pokrewnych
+841;8131.9;operator urządzeń granulujących;813121;Operator urządzeń do produkcji sadzy
+842;8131.9;operator urządzeń granulujących;813122;Operator urządzeń do produkcji sztucznej skóry
+843;8131.2;operator urządzeń mieszających do produkcji wyrobów chemicznych;813123;Operator urządzeń do produkcji środków piorących i myjących
+844;8131.9;operator urządzeń granulujących;813124;Operator urządzeń do produkcji węgli aktywnych
+845;8212.3.6;monter półprzewodników elektronicznych;813117;Operator urządzeń do produkcji materiałów półprzewodnikowych
+846;8219.11;monter wyrobów z drewna;813120;Operator urządzeń do produkcji ołówków
+847;8131.2;operator urządzeń mieszających do produkcji wyrobów chemicznych;813125;Operator urządzeń do produkcji włókien chemicznych
+848;8131.2;operator urządzeń mieszających do produkcji wyrobów chemicznych;813126;Operator urządzeń do produkcji wyrobów farmaceutycznych
+849;8131.8;kontroler procesów przeróbki ropy naftowej;813128;Operator urządzeń do przeróbki ropy naftowej i gazu
+850;8131.2;operator urządzeń mieszających do produkcji wyrobów chemicznych;813131;Operator urządzeń homogenizujących
+851;8131.3;kontroler urządzeń koksowniczych;813132;Operator urządzeń koksowniczych
+852;8160.12;operator urządzeń do saturacji;813136;Operator urządzeń sorpcyjnych
+853;8131.10;operator pieca do wypalania wapna;813137;Operator urządzeń wyparnych
+854;8160.14;operator wirówki;813138;Operator wirówek
+855;8212.3.4;monter sprzętu fotograficznego;813202;Operator urządzeń do obróbki błon i filmów fotograficznych
+856;8141.1.8;wulkanizator opon;814105;Wulkanizator taśm przenośnikowych
+857;8141.1.6;operator urządzeń do formowania pasów klinowych;814103;Operator urządzeń do przetwórstwa surowców gumowych
+858;8141.1.6;operator urządzeń do formowania pasów klinowych;814102;Operator urządzeń do wulkanizacji
+859;8142.10;operator urządzeń do obróbki cieplnej tworzyw sztucznych;814201;Formierz wyrobów z kompozytów polimerowych
+860;7536.2.6;obuwnik ortopedyczny;814202;Formowacz ortopedycznych wyrobów z tworzyw
+861;8142.10;operator urządzeń do obróbki cieplnej tworzyw sztucznych;814203;Odlewnik wyrobów z materiałów polimerowych
+862;8142.10;operator urządzeń do obróbki cieplnej tworzyw sztucznych;814204;Operator maszyn i urządzeń do produkcji okien z tworzyw sztucznych
+863;8142.9;operator maszyn do produkcji mebli z tworzyw sztucznych;814205;Operator urządzeń do cięcia folii i płyt
+864;8142.7;operator wtryskarki;814207;Operator urządzeń do spieniania tworzyw sztucznych
+865;8143.6;operator krajarki do papieru;814301;Operator maszyn do lakierowania i laminowania przetworów papierowych
+866;8143.3;operator maszyn do produkcji kopert;814302;Operator maszyn do produkcji opakowań z papieru i tektury
+867;8143.6;operator krajarki do papieru;814304;Operator maszyn do produkcji papierowych artykułów toaletowych i sanitarnych
+868;8143.6;operator krajarki do papieru;814305;Operator maszyn do produkcji papieru i tektury falistej
+869;8143.6;operator krajarki do papieru;814306;Operator maszyn do produkcji sznurka i tulei
+870;8151.4;operator nawijarki;815101;Operator maszyn do przygotowania włókien
+871;8151.2.1;operator przędzarki do włókien sztucznych;815103;Operator przewijarek i skręcarek nitek
+872;8152.1;operator maszyn dziewiarskich;815202;Operator maszyn przygotowawczych do wytwarzania płaskich wyrobów włókienniczych
+873;8155.1.3;garbarz;815501;Operator agregatów natryskowych
+874;8155.1.1;operator urządzeń do mieszania farb do skór;815502;Operator maszyn i urządzeń chemicznej obróbki skór
+875;8155.1.1;operator urządzeń do mieszania farb do skór;815503;Operator maszyn i urządzeń mechanicznej obróbki skór
+876;8156.2.2;technik utrzymania maszyn do produkcji obuwia;815605;Obuwnik przemysłowy
+877;8156.3.1;technik utrzymania maszyn kaletniczych i rymarskich;815602;Operator urządzeń kaletniczych
+878;8156.2.2;technik utrzymania maszyn do produkcji obuwia;815603;Operator urządzeń montażowych obuwia
+879;8156.2.2;technik utrzymania maszyn do produkcji obuwia;815604;Operator urządzeń wykrawających elementy obuwia
+880;9121.1;opiekun pralni;815701;Operator urządzeń do prania, prasowania i chemicznego czyszczenia tekstyliów
+881;9629.5;pracownik pralni samoobsługowej;815702;Pracownik pralni chemicznej
+882;8159.2;technik ds. procesu oplatania;815901;Operator maszyn do produkcji włóknin i przędzin
+883;8159.5;operator maszyn do produkcji materacy;815903;Operator urządzeń do klejenia elementów odzieży
+884;8156.1;operator zautomatyzowanych urządzeń wykrawających elementy obuwia;815904;Operator urządzeń wykrawających i nawarstwiających
+885;8160.7;operator browaru;816001;Aparatowy produkcji drożdży
+886;8160.27;pracownik gorzelni;816002;Aparatowy produkcji octu
+887;8160.3;technik filtracji napojów;816003;Operator maszyn i urządzeń przemysłu spożywczego
+888;8160.22;operator młyna do kawy;816004;Operator urządzeń do konfekcjonowania herbaty
+889;7515.2;kontroler jakości mleka w gospodarstwie rolnym;816005;Operator urządzeń do obróbki surowca mleczarskiego
+890;8160.11;operator urządzeń do kandyzowania;816006;Operator urządzeń do produkcji cukru
+891;8160.36;pracownik ds. puszkowania owoców i warzyw;816007;Operator urządzeń do produkcji koncentratów spożywczych
+892;8160.6;operator linii mieszalniczej;816008;Operator urządzeń do produkcji majonezu i musztardy
+893;8160.3;technik filtracji napojów;816010;Operator urządzeń do produkcji napojów bezalkoholowych
+894;8160.2;operator maszyn piekarniczych;816012;Operator urządzeń do produkcji pieczywa
+895;8160.37;operator systemów słodowania;816013;Operator urządzeń do produkcji piwa
+896;8131.7;operator urządzeń do fermentacji;816016;Operator urządzeń do produkcji wina
+897;8160.11;operator urządzeń do kandyzowania;816017;Operator urządzeń do produkcji wyrobów cukierniczych
+898;8160.44;operator procesu obróbki cieplnej mleka;816018;Operator urządzeń do produkcji wyrobów mleczarskich
+899;8160.16;operator procesu formowania czekolady;816020;Operator urządzeń do przerobu ziarna kakaowego
+900;7515.1;degustator kawy;816027;Operator urządzeń do przetwórstwa kawy
+901;8160.36;pracownik ds. puszkowania owoców i warzyw;816029;Operator urządzeń do przetwórstwa owocowo-warzywnego
+902;8160.31;operator procesu puszkowania ryb;816030;Operator urządzeń do przetwórstwa ryb
+903;8160.28;pracownik obsługi osuszacza;816022;Operator urządzeń do suszenia zbóż
+904;8160.45;młynarz;816023;Operator urządzeń elewatorów zbożowych
+905;7516.3;wiązacz liści;816025;Operator urządzeń przemysłu tytoniowego
+906;8171.7;operator maszyn do produkcji papierowych artykułów piśmiennych;817101;Operator kalandrów wyrobów papierowych
+907;8171.5;operator maszyny papierniczej;817102;Operator linii do belowania makulatury
+908;8171.3;operator maszyn do flotacyjnego odbarwiania makulatury;817103;Operator maszyny odwadniającej celulozę
+909;8171.1;operator maszyn do wybielania masy papierniczej;817105;Operator maszyny tekturniczej
+910;8171.3;operator maszyn do flotacyjnego odbarwiania makulatury;817107;Operator urządzeń bielących masy włókniste
+911;8171.7;operator maszyn do produkcji papierowych artykułów piśmiennych;817108;Operator urządzeń do impregnowania i powlekania wyrobów papierowych
+912;8171.5;operator maszyny papierniczej;817109;Operator urządzeń do mielenia masy włóknistej
+913;8171.1;operator maszyn do wybielania masy papierniczej;817110;Operator urządzeń do przygotowywania i dozowania dodatków masowych
+914;8171.2;operator warnika;817111;Operator urządzeń do ścierania drewna
+915;8171.2;operator warnika;817112;Operator urządzeń rębalni drewna
+916;8171.5;operator maszyny papierniczej;817113;Operator urządzeń rozwłókniających
+917;8172.5.5;operator frezarki;817201;Operator maszyn do produkcji płyt i sklejek
+918;8172.2;operator piły poprzecznej;817202;Operator pilarek do pozyskiwania tarcicy
+919;7523.3;operator maszyn do produkcji mebli drewnianych;817203;Operator pras w produkcji drzewnej
+920;7522.2;stolarz meblowy;817204;Operator sklejarek płyt stolarskich
+921;8172.5.4;operator łuszczarki do forniru;817206;Operator spajarek okleiny i łuszczki
+922;7223.12;operator strugarki;817207;Operator strugarek i frezarek do drewna
+923;8172.5.2;operator wyrówniarko-grubościówki;817208;Operator urządzeń do końcowej obróbki płyt
+924;7233.7;mechanik urządzeń przemysłowych;817212;Mechanik – operator maszyn do produkcji drzewnej
+925;8122.9;operator pilarki;817210;Pilarz
+926;8181.4;operator pieca do produkcji szkła ciągnionego;818122;Topiarz fryty
+927;8181.4;operator pieca do produkcji szkła ciągnionego;818123;Topiarz mas mineralnych
+928;8181.7;operator odprężarek wyrobów szklanych;818124;Topiarz szkła
+929;8181.3.2;operator pieca tunelowego;818119;Suszarnik ceramiki i wyrobów gipsowych
+930;8181.9;maszynowy szlifierz-polerowacz szkła;818120;Szlifierz ceramiki
+931;8181.2;operator maszyn do produkcji cegieł i płytek ceramicznych;818125;Wypalacz surowców i wyrobów ogniotrwałych
+932;8181.11;operator urządzeń do formowania wyrobów ceramicznych;818126;Wypalacz wyrobów ceramicznych
+933;8181.4;operator pieca do produkcji szkła ciągnionego;818102;Operator maszyn do formowania szkła płaskiego
+934;8181.10;szkliwierz ceramiki;818107;Operator urządzeń do formowania wyrobów ogniotrwałych
+935;8181.7;operator odprężarek wyrobów szklanych;818109;Operator urządzeń do gięcia szkła
+936;8181.7;operator odprężarek wyrobów szklanych;818110;Operator urządzeń do hartowania szkła
+937;8181.8;operator automatów do formowania wyrobów szklanych;818112;Operator urządzeń do obróbki płomieniowej szkła
+938;8181.11;operator urządzeń do formowania wyrobów ceramicznych;818113;Operator urządzeń do produkcji materiałów ściernych
+939;8181.7;operator odprężarek wyrobów szklanych;818114;Operator urządzeń do produkcji termosów
+940;8181.1;operator prasy ślimakowej do gliny;818118;Przygotowywacz mas ceramicznych
+941;8182.1;maszynista kotła;818202;Maszynista urządzeń nawęglania
+942;8182.2;palacz kotłów parowych;818204;Palacz gazowych kotłów centralnego ogrzewania
+943;8182.2;palacz kotłów parowych;818205;Palacz wodnych rusztowych kotłów centralnego ogrzewania
+944;8143.3;operator maszyn do produkcji kopert;818301;Operator maszyn kopertujących
+945;8183.7;operator urządzeń do pakowania i napełniania;818303;Operator urządzeń pakujących
+946;7523.4;zbijacz palet;818901;Operator urządzeń do paletyzacji
+947;3132.3;operator urządzeń do utylizacji odpadów stałych;818902;Operator urządzeń utylizacji surowców zwierzęcych
+948;7213.1;budowniczy kotłów;821103;Monter kotłów i armatury kotłowej
+949;8211.3;monter mechatronik;821107;Monter obrabiarek
+950;8211.1.1;monter silników lotniczych;821108;Monter płatowców i śmigłowców
+951;3115.1.16;technik mechanik silników kolejowych;821110;Monter silników spalinowych
+952;7126.4;monter instalacji i urządzeń grzewczych;821114;Monter urządzeń chłodniczych i gastronomicznych
+953;7223.10;operator urządzeń do obróbki laserowej;821115;Monter urządzeń laserowych
+954;8211.3;monter mechatronik;821116;Monter urządzeń sterowania ruchem kolejowym
+955;8212.2;monter sprzętu elektrycznego;821203;Monter elektrycznych przyrządów pomiarowych
+956;8212.2;monter sprzętu elektrycznego;821204;Monter maszyn elektrycznych
+957;8212.2;monter sprzętu elektrycznego;821205;Monter osprzętu elektrotechnicznego
+958;8212.2;monter sprzętu elektrycznego;821206;Monter sprzętu oświetleniowego i lamp elektrycznych
+959;8212.3;monter sprzętu elektronicznego;821301;Monter aparatury i urządzeń techniki jądrowej
+960;8212.3;monter sprzętu elektronicznego;821302;Monter elektronicznego wyposażenia maszyn i urządzeń
+961;7421.7;instalator elektroniki samochodowej;821303;Monter elektroniki samochodowej
+962;7421.7;instalator elektroniki samochodowej;821304;Monter podzespołów i zespołów elektronicznych
+963;3522.1;technik telekomunikacji;821305;Monter sprzętu radiowego i telewizyjnego
+964;8212.3;monter sprzętu elektronicznego;821306;Monter zestrajacz urządzeń elektronicznych
+965;8312.4;dyżurny ruchu;831202;Dyspozytor ruchu metra
+966;8312.2;zwrotniczy;831210;Ustawiacz
+967;8312.5;przygotowujący pociąg;831208;Operator pociągowy
+968;8312.2;zwrotniczy;831206;Manewrowy metra
+969;9331.1;kurier rowerowy;832101;Kurier motocyklowy
+970;8322.2;kierowca samochodu dostawczego;832201;Kierowca mechanik
+971;8332.5;kierowca wozu strażackiego;833201;Kierowca autocysterny
+972;8332.3;kierowca betoniarki;833202;Kierowca ciągnika siodłowego
+973;8341.2;operator maszyn rolniczych;834101;Kierowca ciągnika rolniczego
+974;7233.8.1;mechanik maszyn rolniczych;834102;Kombajnista (kierowca kombajnu)
+975;8341.2;operator maszyn rolniczych;834106;Operator maszyn ogrodniczych
+976;8341.3;nadzorca maszyn rolniczych;834110;Operator wielooperacyjnych samojezdnych maszyn leśnych
+977;8341.3;nadzorca maszyn rolniczych;834111;Operator zrywkowych kolejek linowych
+978;7233.8.1;mechanik maszyn rolniczych;834103;Mechanik-operator pojazdów i maszyn rolniczych
+979;8342.8;operator zgarniarki;834205;Operator koparki
+980;8342.4;operator równiarki;834206;Operator koparko-ładowarki
+981;8342.3;operator koparki;834207;Operator ładowarki
+982;8343.3;operator dźwigu jezdnego;834202;Operator maszyn drogowych
+983;8342.4;operator równiarki;834203;Operator maszyn i sprzętu torowego
+984;8343.4;operator żurawia warsztatowego;834306;Operator dźwignic linotorowych
+985;8343.5;operator żurawia wieżowego;834308;Operator mostu zwodzonego
+986;8343.1;maszynista kolei linowych, wyciągów narciarskich i zjeżdżalni grawitacyjnych;834309;Operator przenośników
+987;8343.1;maszynista kolei linowych, wyciągów narciarskich i zjeżdżalni grawitacyjnych;834310;Operator przenośników taśmowych
+988;8343.4;operator żurawia warsztatowego;834311;Operator suwnic (suwnicowy)
+989;8343.1;maszynista kolei linowych, wyciągów narciarskich i zjeżdżalni grawitacyjnych;834313;Operator urządzeń ładunkowych silosu
+990;8343.1;maszynista kolei linowych, wyciągów narciarskich i zjeżdżalni grawitacyjnych;834314;Operator wieżowy przenośnika taśmowego
+991;8343.1;maszynista kolei linowych, wyciągów narciarskich i zjeżdżalni grawitacyjnych;834307;Operator-mechanik wyciągarki szybowcowej
+992;8343.1;maszynista kolei linowych, wyciągów narciarskich i zjeżdżalni grawitacyjnych;834302;Maszynista górniczych maszyn wyciągowych
+993;8343.5;operator żurawia wieżowego;834305;Maszynista specjalistycznych dźwignic kolejowych
+994;8350.1;bosman;835006;Bosman żeglugi śródlądowej
+995;8350.3;marynarz motorzysta żeglugi śródlądowej;835005;Sternik żeglugi śródlądowej
+996;9312.1.3;robotnik drogowy;711205;Brukarz
+997;7112.1;murarz;711203;Zdun
+998;7112.1;murarz;711201;Monter kamiennych elementów budowlanych
+999;7214.3;murarz-zbrojarz;711204;Murarz-tynkarz
+1000;7214.3;murarz-zbrojarz;711402;Betoniarz-zbrojarz
+1001;7114.1;betoniarz;711403;Palowniczy
+1002;7115.4;monter klatek schodowych;711503;Stolarz budowlany
+1003;9312.1.2;monter torów kolejowych;711605;Toromistrz
+1004;8312.1;dróżnik przejazdowy;711602;Dróżnik obchodowy
+1005;3112.1.11;konserwator dróg;711606;Układacz nawierzchni drogowych
+1006;7119.4;pracownik z uprawnieniami do pracy na wysokości;711902;Monter reklam
+1007;7122.3;posadzkarz;712201;Cykliniarz
+1008;7122.3;posadzkarz;712203;Parkieciarz
+1009;7122.4;glazurnik;712204;Posadzkarz
+1010;7123.1;monter sufitów;712302;Sztukator
+1011;7123.2;tynkarz;712304;Monter fasad
+1012;7123.2;tynkarz;712301;Monter ociepleń budynków
+1013;8122.1;operator piaszczarki;712402;Monter izolacji chemoodpornych i antykorozyjnych
+1014;7124.1;monter izolacji budowlanych;712403;Monter izolacji przemysłowych
+1015;7125.2;szklarz samochodowy;712503;Szklarz budowlany
+1016;7125.1;szklarz;712504;Szklarz pojazdów
+1017;7125.1;szklarz;712505;Witrażownik
+1018;7126.8;hydraulik;712617;Monter instalacji gazów medycznych
+1019;7126.7;pracownik obsługi rurociągu;712605;Monter rurociągów górniczych
+1020;7126.7;pracownik obsługi rurociągu;712606;Monter rurociągów okrętowych
+1021;7126.7;pracownik obsługi rurociągu;712607;Monter rurociągów przemysłowych
+1022;7126.14;pracownik obsługi sieci wodociągowej;712608;Monter sieci cieplnych
+1023;7126.8;hydraulik;712610;Monter sieci gazowych
+1024;7126.2;monter sieci wodnych i kanalizacyjnych;712616;Monter sieci, instalacji i urządzeń sanitarnych
+1025;7126.7;pracownik obsługi rurociągu;712613;Monter systemów rurociągowych
+1026;7126.4;monter instalacji i urządzeń grzewczych;712614;Monter urządzeń energii odnawialnej
+1027;3151.1;mechanik urządzeń chłodniczych w rybołówstwie;712701;Mechanik urządzeń chłodniczych
+1028;7115.4;monter klatek schodowych;712906;Monter stolarki budowlanej
+1029;7121.1;dekarz;712905;Monter zabudowy i robót wykończeniowych w budownictwie
+1030;7131.1;malarz;713104;Szpachlarz
+1031;7131.2;tapeciarz;713102;Malarz budowlany
+1032;7132.3;lakiernik pojazdowy;713202;Lakiernik proszkowy
+1033;7132.3;lakiernik pojazdowy;713204;Lakiernik tworzyw sztucznych
+1034;7523.5;polerowacz wyrobów z drewna;713205;Lakiernik wyrobów drzewnych
+1035;7132.3;lakiernik pojazdowy;713207;Malarz-lakiernik konstrukcji i wyrobów metalowych
+1036;7132.3;lakiernik pojazdowy;713206;Malarz-lakiernik samolotowy
+1037;7132.1;lakiernik;713208;Piaskarz
+1038;7133.1;specjalista ds. usuwania azbestu;713302;Czyściciel elewacji budowlanych
+1039;7133.3;kominiarz;713301;Alpinista przemysłowy
+1040;7211.1.3;specjalista ds. przygotowania mas formierskich i rdzeniowych;721101;Brązownik
+1041;7211.1.3;specjalista ds. przygotowania mas formierskich i rdzeniowych;721105;Zalewacz form
+1042;7211.1.3;specjalista ds. przygotowania mas formierskich i rdzeniowych;721103;Ludwisarz
+1043;7211.1.2;odlewnik rdzeni;721102;Formierz odlewnik
+1044;7212.2;lutowacz;721209;Zgrzewacz
+1045;7212.3;spawacz;721202;Operator robotów spawalniczych
+1046;7212.2;lutowacz;721203;Operator zgrzewarek
+1047;7213.2;monter zbiorników;721301;Blacharz
+1048;7124.1;monter izolacji budowlanych;721303;Blacharz izolacji przemysłowych
+1049;7213.2;monter zbiorników;721305;Blacharz okrętowy
+1050;7132.3;lakiernik pojazdowy;721306;Blacharz samochodowy
+1051;8219.8;monter konstrukcji stalowych;721405;Oczyszczacz konstrukcji stalowych
+1052;7115.2;monter drzwi;721401;Monter bram
+1053;7214.3.1;nitowacz;721402;Monter kadłubów okrętowych
+1054;8219.8;monter konstrukcji stalowych;721403;Monter konstrukcji aluminiowych
+1055;7215.4;monter namiotów;721504;Takielarz
+1056;8343.1;maszynista kolei linowych, wyciągów narciarskich i zjeżdżalni grawitacyjnych;721501;Monter / konserwator kolei linowych, wyciągów narciarskich i zjeżdżalni grawitacyjnych
+1057;7215.1;montażysta rusztowań scenicznych;721502;Monter konstrukcji linowych stałych
+1058;8113.6;robotnik na platformie wiertniczej;721503;Monter wiertni
+1059;7221.3;operator młota hydraulicznego;722102;Kowal wyrobów zdobniczych
+1060;7222.1;modelarz odlewniczy;722207;Traser
+1061;8219.8;monter konstrukcji stalowych;722205;Ślusarz galanterii metalowej
+1062;7223.4;operator obrabiarki sterowanej numerycznie;722314;Tokarz w metalu
+1063;7223.4.4.1;operator obrabiarki rotacyjnej;722313;Tokarz/frezer obrabiarek sterowanych numerycznie
+1064;7223.4;operator obrabiarki sterowanej numerycznie;722312;Szlifierz metali
+1065;7223.4.4;operator maszyn do obróbki skrawaniem;722315;Ustawiacz maszyn do obróbki skrawaniem
+1066;7223.4;operator obrabiarki sterowanej numerycznie;722302;Operator automatycznej linii obróbki skrawaniem
+1067;8121.4;operator ciągarki;722304;Operator maszyn do produkcji wyrobów z drutu, lin, siatek i kabli
+1068;7223.4.5;operator maszyn do cięcia metalu;722306;Operator maszyn i urządzeń do produkcji opakowań blaszanych
+1069;7223.4;operator obrabiarki sterowanej numerycznie;722307;Operator obrabiarek skrawających
+1070;7223.4;operator obrabiarki sterowanej numerycznie;722309;Operator obrabiarek zespołowych
+1071;7231.3;mechanik silników spalinowych;723101;Mechanik autobusów
+1072;7231.3;mechanik silników spalinowych;723102;Mechanik ciągników
+1073;7231.3;mechanik silników spalinowych;723107;Mechanik motocyklowy
+1074;7231.3;mechanik silników spalinowych;723104;Mechanik samochodów ciężarowych
+1075;7231.3;mechanik silników spalinowych;723105;Mechanik samochodów osobowych
+1076;7231.8;serwisant pojazdów;723106;Monter samochodowej instalacji gazowej (LPG)
+1077;7232.4;koordynator prac obsługi hangarowej;723201;Mechanik płatowców
+1078;8211.1.1;monter silników lotniczych;723202;Mechanik silników lotniczych
+1079;7232.4;koordynator prac obsługi hangarowej;723203;Mechanik wyposażenia lotniczego statków powietrznych
+1080;7233.12;technik systemów pneumatycznych;723301;Mechanik / konserwator urządzeń do napełniania i opróżniania zbiorników
+1081;7233.4;technik urządzeń hydraulicznych i pneumatycznych;723303;Mechanik maszyn i urządzeń budowlanych i melioracyjnych
+1082;7233.7;mechanik urządzeń przemysłowych;723304;Mechanik maszyn i urządzeń do obróbki metali
+1083;7233.10;mechanik sprzętu górniczego;723305;Mechanik maszyn i urządzeń górnictwa odkrywkowego
+1084;7233.1;mechanik maszyn ciężkich;723306;Mechanik maszyn i urządzeń górnictwa podziemnego
+1085;8156.2.3;operator obuwniczych urządzeń szwalniczych;723309;Mechanik maszyn szwalniczych
+1086;7412.11;elektromonter taboru szynowego;723313;Mechanik taboru kolejowego
+1087;7233.9;mechanik okrętowy;723310;Mechanik-monter maszyn i urządzeń
+1088;5411.1.4;operator sprzętu pożarniczego;723315;Monter / konserwator urządzeń przeciwpożarowych
+1089;8212.2;monter sprzętu elektrycznego;723314;Monter-instalator urządzeń technicznych w budownictwie wiejskim
+1090;7233.3;pomocnik starszego mechanika statku rybackiego;723316;Motorzysta wachtowy
+1091;7311.4;monter urządzeń precyzyjnych;731105;Ortopeda mechanik
+1092;7311.2;monter aparatów i przyrządów optycznych;731102;Mechanik automatyki przemysłowej i urządzeń precyzyjnych
+1093;7311.1;zegarmistrz;731103;Mechanik precyzyjny
+1094;7312.2;korektor instrumentów muzycznych;731205;Monter instrumentów muzycznych
+1095;7314.1;cegielnik;731408;Sortowacz-brakarz ceramiki
+1096;8181.11;operator urządzeń do formowania wyrobów ceramicznych;731401;Ceramik wyrobów ceramiki budowlanej
+1097;8181.10;szkliwierz ceramiki;731402;Ceramik wyrobów użytkowych i ozdobnych
+1098;7314.1;cegielnik;731403;Formowacz ściernic
+1099;8181.11;operator urządzeń do formowania wyrobów ceramicznych;731407;Odlewnik wyrobów ceramicznych
+1100;7222.1;modelarz odlewniczy;731406;Modelarz odlewnik gipsowych form roboczych
+1101;7315.2;krajacz szkła;731504;Ręczny polerowacz szkła
+1102;7125.1;szklarz;731505;Sortowacz-brakarz szkła
+1103;8181.9;maszynowy szlifierz-polerowacz szkła;731507;Szlifierz szkła gospodarczego i technicznego
+1104;7315.2;krajacz szkła;731508;Szlifierz szkła płaskiego
+1105;3254.1;optyk okularowy;731506;Szlifierz-polerowacz szkła optycznego
+1106;7315.2;krajacz szkła;731501;Formowacz wyrobów szklanych
+1107;7316.2;specjalista grawerowania w szkle;731607;Rzeźbiarz szkła
+1108;7316.2;specjalista grawerowania w szkle;731610;Zdobnik szkła
+1109;7316.2;specjalista grawerowania w szkle;731601;Cechowacz skal i znaków na szkle oraz na wyrobach z metali
+1110;7316.1.2;dekorator powierzchni szklanych;731605;Lustrzarz
+1111;7316.3;specjalista grawerowania w metalu;731603;Giloszer szkła
+1112;7223.4.1;operator maszyn grawerskich;731611;Grawer
+1113;7313.1.2;złotnik-jubiler;731606;Pozłotnik
+1114;7317.2;wyplatacz koszyków;731708;Trzciniarz
+1115;7317.5;wykonawca mebli wyplatanych;731703;Łubiankarz
+1116;7317.6;rzeźbiarz w drewnie;731701;Fajkarz
+1117;7317.5;wykonawca mebli wyplatanych;731704;Modelarz wyrobów plecionkarskich
+1118;7318.6;tkacz;731807;Renowator tkanin unikatowych
+1119;8151.2.2;operator skręcarki do przędzy;731805;Przędzarz
+1120;8219.9;monter wyrobów z tworzyw sztucznych;731903;Wytwórca sztucznych kwiatów
+1121;7222.3;ślusarz;731905;Metaloplastyk
+1122;7317.4;zabawkarz;731901;Pamiątkarz
+1123;7316.3;specjalista grawerowania w metalu;732112;Rytownik
+1124;7321.1.1;montażysta ilustracji;732101;Fotograf poligraficzny
+1125;7316.3;specjalista grawerowania w metalu;732103;Giloszer poligraficzny
+1126;7321.1.2;specjalista wykonania form drukowych;732106;Moletownik
+1127;7321.1.2;specjalista wykonania form drukowych;732107;Montażysta reprodukcyjny
+1128;7322.7;technik druku na tkaninach;732201;Drukarz
+1129;7322.1;operator drukarki;732208;Operator kserokopiarek
+1130;7322.6;operator prasy tłoczącej;732206;Maszynista maszyn typograficznych
+1131;7323.4;falcerz;732301;Introligator
+1132;7323.3;konserwator książek;732302;Introligator galanteryjny
+1133;7411.1.3;elektryk obsługi imprez okolicznościowych;741101;Elektromonter instalacji elektrycznych
+1134;7411.1.3;elektryk obsługi imprez okolicznościowych;741102;Elektromonter reklam świetlnych
+1135;7412.5;elektromechanik sprzętu gospodarstwa domowego;741205;Elektromechanik urządzeń chłodniczych
+1136;7411.1.2;elektromechanik elektrycznych przyrządów pomiarowych;741206;Elektromechanik urządzeń sterowania ruchem kolejowym
+1137;7412.10;technik konserwator urządzeń parku rozrywki;741207;Elektromonter (elektryk) zakładowy
+1138;7412.4;pracownik obsługi lotniczego oświetlenia naziemnego;741209;Elektromonter lotniczy
+1139;7412.10;technik konserwator urządzeń parku rozrywki;741210;Elektromonter maszyn elektrycznych
+1140;7412.8;elektryk górniczy;741211;Elektromonter maszyn i urządzeń górnictwa odkrywkowego
+1141;7412.8;elektryk górniczy;741212;Elektromonter maszyn i urządzeń górnictwa podziemnego
+1142;7412.3;elektromechanik;741214;Elektromonter prefabrykowanych stacji transformatorowych
+1143;8212.2.1;monter aparatury rozdzielczej i kontrolnej energii elektrycznej;741215;Elektromonter rozdzielni i podstacji trakcyjnych
+1144;7422.6;konserwator sprzętu telekomunikacyjnego;741217;Elektromonter telekomunikacyjnych urządzeń zasilających
+1145;7413.1.2;monter napowietrznych linii elektroenergetycznych;741218;Elektromonter transformatorów
+1146;7411.1.2;elektromechanik elektrycznych przyrządów pomiarowych;741219;Elektromonter układów pomiarowych i automatyki zabezpieczeniowej
+1147;7412.4;pracownik obsługi lotniczego oświetlenia naziemnego;741220;Elektromonter urządzeń sygnalizacyjnych
+1148;7413.1.3;elektryk – konserwator oświetlenia ulicznego;741302;Elektromonter napowietrznych linii niskich i średnich napięć
+1149;7413.1.2;monter napowietrznych linii elektroenergetycznych;741304;Elektromonter pogotowia elektroenergetycznego
+1150;7421.6;elektromechanik urządzeń sterowania ruchem kolejowym;742101;Automatyk sterowania ruchem kolejowym
+1151;3114.1;technik elektronik;742115;Monter urządzeń sterowania ruchem pociągów metra
+1152;7421.6;elektromechanik urządzeń sterowania ruchem kolejowym;742116;Monter urządzeń zdalnego sterowania i kontroli dyspozytorskiej metra
+1153;7421.7;instalator elektroniki samochodowej;742102;Monter-elektronik
+1154;8219.6;monter urządzeń medycznych;742103;Monter-elektronik – aparatura medyczna
+1155;7421.6;elektromechanik urządzeń sterowania ruchem kolejowym;742104;Monter-elektronik – aparatura pomiarowa
+1156;7421.4;elektronik okrętowy;742106;Monter-elektronik – elektroniczny sprzęt sygnalizacyjny i systemy sygnalizacyjne
+1157;7421.3;technik serwisant elektroniki użytkowej;742108;Monter-elektronik – naprawa sprzętu audiowizualnego
+1158;8211.3;monter mechatronik;742110;Monter-elektronik – układy elektroniczne automatyki przemysłowej
+1159;7421.1;technik konserwator bankomatów;742113;Monter/konserwator urządzeń zabezpieczeń technicznych osób i mienia
+1160;7422.1;konserwator infrastruktury telekomunikacyjnej;742201;Monter instalacji i urządzeń telekomunikacyjnych (telemonter)
+1161;7422.1;konserwator infrastruktury telekomunikacyjnej;742202;Monter sieci i urządzeń telekomunikacyjnych
+1162;7422.6;konserwator sprzętu telekomunikacyjnego;742203;Monter sieci telekomunikacyjnych
+1163;7422.1;konserwator infrastruktury telekomunikacyjnej;742204;Monter-elektronik – instalacja anten
+1164;7422.2;serwisant sprzętu komputerowego;742205;Monter-elektronik – sprzęt komputerowy
+1165;7422.1;konserwator infrastruktury telekomunikacyjnej;742206;Monter-elektronik – urządzenia radiokomunikacyjne
+1166;7422.4;technik urządzeń radiowych;742207;Monter-elektronik – urządzenia radiowo-telewizyjne
+1167;7511.4;rozbieracz – wykrawacz;751105;Rzeźnik-wędliniarz
+1168;7511.1;rzeźnik;751107;Wędliniarz
+1169;7511.1.1;masarz halal;751102;Jeliciarz
+1170;7511.1;rzeźnik;751101;Garmażer
+1171;6223.1;rybak rybołówstwa dalekomorskiego;751103;Przetwórca ryb
+1172;9211.1;zbieracz owoców i warzyw;751402;Przetwórca owoców i warzyw
+1173;6122.1;hodowca drobiu;751504;Klasyfikator jaj, drobiu i pierza
+1174;6223.1;rybak rybołówstwa dalekomorskiego;751505;Klasyfikator ryb
+1175;7543.8.2;klasyfikator drewna;752105;Sortowacz materiałów drzewnych
+1176;7521.1;suszarniowy drewna;752103;Mygłowacz
+1177;7521.2;impregnator drewna;752104;Parzelniczy drewna
+1178;7522.1;stolarz wykonawca imitacji mebli zabytkowych;752206;Stolarz galanterii drzewnej
+1179;7522.6;renowator mebli;752207;Stolarz mebli artystycznych i wzorcowych
+1180;7312.2;korektor instrumentów muzycznych;752209;Stolarz modelarz instrumentów muzycznych
+1181;7522.3;bednarz;752202;Gięciarz drewna
+1182;8219.11;monter wyrobów z drewna;752203;Kołodziej
+1183;7523.3;operator maszyn do produkcji mebli drewnianych;752308;Szlifierz materiałów drzewnych
+1184;7523.3;operator maszyn do produkcji mebli drewnianych;752311;Ustawiacz maszyn do obróbki drewna
+1185;7523.3;operator maszyn do produkcji mebli drewnianych;752301;Frezer drewna
+1186;7531.1;krawiec artystyczny / krawcowa artystyczna;753102;Gorseciarka
+1187;7532.2;krojczy;753105;Krawiec
+1188;7531.6;perukarz;753107;Modystka
+1189;7533.4;wytwórca wyrobów tekstylnych;753303;Szwaczka ręczna
+1190;7533.4;wytwórca wyrobów tekstylnych;753305;Żaglownik
+1191;7533.5;szwacz/szwaczka;753304;Wytwórca abażurów
+1192;7533.4;wytwórca wyrobów tekstylnych;753302;Parasolnik
+1193;7533.4;wytwórca wyrobów tekstylnych;753401;Bieliźniarz-kołdrzarz
+1194;7535.1;sortowacz skór;753505;Wyprawiacz skór futerkowych
+1195;7535.1;sortowacz skór;753504;Konserwator skór surowych
+1196;7536.1;formowacz wyrobów skórzanych;753601;Cholewkarz
+1197;7536.2.6;obuwnik ortopedyczny;753701;Bandażysta ortopedyczny
+1198;7536.1.3;szwacz ręczny wyrobów skórzanych/szwaczka ręczna wyrobów skórzanych;753703;Rymarz
+1199;8155.1;operator maszyn i urządzeń do produkcji wyrobów skórzanych;753702;Kaletnik
+1200;7541.2;nurek poławiacz zasobów morskich;754102;Nurek
+1201;7541.1;nurek techniczny;754104;Operator systemów nurkowych
+1202;7542.1;strzałowy;754202;Wydawca środków strzałowych
+1203;7115.5;monter okien;754902;Monter żaluzji
+1204;6113.5;projektant wewnętrznych terenów zielonych;611308;Ogrodnik – uprawa roślin ozdobnych
+1205;6113.5;projektant wewnętrznych terenów zielonych;611306;Ogrodnik terenów zieleni
+1206;6114.1;zarządca produkcji rolnej;611402;Producent zdrowej żywności
+1207;6121.6;pasterz;612111;Hodowca inwentarza mieszanego
+1208;5164.9;opiekun zwierząt domowych;612106;Hodowca zwierząt domowych
+1209;6121.1;hodowca bydła;612108;Juhas
+1210;6130.2;rolnik produkcji roślinnej i zwierzęcej;612109;Kierownik gospodarstwa produkcji zwierzęcej
+1211;6122.1;hodowca drobiu;612202;Kierownik gospodarstwa hodowli drobiu
+1212;6122.1;hodowca drobiu;612902;Hodowca ptaków
+1213;9212.4;pracownik zajmujący się żywym inwentarzem;612903;Hodowca zwierząt laboratoryjnych
+1214;9215.1;robotnik leśny;621001;Drwal / pilarz drzew
+1215;9215.1;robotnik leśny;621003;Wozak zrywkarz
+1216;7511.3;oprawiacz ryb;622101;Hodowca ryb
+1217;7511.3;oprawiacz ryb;622201;Rybak śródlądowy
+1218;7511.3;oprawiacz ryb;622301;Rybak rybołówstwa morskiego
+1219;9212.4;pracownik zajmujący się żywym inwentarzem;632001;Hodowca zwierząt pracujący na własne potrzeby
+1220;9213.1;pracownik produkcji roślinnej;633001;Rolnik produkcji roślinnej i zwierzęcej pracujący na własne potrzeby
+1221;7511.2;robotnik w przetwórstwie ryb;634001;Rybak pracujący na własne potrzeby
+1222;7514.1;konserwator owoców i warzyw;634002;Zbieracz owoców, ziół i innych roślin
+1223;5112.2;pracownik obsługi podróżnych na stacjach kolejowych;511206;Rewizor pociągów
+1224;5112.3;konduktor;511203;Konduktor kolei linowej
+1225;5113.1;przewodnik;511301;Pilot wycieczek
+1226;4221.5;organizator wycieczki;511303;Przewodnik turystyczny miejski
+1227;5113.1.1;specjalista ds. edukacji ekologicznej;511304;Przewodnik turystyczny terenowy
+1228;5141.1.3;stylista fryzur / stylistka fryzur;514105;Technik usług fryzjerskich
+1229;5141.1;fryzjer/fryzjerka;514104;Perukarz
+1230;5142.5;charakteryzator/charakteryzatorka;514208;Wizażystka / stylistka
+1231;5142.2;pracownik salonu piękności / pracownica salonu piękności;514207;Technik usług kosmetycznych
+1232;5142.10;pracownik spa / pracownica spa;514205;Pracownik solarium
+1233;5151.1;kamerdyner;515102;Intendent
+1234;5152.1;osoba prowadząca pensjonat;515203;Technik turystyki wiejskiej
+1235;5152.1;osoba prowadząca pensjonat;515204;Właściciel małego zakładu agroturystycznego/hotelarskiego/gastronomicznego
+1236;5152.1;osoba prowadząca pensjonat;515201;Gospodyni
+1237;5153.1.1;sprzątacz wesołych miasteczek;515303;Robotnik gospodarczy
+1238;5163.1;pracownik cmentarza;516301;Kremator
+1239;5163.4;kierownik zakładu usług pogrzebowych;516302;Organizator usług pogrzebowych
+1240;6121.3;hodowca koni;516404;Trener koni wyścigowych
+1241;5164.2;treser i opiekun zwierząt;516407;Zoopsycholog
+1242;5164.6;hodowca psów;516401;Fryzjer zwierząt (groomer)
+1243;5164.2.1.2;trener koni/trenerka koni;516408;Jeździec
+1244;2320.1.19;instruktor szkolenia kierowców zawodowych;516501;Instruktor techniki jazdy
+1245;8113.9;wiertacz studni;516901;Radiesteta
+1246;5169.3;osoba do towarzystwa;516902;Asystent osobisty (concierge)
+1247;5211.1;sprzedawca na targowisku i bazarze;521102;Sprzedawca obwoźny z samochodu (vanseller)
+1248;5221.1;przedsiębiorca prowadzący jednostkę handlu detalicznego;522101;Antykwariusz
+1249;5221.1;przedsiębiorca prowadzący jednostkę handlu detalicznego;522103;Właściciel małego sklepu
+1250;5221.1;przedsiębiorca prowadzący jednostkę handlu detalicznego;522102;Kioskarz
+1251;1221.3.2.1;kierownik ds. sprzedaży;522201;Kierownik sali sprzedaży
+1252;2423.3;specjalista ds. kadr;523003;Kasjer w zakładzie pracy
+1253;5243.1;komiwojażer;524301;Akwizytor
+1254;5243.1;komiwojażer;524302;Konsultant/agent sprzedaży bezpośredniej
+1255;5244.1;sprzedawca w centrum sprzedaży telefonicznej;524401;Ekspedytor sprzedaży wysyłkowej / internetowej
+1256;4222.1.1;konsultant ds. internetowej obsługi klienta;524404;Telemarketer
+1257;2431.10.4;specjalista ds. marketingu internetowego;524402;Organizator obsługi sprzedaży internetowej
+1258;5246.1;pracownik usług gastronomicznych linii lotniczych;524601;Wydawca posiłków / bufetowy
+1259;7231.8;serwisant pojazdów;524905;Ekspedient stacji obsługi pojazdów
+1260;5246.1;pracownik usług gastronomicznych linii lotniczych;524903;Ekspedient w punkcie usługowym
+1261;1420.3;opiekun klienta;524902;Doradca klienta
+1262;2433.2;przedstawiciel medyczny;524906;Pośrednik usług medycznych
+1263;3412.4.6;pracownik ds. rodzin zastępczych;531105;Rodzic zastępczy
+1264;5311.1;opiekun dziecięcy / opiekunka dziecięca;531103;Opiekunka dzieci w drodze do szkoły
+1265;5311.1;opiekun dziecięcy / opiekunka dziecięca;531107;Opiekunka w żłobku / klubie dziecięcym
+1266;5312.2;asystent nauczyciela w szkole podstawowej;531203;Asystent edukacji romskiej
+1267;5312.2;asystent nauczyciela w szkole podstawowej;531201;Asystent nauczyciela dziecka cudzoziemca
+1268;5322.1;opiekunka domowa / opiekun domowy;532202;Siostra PCK
+1269;5142.10;pracownik spa / pracownica spa;532905;Zabiegowy balneologiczny
+1270;3222.1;asystent / asystentka zespołu porodowego;532906;Asystentka kobiety w czasie ciąży i porodu (doula)
+1271;3213.1;asystent farmaceutyczny / asystentka farmaceutyczna;532901;Pomoc apteczna
+1272;3251.1;asystent stomatologiczny / asystentka stomatologiczna;532902;Pomoc dentystyczna
+1273;3411.8.1;detektyw sklepowy;541315;Technik ochrony fizycznej osób i mienia
+1274;5414.1;pracownik ochrony osób i mienia;541313;Strażnik straży marszałkowskiej
+1275;5414.1;pracownik ochrony osób i mienia;541314;Funkcjonariusz straży ochrony kolei
+1276;5414.1;pracownik ochrony osób i mienia;541306;Portier
+1277;3423.4;przewodnik górski;541903;Ratownik górski
+1278;5419.3;funkcjonariusz straży przybrzeżnej;541904;Ratownik morski
+1279;5419.6;ratownik wodny;541905;Ratownik pokładowy
+1280;6210.1;strażnik leśny;541908;Strażnik łowiecki
+1281;6222.1;rybak przybrzeżny;541909;Strażnik rybacki
+1282;5419.2;strażnik miejski;541901;Pracownik obsługi monitoringu
+1283;4211.1;kasjer bankowy;421108;Technik usług pocztowych i finansowych
+1284;4211.1;kasjer bankowy;421107;Skarbnik bankowy
+1285;7422.7;technik systemów telekomunikacyjnych;421102;Asystent usług telekomunikacyjnych
+1286;4211.1;kasjer bankowy;421105;Kontroler pocztowy
+1287;4211.1;kasjer bankowy;421106;Kontroler rozliczeń pieniężnych
+1288;4212.7;osoba wystawiająca kursy;421202;Krupier
+1289;9623.1;odczytywacz liczników;421401;Inkasent
+1290;4214.1;windykator;421402;Poborca skarbowy
+1291;4221.3;pracownik informacji turystycznej;422103;Technik obsługi turystycznej
+1292;4221.4;przedstawiciel biura podróży / przedstawicielka biura podróży;422102;Rezydent biura turystycznego
+1293;4222.1.1;konsultant ds. internetowej obsługi klienta;422201;Pracownik centrum obsługi telefonicznej (pracownik call center)
+1294;4224.1;recepcjonista w placówce hotelarskiej / recepcjonistka w placówce hotelarskiej;422402;Technik hotelarstwa
+1295;4225.1;pracownik działu obsługi klienta;422501;Informator ruchu pasażerskiego
+1296;4226.1;nocny recepcjonista;422601;Pracownik biura przepustek
+1297;4227.1;ankieter w dziale analiz i badań rynkowych;422702;Teleankieter
+1298;3313.2;kontysta / kontystka;431103;Technik rachunkowości
+1299;4312.5;pracownik ds. inwestycji;431203;Pracownik w biurze maklerskim
+1300;4321.1;magazynier;432102;Inwentaryzator
+1301;4321.1;magazynier;432105;Pracownik sortowania przesyłek i towarów
+1302;4323.4;dyspozytor transportu samochodowego;432305;Konstruktor rozkładów jazdy
+1303;4323.6;ekspedytor;432304;Odprawiacz pociągów
+1304;4412.1;ekspedient pocztowy;441202;Kurier
+1305;2514.3;programista przemysłowych aplikacji mobilnych;441301;Kodowacz (koder)
+1306;4415.1;archiwista zakładowy;441401;Archiwista dokumentów elektronicznych
+1307;3433.2;archiwista danych big data;441402;Archiwista zakładowy
+1308;3339.6;specjalista ds. prawa do publikacji w formie drukowanej;441901;Asystent do spraw wydawniczych
+1309;3111.2;technik ochrony środowiska;311103;Technik analityk
+1310;3111.4;technik geolog;311105;Technik geofizyk
+1311;3112.1.1;inspektor budowy mostów;311212;Inspektor budowy dróg
+1312;3118.3.2;kreślarz w pracowni architektonicznej;311203;Technik architekt
+1313;3112.1;technik inżynierii lądowej;311204;Technik budownictwa
+1314;3112.1.13;technik inżynierii wodnej;311205;Technik budownictwa wodnego
+1315;3112.1;technik inżynierii lądowej;311207;Technik dróg i mostów kolejowych
+1316;3112.1.13;technik inżynierii wodnej;311208;Technik inżynierii środowiska i melioracji
+1317;3112.1.4;menedżer jakości obiektów budowlanych;311210;Technik renowacji elementów architektury
+1318;3112.1.12;konserwator urządzeń kanalizacyjnych;311209;Technik urządzeń sanitarnych
+1319;3112.1.4;menedżer jakości obiektów budowlanych;311202;Laborant budowlany
+1320;3112.1;technik inżynierii lądowej;311201;Kosztorysant budowlany
+1321;3112.1;technik inżynierii lądowej;311215;Mostowniczy
+1322;3113.1;technik elektryk;311302;Technik elektroenergetyk transportu szynowego
+1323;3123.1.18;brygadzista monter linii elektroenergetycznych;311304;Technik elektryk kolejowych sieci elektroenergetycznych
+1324;3113.1.2;technik elektromechanik;311306;Technik elektryk urządzeń zabezpieczenia i sterowania ruchem kolejowym
+1325;3113.1;technik elektryk;311307;Technik energetyk
+1326;3114.1.9;technik technologii sensorów;311403;Instalator systemów alarmowych przeciwkradzieżowych
+1327;7422.7;technik systemów telekomunikacyjnych;311404;Instalator systemów telewizji przemysłowej
+1328;3114.1.4;technik aparatury kontrolno-pomiarowej i automatyki;311407;Technik automatyk sterowania ruchem kolejowym
+1329;3114.1.5;technik aparatury medycznej;311411;Technik elektroniki i informatyki medycznej
+1330;3114.1.5;technik aparatury medycznej;311409;Technik elektroniki medycznej
+1331;3114.1.6;technik mikroelektronik;311412;Technik szerokopasmowej komunikacji elektronicznej
+1332;9312.1.2;monter torów kolejowych;311401;Diagnosta kolejowy
+1333;3114.1.9;technik technologii sensorów;311406;Projektant systemów alarmowych
+1334;8341.2;operator maszyn rolniczych;311515;Technik mechanizacji rolnictwa i agrotroniki
+1335;8341.2;operator maszyn rolniczych;311512;Technik mechanizacji rolnictwa
+1336;3115.1.11;specjalista ds. kontroli jakości silników pojazdów mechanicznych;311501;Diagnosta uprawniony do wykonywania badań technicznych pojazdów
+1337;3116.1.2;technik ds. kontroli jakości w przemyśle chemicznym;311602;Technik przetwórstwa tworzyw sztucznych
+1338;3213.2;technik farmaceutyczny;311604;Technik technologii środków farmaceutycznych
+1339;5142.1;kosmetyczka;311605;Technik technologii środków kosmetycznych
+1340;8111.3;górnik pracujący na powierzchni;311701;Technik górnictwa odkrywkowego
+1341;3121.1;osoba dozoru ruchu w górnictwie;311702;Technik górnictwa otworowego
+1342;3121.1;osoba dozoru ruchu w górnictwie;311703;Technik górnictwa podziemnego
+1343;7211.1.1;odlewnik wyrobów metalowych;311704;Technik hutnik
+1344;7233.11;mechanik maszyn i urządzeń odlewniczych;311705;Technik odlewnik
+1345;3117.2;geotechnik;311706;Technik przeróbki kopalin stałych
+1346;3117.2;geotechnik;311707;Technik wiertnik
+1347;7543.7.7;inspektor budownictwa okrętowego;311910;Technik budownictwa okrętowego
+1348;7312.2;korektor instrumentów muzycznych;311934;Technik budowy fortepianów i pianin
+1349;2166.8;projektant mediów cyfrowych;311911;Technik cyfrowych procesów graficznych
+1350;7535.1;sortowacz skór;311912;Technik garbarz
+1351;8183.3;napełniacz butli gazowych;311913;Technik gazownictwa
+1352;8343.3;operator dźwigu jezdnego;311939;Technik konserwator urządzeń dźwigowych
+1353;1349.8;dowódca zastępu straży pożarnej;311919;Technik pożarnictwa
+1354;5414.1;pracownik ochrony osób i mienia;311920;Technik systemów zabezpieczeń technicznych osób i mienia
+1355;3111.7;technik ds. testowania materiałów;311923;Technik technologii materiałów budowlanych
+1356;3139.1.1;kontroler procesów w przemyśle odzieżowym;311924;Technik technologii odzieży
+1357;8181.4;operator pieca do produkcji szkła ciągnionego;311925;Technik technologii szkła
+1358;8343.3;operator dźwigu jezdnego;311940;Technik urządzeń dźwigowych
+1359;8219.6;monter urządzeń medycznych;311907;Serwisant urządzeń medycznych
+1360;7312.3.3;monter fortepianów i pianin;311933;Stroiciel fortepianów i pianin
+1361;7543.5;specjalista kontroli z użyciem badań nieniszczących;311902;Kontroler jakości połączeń spawanych
+1362;8322.1;kierowca bankowozu;311906;Pracownik obsługi bankomatów
+1363;8182.1;maszynista kotła;313109;Maszynista urządzeń pomocniczych elektrowni
+1364;3132.2;operator urządzeń do utylizacji odpadów płynnych;313205;Operator (maszynista) stacji pomp
+1365;7513.1;robotnik w produkcji wyrobów mleczarskich;313202;Maszynista chłodni
+1366;7231.7;mechanik oponiarz;313203;Maszynista sprężarek
+1367;7127.1;specjalista obsługi systemów grzewczych, wentylacyjnych, klimatyzacji i chłodzenia;313204;Maszynista wentylatorów w kopalni
+1368;7133.5;specjalista ds. usuwania i unieszkodliwiania materiałów niebezpiecznych;313210;Pracownik oczyszczania terenu z materiałów wybuchowych i niebezpiecznych
+1369;3134.4;operator systemu pompowania ropy naftowej;313401;Kontroler (sterowniczy) procesów przeróbki ropy naftowej i gazu
+1370;7543.9.3;kontroler jakości wyrobów metalowych;313501;Kontroler (sterowniczy) urządzeń do ciągnienia i tłoczenia metali
+1371;7233.11;mechanik maszyn i urządzeń odlewniczych;313504;Kontroler (sterowniczy) urządzeń odlewniczych
+1372;7223.24;operator walcarki do gwintów;313505;Kontroler (sterowniczy) urządzeń walcowniczych
+1373;7317.1;papiernik;313902;Kontroler (sterowniczy) urządzeń do produkcji papieru
+1374;3139.1;operator zautomatyzowanej linii produkcyjnej;313903;Operator robotów i manipulatorów przemysłowych
+1375;9213.1;pracownik produkcji roślinnej;314103;Laborant w hodowli roślin
+1376;6113.7;chirurg pielęgniarz drzew;314202;Technik architektury krajobrazu
+1377;3141.2.5;technik zoolog;314204;Technik hodowca zwierząt
+1378;6113.2;kierownik produkcji w przedsiębiorstwie ogrodniczym;314205;Technik ogrodnik
+1379;3142.1;technik rolnik;314201;Laborant nasiennictwa
+1380;3257.3;kontroler bezpieczeństwa żywności;314401;Kontroler jakości produktów spożywczych
+1381;8350.5;marynarz żeglugi śródlądowej;315210;Obserwator radarowy żeglugi śródlądowej
+1382;3153.2.1;pierwszy oficer - lotnictwo;315302;Nawigator lotniczy
+1383;3153.2.4;pilot śmigłowcowy;315319;Pilot pionowzlotu
+1384;3154.1;kontroler ruchu lotniczego;315405;Informator lotniskowej służby informacji powietrznej
+1385;3122.2;planista produkcji żywności;322002;Technik żywienia i gospodarstwa domowego
+1386;5142.12;konsultant ds. odchudzania i odżywania / konsultantka ds. odchudzania i odżywiania;322001;Dietetyk
+1387;5142.7;masażysta/masażystka;323003;Biomasażysta
+1388;2269.9;terapeuta rekreacyjny;325201;Terapeuta środowiskowy
+1389;3112.1.6;inspektor ochrony przeciwpożarowej;325513;Inspektor obrony cywilnej
+1390;2263.3;specjalista bezpieczeństwa i higieny pracy;325505;Instruktor higieny
+1391;3257.5;inspektor bezpieczeństwa i higieny pracy;325509;Technik bezpieczeństwa i higieny pracy
+1392;3257.4.2;inspektor edukator ds. odpadów niebezpiecznych;325501;Edukator ekologiczny
+1393;2133.4;inspektor ochrony środowiska;325507;Strażnik ochrony przyrody / środowiska
+1394;5164.4;inspektor weterynaryjny ds. zdrowia zwierząt;325512;Weterynaryjny kontroler sanitarny
+1395;5164.4;inspektor weterynaryjny ds. zdrowia zwierząt;325506;Kontroler higieny mięsa
+1396;2269.5;asystent terapii zajęciowej/asystentka terapii zajęciowej;325907;Terapeuta zajęciowy
+1397;5321.1.1;asystent pielęgniarski / asystentka pielęgniarska;325902;Higienistka szkolna
+1398;3253.1.1;instruktor / instruktorka pierwszej pomocy;325901;Felczer
+1399;3311.3.5;trader giełdowy;331101;Dealer aktywów finansowych
+1400;3311.2.2;pośrednik kredytowy;331104;Pracownik do spraw produktów finansowych
+1401;3312.4;analityk ryzyka kredytowego;331201;Pracownik do spraw kredytów
+1402;2433.6.1;przedstawiciel techniczno-handlowy ds. sprzedaży maszyn rolniczych;331402;Technik agrobiznesu
+1403;3314.1;asystent aktuarialny;331404;Asystent przetwarzania danych
+1404;3315.2;gemmolog;331506;Taksator
+1405;3321.2;specjalista ds. oceny ryzyka ubezpieczeniowego;331508;Taksator ryzyka działalności firm
+1406;7515.2;kontroler jakości mleka w gospodarstwie rolnym;331504;Rzeczoznawca jakości handlowej artykułów rolno-spożywczych
+1407;3321.1;broker ubezpieczeniowy;332103;Broker reasekuracyjny
+1408;4225.1;pracownik działu obsługi klienta;332202;Pracownik centrum elektronicznej obsługi klienta
+1409;3331.2;spedytor;333106;Technik eksploatacji portów i terminali
+1410;3331.3;koordynator spedycji międzynarodowej;333108;Technik spedytor
+1411;9333.7;brygadzista portowej ekipy przeładunkowej;333103;Eksploatator portu
+1412;4323.5;doradca do spraw bezpieczeństwa przewozu towarów niebezpiecznych w zakresie transportu drogowego;333109;Doradca do spraw bezpieczeństwa przewozu koleją towarów niebezpiecznych (Doradca RID)
+1413;3332.2.2;organizator imprez ślubnych;333201;Organizator imprez rozrywkowych (organizator eventów)
+1414;1349.22;administrator ds. sportu;333203;Organizator imprez sportowych
+1415;2423.2;konsultant ds. pracy i szkolenia zawodowego;333302;Pracownik agencji pracy tymczasowej
+1416;3334.3;pośrednik w obrocie nieruchomościami;333401;Agent do spraw pozyskiwania gruntów
+1417;4227.1;ankieter w dziale analiz i badań rynkowych;333905;Tajemniczy klient (mystery shopper)
+1418;4120.1;sekretarka;334201;Sekretarka w kancelarii prawnej
+1419;2422.9;asystent posła;334301;Akredytowany asystent parlamentarny
+1420;3353.2;urzędnik ds. ubezpieczeń społecznych;334401;Pracownik do spraw ubezpieczeń medycznych
+1421;3351.1;funkcjonariusz celny;335102;Funkcjonariusz straży granicznej
+1422;3352.2;kontroler rozliczeń podatkowych;335202;Rewident kontroli skarbowej
+1423;2422.4;planista w administracji publicznej;335403;Urzędnik do spraw udzielania pozwoleń na budowę
+1424;3343.1;technik administracji;335404;Urzędnik do spraw udzielania pozwoleń na prowadzenie działalności gospodarczej
+1425;3355.1;policjant służby kryminalnej;335505;Policjant służby wspomagającej
+1426;2359.10;kurator penitencjarny;335602;Funkcjonariusz służby penitencjarnej
+1427;3359.5;inspektor ds. przewozu towarów;335909;Inspektor Inspekcji Transportu Drogowego
+1428;4120.1;sekretarka;341102;Sekretarka notarialna
+1429;3412.4.11;opiekun dorosłych w placówce całodobowej;341202;Opiekun osoby starszej
+1430;3412.4.5;asystent rodziny;341204;Opiekunka środowiskowa
+1431;3412.4;pracownik opieki społecznej;341205;Pracownik socjalny
+1432;5153.1.3;kościelny;341301;Pracownik parafialny
+1433;5164.2.1.2;trener koni/trenerka koni;342101;Dżokej
+1434;3421.1;sportowiec zawodowy;342102;Zawodnik dyscypliny sportu
+1435;3423.1.2.3;wyspecjalizowany instruktor rekreacji ruchowej;342202;Instruktor sportu osób niepełnosprawnych
+1436;1349.22;administrator ds. sportu;342203;Menedżer dyscypliny sportu
+1437;1349.22;administrator ds. sportu;342204;Menedżer imprez sportowych
+1438;1349.22;administrator ds. sportu;342205;Menedżer sportu
+1439;3423.2;instruktor fitness;342302;Instruktor gimnastyki korekcyjnej
+1440;5142.7;masażysta/masażystka;342304;Instruktor odnowy biologicznej
+1441;3423.1.2;instruktor rekreacji ruchowej;342306;Instruktor rytmiki
+1442;3423.2;instruktor fitness;342307;Instruktor sportów siłowych
+1443;3422.5;instruktor sportu;342309;Instruktor sztuki walki
+1444;2659.4;animator turystyki;342311;Animator rekreacji i organizacji czasu wolnego
+1445;2642.1.14;fotoedytor;343103;Fotosista
+1446;8132.2;technik fotograf;343104;Fototechnik
+1447;7113.1;kamieniarz;343205;Technik sztukatorstwa i kamieniarstwa artystycznego
+1448;3432.1;projektant wnętrz;343201;Dekorator sklepów
+1449;2651.10;artysta rzeźbiarz;343206;Rzeźbiarz w owocach i warzywach
+1450;3432.4.1;malarz scenografii;343204;Plastyk
+1451;2621.6;inwentaryzator zbiorów;343302;Pracownik galerii / muzeum
+1452;5152.2;organizator usług domowych / organizatorka usług domowych;343401;Organizator usług kateringowych
+1453;2131.1;behawiorysta zwierząt;343506;Treser zwierząt cyrkowych
+1454;2659.2.5;artysta uliczny / artystka uliczna;343505;Komik
+1455;2652.2;reżyser muzyczny;343602;Muzyk
+1456;2653.1.2;korepetytor tańca;343701;Tancerz
+1457;3435.2;asystent reżysera filmowego;343914;Sekretarz planu filmowego
+1458;3435.2;asystent reżysera filmowego;343902;Asystent kierownika produkcji filmowej / telewizyjnej
+1459;3435.23.2;oświetleniowiec;343909;Oświetlacz filmowy
+1460;3339.8;menedżer artystyczny;343908;Menedżer klubu muzycznego
+1461;3513.2;konserwator sieci informacyjno-telekomunikacyjnej;351102;Operator komputerowych urządzeń peryferyjnych
+1462;7422.2;serwisant sprzętu komputerowego;351201;Konserwator sieci i systemów komputerowych
+1463;3512.3;technik ds. bezpieczeństwa systemów informacyjno-telekomunikacyjnych;351202;Operator zintegrowanych systemów zarządzania zasobami firmy
+1464;3513.2;konserwator sieci informacyjno-telekomunikacyjnej;351301;Operator sieci komputerowych
+1465;3513.2;konserwator sieci informacyjno-telekomunikacyjnej;351302;Operator sprzętu komputerowego
+1466;3513.2;konserwator sieci informacyjno-telekomunikacyjnej;351303;Operator systemów komputerowych
+1467;1221.3.2.1.4;kierownik ds. sprzedaży internetowej;351405;Pracownik obsługi kampanii e-mailowych
+1468;3521.1.1;technik realizacji dźwięku;352116;Realizator dźwięku
+1469;3521.1;technik urządzeń audiowizualnych;352118;Realizator rekonstrukcji dźwięku
+1470;3521.1.12;realizator filmu wideo;352102;Asystent operatora obrazu
+1471;3435.2;asystent reżysera filmowego;352104;Asystent techniczny realizatora programu
+1472;7422.4;technik urządzeń radiowych;352114;Operator radiowych urządzeń transmisyjnych
+1473;2166.4.3;operator obrazu;352113;Operator sprzętu zdjęciowego (wózkarz)
+1474;3522.1;technik telekomunikacji;352115;Operator telewizyjnych urządzeń transmisyjnych
+1475;3521.1.11;operator dźwięku;352107;Mikser dźwięku
+1476;2654.4;montażysta obrazu;352108;Mikser obrazu
+1477;3521.1.10;montażysta dźwięku;352110;Montażysta obrazu
+1478;7422.6;konserwator sprzętu telekomunikacyjnego;352201;Operator urządzeń nadawczych telewizji kablowej
+1479;2111.2;kosmolog;211101;Astrofizyk
+1480;2112.1.3;synoptyk;211201;Hydrometeorolog
+1481;2113.1.2;chemik ds. rozwoju;211302;Chemik – technologia chemiczna
+1482;2114.2;geofizyk;211404;Hydrograf morski
+1483;3141.2.3;technik biolog;213106;Biotechnolog
+1484;2132.5;doradca ds. gospodarki leśnej;213203;Inżynier leśnictwa
+1485;2132.2;doradca rolniczy;213204;Inżynier ogrodnictwa
+1486;2132.2;doradca rolniczy;213205;Inżynier rolnictwa
+1487;2132.6;doradca ds. żywego inwentarza;213207;Inżynier zootechniki
+1488;2132.2;doradca rolniczy;213209;Rzeczoznawca rolniczy
+1489;2132.2;doradca rolniczy;213208;Klasyfikator gruntów
+1490;2141.9;inżynier procesu;214103;Inżynier utrzymania ruchu
+1491;1324.3;kierownik ds. logistyki i dystrybucji;214104;Inżynier zaopatrzenia, transportu i magazynowania
+1492;2149.9;inżynier inżynierii materiałowej;214110;Towaroznawca
+1493;2141.3.1;inżynier produkcji;214105;Konsultant komitetu technicznego
+1494;2142.1.2;inżynier budownictwa - budownictwo ogólne;214204;Inżynier budownictwa – linie, węzły i stacje kolejowe
+1495;2142.1.2;inżynier budownictwa - budownictwo ogólne;214203;Inżynier budownictwa – budownictwo przemysłowe
+1496;2142.1.2;inżynier budownictwa - budownictwo ogólne;214205;Inżynier budownictwa – urządzenia, instalacje i sieci energetyczne
+1497;2142.1.2;inżynier budownictwa - budownictwo ogólne;214206;Inżynier budownictwa – wyburzanie obiektów
+1498;2142.1.4;inżynier geolog;214209;Inżynier geotechnik
+1499;1219.5.4;kierownik stacji uzdatniania wody;214302;Inżynier inżynierii środowiska – gospodarka wodna i hydrologia
+1500;2143.1.4;inżynier inżynierii środowiska - oczyszczanie miast i gospodarka odpadami;214303;Inżynier inżynierii środowiska – instalacje sanitarne
+1501;2149.7.2;inżynier energetyki jądrowej;214307;Inżynier systemów bezpieczeństwa jądrowego i ochrony radiologicznej
+1502;2149.7.5;inżynier ds. energetyki cieplnej;214401;Inżynier mechanik – cieplno-mechaniczne urządzenia, instalacje i sieci energetyczne
+1503;2142.1.9;inżynier transportu;214406;Inżynier mechanik – środki transportu
+1504;2144.1.1.1;inżynier ds. aerodynamiki;214408;Inżynier mechanik lotniczy
+1505;2145.2;inżynier inżynierii materiałów syntetycznych;214501;Inżynier inżynierii chemicznej
+1506;2145.2;inżynier inżynierii materiałów syntetycznych;214502;Inżynier technologii chemicznej
+1507;2142.1.6;inżynier geotechnik - górnictwo;214608;Inżynier geofizyk - geofizyka górnicza
+1508;2114.1.4;inżynier geolog - hydrologia górnicza;214609;Inżynier geolog - geologia górnicza i poszukiwawcza
+1509;2146.6;inżynier ds. rozwoju kopalni;214603;Inżynier górnik – górnictwo podziemne
+1510;2146.2;inżynier górnik - wiertnictwo;214601;Inżynier górnik – górnictwo otworowe
+1511;2146.5.1;specjalista ds. metalurgii chemicznej;214605;Inżynier hutnik
+1512;1219.5.2;kierownik odlewni;214607;Inżynier odlewnik
+1513;1349.6;specjalista ds. dozorowania lotniczego i koordynacji kodów;214902;Inspektor dozoru technicznego
+1514;2143.1;inżynier inżynierii środowiska;214907;Inżynier gospodarki przestrzennej
+1515;2152.1.5;inżynier sprzętu medycznego;214908;Inżynier kliniczny
+1516;1324.3.1.5;kierownik działu transportu drogowego;214917;Inżynier transportu drogowego
+1517;3115.1.4;technik pojazdów samochodowych;214930;Rzeczoznawca samochodowy
+1518;1219.1.2;kierownik ds. ochrony;214926;Specjalista monitoringu systemów zabezpieczeń technicznych osób i mienia
+1519;2152.1.3;inżynier ds. aparatury kontrolno-pomiarowej i automatyki;214921;Legalizator
+1520;1324.3.1.3;kierownik ds. przewozów kolejowych;214920;Kontroler kolejowy
+1521;2141.3.2.1;inżynier automatyki i robotyki;215104;Inżynier elektryk automatyk
+1522;2149.10.1;inżynier fotoniki;215105;Inżynier techniki świetlnej
+1523;2152.1;inżynier elektronik;215203;Inżynier urządzeń zabezpieczenia i sterowania ruchem kolejowym
+1524;2511.16;inżynier integracji technologii informatycznych;215301;Inżynier telekomunikacji
+1525;2153.1.1;analityk systemów telekomunikacyjnych;215302;Technolog inżynierii telekomunikacyjnej
+1526;2161.1.1;architekt wnętrz;216202;Architekt zieleni wewnątrz budynków
+1527;2164.2;planista transportu;216401;Inżynier ruchu drogowego
+1528;2164.2;planista transportu;216402;Inżynier ruchu kolejowego
+1529;2165.2;kartograf;216501;Inżynier geodeta – fotogrametria i teledetekcja
+1530;2165.3;inżynier geodeta – geomatyka;216505;Inżynier geodeta – geodezyjne pomiary podstawowe i satelitarne
+1531;2166.11;ilustrator;216602;Grafik komputerowy multimediów
+1532;2166.11;ilustrator;216605;Projektant grafiki stron internetowych
+1533;2211.1;lekarz podstawowej opieki zdrowotnej;221101;Lekarz
+1534;2149.7.2;inżynier energetyki jądrowej;229101;Inspektor dozoru jądrowego
+1535;2263.3;specjalista bezpieczeństwa i higieny pracy;229106;Rzeczoznawca do spraw bezpieczeństwa i higieny pracy
+1536;2422.5;specjalista organizacji i zarządzania w ochronie zdrowia;229102;Specjalista promocji zdrowia i edukacji zdrowotnej
+1537;2422.5;specjalista organizacji i zarządzania w ochronie zdrowia;229105;Specjalista zdrowia środowiskowego
+1538;2265.1;specjalista ds. dietetyki;229302;Specjalista żywienia człowieka
+1539;2149.4.1;inżynier biocybernetyki i inżynierii biomedycznej;229912;Specjalista inżynierii medycznej
+1540;2145.1.9;inżynier ds. chemii farmaceutycznej;229911;Specjalista radiofarmacji
+1541;1223.2.2;kierownik ds. badań;229902;Koordynator badań klinicznych
+1542;2113.1.4;chemik kosmetolog;229903;Kosmetolog
+1543;3122.4.2;mistrz produkcji w przemyśle chemicznym;229904;Osoba wykwalifikowana w przemyśle farmaceutycznym
+1544;2634.2.3;psycholog zdrowia;229909;Psychoonkolog
+1545;2310.1.36;wykładowca akademicki w dziedzinie religioznawstwa;231015;Nauczyciel akademicki – nauki teologiczne
+1546;2320.1.16;nauczyciel kształcenia zawodowego w zakresie sztuki użytkowej/nauczycielka kształcenia zawodowego w zakresie sztuki użytkowej;232002;Nauczyciel przedmiotów zawodowych artystycznych
+1547;2352.1.5;nauczyciel osób ze specjalnymi potrzebami edukacyjnymi w szkole podstawowej/nauczycielka osób ze specjalnymi potrzebami edukacyjnymi w szkole podstawowej;234101;Nauczyciel etyki w szkole podstawowej
+1548;2352.1.5;nauczyciel osób ze specjalnymi potrzebami edukacyjnymi w szkole podstawowej/nauczycielka osób ze specjalnymi potrzebami edukacyjnymi w szkole podstawowej;234102;Nauczyciel historii i społeczeństwa w szkole podstawowej
+1549;2352.1.5;nauczyciel osób ze specjalnymi potrzebami edukacyjnymi w szkole podstawowej/nauczycielka osób ze specjalnymi potrzebami edukacyjnymi w szkole podstawowej;234103;Nauczyciel informatyki w szkole podstawowej
+1550;2352.1.5;nauczyciel osób ze specjalnymi potrzebami edukacyjnymi w szkole podstawowej/nauczycielka osób ze specjalnymi potrzebami edukacyjnymi w szkole podstawowej;234104;Nauczyciel języka obcego w szkole podstawowej
+1551;2352.1.5;nauczyciel osób ze specjalnymi potrzebami edukacyjnymi w szkole podstawowej/nauczycielka osób ze specjalnymi potrzebami edukacyjnymi w szkole podstawowej;234108;Nauczyciel języka polskiego w szkole podstawowej
+1552;2352.1.5;nauczyciel osób ze specjalnymi potrzebami edukacyjnymi w szkole podstawowej/nauczycielka osób ze specjalnymi potrzebami edukacyjnymi w szkole podstawowej;234111;Nauczyciel matematyki w szkole podstawowej
+1553;2352.1.5;nauczyciel osób ze specjalnymi potrzebami edukacyjnymi w szkole podstawowej/nauczycielka osób ze specjalnymi potrzebami edukacyjnymi w szkole podstawowej;234112;Nauczyciel muzyki w szkole podstawowej
+1554;2352.1.5;nauczyciel osób ze specjalnymi potrzebami edukacyjnymi w szkole podstawowej/nauczycielka osób ze specjalnymi potrzebami edukacyjnymi w szkole podstawowej;234113;Nauczyciel nauczania początkowego
+1555;2352.1.5;nauczyciel osób ze specjalnymi potrzebami edukacyjnymi w szkole podstawowej/nauczycielka osób ze specjalnymi potrzebami edukacyjnymi w szkole podstawowej;234114;Nauczyciel plastyki w szkole podstawowej
+1556;2352.1.5;nauczyciel osób ze specjalnymi potrzebami edukacyjnymi w szkole podstawowej/nauczycielka osób ze specjalnymi potrzebami edukacyjnymi w szkole podstawowej;234115;Nauczyciel przyrody w szkole podstawowej
+1557;2352.1.5;nauczyciel osób ze specjalnymi potrzebami edukacyjnymi w szkole podstawowej/nauczycielka osób ze specjalnymi potrzebami edukacyjnymi w szkole podstawowej;234116;Nauczyciel religii w szkole podstawowej
+1558;2352.1.5;nauczyciel osób ze specjalnymi potrzebami edukacyjnymi w szkole podstawowej/nauczycielka osób ze specjalnymi potrzebami edukacyjnymi w szkole podstawowej;234117;Nauczyciel techniki w szkole podstawowej
+1559;2352.1.5;nauczyciel osób ze specjalnymi potrzebami edukacyjnymi w szkole podstawowej/nauczycielka osób ze specjalnymi potrzebami edukacyjnymi w szkole podstawowej;234118;Nauczyciel wychowania fizycznego w szkole podstawowej
+1560;5311.1.3;dzienny opiekun małego dziecka / dzienna opiekunka małego dziecka;234202;Wychowawca małego dziecka
+1561;2359.4;projektant systemów nauczania przez internet;235103;Metodyk edukacji na odległość
+1562;2330.1.13;nauczyciel muzyki w szkole ponadpodstawowej/nauczycielka muzyki w szkole ponadpodstawowej;235401;Nauczyciel muzyki w placówkach pozaszkolnych
+1563;2355.3;nauczyciel technik teatralnych/nauczycielka technik teatralnych;235501;Instruktor amatorskiego ruchu artystycznego
+1564;2355.2;nauczyciel tańca/nauczycielka tańca;235503;Nauczyciel sztuki w placówkach pozaszkolnych
+1565;5165.1.2;instruktor nauki jazdy samochodem osobowym;235903;Egzaminator osób ubiegających się o uprawnienia do kierowania pojazdem
+1566;2659.4;animator turystyki;235916;Animator czasu wolnego młodzieży (pracownik młodzieżowy)
+1567;2635.2;pedagog socjalny;235914;Wychowawca w placówkach oświatowych, wsparcia dziennego, wychowawczych i opiekuńczych oraz instytucjach pieczy zastępczej
+1568;5322.1;opiekunka domowa / opiekun domowy;235918;Nauczyciel domowy
+1569;2351.4;koordynator do spraw specjalnych potrzeb edukacyjnych;235905;Nauczyciel konsultant
+1570;2359.5;autor programów nauczania przez internet;235907;Nauczyciel nauczania na odległość
+1571;2359.6;doradca edukacyjny;235909;Nauczyciel specjalista terapii pedagogicznej
+1572;1431.1.1;kierownik domu kultury;235911;Pedagog animacji kulturalnej
+1573;2359.11;trener wystąpień publicznych;235922;Pedagog mediów
+1574;2635.2;pedagog socjalny;235919;Pedagog specjalny
+1575;2411.1.7;audytor finansowy;241103;Specjalista do spraw rachunkowości
+1576;2412.5.4;menedżer ds. relacji inwestorskich;241104;Specjalista do spraw rachunkowości inwestycyjnej
+1577;2411.1.12;doradca podatkowy;241105;Specjalista do spraw rachunkowości podatkowej
+1578;2411.1.9;biegły ds. zapobiegania i wykrywania przestępstw gospodarczych i korupcji;241106;Specjalista do spraw rachunkowości zarządczej
+1579;2412.5;doradca inwestycyjny;241205;Doradca do spraw leasingu
+1580;1346.6;kierownik programu emerytalnego;241201;Doradca emerytalny
+1581;2412.5;doradca inwestycyjny;241202;Doradca finansowy
+1582;2421.1;analityk biznesowy;241206;Specjalista do spraw tworzenia biznes planów
+1583;3312.5;pracownik do spraw pożyczek;241304;Specjalista bankowości
+1584;2413.1;analityk finansowy;241305;Specjalista do spraw factoringu
+1585;2413.1.2;analityk ubezpieczeniowy;241307;Specjalista do spraw ubezpieczeń majątkowych i osobowych
+1586;3353.1;inspektor ds. ubezpieczeń społecznych;241308;Specjalista do spraw ubezpieczeń społecznych
+1587;2413.1.2;analityk ubezpieczeniowy;241309;Specjalista do spraw ubezpieczeń zdrowotnych
+1588;2413.1;analityk finansowy;241310;Specjalista zarządzania ryzykiem (underwriter)
+1589;2412.8;specjalista ds. finansowania programów;241303;Projektant pakietów usług finansowych
+1590;2412.3;specjalista ds. polityki gospodarczej;242106;Specjalista do spraw doskonalenia organizacji
+1591;1439.6;kierownik biura podróży;242113;Specjalista do spraw organizacji usług gastronomicznych, hotelowych i turystycznych
+1592;2529.5;administrator bezpieczeństwa systemów informacyjno-telekomunikacyjnych;242110;Specjalista ochrony informacji niejawnych
+1593;2521.1;administrator baz danych;242111;Administrator bezpieczeństwa informacji (inspektor ochrony danych)
+1594;2166.4.8;reżyser filmowy;242101;Administrator produkcji filmowej
+1595;2421.2;doradca biznesowy;242104;Negocjator biznesowy
+1596;2133.10;menedżer projektów ochrony środowiska związanych z budową rurociągu;242102;Koordynator projektów unijnych
+1597;1324.3.1.4;kierownik ds. przewozów drogowych;242105;Organizator transportu drogowego
+1598;2262.1.1;inspektor farmaceutyczny;242229;Inspektor do spraw obrotu hurtowego lekami
+1599;2262.1.1;inspektor farmaceutyczny;242207;Inspektor do spraw wytwarzania Głównego Inspektoratu Farmaceutycznego
+1600;1346.1;menedżer banku;242210;Inspektor nadzoru bankowego
+1601;1330.1;inspektor ds. danych;242212;Inspektor ochrony danych osobowych
+1602;3359.3;obserwator połowów;242213;Inspektor rybołówstwa morskiego
+1603;1221.3.2.1.2;kierownik ds. licencji;242206;Ekspert w Urzędzie Patentowym RP
+1604;8332.4;kierowca przewożący towary niebezpieczne;242205;Doradca do spraw bezpieczeństwa w transporcie towarów niebezpiecznych
+1605;2149.11;inżynier patentowy;242216;Rzecznik patentowy
+1606;2635.3.7;ekspert z zakresu pracy socjalnej;242218;Specjalista do spraw badań społeczno-ekonomicznych
+1607;2412.3;specjalista ds. polityki gospodarczej;242219;Specjalista do spraw integracji europejskiej
+1608;2433.6;doradca techniczny–przedstawiciel handlowy;242203;Specjalista do spraw komercjalizacji innowacyjnych technologii
+1609;2412.3;specjalista ds. polityki gospodarczej;242220;Specjalista do spraw organizacji i rozwoju przemysłu
+1610;1221.3.2.1;kierownik ds. sprzedaży;242228;Specjalista do spraw organizacji i rozwoju sprzedaży
+1611;2142.1.8;inżynier transportu kolejowego;242221;Specjalista do spraw organizacji i rozwoju transportu
+1612;2422.1;specjalista ds. administracyjnych w administracji publicznej;242225;Specjalista do spraw zamówień publicznych
+1613;2263.1;koordynator ds. zarządzania kryzysowego;242227;Specjalista zarządzania kryzysowego
+1614;2431.5;specjalista ds. rozwoju biznesu;242201;Animator gospodarczy do spraw przedsiębiorczości
+1615;2631.1.3;doradca do spraw rozwoju gospodarczego;242202;Animator gospodarczy do spraw rozwoju regionalnego
+1616;2423.7;specjalista ds. rekrutacji pracowników;242302;Doradca EURES
+1617;2423.1;doradca zawodowy;242303;Doradca personalny
+1618;2635.3.11;pracownik do spraw wspierania zatrudnienia;242313;Specjalista do spraw czasowego zatrudniania pracowników
+1619;2423.3;specjalista ds. kadr;242308;Specjalista do spraw kultury firmy
+1620;2423.5;analityk pracy;242310;Specjalista do spraw wynagrodzeń
+1621;2423.7;specjalista ds. rekrutacji pracowników;242311;Specjalista do spraw zarządzania talentami
+1622;2423.7;specjalista ds. rekrutacji pracowników;242305;Konsultant do spraw kariery
+1623;2424.3;menedżer szkoleń;242401;Broker edukacyjny
+1624;2424.2;trener wewnętrzny;242402;Specjalista do spraw rozwoju zawodowego
+1625;2431.5;specjalista ds. rozwoju biznesu;243105;Specjalista analizy i rozwoju rynku
+1626;2431.11;specjalista ds. badań rynku;243106;Specjalista do spraw marketingu i handlu
+1627;2431.10.2;kierownik ds. usług elektronicznych;243108;Specjalista do spraw mediów interaktywnych
+1628;2431.10;specjalista ds. marketingu;243101;Analityk trendów rynkowych (cool hunter)
+1629;2431.16;asystent ds. promocji;243103;Menedżer produktu (product manager)
+1630;2432.9;specjalista ds. public relations;243201;Specjalista etyki biznesu
+1631;1349.21;kierownik ds. serwisu;243304;Specjalista do spraw kluczowych klientów (key account manager)
+1632;2433.1;specjalista ds. obsługi posprzedażowej;243305;Specjalista do spraw sprzedaży
+1633;2152.1.5;inżynier sprzętu medycznego;243306;Specjalista zaopatrzenia medycznego
+1634;3315.6;rzeczoznawca;244102;Rzeczoznawca majątkowy
+1635;3334.1;administrator nieruchomości;244103;Zarządca nieruchomości
+1636;3114.1.5;technik aparatury medycznej;251901;Informatyk medyczny
+1637;2511.15;konsultant ds. integracji systemów technologii informacyjno-telekomunikacyjnych;251905;Specjalista systemów rozpoznawania mowy
+1638;1330.1;inspektor ds. danych;252102;Analityk baz danych
+1639;2523.1;planista przepustowości technologii informacyjno-telekomunikacyjnych;252302;Inżynier systemów i sieci komputerowych
+1640;2523.1;planista przepustowości technologii informacyjno-telekomunikacyjnych;252301;Analityk sieci komputerowych
+1641;1439.5;kierownik centrum informacji turystycznej;262204;Broker informacji (researcher)
+1642;2622.2;bibliotekarz;262206;Specjalista informacji naukowej, technicznej i ekonomicznej
+1643;2622.2;bibliotekarz;262208;Specjalista zarządzania dokumentacją
+1644;2622.2;bibliotekarz;262207;Specjalista zarządzania informacją
+1645;2622.2;bibliotekarz;262201;Analityk informacji i raportów medialnych
+1646;2431.10.4;specjalista ds. marketingu internetowego;262202;Analityk ruchu na stronach internetowych
+1647;2631.1.2;doradca ekonomiczny;263101;Ekonometryk
+1648;2632.3;badacz nauk o zachowaniu;263202;Etnograf
+1649;2632.6;socjolog;263203;Kulturoznawca
+1650;2636.4;religioznawca;263306;Teolog
+1651;2310.1.20;wykładowca akademicki w dziedzinie historii;263303;Historyk sztuki
+1652;2635.3.24;pracownik do spraw wsparcia osób z uzależnieniami;263407;Specjalista do spraw uzależnień od mediów cyfrowych
+1653;2431.13;specjalista ds. marketingu sieciowego;263409;Specjalista marketingu społecznego
+1654;2310.1.35;wykładowca akademicki w dziedzinie psychologii;263402;Psycholog biznesu
+1655;2310.1.35;wykładowca akademicki w dziedzinie psychologii;263404;Psycholog organizacji
+1656;2310.1.35;wykładowca akademicki w dziedzinie psychologii;263405;Psycholog sportowy
+1657;2635.1.4;doradca małżeństw i par;263509;Specjalista do spraw adopcji
+1658;2635.3.5;pracownik socjalny do spraw wspierania lokalnych społeczności;263510;Specjalista komunikacji społecznej
+1659;2635.1;pracownik socjalny - wsparcie psychologiczne;263503;Specjalista poradnictwa psychospołecznego i rodzinnego
+1660;2635.1;pracownik socjalny - wsparcie psychologiczne;263505;Specjalista resocjalizacji
+1661;2359.10;kurator penitencjarny;263506;Wychowawca w jednostkach penitencjarnych
+1662;2635.3.2;pracownik socjalny do spraw wsparcia dzieci;263508;Koordynator rodzinnej pieczy zastępczej
+1663;2636.3;misjonarz;263605;Duchowny wyznania ewangelickiego
+1664;2636.3;misjonarz;263603;Duchowny wyznania prawosławnego
+1665;2636.3;misjonarz;263604;Duchowny wyznania rzymskokatolickiego
+1666;2636.4;religioznawca;263601;Duchowny religii mojżeszowej
+1667;2636.4;religioznawca;263602;Duchowny religii muzułmańskiej
+1668;2641.3;literaturoznawca;264101;Edytor materiałów źródłowych
+1669;2641.4;pisarz / pisarka;264103;Poeta
+1670;2654.3;producent radiowy;264204;Redaktor programowy
+1671;2642.1.17;vloger / vlogerka;264207;Redaktor serwisu internetowego
+1672;2642.1.10;dziennikarz-dokumentalista;264205;Reporter radiowy / telewizyjny / prasowy
+1673;2642.1.9;dziennikarz kulturalny;264203;Krytyk artystyczny
+1674;1349.15;dyrektor agencji tłumaczeń ustnych;264304;Tłumacz
+1675;2353.1;lektor w szkole języków obcych/lektorka w szkole języków obcych;264302;Filolog języka nowożytnego
+1676;3431.1;fotograf;265101;Artysta fotografik
+1677;2651.6;rysownik;265102;Artysta grafik
+1678;2651.2;konserwator dzieł sztuki;265107;Konserwator zabytków architektury
+1679;2652.2;reżyser muzyczny;265205;Reżyser dźwięku
+1680;2652.3;muzyk;265206;Muzykolog
+1681;2653.1;choreograf;265302;Tancerz baletowy
+1682;2654.2;producent;265406;Realizator programu telewizyjnego / radiowego
+1683;2166.4.6;reżyser;265410;Kierownik produkcji filmowej / telewizyjnej / radiowej
+1684;2166.4.6;reżyser;265403;Producent filmowy
+1685;2166.4.6;reżyser;265404;Producent teatralny
+1686;2166.4.6;reżyser;265405;Producent telewizyjny
+1687;2654.1;kierownik postprodukcji;265409;Reżyser telewizyjny / radiowy
+1688;2655.1.1;aktor głosowy / aktorka głosowa;265502;Aktor lalkarz
+1689;2659.2;artysta performer / artystka performerka;265503;Mim
+1690;2656.2;prezenter wiadomości / prezenterka wiadomości;265606;Spiker radiowy
+1691;2656.1;audiodeskryptor;265603;Lektor dialogów filmowych i radiowych
+1692;2642.1.16;dziennikarz sportowy;265601;Komentator sportowy
+1693;3339.5;organizator koncertów;265602;Konferansjer
+1694;2659.1;animator kultury;265901;Twórca ludowy
+1695;1111.3;burmistrz;111301;Wyższy urzędnik samorządowy
+1696;2432.7;pracownik partii politycznej;111402;Zawodowy działacz organizacji politycznej
+1697;1120.3;dyrektor generalny;112019;Syndyk
+1698;1120.4;dyrektor operacyjny;121301;Dyrektor departamentu
+1699;1219.4;kierownik działu;121303;Naczelnik / kierownik wydziału
+1700;1221.3.2.1;kierownik ds. sprzedaży;122104;Kierownik do spraw marketingu internetowego
+1701;1221.3.3;kierownik ds. promocji;122105;Kierownik do spraw marketingu sieciowego (wielopoziomowego)
+1702;2431.1;autor tekstów i sloganów reklamowych;122201;Kierownik agencji reklamowej
+1703;6130.2;rolnik produkcji roślinnej i zwierzęcej;131105;Kierownik produkcji w  przedsiębiorstwie hodowlanym
+1704;2132.5;doradca ds. gospodarki leśnej;131102;Kierownik przedsiębiorstwa usługowego związanego z leśnictwem
+1705;2146.6;inżynier ds. rozwoju kopalni;132201;Kierownik działu ruchu zakładu górniczego lub zakładu
+1706;1322.1.1;kierownik ds. produkcji w kopalni;132203;Kierownik małego przedsiębiorstwa w przemyśle wydobywczym
+1707;1322.1.1;kierownik ds. produkcji w kopalni;132204;Kierownik ruchu zakładu górniczego lub zakładu
+1708;1323.1;kierownik budowy;132302;Kierownik małego przedsiębiorstwa budowlanego
+1709;3324.1;pośrednik handlowy;132408;Kierownik punktu skupu
+1710;1330.9;kierownik działu telekomunikacji;133001;Kierownik działu informatyki
+1711;1330.9;kierownik działu telekomunikacji;133002;Kierownik działu w przedsiębiorstwie telekomunikacyjnym
+1712;1330.2;dyrektor ds. informatyzacji;133003;Kierownik przedsiębiorstwa informatycznego
+1713;2523.2;projektant sieci informacyjno-telekomunikacyjnej;133007;Kierownik sieci informatycznych
+1714;1341.2;kierownik placówki wsparcia dziennego;134107;Dyrektor placówki opiekuńczo-wychowawczej
+1715;1341.2;kierownik placówki wsparcia dziennego;134101;Kierownik centrum rozrywki dla dzieci
+1716;1341.1;koordynator opieki nad dziećmi;134104;Kierownik żłobka / klubu dziecięcego
+1717;1344.1;specjalista pracy socjalnej;134402;Kierownik domu pomocy społecznej
+1718;1344.1;specjalista pracy socjalnej;134403;Kierownik działu w instytucjach pomocy społecznej
+1719;1344.1;specjalista pracy socjalnej;134404;Kierownik ośrodka pomocy rodzinie
+1720;1345.1.7;kierownik w szkole średniej;134503;Kierownik warsztatów szkolnych
+1721;1346.3;kierownik unii kredytowej;134605;Kierownik placówki bankowej
+1722;1349.10;dyrektor zakładu karnego;134901;Dyrektor aresztu śledczego / zakładu karnego
+1723;1349.21.1;kierownik działu prawnego;134905;Kierownik kancelarii prawnej
+1724;2431.9;menedżer ds. przychodów z hotelarstwa;141101;Kierownik działu w hotelu
+1725;5414.1.7;kierownik ochrony placówki hotelarskiej;141102;Kierownik hostelu / motelu
+1726;4229.1;konsjerż hotelowy;141104;Kierownik pensjonatu
+1727;5131.1;gospodarz restauracji / gospodyni restauracji;141203;Kierownik do spraw kateringu
+1728;2422.14;specjalista ds. polityki handlowej;142002;Kierownik działu w handlu hurtowym
+1729;1431.1.1;kierownik domu kultury;143101;Kierownik agencji do spraw usług sportowych / turystycznych / kulturalnych
+1730;1431.2;kierownik ośrodków rekreacji i rozrywki;143904;Kierownik centrum konferencyjnego
+1731;0210.4;specjalista w zakresie działań wojennych;021001;Podoficer sił zbrojnych
+1732;0210.4;specjalista w zakresie działań wojennych;011001;Oficer sił zbrojnych
+1733;0310.4;specjalista przechwytywania transmisji komunikacyjnych;031001;Żołnierz szeregowy
+1734;9112.3;czyściciel mebli;911201;Łazienkowa
+1735;9129.1;czyściciel dywanów;912904;Operator maszyn czyszczących
+1736;9211.1;zbieracz owoców i warzyw;921101;Pomocniczy robotnik polowy
+1737;9212.1;łapacz drobiu;921201;Pomocniczy robotnik w hodowli zwierząt
+1738;9213.1;pracownik produkcji roślinnej;921301;Pomocniczy robotnik przy uprawie roślin i hodowli zwierząt
+1739;8342.10;operator koparki na polach górniczych;811111;Wydobywca kruszywa i gliny
+1740;8111.2;wiertacz;811101;Górnik eksploatacji podziemnej
+1741;8111.2;wiertacz;811102;Górnik odkrywkowej eksploatacji złóż
+1742;8111.4;operator ciężkiego sprzętu górniczego;811107;Operator maszyn i urządzeń do pozyskiwania torfu
+1743;8112.1;operator kruszarki do surowców mineralnych;811202;Operator maszyn i urządzeń do przeróbki mechanicznej rud
+1744;8112.1;operator kruszarki do surowców mineralnych;811203;Operator maszyn i urządzeń do przeróbki mechanicznej węgla
+1745;8112.1;operator kruszarki do surowców mineralnych;811204;Operator maszyn i urządzeń do rozdrabniania i sortowania surowców mineralnych
+1746;8121.1;operator maszyn odlewniczych;812106;Operator maszyn i urządzeń metalurgicznych
+1747;8121.3;operator wyżarzarki;812109;Operator pieców do obróbki cieplnej
+1748;8121.5;operator walcarki;812114;Operator urządzeń walcowni
+1749;8131.14;operator separatora grawitacyjnego nitrogliceryny;813134;Operator urządzeń przemysłu chemicznego
+1750;8112.1;operator kruszarki do surowców mineralnych;813135;Operator urządzeń rozdrabniających
+1751;8142.4;laminator włóknem szklanym;814209;Operator maszyn i urządzeń do przetwórstwa tworzyw sztucznych
+1752;8142.4;laminator włóknem szklanym;814206;Operator urządzeń do formowania wyrobów z tworzyw sztucznych
+1753;8143.6;operator krajarki do papieru;814307;Operator maszyn krojących i wykrawających do papieru
+1754;8153.1.5;operator maszyn do produkcji odzieży ochronnej;815301;Szwaczka maszynowa
+1755;8160.26;pracownik obsługi młyna gorzelniczego;816014;Operator urządzeń do produkcji spirytusu
+1756;8160.30;pracownik ds. puryfikacji tłuszczu;816015;Operator urządzeń do produkcji tłuszczów roślinnych
+1757;8160.26;pracownik obsługi młyna gorzelniczego;816019;Operator urządzeń do produkcji wyrobów spirytusowych
+1758;8160.1;operator procesów produkcji pasz;816021;Operator urządzeń do przerobu ziarna zbóż
+1759;8160.47;operator urządzeń do przetwórstwa mięsa;816028;Operator urządzeń do przetwórstwa mięsa
+1760;8160.50;operator procesu konwersji skrobi;816031;Operator urządzeń do przetwórstwa ziemniaczanego
+1761;8171.2;operator warnika;817114;Operator urządzeń warzelni
+1762;8172.5;tartacznik;817209;Sterowniczy linii sztaplowania i pakietowania tarcicy
+1763;8172.5.4;operator łuszczarki do forniru;817205;Operator skrawarek drewna
+1764;8181.6;operator maszyn do formowania włókna szklanego;818105;Operator urządzeń do formowania i przetwórstwa włókna szklanego
+1765;8181.5;operator ceglarki;818108;Operator urządzeń do formowania wyrobów sylikatowych
+1766;8181.1;operator prasy ślimakowej do gliny;818115;Operator urządzeń przemysłu ceramicznego
+1767;8181.9;maszynowy szlifierz-polerowacz szkła;818116;Operator urządzeń przemysłu szklarskiego
+1768;8181.1;operator prasy ślimakowej do gliny;818117;Prasowacz ceramiki elektronicznej i elektrotechnicznej
+1769;8211.6;monter taboru szynowego;821109;Monter pojazdów i urządzeń transportowych
+1770;7533.4;wytwórca wyrobów tekstylnych;821904;Monter wyrobów tekstylnych, z tektury i pokrewnych materiałów
+1771;8312.4;dyżurny ruchu;831212;Dyspozytor ruchu kolejowego
+1772;8312.4;dyżurny ruchu;831203;Dyżurny ruchu i stacji metra
+1773;8312.5;przygotowujący pociąg;831209;Rewident taboru
+1774;8312.3;manewrowy;831207;Nastawniczy
+1775;8322.7;taksówkarz;832203;Kierowca samochodu osobowego
+1776;8322.7;taksówkarz;832204;Przewoźnik osób
+1777;8342.4;operator równiarki;834204;Operator sprzętu ciężkiego
+1778;7111.1;robotnik budowlany;711102;Monter konstrukcji budowlanych
+1779;9312.1.2;monter torów kolejowych;711603;Monter nawierzchni kolejowej
+1780;8113.9;wiertacz studni;712615;Studniarz
+1781;7121.1;dekarz;712904;Technolog robót wykończeniowych w budownictwie
+1782;7131.1;malarz;713101;Malarz-tapeciarz
+1783;7221.4;operator prasy mechanicznej;722103;Operator pras kuźniczych
+1784;7223.1;operator wiertarki;722316;Wiertacz w metalu
+1785;7223.25;operator kuźniarki;722305;Operator maszyn i urządzeń do produkcji łożysk tocznych
+1786;7313.2;szlifierz kamieni szlachetnych;731303;Szlifierz kamieni szlachetnych i ozdobnych
+1787;7313.2;szlifierz kamieni szlachetnych;731304;Szlifierz-polerowacz wyrobów artystycznych
+1788;7314.2;garncarz;731404;Formowacz wyrobów ceramicznych
+1789;8122.7;operator urządzeń do nakładania powłok galwanicznych;731602;Galwanizer
+1790;7317.5;wykonawca mebli wyplatanych;731706;Sitarz
+1791;7318.6;tkacz;731809;Tkacz
+1792;7318.4;dziewiarz;731802;Dziewiarz
+1793;7318.6;tkacz;731808;Rękodzielnik wyrobów włókienniczych
+1794;7318.3;sieciarz;731804;Plecionkarz
+1795;7318.5;rękodzielnik wyrobów skórzanych;731902;Wytwórca galanterii
+1796;7321.1.1;montażysta ilustracji;732109;Operator fotoskładu
+1797;7322.3;operator maszyny rotograwiurowej;732207;Maszynista maszyn wklęsłodrukowych
+1798;7323.1;operator maszyn introligatorskich;732303;Introligator poligraficzny
+1799;7522.1;stolarz wykonawca imitacji mebli zabytkowych;752205;Stolarz
+1800;7523.3;operator maszyn do produkcji mebli drewnianych;752307;Strugacz drewna
+1801;7523.5;polerowacz wyrobów z drewna;752302;Operator maszyn do produkcji wyrobów drewnianych
+1802;7523.3;operator maszyn do produkcji mebli drewnianych;752304;Operator urządzeń do polerowania drewna
+1803;7531.4;kapelusznik-czapnik;753104;Kożusznik
+1804;7531.4;kapelusznik-czapnik;753106;Kuśnierz
+1805;7541.1;nurek techniczny;754101;Kierownik prac podwodnych
+1806;7542.1;strzałowy;754203;Instruktor strzałowy
+1807;9213.1;pracownik produkcji roślinnej;611104;Rolnik upraw polowych
+1808;6111.1;koordynator zespołu ds. produkcji roślinnej;611101;Kierownik gospodarstwa upraw polowych
+1809;6113.4;pracownik gospodarstwa ogrodniczego;611302;Kierownik gospodarstwa ogrodniczego
+1810;6113.4;pracownik gospodarstwa ogrodniczego;611307;Ogrodnik – uprawa grzybów jadalnych
+1811;6113.4;pracownik gospodarstwa ogrodniczego;611309;Ogrodnik – uprawa warzyw polowych
+1812;6113.4;pracownik gospodarstwa ogrodniczego;611310;Ogrodnik – uprawy pod osłonami
+1813;6113.4;pracownik gospodarstwa ogrodniczego;611304;Ogrodnik producent nasion
+1814;6113.4;pracownik gospodarstwa ogrodniczego;611305;Ogrodnik szkółkarz
+1815;6112.3;rolnik chmielarz;611403;Rolnik upraw mieszanych
+1816;9212.3;stajenny;612110;Masztalerz
+1817;6122.2;sekser drobiu;612203;Pracownik wylęgarni drobiu
+1818;9213.1;pracownik produkcji roślinnej;631001;Rolnik produkcji roślinnej pracujący na własne potrzeby
+1819;5112.3.1;kontroler biletów;511205;Konwojent (konduktor) wagonów specjalnych
+1820;5151.2;przełożony serwisu sprzątającego / przełożona serwisu sprzątającego;515101;Inspektor hotelowy
+1821;5223.4;sprzedawca/sprzedawczyni;522305;Technik handlowiec
+1822;5223.7.6;sprzedawca księgarz;522306;Technik księgarstwa
+1823;5223.7.21;sprzedawca artykułów chemiczno-metalowych;522303;Sprzedawca w branży przemysłowej
+1824;5223.7.16;sprzedawca ryb i owoców morza;522304;Sprzedawca w branży spożywczej
+1825;5419.2;strażnik miejski;541312;Strażnik gminny / miejski
+1826;4131.1;maszynistka;413102;Operator aplikacji komputerowych
+1827;4213.1;pracownik lombardu;421301;Pracownik instytucji pożyczkowej
+1828;4321.1.3;operator przyjęć surowców;432104;Pracownik punktu skupu
+1829;4415.1;archiwista zakładowy;441403;Technik archiwista
+1830;4415.1;archiwista zakładowy;441501;Pracownik do spraw osobowych
+1831;7412.2;elektromechanik pojazdów samochodowych;311305;Technik elektryk samochodowy
+1832;3115.1.7;technik mechanik okrętowy;311505;Technik mechanik budowy środków transportu
+1833;3115.1.4;technik pojazdów samochodowych;311506;Technik mechanik eksploatacji środków transportu
+1834;3115.1.16;technik mechanik silników kolejowych;311508;Technik mechanik maszyn i urządzeń
+1835;7223.4.4;operator maszyn do obróbki skrawaniem;311509;Technik mechanik obróbki skrawaniem
+1836;7311.4;monter urządzeń precyzyjnych;311510;Technik mechanik precyzyjny
+1837;3115.1.6;kierownik prac konserwacyjnych i remontowych;311514;Technik utrzymania ruchu
+1838;3115.1.11;specjalista ds. kontroli jakości silników pojazdów mechanicznych;311503;Kontroler stanu technicznego pojazdów
+1839;8171.8;technik ds. produkcji masy papierniczej;311601;Technik papiernictwa
+1840;8122.10;operator maszyn do nakładania powłok antykorozyjnych;311606;Technik zabezpieczeń przeciwkorozyjnych
+1841;3521.1.1;technik realizacji dźwięku;311908;Technik akustyk
+1842;7127.1;specjalista obsługi systemów grzewczych, wentylacyjnych, klimatyzacji i chłodzenia;311929;Technik chłodnictwa i klimatyzacji
+1843;4322.1;planista produkcyjny;311917;Technik organizacji produkcji
+1844;7321.1.3;pracownik poligraficzny – wykonywanie wydruków próbnych;311918;Technik poligraf
+1845;7322.7;technik druku na tkaninach;311935;Technik procesów drukowania
+1846;7323.2;operator zszywarki introligatorskiej;311936;Technik procesów introligatorskich
+1847;8153.1.2;pracownik szyjący pierwowzory odzieży;311941;Technik przemysłu mody
+1848;8181.11;operator urządzeń do formowania wyrobów ceramicznych;311921;Technik technologii ceramicznej
+1849;8219.11;monter wyrobów z drewna;311922;Technik technologii drewna
+1850;8155.1;operator maszyn i urządzeń do produkcji wyrobów skórzanych;311926;Technik technologii wyrobów skórzanych
+1851;4323.4;dyspozytor transportu samochodowego;311927;Technik transportu drogowego
+1852;4323.13;kontroler ruchu kolejowego;311928;Technik transportu kolejowego
+1853;3112.7;doradca ds. efektywności energetycznej;311930;Technik urządzeń i systemów energetyki odnawialnej
+1854;8159.7;technik ds. nietkanych materiałów włókienniczych;311931;Technik włókienniczych wyrobów dekoracyjnych
+1855;3119.16;kontroler procesów w przemyśle włókienniczym;311932;Technik włókiennik
+1856;7543.8;klasyfikator wyrobów przemysłowych;311937;Kontroler jakości wyrobów przemysłowych
+1857;7312.5;technik instrumentów muzycznych;311903;Korektor i stroiciel instrumentów muzycznych
+1858;3121.1.1;sztygar;312101;Osoba dozoru ruchu w górnictwie odkrywkowym
+1859;3121.1.1;sztygar;312102;Osoba dozoru ruchu w górnictwie otworowym
+1860;3121.1.1;sztygar;312103;Osoba dozoru ruchu w górnictwie podziemnym
+1861;3122.4.16;mistrz produkcji w drukarni;312210;Mistrz produkcji w poligrafii
+1862;3122.4.4;mistrz produkcji urządzeń elektrycznych;312203;Mistrz produkcji w przemyśle elektromaszynowym
+1863;3122.3.5;mistrz montażu w przemyśle samochodowym;312207;Mistrz produkcji w przemyśle samochodowym
+1864;8160.34;operator produkcji żywności;312208;Mistrz produkcji w przemyśle spożywczym
+1865;3131.1.9;maszynista turbozespołu parowego;313105;Maszynista agregatów prądotwórczych
+1866;3132.3;operator urządzeń do utylizacji odpadów stałych;313201;Operator aparatury utylizacji odpadów toksycznych
+1867;8131.2.1;operator urządzeń do produkcji nawozów sztucznych;313301;Kontroler (sterowniczy) procesów w produkcji nawozów sztucznych
+1868;8131.5;operator urządzeń destylacyjnych;313304;Kontroler (sterowniczy) urządzeń destylacyjnych i rektyfikacyjnych
+1869;8142.10;operator urządzeń do obróbki cieplnej tworzyw sztucznych;313305;Kontroler (sterowniczy) urządzeń do obróbki cieplnej chemikaliów
+1870;8121.3;operator wyżarzarki;313503;Kontroler (sterowniczy) urządzeń obróbki cieplnej metali
+1871;6123.1;pszczelarz;314206;Technik pszczelarz
+1872;6221.2;technik akwakultury ds. odłowów;314208;Technik rybactwa śródlądowego
+1873;3122.1;technik przetwórstwa nabiału;314402;Technik przetwórstwa mleczarskiego
+1874;8160.2;operator maszyn piekarniczych;314407;Technik technologii żywności – produkcja piekarsko-ciastkarska
+1875;8131.7;operator urządzeń do fermentacji;314409;Technik technologii żywności – przetwórstwo fermentacyjne
+1876;8160.47;operator urządzeń do przetwórstwa mięsa;314411;Technik technologii żywności – przetwórstwo mięsne
+1877;7514.1;konserwator owoców i warzyw;314413;Technik technologii żywności – przetwórstwo owocowo-warzywne
+1878;8160.32;operator produkcji rybnej;314414;Technik technologii żywności – przetwórstwo rybne
+1879;7514.3;pracownik tłoczenia oleju;314415;Technik technologii żywności – przetwórstwo surowców olejarskich
+1880;8160.1;operator procesów produkcji pasz;314416;Technik technologii żywności – przetwórstwo zbożowe
+1881;7233.9;mechanik okrętowy;315105;Technik mechanik okrętowy
+1882;7233.9;mechanik okrętowy;315101;Mechanik statkowy żeglugi śródlądowej
+1883;3115.1.8;inspektor bezpieczeństwa żeglugi morskiej;315203;Inspektor bezpieczeństwa żeglugi
+1884;8350.3;marynarz motorzysta żeglugi śródlądowej;315216;Technik żeglugi śródlądowej
+1885;3152.3;pilot morski;315204;Kapitan portu morskiego
+1886;3214.1;technik audiolog;321401;Protetyk słuchu
+1887;3344.1;asystent chiropraktyka;323004;Chiropraktyk
+1888;3255.4;asystent / asystentka fizjoterapii;325401;Technik fizjoterapii
+1889;3323.1;agent ds. zakupów - kostiumy;332301;Agent do spraw zakupów
+1890;3331.2;spedytor;333107;Technik logistyk
+1891;3332.1;asystent organizatora imprez zbiorowych;333204;Organizator usług konferencyjnych
+1892;3334.3;pośrednik w obrocie nieruchomościami;333404;Doradca do spraw rynku nieruchomości
+1893;3339.1;sprzedawca reklam;333906;Technik organizacji reklamy
+1894;5413.2;strażnik więzienny;335601;Funkcjonariusz służby ochrony
+1895;2422.7;funkcjonariusz wywiadu;335701;Funkcjonariusz służb specjalnych
+1896;3359.5.1;inspektor frachtu morskiego;335905;Inspektor kontroli handlu i usług
+1897;3432.1.1;dekorator wnętrz;343203;Florysta
+1898;4411.1;pomocnik biblioteczny;343304;Doradca do spraw zasobów bibliotecznych
+1899;3423.1;instruktor kulturalno-oświatowy;343901;Animator kultury
+1900;3435.22;kaskader;343906;Kaskader filmowy – koordynator
+1901;3512.4;technik technologii informacyjno-telekomunikacyjnych;351103;Technik teleinformatyk
+1902;3512.1;pracownik działu pomocy technicznej w zakresie technologii informacyjno-telekomunikacyjnych;351203;Technik informatyk
+1903;3111.1;laborant chemiczny;211303;Agrochemik
+1904;2133.7;sozolog;213301;Audytor środowiskowy
+1905;4110.1.1;asystent inżyniera;214101;Inżynier normowania pracy
+1906;2149.8;inżynier bezpieczeństwa i higieny pracy;214108;Specjalista do spraw audytu zabezpieczenia
+1907;3119.15;technik kontroli jakości;214109;Specjalista kontroli jakości
+1908;3119.15;technik kontroli jakości;214107;Normalizator
+1909;2141.1;technolog odzieży;214111;Główny technolog
+1910;3112.1.1;inspektor budowy mostów;214208;Inżynier budowy mostów
+1911;2145.1.5;inżynier gazownictwa - dystrybucja gazu;214301;Inżynier inżynierii środowiska – gazowe urządzenia, instalacje i sieci energetyczne
+1912;2142.1.10;inżynier inżynierii środowiska - systemy kanalizacyjne;214306;Inżynier inżynierii środowiska – systemy wodociągowe i kanalizacyjne
+1913;2144.1.17;inżynier mechanik - mechanika precyzyjna;214402;Inżynier mechanik – maszyny i urządzenia do obróbki metali
+1914;2144.1.19;inżynier ds. maszyn wirujących;214403;Inżynier mechanik – maszyny i urządzenia energetyczne
+1915;2144.1.17;inżynier mechanik - mechanika precyzyjna;214407;Inżynier mechanik – technologia mechaniczna
+1916;2141.3.2.2;inżynier produkcji żywności;214503;Inżynier technologii żywności
+1917;7421.2;technik awionik;214904;Inżynier awionik
+1918;3122.4.16;mistrz produkcji w drukarni;214909;Inżynier poligrafii
+1919;3119.13;technik inżynierii procesu;214929;Inżynier procesu malowania
+1920;1349.1;specjalista ds. bezpieczeństwa w części lotniczej lotniska;214911;Inżynier systemów zabezpieczeń technicznych osób i mienia
+1921;3123.1.4;brygadzista betoniarz;214912;Inżynier technologii betonów
+1922;7223.4;operator obrabiarki sterowanej numerycznie;214931;Technolog – programista obrabiarek
+1923;7413.1.2;monter napowietrznych linii elektroenergetycznych;215102;Inżynier elektroenergetyk kolejowych sieci i podstacji trakcyjnych
+1924;3112.9;technik geodeta;216503;Inżynier geodeta – geodezja inżynieryjno-przemysłowa
+1925;3112.9;technik geodeta;216504;Inżynier geodeta – geodezja urządzania terenów rolnych i leśnych
+1926;5321.1.1;asystent pielęgniarski / asystentka pielęgniarska;222101;Pielęgniarka
+1927;3258.2;ratownik medyczny;224001;Specjalista do spraw ratownictwa medycznego
+1928;3240.2.3;technik dentystyczny dla koni;225203;Lekarz weterynarii – specjalista chorób koni
+1929;3212.1;technik analityki medycznej;227101;Diagnosta laboratoryjny
+1930;3141.2;technik analityki laboratoryjnej;227201;Diagnosta laboratoryjny – specjalista cytomorfologii medycznej
+1931;3141.2;technik analityki laboratoryjnej;227202;Diagnosta laboratoryjny – specjalista epidemiologii
+1932;3141.2;technik analityki laboratoryjnej;227203;Diagnosta laboratoryjny – specjalista laboratoryjnej diagnostyki medycznej
+1933;3141.2;technik analityki laboratoryjnej;227205;Diagnosta laboratoryjny – specjalista laboratoryjnej genetyki medycznej
+1934;3141.2;technik analityki laboratoryjnej;227204;Diagnosta laboratoryjny – specjalista laboratoryjnej genetyki sądowej
+1935;3141.2;technik analityki laboratoryjnej;227206;Diagnosta laboratoryjny – specjalista laboratoryjnej hematologii medycznej
+1936;3141.2;technik analityki laboratoryjnej;227207;Diagnosta laboratoryjny – specjalista laboratoryjnej immunologii medycznej
+1937;3141.2;technik analityki laboratoryjnej;227208;Diagnosta laboratoryjny – specjalista laboratoryjnej parazytologii medycznej
+1938;3141.2;technik analityki laboratoryjnej;227209;Diagnosta laboratoryjny – specjalista laboratoryjnej toksykologii medycznej
+1939;3141.2;technik analityki laboratoryjnej;227214;Diagnosta laboratoryjny – specjalista laboratoryjnej toksykologii sądowej
+1940;3141.2;technik analityki laboratoryjnej;227210;Diagnosta laboratoryjny – specjalista laboratoryjnej transfuzjologii medycznej
+1941;3141.2;technik analityki laboratoryjnej;227211;Diagnosta laboratoryjny – specjalista mikrobiologii medycznej
+1942;3141.2;technik analityki laboratoryjnej;227212;Diagnosta laboratoryjny – specjalista zdrowia publicznego
+1943;3141.2;technik analityki laboratoryjnej;227213;Diagnosta laboratoryjny – specjalista zdrowia środowiskowego
+1944;2262.1;farmaceuta;228201;Farmaceuta – specjalista analityki farmaceutycznej
+1945;2262.1;farmaceuta;228202;Farmaceuta – specjalista bromatologii
+1946;2262.1;farmaceuta;228203;Farmaceuta – specjalista farmacji aptecznej
+1947;2262.1;farmaceuta;228204;Farmaceuta – specjalista farmacji klinicznej
+1948;2262.1;farmaceuta;228207;Farmaceuta – specjalista farmakologii
+1949;2262.1;farmaceuta;228208;Farmaceuta – specjalista leku roślinnego
+1950;2262.1;farmaceuta;228209;Farmaceuta – specjalista mikrobiologii i biotechnologii farmaceutycznej
+1951;2262.1;farmaceuta;228210;Farmaceuta – specjalista toksykologii
+1952;2262.1;farmaceuta;228211;Farmaceuta – specjalista zdrowia publicznego
+1953;2262.1;farmaceuta;228212;Farmaceuta – specjalista zdrowia środowiskowego
+1954;2266.2;logopeda;229404;Surdologopeda
+1955;3214.1;technik audiolog;229401;Audiofonolog
+1956;2266.2;logopeda;229403;Neurologopeda
+1957;3214.2;technik dentystyczny;229914;Specjalista do spraw techniki dentystycznej
+1958;2635.1.2;doradca osób uzależnionych od alkoholu lub narkotyków;229906;Specjalista psychoterapii uzależnień
+1959;2635.1.2;doradca osób uzależnionych od alkoholu lub narkotyków;229907;Specjalista terapii uzależnień
+1960;3259.2;asystent – psycholog kliniczny;229910;Psychotraumatolog
+1961;2310.1.40;wykładowca naukowy w dziedzinie literaturoznawstwa;231006;Nauczyciel akademicki – nauki humanistyczne
+1962;2320.1.1;nauczyciel kształcenia zawodowego w zakresie rolnictwa, leśnictwa i rybołówstwa/nauczycielka kształcenia zawodowego w zakresie rolnictwa, leśnictwa i rybołówstwa;231013;Nauczyciel akademicki – nauki rolnicze
+1963;2320.1.1;nauczyciel kształcenia zawodowego w zakresie rolnictwa, leśnictwa i rybołówstwa/nauczycielka kształcenia zawodowego w zakresie rolnictwa, leśnictwa i rybołówstwa;231010;Nauczyciel akademicki – nauki o kulturze fizycznej
+1964;2354.1;nauczyciel muzyki/nauczycielka muzyki;231019;Nauczyciel akademicki – sztuki muzyczne
+1965;2320.1.9;nauczyciel akademicki wzornictwa i sztuki użytkowej;231020;Nauczyciel akademicki – sztuki plastyczne
+1966;2355.3;nauczyciel technik teatralnych/nauczycielka technik teatralnych;231021;Nauczyciel akademicki – sztuki teatralne
+1967;2320.1.18;nauczyciel kształcenia zawodowego w zakresie laboratoryjnej technologii medycznej/nauczycielka kształcenia zawodowego w zakresie laboratoryjnej technologii medycznej;232004;Nauczyciel przedmiotów zawodowych medycznych
+1968;2320.1.11;nauczyciel kształcenia zawodowego w zakresie elektroniki i automatyki/nauczycielka kształcenia zawodowego w zakresie elektroniki i automatyki;232006;Nauczyciel przedmiotów zawodowych technicznych
+1969;2320.1.15;nauczyciel kształcenia zawodowego w zakresie hotelarstwa/nauczycielka kształcenia zawodowego w zakresie hotelarstwa;232007;Nauczyciel przedmiotów zawodowych turystycznych
+1970;2330.1.10;nauczyciel literatury w szkole ponadpodstawowej/nauczycielka literatury w szkole ponadpodstawowej;233012;Nauczyciel języka polskiego
+1971;2359.7;nauczyciel osób dorosłych/nauczycielka osób dorosłych;235101;Andragog
+1972;2359.6;doradca edukacyjny;235106;Nauczyciel instruktor
+1973;2359.6;doradca edukacyjny;235104;Metodyk technologii informacyjnych i komunikacyjnych
+1974;2352.1.3;nauczyciel wsparcia dzieci w uczeniu się/nauczycielka wsparcia dzieci w uczeniu się;235202;Nauczyciel niedostosowanych społecznie (pedagog resocjalizacji,socjoterapeuta)
+1975;2352.1.3;nauczyciel wsparcia dzieci w uczeniu się/nauczycielka wsparcia dzieci w uczeniu się;235201;Nauczyciel niesłyszących i słabosłyszących (surdopedagog)
+1976;2352.1.3;nauczyciel wsparcia dzieci w uczeniu się/nauczycielka wsparcia dzieci w uczeniu się;235203;Nauczyciel niewidomych i słabowidzących (tyflopedagog)
+1977;2352.1.3;nauczyciel wsparcia dzieci w uczeniu się/nauczycielka wsparcia dzieci w uczeniu się;235204;Nauczyciel przewlekle chorych i niepełnosprawnych ruchowo
+1978;2352.1.3;nauczyciel wsparcia dzieci w uczeniu się/nauczycielka wsparcia dzieci w uczeniu się;235205;Nauczyciel upośledzonych umysłowo (oligofrenopedagog)
+1979;2356.1;instruktor obsługi technologii informacyjno-telekomunikacyjnych;235601;Nauczyciel technologii informatycznych w placówkach pozaszkolnych
+1980;2359.4;projektant systemów nauczania przez internet;235901;Dydaktyk multimedialny
+1981;1345.1.3;koordynator programu oświatowego;235913;Specjalista do spraw zarządzania w oświacie
+1982;4411.1;pomocnik biblioteczny;235904;Nauczyciel bibliotekarz
+1983;2352.1.4;nauczyciel dzieci ze specjalnymi potrzebami edukacyjnymi w warunkach pozaszkolnych/nauczycielka dzieci ze specjalnymi potrzebami edukacyjnymi w warunkach pozaszkolnych;235910;Nauczyciel w placówkach pozaszkolnych
+1984;2635.3.10;pedagog szkolny;235921;Pedagog
+1985;2411.1;księgowy/księgowa;241101;Biegły rewident
+1986;3311.3.5;trader giełdowy;241301;Analityk giełdowy
+1987;2421.3;specjalista ds. inteligentnej analizy danych;242107;Specjalista do spraw konsultingu
+1988;3311.2.5;makler giełdowy;242103;Makler nadzorujący
+1989;3352.1;urzędnik podatkowy;242209;Inspektor kontroli skarbowej
+1990;2411.1.7;audytor finansowy;242204;Audytor/Kontroler
+1991;2133.4;inspektor ochrony środowiska;242215;Kontroler państwowy
+1992;2424.2;trener wewnętrzny;242403;Specjalista do spraw szkoleń
+1993;2431.10.4;specjalista ds. marketingu internetowego;243109;Specjalista sprzedaży internetowej
+1994;2434.3;inżynier przedsprzedaży technologii informacyjno-telekomunikacyjnych;243401;Inżynier sprzedaży technologii i usług teleinformatycznych
+1995;2434.3;inżynier przedsprzedaży technologii informacyjno-telekomunikacyjnych;243402;Specjalista sprzedaży technologii i usług informatycznych
+1996;3334.3;pośrednik w obrocie nieruchomościami;244101;Pośrednik w obrocie nieruchomościami
+1997;2511.15;konsultant ds. integracji systemów technologii informacyjno-telekomunikacyjnych;251102;Konsultant do spraw systemów teleinformatycznych
+1998;2512.1;analityk oprogramowania;251201;Specjalista do spraw doskonalenia i rozwoju aplikacji
+1999;2514.2.1;twórca oprogramowania systemów wbudowanych;251202;Specjalista do spraw rozwoju oprogramowania systemów informatycznych
+2000;2513.2;specjalista ds. optymalizacji aparatu wyszukiwania;251303;Specjalista do spraw rozwoju stron internetowych
+2001;2513.2;specjalista ds. optymalizacji aparatu wyszukiwania;251301;Architekt stron internetowych
+2002;2513.3;projektant interfejsu użytkownika;251302;Projektant aplikacji multimedialnych, animacji i gier komputerowych
+2003;2514.3;programista przemysłowych aplikacji mobilnych;251401;Programista aplikacji
+2004;2514.3;programista przemysłowych aplikacji mobilnych;251402;Programista aplikacji mobilnych
+2005;2131.3;bioinformatyk;251902;Specjalista zastosowań informatyki
+2006;2522.1.2;specjalista ds. konfiguracji systemów;252201;Administrator systemów komputerowych
+2007;2522.1;administrator systemów informacyjno-telekomunikacyjnych;252202;Administrator zintegrowanych systemów zarządzania
+2008;2529.5;administrator bezpieczeństwa systemów informacyjno-telekomunikacyjnych;252901;Specjalista bezpieczeństwa oprogramowania
+2009;2529.5;administrator bezpieczeństwa systemów informacyjno-telekomunikacyjnych;252902;Specjalista bezpieczeństwa systemów teleinformatycznych
+2010;2529.5;administrator bezpieczeństwa systemów informacyjno-telekomunikacyjnych;252903;Specjalista do spraw systemów zarządzania bezpieczeństwem informacji
+2011;3339.4;doradca ds. ochrony własności intelektualnej;261910;Specjalista do spraw ochrony własności intelektualnej
+2012;3411.7;asystent prawny;261901;Asystent prawny
+2013;2619.6;redaktor legislacyjny;261906;Legislator
+2014;3411.6;komornik;261904;Komornik sądowy
+2015;2622.2;bibliotekarz;262203;Bibliotekoznawca
+2016;2513.4;administrator treści stron internetowych;262205;Menedżer zawartości serwisów internetowych
+2017;2310.1.9;wykładowca akademicki języków klasycznych;264301;Filolog klasyczny
+2018;2310.1.26;wykładowca akademicki języków nowożytnych;264303;Filolog polski
+2019;3435.1;asystent reżysera teatralnego;265408;Reżyser teatralny
+2020;2656.2;prezenter wiadomości / prezenterka wiadomości;265605;Prezenter telewizyjny
+2021;1111.2;minister;111102;Polityk (minister, sekretarz / podsekretarz stanu)
+2022;1111.3;burmistrz;111103;Przedstawiciel władzy samorządowej (marszałek, starosta, radny)
+2023;1120.4;dyrektor operacyjny;112001;Dyrektor do spraw administracyjnych
+2024;1120.4;dyrektor operacyjny;112002;Dyrektor do spraw badawczo-rozwojowych
+2025;1120.4;dyrektor operacyjny;112003;Dyrektor do spraw energetyki
+2026;1120.4;dyrektor operacyjny;112004;Dyrektor do spraw informatyki / informacji
+2027;1120.4;dyrektor operacyjny;112005;Dyrektor do spraw personalnych
+2028;1120.4;dyrektor operacyjny;112020;Dyrektor do spraw wdrożeń i rozwoju technologii
+2029;1120.4;dyrektor operacyjny;112006;Dyrektor finansowy
+2030;1120.4;dyrektor operacyjny;112008;Dyrektor handlowy
+2031;1120.4;dyrektor operacyjny;112009;Dyrektor logistyki
+2032;1120.4;dyrektor operacyjny;112010;Dyrektor marketingu
+2033;1120.4;dyrektor operacyjny;112012;Dyrektor produkcji
+2034;1120.4;dyrektor operacyjny;112013;Dyrektor rozwoju biznesu
+2035;1120.4;dyrektor operacyjny;112014;Dyrektor sprzedaży
+2036;1120.4;dyrektor operacyjny;112015;Dyrektor techniczny
+2037;2423.3;specjalista ds. kadr;121201;Kierownik działu kadr i płac
+2038;1212.1;kierownik działu zarządzania zasobami ludzkimi;121204;Kierownik przedsiębiorstwa świadczącego usługi z zakresu zarządzania zasobami ludzkimi
+2039;4110.1;technik prac biurowych;121901;Kierownik działu administracyjno-gospodarczego
+2040;1219.1;kierownik ds. obsługi biznesu;121902;Kierownik przedsiębiorstwa świadczącego usługi z zakresu obsługi biznesu
+2041;2433.4;inżynier sprzedaży;122106;Regionalny kierownik sprzedaży
+2042;1221.3.2;kierownik ds. marketingu;122103;Kierownik przedsiębiorstwa świadczącego usługi z zakresu marketingu i sprzedaży
+2043;6223.1;rybak rybołówstwa dalekomorskiego;131202;Kierownik przedsiębiorstwa w rybołówstwie
+2044;1219.5.5;kierownik zakładu produkcji drzewnej;132104;Kierownik małego przedsiębiorstwa w przemyśle przetwórczym
+2045;5411.1.3;ratownik górniczy;132202;Kierownik jednostki ratownictwa górniczego
+2046;1324.7;kierownik stacji kolejowej;132407;Zawiadowca stacji
+2047;2141.6;specjalista ds. logistyki;132401;Kierownik działu logistyki
+2048;1324.3.1.5;kierownik działu transportu drogowego;132402;Kierownik działu transportu
+2049;3331.3;koordynator spedycji międzynarodowej;132405;Kierownik przedsiębiorstwa spedycyjnego
+2050;1324.3.3;kierownik ds. transportu intermodalnego;132406;Kierownik przedsiębiorstwa transportowego
+2051;1330.9;kierownik działu telekomunikacji;133004;Kierownik przedsiębiorstwa telekomunikacyjnego
+2052;1330.5;kierownik ds. eksploatacji technologii informacyjno-telekomunikacyjnych;133005;Kierownik rozwoju technologii informatycznych
+2053;1330.4;kierownik ds. dokumentacji technologii informacyjno-telekomunikacyjnych;133006;Kierownik rozwoju technologii telekomunikacyjnych
+2054;1342.1;kierownik ds. informatyki medycznej;134202;Kierownik komórki organizacyjnej podmiotu leczniczego
+2055;5321.1.1;asystent pielęgniarski / asystentka pielęgniarska;134205;Pielęgniarka oddziałowa
+2056;2222.1;położny/położna;134206;Położna oddziałowa
+2057;2412.5;doradca inwestycyjny;134601;Kierownik agencji doradztwa finansowego
+2058;1344.1.2;kierownik ośrodka dla młodzieży;134902;Dyrektor zakładu dla nieletnich
+2059;1431.1.2;kierownik produkcji widowisk;134906;Kierownik agencji filmowej / telewizyjnej
+2060;1219.1.2;kierownik ds. ochrony;134903;Kierownik agencji ochrony mienia i osób
+2061;2411.1.2;kierownik działu audytu;134904;Kierownik firmy audytorskiej
+2062;5412.1;policjant;134914;Kierownik rewiru / posterunku policji
+2063;5419.2;strażnik miejski;134912;Komendant straży gminnej / miejskiej
+2064;1411.2;kierownik działu obsługi pokoi;141103;Kierownik hotelu
+2065;5131.1;gospodarz restauracji / gospodyni restauracji;141201;Kierownik działu w lokalu gastronomicznym
+2066;3322.1;przedstawiciel handlowy;142001;Kierownik działu w handlu detalicznym
+2067;3322.1;przedstawiciel handlowy;142003;Kierownik hurtowni
+2068;1349.4;kierownik artystyczny;143118;Dyrektor filharmonii/opery/operetki/orkiestry
+2069;1349.4;kierownik artystyczny;143116;Dyrektor teatru
+2070;1349.4;kierownik artystyczny;143119;Dyrektor zespołu pieśni i tańca
+2071;1349.4;kierownik artystyczny;143117;Kierownik szkoły tańca
+2072;1349.22;administrator ds. sportu;143110;Kierownik klubu sportowego
+2073;3423.2;instruktor fitness;143109;Kierownik klubu fitness
+2074;3423.2;instruktor fitness;143114;Kierownik siłowni
+2075;2659.2.1;aktor cyrkowy / aktorka cyrkowa;143112;Kierownik parku rozrywki / cyrku
+2076;5164.2.1.2;trener koni/trenerka koni;143115;Kierownik szkółki jeździeckiej
+2077;5165.1;instruktor nauki jazdy;143911;Kierownik / właściciel szkoły jazdy
+2078;1349.21;kierownik ds. serwisu;143909;Kierownik / właściciel zakładu usługowego
+2079;1349.15;dyrektor agencji tłumaczeń ustnych;143902;Kierownik biura tłumaczeń
+2080;1420.5;dyrektor supermarketu;143903;Kierownik centrum handlowego
+2081;4214.2;windykator składek;143906;Kierownik do spraw windykacji
+2082;5151.2;przełożony serwisu sprzątającego / przełożona serwisu sprzątającego;143907;Kierownik firmy sprzątającej
+2083;2250.5;weterynarz specjalista;225201;Lekarz weterynarii – specjalista chirurgii weterynaryjnej
+2084;2250.5;weterynarz specjalista;225204;Lekarz weterynarii – specjalista chorób owadów użytkowych
+2085;2250.5;weterynarz specjalista;225205;Lekarz weterynarii – specjalista chorób przeżuwaczy
+2086;2250.5;weterynarz specjalista;225206;Lekarz weterynarii – specjalista chorób psów i kotów
+2087;2250.5;weterynarz specjalista;225207;Lekarz weterynarii – specjalista chorób ryb
+2088;2250.5;weterynarz specjalista;225208;Lekarz weterynarii – specjalista chorób trzody chlewnej
+2089;2250.5;weterynarz specjalista;225209;Lekarz weterynarii – specjalista chorób zwierząt futerkowych
+2090;2250.5;weterynarz specjalista;225210;Lekarz weterynarii – specjalista chorób zwierząt nieudomowionych
+2091;2250.5;weterynarz specjalista;225211;Lekarz weterynarii – specjalista epizootiologii i administracji weterynaryjnej
+2092;2250.5;weterynarz specjalista;225212;Lekarz weterynarii – specjalista higieny zwierząt rzeźnych i żywności pochodzenia zwierzęcego
+2093;2250.5;weterynarz specjalista;225213;Lekarz weterynarii – specjalista prewencji weterynaryjnej i higieny pasz
+2094;2250.5;weterynarz specjalista;225214;Lekarz weterynarii – specjalista radiologii weterynaryjnej
+2095;2250.5;weterynarz specjalista;225216;Lekarz weterynarii – specjalista użytkowania i patologii zwierząt laboratoryjnych
+2096;2250.5;weterynarz specjalista;225217;Lekarz weterynarii – specjalista weterynaryjnej diagnostyki laboratoryjnej
+2097;9122.1;sprzątacz pojazdów/sprzątaczka pojazdów;912201;Czyściciel pojazdów
+2098;9122.1;sprzątacz pojazdów/sprzątaczka pojazdów;912202;Operator myjni
+2099;9214.1;pomocniczy robotnik w ogrodnictwie;921402;Pomocniczy robotnik szklarniowy
+2100;9215.1;robotnik leśny;921501;Pomocniczy robotnik leśny
+2101;9332.1;prowadzący pojazdy ciągnięte przez zwierzęta;933201;Dorożkarz
+2102;9332.1;prowadzący pojazdy ciągnięte przez zwierzęta;933202;Wozak
+2103;9412.1;asystent kuchenny;941202;Zmywacz naczyń
+2104;9611.1;pracownik zbiórki odpadów;961102;Ładowacz nieczystości stałych
+2105;9612.1;pracownik recyklingu;961202;Sortowacz odpadów komunalnych
+2106;5329.1;sanitariusz szpitalny;962107;Noszowy
+2107;8111.4;operator ciężkiego sprzętu górniczego;811108;Operator maszyn urabiających i ładujących
+2108;8114.3;operator maszyn do produkcji prefabrykatów betonowych;811402;Krajacz materiałów budowlanych
+2109;8114.3;operator maszyn do produkcji prefabrykatów betonowych;811405;Operator urządzeń do produkcji elementów z betonu komórkowego
+2110;8121.1;operator maszyn odlewniczych;812108;Operator maszyny rozlewniczej
+2111;8121.1;operator maszyn odlewniczych;812110;Operator urządzeń do ciągłego odlewania stali
+2112;8121.1;operator maszyn odlewniczych;812112;Operator urządzeń próżniowego odgazowania stali
+2113;8121.1;operator maszyn odlewniczych;812113;Operator urządzeń przygotowania wsadu
+2114;8131.8;kontroler procesów przeróbki ropy naftowej;813116;Operator urządzeń do produkcji mas bitumicznych
+2115;8132.2;technik fotograf;813201;Operator minilabu fotograficznego
+2116;7534.3;tapicer;815902;Operator maszyn tapicerskich
+2117;8160.47;operator urządzeń do przetwórstwa mięsa;816026;Operator urządzeń do przetwórstwa drobiu
+2118;8160.34;operator produkcji żywności;816024;Operator urządzeń linii aseptycznego rozlewu w opakowania kartonowe
+2119;8171.6;operator pras do formowania wyrobów z masy papierniczej;817106;Operator pergaminiarki
+2120;8181.9;maszynowy szlifierz-polerowacz szkła;818104;Operator urządzeń do chemicznego polerowania szkła
+2121;8181.9;maszynowy szlifierz-polerowacz szkła;818111;Operator urządzeń do matowania wyrobów szklanych
+2122;8182.1;maszynista kotła;818203;Maszynista urządzeń odpopielania i odżużlania
+2123;8183.1;operator linii puszkowania i butelkowania;818302;Operator urządzeń do mycia, napełniania i zamykania butelek
+2124;8211.2;monter maszyn i urządzeń przemysłowych;821102;Monter aparatury i urządzeń chemicznych
+2125;7412.5;elektromechanik sprzętu gospodarstwa domowego;821111;Monter sprzętu gospodarstwa domowego
+2126;7233.4;technik urządzeń hydraulicznych i pneumatycznych;821113;Monter układów hydraulicznych i pneumatycznych
+2127;8212.2;monter sprzętu elektrycznego;821202;Monter elektrycznego sprzętu gospodarstwa domowego
+2128;8311.1;maszynista;831101;Kierowca drezyny i wózka motorowego
+2129;8311.1;maszynista;831102;Kierowca lokomotywy spalinowej
+2130;8311.1;maszynista;831103;Maszynista pociągu metra
+2131;8311.1;maszynista;831105;Maszynista pomocniczych pojazdów kolejowych metra
+2132;8311.1;maszynista;831106;Prowadzący maszyny do kolejowych robót budowlanych
+2133;8341.1;operator maszyn leśnych;834104;Operator ciągników zrywkowych do zrywki podwieszanej
+2134;8341.1;operator maszyn leśnych;834108;Operator nasiębiernych ciągników zrywkowych
+2135;8341.1;operator maszyn leśnych;834109;Operator urządzeń technicznych stosowanych w leśnictwie
+2136;7233.1;mechanik maszyn ciężkich;834201;Mechanik maszyn i urządzeń drogowych
+2137;3112.1.13;technik inżynierii wodnej;834312;Operator śluzy, jazu, zapory i pompowni
+2138;2621.4;konserwator dzieł sztuki;711103;Renowator zabytków architektury
+2139;7214.3;murarz-zbrojarz;711404;Zbrojarz
+2140;7115.1;cieśla;711502;Cieśla szalunkowy
+2141;2142.1.11;inżynier budownictwa wodnego;711701;Monter budownictwa wodnego
+2142;7124.1;monter izolacji budowlanych;712404;Termoizoler
+2143;7125.1;szklarz;712506;Monter szkła budowlanego
+2144;7126.6;specjalista ds. obsługi systemów nawadniania i odwadniania;712609;Monter sieci deszczownianych
+2145;3115.1.5;technik systemów grzewczych, wentylacyjnych, klimatyzacji i chłodzenia;712702;Mechanik urządzeń klimatyzacyjnych
+2146;7127.1;specjalista obsługi systemów grzewczych, wentylacyjnych, klimatyzacji i chłodzenia;712703;Monter / konserwator instalacji wentylacyjnych i klimatyzacyjnych
+2147;7111.1;robotnik budowlany;713304;Robotnik osuszania i odgrzybiania budowli
+2148;8211.1;monter lotniczy;721304;Blacharz lotniczy
+2149;7222.3;ślusarz;722201;Eguterzysta
+2150;7222.3;ślusarz;722202;Płatnerz
+2151;7313.1;jubiler;731301;Bursztyniarz
+2152;7314.1;cegielnik;731410;Operator automatów ceglarskich i wapienno-piaskarskich
+2153;7318.6;tkacz;731801;Arkadownik
+2154;7318.4;dziewiarz;731803;Koronkarka
+2155;8151.3;technik ds. procesu przędzenia;731806;Przygotowywacz włókna
+2156;7321.1;pracownik poligraficzny – formatowanie/przygotowanie materiałów do druku;732113;Trawiacz poligraficzny
+2157;7321.1;pracownik poligraficzny – formatowanie/przygotowanie materiałów do druku;732111;Rysownik litograficzny
+2158;7321.1;pracownik poligraficzny – formatowanie/przygotowanie materiałów do druku;732102;Fotograf w drukarni filmowej
+2159;7316.3;specjalista grawerowania w metalu;732104;Grawer poligraficzny
+2160;7321.1.6;operator DTP;732105;Komputerowy składacz tekstu
+2161;7321.1;pracownik poligraficzny – formatowanie/przygotowanie materiałów do druku;732110;Operator skanera poligraficznego
+2162;7413.1;monter linii elektrycznych;741303;Elektromonter napowietrznych linii wysokich i najwyższych napięć
+2163;7413.1;monter linii elektrycznych;741305;Elektromonter sieci trakcyjnej
+2164;7512.3;cukiernik;751202;Dekorator wyrobów cukierniczych
+2165;7512.3;cukiernik;751203;Karmelarz
+2166;7513.1;robotnik w produkcji wyrobów mleczarskich;751302;Serowar
+2167;7513.1;robotnik w produkcji wyrobów mleczarskich;751301;Maślarz
+2168;7515.3;klasyfikator żywności;751501;Grzyboznawca
+2169;7515.3;klasyfikator żywności;751502;Klasyfikator dziczyzny i ptactwa
+2170;7515.3;klasyfikator żywności;751503;Klasyfikator grzybów
+2171;7543.8.2;klasyfikator drewna;752102;Manipulant drewna okrągłego
+2172;7531.5;krawiec odzieży męskiej / krawcowa odzieży męskiej;753101;Bieliźniarz
+2173;8155.1.3;garbarz;753502;Garbarz skór bez włosa
+2174;4323.20;koordynator ruchu statków;754901;Monter znaków nawigacyjnych
+2175;6130.2;rolnik produkcji roślinnej i zwierzęcej;611102;Rolnik łąkarz
+2176;3142.1;technik rolnik;611103;Rolnik producent kwalifikowanych nasion rolniczych
+2177;6113.6;ogrodnik/ogrodniczka;611312;Pielęgniarz trawników / murawy (greenkeeper)
+2178;6113.4;pracownik gospodarstwa ogrodniczego;611311;Producent i zbieracz ziół
+2179;6121.6;pasterz;612101;Dojarz
+2180;6130.2;rolnik produkcji roślinnej i zwierzęcej;613001;Baca
+2181;5163.3;pracownik zakładu pogrzebowego;516304;Żałobnik
+2182;5222.1;kierownik w sklepie;522202;Kierownik stoiska w markecie
+2183;5230.1;kasjer/kasjerka;523002;Kasjer handlowy
+2184;5244.1;sprzedawca w centrum sprzedaży telefonicznej;524403;Sprzedawca na telefon
+2185;5419.4;strażnik ruchu drogowego;531102;Opiekun dzieci na przejściach dla pieszych
+2186;5414.1.1;pracownik służby ochrony lotniska;541316;Operator kontroli bezpieczeństwa
+2187;4110.1;technik prac biurowych;411002;Pracownik do spraw ewidencji ludności
+2188;4110.1;technik prac biurowych;411003;Pracownik kancelaryjny
+2189;4132.1;specjalista ds. wprowadzania danych;413201;Operator wprowadzania danych
+2190;3314.2;asystent / asystentka ds. statystyki;431201;Pracownik do spraw statystyki
+2191;2164.2;planista transportu;311206;Technik drogownictwa
+2192;3112.9;technik geodeta;311801;Rysownik geodezyjny
+2193;2165.2;kartograf;311802;Rysownik kartograficzny
+2194;2423.5;analityk pracy;311915;Technik normowania pracy
+2195;7313.1;jubiler;311901;Cechowniczy
+2196;7543.5;specjalista kontroli z użyciem badań nieniszczących;311904;Operator badań defektoskopowych
+2197;3122.4;mistrz produkcji;312205;Mistrz produkcji w przemyśle farmaceutycznym
+2198;3123.1;mistrz produkcji w budownictwie;312305;Mistrz produkcji w budownictwie przemysłowym
+2199;3131.1;elektroenergetyk;313104;Elektroenergetyk pomiarów i zabezpieczeń
+2200;3131.1;elektroenergetyk;313110;Obchodowy bloku
+2201;3131.1;elektroenergetyk;313107;Maszynista turbozespołu wodnego
+2202;3131.1.3;elektroenergetyk elektrowni wykorzystujących paliwa kopalne;313108;Maszynista urządzeń ciepłowniczych elektrowni
+2203;2144.1.8;inżynier - ogrzewanie, wentylacja i klimatyzacja;313207;Operator urządzeń klimatyzacyjnych i odpylających
+2204;3133.1;kontroler procesów w przemyśle chemicznym;313303;Kontroler (sterowniczy) reaktorów chemicznych
+2205;3133.1;kontroler procesów w przemyśle chemicznym;313306;Kontroler (sterowniczy) urządzeń filtrujących i oddzielających
+2206;3141.1;technik biotechnolog;314102;Laborant biochemiczny
+2207;3141.2.3;technik biolog;314101;Laborant mikrobiologiczny
+2208;3119.5;technik żywności;314403;Technik technologii żywności
+2209;3119.5;technik żywności;314404;Technik technologii żywności – cukrownictwo
+2210;3119.5;technik żywności;314406;Technik technologii żywności – produkcja koncentratów spożywczych
+2211;3119.5;technik żywności;314408;Technik technologii żywności – przechowalnictwo chłodnicze i technologia żywności mrożonej
+2212;3119.5;technik żywności;314410;Technik technologii żywności – przetwórstwo jajczarsko-drobiarskie
+2213;3119.5;technik żywności;314417;Technik technologii żywności – przetwórstwo ziemniaczane
+2214;3151.4;mechanik wachtowy;315102;Oficer automatyk okrętowy
+2215;4323.11;zarządca portu;315202;Bosman portu
+2216;3152.4;kapitan statku morskiego;315207;Kapitan żeglugi przybrzeżnej
+2217;4323.11;zarządca portu;315209;Oficer portu
+2218;3152.5;kapitan żeglugi śródlądowej;315212;Pilot żeglugi śródlądowej
+2219;3153.1;technik mechanik lotniczy;315318;Mechanik lotniczy obsługi technicznej
+2220;3153.2;pilot statku powietrznego;315306;Pilot balonu wolnego
+2221;3153.2;pilot statku powietrznego;315309;Pilot sterowcowy zawodowy
+2222;3153.2;pilot statku powietrznego;315310;Pilot szybowcowy
+2223;3153.2;pilot statku powietrznego;315312;Pilot wiatrakowcowy zawodowy
+2224;5329.3;technik sterylizacji medycznej;321101;Operator systemów sterylizacji artykułów sanitarnych, sprzętu i aparatów medycznych
+2225;2269.9.1;specjalista zooterapii;323006;Instruktor hipoterapii
+2226;2230.1;terapeuta w dziedzinie medycyny komplementarnej;323002;Bioenergoterapeuta
+2227;2230.1;terapeuta w dziedzinie medycyny komplementarnej;323011;Refleksolog
+2228;2269.9.2;specjalista arteterapii;323013;Arteterapeuta
+2229;2230.1;terapeuta w dziedzinie medycyny komplementarnej;323009;Naturopata
+2230;2269.9.1;specjalista zooterapii;323007;Kynoterapeuta (dogoterapeuta)
+2231;2269.6;lekarz – specjalista podiatrii;323014;Podolog
+2232;3240.2;technik weterynarii;324001;Laborant weterynaryjny
+2233;3111.10;technik nukleonik;325510;Technik dozymetrysta
+2234;2635.1.2;doradca osób uzależnionych od alkoholu lub narkotyków;325903;Instruktor terapii uzależnień
+2235;2267.2;ortoptysta;325906;Ortoptystka
+2236;3311.2.5;makler giełdowy;331102;Makler papierów wartościowych
+2237;1346.1;menedżer banku;331105;Pracownik scentralizowanych systemów rozliczeniowych
+2238;3312.2;doradca kredytowy;331203;Pracownik obsługi klienta instytucji finansowej
+2239;2631.1;ekonomista;331403;Technik ekonomista
+2240;1324.3;kierownik ds. logistyki i dystrybucji;333104;Pracownik działu logistyki
+2241;3332.2;organizator imprez zbiorowych;333205;Organizator widowni
+2242;3334.4;specjalista ds. zarządzania najmem;333402;Pracownik wynajmu powierzchni komercyjnych
+2243;3339.1;sprzedawca reklam;333904;Sprzedawca reklam internetowych
+2244;3343.1;technik administracji;334305;Sekretarz konsularny
+2245;3355.1;policjant służby kryminalnej;335503;Technik kryminalistyki
+2246;5412.1;policjant;335501;Negocjator policyjny
+2247;5412.1;policjant;335504;Policjant służby prewencji
+2248;2263.1;koordynator ds. zarządzania kryzysowego;341206;Pracownik zarządzania kryzysowego
+2249;3422.5;instruktor sportu;342308;Instruktor sportów ekstremalnych
+2250;2622.1;menedżer informacji;343303;Technik informacji naukowej
+2251;2659.2.6;artysta estradowy / artystka estradowa;343504;Iluzjonista
+2252;2659.2.1;aktor cyrkowy / aktorka cyrkowa;343501;Akrobata
+2253;2659.2.1;aktor cyrkowy / aktorka cyrkowa;343507;Żongler
+2254;2659.2.6;artysta estradowy / artystka estradowa;343503;Klaun (clown)
+2255;2655.1;aktor / aktorka;343601;Aktor scen muzycznych
+2256;2652.3;muzyk;343603;Organista
+2257;3435.4;artysta sztuki ciała;343917;Tatuażysta
+2258;3512.4;technik technologii informacyjno-telekomunikacyjnych;351101;Operator bezprzewodowych sieci komputerowych
+2259;3512.4;technik technologii informacyjno-telekomunikacyjnych;351204;Technik tyfloinformatyk
+2260;2522.1;administrator systemów informacyjno-telekomunikacyjnych;351402;Administrator systemów poczty elektronicznej
+2261;3514.1;administrator stron internetowych;351403;Pracownik pozycjonowania stron internetowych
+2262;2166.12;twórca efektów specjalnych;352105;Imitator efektów dźwiękowych
+2263;2523.3;inżynier sieci informacyjno-telekomunikacyjnej;352202;Operator urządzeń radiokomunikacyjnych
+2264;2111.3;fizyk;211104;Fizyk medyczny
+2265;2142.1;inżynier budownictwa;214207;Inżynier budowy dróg
+2266;2142.1;inżynier budownictwa;214210;Rzeczoznawca budowlany
+2267;2144.1;inżynier mechanik;214411;Konstruktor form wtryskowych
+2268;2149.9;inżynier inżynierii materiałowej;214913;Inżynier technologii ceramiki
+2269;2149.9;inżynier inżynierii materiałowej;214916;Inżynier technologii szkła
+2270;2263.3.1;ergonomista;214924;Specjalista do spraw ergonomii i projektowania form użytkowych
+2271;2212.1;lekarz – specjalista;221102;Lekarz ze specjalizacją I stopnia
+2272;2212.1;lekarz – specjalista;221201;Lekarz – specjalista alergologii
+2273;2212.1;lekarz – specjalista;221202;Lekarz – specjalista anestezjologii i intensywnej terapii
+2274;2212.1;lekarz – specjalista;221203;Lekarz – specjalista angiologii
+2275;2212.1;lekarz – specjalista;221205;Lekarz – specjalista balneologii i medycyny fizykalnej
+2276;2212.1;lekarz – specjalista;221206;Lekarz – specjalista chirurgii dziecięcej
+2277;2212.1;lekarz – specjalista;221207;Lekarz – specjalista chirurgii klatki piersiowej
+2278;2212.1;lekarz – specjalista;221208;Lekarz – specjalista chirurgii naczyniowej
+2279;2212.1;lekarz – specjalista;221209;Lekarz – specjalista chirurgii ogólnej
+2280;2212.1;lekarz – specjalista;221210;Lekarz – specjalista chirurgii onkologicznej
+2281;2212.1;lekarz – specjalista;221211;Lekarz – specjalista chirurgii plastycznej
+2282;2212.1;lekarz – specjalista;221212;Lekarz – specjalista chirurgii szczękowo-twarzowe
+2283;2212.1;lekarz – specjalista;221213;Lekarz – specjalista chorób płuc
+2284;2212.1;lekarz – specjalista;221269;Lekarz – specjalista chorób płuc dzieci
+2285;2212.1;lekarz – specjalista;221214;Lekarz – specjalista chorób wewnętrznych
+2286;2212.1;lekarz – specjalista;221215;Lekarz – specjalista chorób zakaźnych
+2287;2212.1;lekarz – specjalista;221216;Lekarz – specjalista dermatologii i wenerologii
+2288;2212.1;lekarz – specjalista;221217;Lekarz – specjalista diabetologii
+2289;2212.1;lekarz – specjalista;221218;Lekarz – specjalista diagnostyki laboratoryjnej
+2290;2212.1;lekarz – specjalista;221219;Lekarz – specjalista endokrynologii
+2291;2212.1;lekarz – specjalista;221270;Lekarz – specjalista endokrynologii ginekologicznej i rozrodczości
+2292;2212.1;lekarz – specjalista;221271;Lekarz – specjalista endokrynologii i diabetologii dziecięcej
+2293;2212.1;lekarz – specjalista;221220;Lekarz – specjalista epidemiologii
+2294;2212.1;lekarz – specjalista;221221;Lekarz – specjalista farmakologii klinicznej
+2295;2212.1;lekarz – specjalista;221222;Lekarz – specjalista gastroenterologii
+2296;2212.1;lekarz – specjalista;221272;Lekarz – specjalista gastrologii dziecięcej
+2297;2212.1;lekarz – specjalista;221223;Lekarz – specjalista genetyki klinicznej
+2298;2212.1;lekarz – specjalista;221224;Lekarz – specjalista geriatrii
+2299;2212.1;lekarz – specjalista;221225;Lekarz – specjalista ginekologii onkologicznej
+2300;2212.1;lekarz – specjalista;221226;Lekarz – specjalista hematologii
+2301;2212.1;lekarz – specjalista;221227;Lekarz – specjalista hipertensjologii
+2302;2212.1;lekarz – specjalista;221228;Lekarz – specjalista immunologii klinicznej
+2303;2212.1;lekarz – specjalista;221273;Lekarz – specjalista intensywnej terapii
+2304;2212.1;lekarz – specjalista;221229;Lekarz – specjalista kardiochirurgii
+2305;2212.1;lekarz – specjalista;221230;Lekarz – specjalista kardiologii
+2306;2212.1;lekarz – specjalista;221231;Lekarz – specjalista kardiologii dziecięcej
+2307;2212.1;lekarz – specjalista;221274;Lekarz – specjalista medycyny lotniczej
+2308;2212.1;lekarz – specjalista;221275;Lekarz – specjalista medycyny morskiej i tropikalnej
+2309;2212.1;lekarz – specjalista;221232;Lekarz – specjalista medycyny nuklearnej
+2310;2212.1;lekarz – specjalista;221233;Lekarz – specjalista medycyny paliatywnej
+2311;2212.1;lekarz – specjalista;221234;Lekarz – specjalista medycyny pracy
+2312;2212.1;lekarz – specjalista;221235;Lekarz – specjalista medycyny ratunkowej
+2313;2212.1;lekarz – specjalista;221236;Lekarz – specjalista medycyny rodzinnej
+2314;2212.1;lekarz – specjalista;221237;Lekarz – specjalista medycyny sądowej
+2315;2212.1;lekarz – specjalista;221238;Lekarz – specjalista medycyny sportowej
+2316;2212.1;lekarz – specjalista;221239;Lekarz – specjalista medycyny transportu
+2317;2212.1;lekarz – specjalista;221240;Lekarz – specjalista mikrobiologii lekarskiej
+2318;2212.1;lekarz – specjalista;221241;Lekarz – specjalista nefrologii
+2319;2212.1;lekarz – specjalista;221276;Lekarz – specjalista nefrologii dziecięcej
+2320;2212.1;lekarz – specjalista;221242;Lekarz – specjalista neonatologii
+2321;2212.1;lekarz – specjalista;221243;Lekarz – specjalista neurochirurgii
+2322;2212.1;lekarz – specjalista;221244;Lekarz – specjalista neurologii
+2323;2212.1;lekarz – specjalista;221245;Lekarz – specjalista neurologii dziecięcej
+2324;2212.1;lekarz – specjalista;221246;Lekarz – specjalista neuropatologii
+2325;2212.1;lekarz – specjalista;221247;Lekarz – specjalista okulistyki
+2326;2212.1;lekarz – specjalista;221248;Lekarz – specjalista onkologii i hematologii dziecięcej
+2327;2212.1;lekarz – specjalista;221249;Lekarz – specjalista onkologii klinicznej
+2328;2212.1;lekarz – specjalista;221250;Lekarz – specjalista ortopedii i traumatologii narządu ruchu
+2329;2212.1;lekarz – specjalista;221251;Lekarz – specjalista otorynolaryngologii
+2330;2212.1;lekarz – specjalista;221252;Lekarz – specjalista otorynolaryngologii dziecięcej
+2331;2212.1;lekarz – specjalista;221253;Lekarz – specjalista patomorfologii
+2332;2212.1;lekarz – specjalista;221254;Lekarz – specjalista pediatrii
+2333;2212.1;lekarz – specjalista;221277;Lekarz – specjalista pediatrii metabolicznej
+2334;2212.1;lekarz – specjalista;221278;Lekarz – specjalista perinatologii
+2335;2212.1;lekarz – specjalista;221255;Lekarz – specjalista położnictwa i ginekologii
+2336;2212.1;lekarz – specjalista;221256;Lekarz – specjalista psychiatrii
+2337;2212.1;lekarz – specjalista;221257;Lekarz – specjalista psychiatrii dzieci i młodzieży
+2338;2212.1;lekarz – specjalista;221258;Lekarz – specjalista radiologii i diagnostyki obrazowej
+2339;2212.1;lekarz – specjalista;221259;Lekarz – specjalista radioterapii onkologicznej
+2340;2212.1;lekarz – specjalista;221260;Lekarz – specjalista rehabilitacji medycznej
+2341;2212.1;lekarz – specjalista;221261;Lekarz – specjalista reumatologii
+2342;2212.1;lekarz – specjalista;221262;Lekarz – specjalista seksuologii
+2343;2212.1;lekarz – specjalista;221263;Lekarz – specjalista toksykologii klinicznej
+2344;2212.1;lekarz – specjalista;221264;Lekarz – specjalista transfuzjologii klinicznej
+2345;2212.1;lekarz – specjalista;221265;Lekarz – specjalista transplantologii klinicznej
+2346;2212.1;lekarz – specjalista;221266;Lekarz – specjalista urologii
+2347;2212.1;lekarz – specjalista;221267;Lekarz – specjalista urologii dziecięcej
+2348;2212.1;lekarz – specjalista;221268;Lekarz – specjalista zdrowia publicznego
+2349;2221.3;pielęgniarz - specjalista/pielęgniarka – specjalista;222201;Pielęgniarka – specjalista organizacji i zarządzania
+2350;2221.3;pielęgniarz - specjalista/pielęgniarka – specjalista;222202;Pielęgniarka – specjalista pielęgniarstwa anestezjologicznego i intensywnej opieki
+2351;2221.3;pielęgniarz - specjalista/pielęgniarka – specjalista;222203;Pielęgniarka – specjalista pielęgniarstwa chirurgicznego
+2352;2221.3;pielęgniarz - specjalista/pielęgniarka – specjalista;222204;Pielęgniarka – specjalista pielęgniarstwa diabetologicznego
+2353;2221.3;pielęgniarz - specjalista/pielęgniarka – specjalista;222205;Pielęgniarka – specjalista pielęgniarstwa epidemiologicznego
+2354;2221.3;pielęgniarz - specjalista/pielęgniarka – specjalista;222206;Pielęgniarka – specjalista pielęgniarstwa geriatrycznego
+2355;2221.3;pielęgniarz - specjalista/pielęgniarka – specjalista;222207;Pielęgniarka – specjalista pielęgniarstwa kardiologicznego
+2356;2221.3;pielęgniarz - specjalista/pielęgniarka – specjalista;222208;Pielęgniarka – specjalista pielęgniarstwa nefrologicznego
+2357;2221.3;pielęgniarz - specjalista/pielęgniarka – specjalista;222209;Pielęgniarka – specjalista pielęgniarstwa neonatologicznego
+2358;2221.3;pielęgniarz - specjalista/pielęgniarka – specjalista;222210;Pielęgniarka – specjalista pielęgniarstwa neurologicznego
+2359;2221.3;pielęgniarz - specjalista/pielęgniarka – specjalista;222211;Pielęgniarka – specjalista pielęgniarstwa onkologicznego
+2360;2221.3;pielęgniarz - specjalista/pielęgniarka – specjalista;222212;Pielęgniarka – specjalista pielęgniarstwa operacyjnego
+2361;2221.3;pielęgniarz - specjalista/pielęgniarka – specjalista;222213;Pielęgniarka – specjalista pielęgniarstwa opieki długoterminowej
+2362;2221.3;pielęgniarz - specjalista/pielęgniarka – specjalista;222214;Pielęgniarka – specjalista pielęgniarstwa opieki paliatywnej
+2363;2221.3;pielęgniarz - specjalista/pielęgniarka – specjalista;222215;Pielęgniarka – specjalista pielęgniarstwa pediatrycznego
+2364;2221.3;pielęgniarz - specjalista/pielęgniarka – specjalista;222216;Pielęgniarka – specjalista pielęgniarstwa psychiatrycznego
+2365;2221.3;pielęgniarz - specjalista/pielęgniarka – specjalista;222217;Pielęgniarka – specjalista pielęgniarstwa ratunkowego
+2366;2221.3;pielęgniarz - specjalista/pielęgniarka – specjalista;222218;Pielęgniarka – specjalista pielęgniarstwa rodzinnego
+2367;2221.3;pielęgniarz - specjalista/pielęgniarka – specjalista;222219;Pielęgniarka – specjalista pielęgniarstwa środowiska nauczania i wychowania
+2368;2221.3;pielęgniarz - specjalista/pielęgniarka – specjalista;222220;Pielęgniarka – specjalista pielęgniarstwa w ochronie zdrowia pracujących
+2369;2221.3;pielęgniarz - specjalista/pielęgniarka – specjalista;222221;Pielęgniarka – specjalista pielęgniarstwa zachowawczego
+2370;2221.3;pielęgniarz - specjalista/pielęgniarka – specjalista;222222;Pielęgniarka – specjalista promocji zdrowia i edukacji zdrowotnej
+2371;2222.1;położny/położna;223201;Położna – specjalista organizacji i zarządzania
+2372;2222.1;położny/położna;223202;Położna – specjalista pielęgniarstwa epidemiologicznego
+2373;2222.1;położny/położna;223203;Położna – specjalista pielęgniarstwa ginekologicznego
+2374;2222.1;położny/położna;223204;Położna – specjalista pielęgniarstwa neonatologicznego
+2375;2222.1;położny/położna;223205;Położna – specjalista pielęgniarstwa położniczego
+2376;2222.1;położny/położna;223206;Położna – specjalista pielęgniarstwa rodzinnego
+2377;2222.1;położny/położna;223207;Położna – specjalista promocji zdrowia i edukacji zdrowotnej
+2378;2250.5;weterynarz specjalista;225202;Lekarz weterynarii – specjalista chorób drobiu i ptaków ozdobnych
+2379;2261.2;lekarz dentysta – specjalista;226102;lekarz dentysta ze specjalizacją I stopnia
+2380;2261.2;lekarz dentysta – specjalista;226201;Lekarz dentysta – specjalista chirurgii stomatologicznej
+2381;2261.2;lekarz dentysta – specjalista;226202;Lekarz dentysta – specjalista chirurgii szczękowo-twarzowej
+2382;2261.2;lekarz dentysta – specjalista;226203;Lekarz dentysta – specjalista epidemiologii
+2383;2261.2;lekarz dentysta – specjalista;226204;Lekarz dentysta – specjalista ortodoncji
+2384;2261.2;lekarz dentysta – specjalista;226205;Lekarz dentysta – specjalista periodontologii
+2385;2261.2;lekarz dentysta – specjalista;226206;Lekarz dentysta – specjalista protetyki stomatologicznej
+2386;2261.2;lekarz dentysta – specjalista;226207;Lekarz dentysta – specjalista stomatologii dziecięcej
+2387;2261.2;lekarz dentysta – specjalista;226208;Lekarz dentysta – specjalista stomatologii zachowawczej z endodoncją
+2388;2261.2;lekarz dentysta – specjalista;226209;Lekarz dentysta – specjalista zdrowia publicznego
+2389;2310.1;nauczyciel akademicki;231007;Nauczyciel akademicki – nauki leśne
+2390;2310.1;nauczyciel akademicki;231017;Nauczyciel akademicki – nauki wojskowe
+2391;2310.1;nauczyciel akademicki;231018;Nauczyciel akademicki – sztuki filmowe
+2392;2320.1.1;nauczyciel kształcenia zawodowego w zakresie rolnictwa, leśnictwa i rybołówstwa/nauczycielka kształcenia zawodowego w zakresie rolnictwa, leśnictwa i rybołówstwa;232005;Nauczyciel przedmiotów zawodowych rolniczych i leśnych
+2393;2330.1;nauczyciel w szkole ponadpodstawowej/nauczycielka w szkole ponadpodstawowej;233003;Nauczyciel etyki
+2394;2330.1;nauczyciel w szkole ponadpodstawowej/nauczycielka w szkole ponadpodstawowej;233017;Nauczyciel plastyki
+2395;2330.1;nauczyciel w szkole ponadpodstawowej/nauczycielka w szkole ponadpodstawowej;233019;Nauczyciel przysposobienia obronnego
+2396;2330.1;nauczyciel w szkole ponadpodstawowej/nauczycielka w szkole ponadpodstawowej;233021;Nauczyciel techniki
+2397;2330.1;nauczyciel w szkole ponadpodstawowej/nauczycielka w szkole ponadpodstawowej;233022;Nauczyciel wiedzy o kulturze
+2398;2330.1;nauczyciel w szkole ponadpodstawowej/nauczycielka w szkole ponadpodstawowej;233023;Nauczyciel wiedzy o społeczeństwie
+2399;2330.1;nauczyciel w szkole ponadpodstawowej/nauczycielka w szkole ponadpodstawowej;233024;Nauczyciel wychowania do życia w rodzinie
+2400;2351.2;doradca do spraw doskonalenia procesów edukacyjnych;235102;Ewaluator programów edukacji
+2401;2355.2;nauczyciel tańca/nauczycielka tańca;235502;Instruktor tańca
+2402;2320.1;nauczyciel kształcenia zawodowego/nauczycielka kształcenia zawodowego;235915;Wykładowca na kursach (edukator, trener)
+2403;2266.2;logopeda;235906;Nauczyciel logopeda
+2404;2634.2.2;psycholog wychowawczy;235908;Nauczyciel psycholog
+2405;2423.1;doradca zawodowy;242306;Lider klubu pracy
+2406;2611.1;prawnik;261101;Adwokat
+2407;2611.1;prawnik;261102;Prokurator
+2408;1346.5;specjalista ds. odszkodowań;261909;Doradca do spraw odszkodowań
+2409;2611.1;prawnik;261907;Radca Prokuratorii Generalnej Skarbu Państwa
+2410;2611.1;prawnik;261908;Referendarz sądowy
+2411;2611.1;prawnik;261902;Asystent prokuratora
+2412;2611.1;prawnik;261903;Asystent sędziego
+2413;2619.7;mediator;263507;Mediator sądowy
+2414;2642.1;dziennikarz;264206;Krytyk kulinarny
+2415;2652.3;muzyk;265201;Instrumentalista
+2416;2652.3.2;wokalista;265207;Piosenkarz
+2417;1114.1;zawodowy działacz organizacji członkowskiej;111401;Zawodowy działacz organizacji komercyjnej / pracodawców
+2418;1114.1;zawodowy działacz organizacji członkowskiej;111403;Zawodowy działacz organizacji pozarządowej
+2419;1114.1;zawodowy działacz organizacji członkowskiej;111404;Zawodowy działacz organizacji zawodowej
+2420;1114.1;zawodowy działacz organizacji członkowskiej;111405;Zawodowy działacz organizacji związkowej
+2421;2411.1;księgowy/księgowa;121102;Kierownik biura rachunkowego
+2422;1211.1;dyrektor finansowy;121103;Kierownik działu finansowego
+2423;1120.2;dyrektor przedsiębiorstwa;121903;Kierownik przedsiębiorstwa świadczącego usługi osobiste i porządkowe
+2424;1321.1;kierownik ds. produkcji;132105;Kierownik utrzymania ruchu
+2425;1342.2;kierownik zakładu opieki zdrowotnej;134207;Lekarz ordynator oddziału
+2426;1342.2;kierownik zakładu opieki zdrowotnej;134201;Kierownik hospicjum
+2427;1342.2;kierownik zakładu opieki zdrowotnej;134204;Kierownik podmiotu leczniczego
+2428;1346.3;kierownik unii kredytowej;134603;Kierownik działu operacji finansowych
+2429;1431.1;kierownik placówki kulturalnej;143108;Kierownik kina
+2430;1431.2;kierownik ośrodków rekreacji i rozrywki;143107;Kierownik kasyna

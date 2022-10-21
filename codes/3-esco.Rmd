@@ -1,0 +1,48 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+```{r}
+library(data.table)
+```
+
+ESCO dictionary
+
+```{r}
+esco <- readRDS("../data-raw/esco-pl-en-desc.rds")
+esco <- setDT(esco)
+head(esco)
+```
+
+Esco - KSID
+
+```{r}
+kzis_esco <- fread("../data-raw/kzis_esco_crosswalk.csv", col.names = c("id", "esco_code", "esco_name", "ksiz_code", "ksiz_name"), colClasses = "character")
+kzis_esco[, uniq_ksiz := uniqueN(ksiz_code), esco_code]
+kzis_esco[, uniq_esco := uniqueN(esco_code), ksiz_code]
+kzis_esco <- kzis_esco[order(esco_code)]
+kzis_esco
+```
+Only 1-n (ksiz, esco)
+
+
+```{r}
+esco_selected <- merge(x = esco[language == "pl"],
+                       y = kzis_esco[uniq_ksiz == 1, .(occupation_code=esco_code, ksiz_code)])
+
+esco_selected <- esco_selected[substr(occupation_code, 1,2 ) == substr(ksiz_code,1,2) ]
+
+esco_selected_long <- melt(data = esco_selected[, .(ksiz_code, occupation_name, occupation_alternative_names, occupation_description, 
+                                                    skills=paste(EssentialSkill,  OptionalSkill))],
+                           id.vars = "ksiz_code")
+esco_selected_long <- na.omit(esco_selected_long)
+setnames(esco_selected_long, c("codes", "var", "desc"))
+head(esco_selected_long, n=20)
+```
+
+```{r}
+fwrite(esco_selected_long, file = "../data/esco-kzis-selected.csv")
+```
+
+

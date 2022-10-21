@@ -29,12 +29,19 @@ opisy_linki <- unlist(opisy_linki)
 
 ## scraping descriptions
 
-opisy_zawodow <- lapply(opisy_linki, function(x) {x %>%
+opisy_zawodow <- list()
+k <- 1
+for (z in opisy_linki) {
+  if (k %% 50 == 0) {
+    print(k)
+  }
+  opisy_zawodow[[k]] <- z %>%
     read_html() %>%
     html_table() %>%
     .[[1]] %>%
-    rename(koluma = X1, opis = X2)}
-)
+    rename(koluma = X1, opis = X2)
+  k <- k + 1
+}
 
 ## transforming
 

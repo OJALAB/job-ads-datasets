@@ -8,6 +8,8 @@ library(data.table)
 library(docxtractr)
 library(snakecase)
 library(zoo)
+library(stringr)
+library(pdftools)
 ```
 
 Grupa 2
@@ -50,20 +52,43 @@ fwrite(gr3_tab, file = "../data/ksiz-desc-level3.csv")
 Grupa 3
 
 ```{r}
-gr4 <- read_docx("../data-raw/ksiz-desc-lev4_1.docx")
-gr4_tabs <- docx_extract_all_tbls(gr4, guess_header = F)
-gr4_tab <- data.table::rbindlist(gr4_tabs[-c(1:11)])
+ksiz_code4 <- list()
+
+## part1
+gr1 <- docx_extract_all_tbls(read_docx("../data-raw/ksiz-desc-lev4_1.docx"), guess_header = F)
+gr2 <- docx_extract_all_tbls(read_docx("../data-raw/ksiz-desc-lev4_2.docx"), guess_header = F)
+gr3 <- docx_extract_all_tbls(read_docx("../data-raw/ksiz-desc-lev4_3.docx"), guess_header = F)
+gr4 <- docx_extract_all_tbls(read_docx("../data-raw/ksiz-desc-lev4_4.docx"), guess_header = F)
+gr1_tab <- data.table::rbindlist(gr1[-c(1:11)])
+gr2_tab <- data.table::rbindlist(gr2)
+gr3_tab <- data.table::rbindlist(gr3)
+gr4_tab <- data.table::rbindlist(gr4)
+gr4_tab <- rbind(gr1_tab, gr2_tab,gr3_tab,gr4_tab)
+
+gr4_tab[str_detect(V2, "Nazwa: ") & V1 == "", V1 := "Nazwa:"]
+gr4_tab[, V2:=str_remove(V2, "^Nazwa: ")]
 gr4_tab[, V1 := snakecase::to_snake_case(V1)]
 gr4_tab[V1 %in% c("zadania", "zawodowe"), V1 := "zadania_zawodowe"]
 gr4_tab[nchar(V1) ==0, V1 :=NA]
 gr4_tab[, V1:=na.locf(V1, na.rm = F)]
-gr4_tab[V1 == "kod",  kod:=V2]
-gr4_tab[stri_detect_regex(kod, "\\d{4}",negate = T) & stri_detect_regex(V2, "\\d{4}",negate = F), kod:=V2]
+gr4_tab[V1 == "kod" & str_detect(V2, "\\d{4}"),  kod:=V2]
+gr4_tab[V1 == "nazwa" & str_detect(V2, "\\d{4}"),  kod:=V2]
+gr4_tab[str_detect(kod, "\\d{4}",negate = T) & str_detect(V2, "\\d{4}",negate = F), kod:=V2]
 gr4_tab[, kod2:=shift(kod, n=-1)]
 gr4_tab[is.na(kod), kod:=kod2]
 gr4_tab[, kod:=na.locf(kod)]
 gr4_tab <- gr4_tab[V1 != "kod",.(opis = paste(V2, collapse = " ")), .(kod, nazwa = V1)]
+
 gr4_tab <- dcast(gr4_tab, kod ~ nazwa, value.var = "opis")
-#fwrite(gr3_tab, file = "../data/ksiz-desc-level3.csv")
+
+gr4_tab[nazwa == "1111", nazwa := "Przedstawiciele władz publicznych"]
+gr4_tab[nazwa == "2634", nazwa := "Psycholodzy i pokrewni"]
+gr4_tab[nazwa == "3313", nazwa := "Księgowi"]
+
+gr4_tab
+
+fwrite(gr4_tab, file = "../data/ksiz-desc-level4.csv")
+
 ```
+
 
