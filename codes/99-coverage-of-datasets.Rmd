@@ -11,10 +11,15 @@ library(readxl)
 datasets
 
 ```{r}
+hierachy <- fread("../data/kzis-official-2022.csv", colClasses = "character")
+```
+
+```{r}
 official <- fread("../data/kzis-occup-dictionary-long.csv", colClasses = "character")
 esco <- fread("../data/esco-kzis-selected.csv", colClasses = "character")
 thes <- fread("../data/gus-thesaurus.csv", colClasses = "character")
 info <- fread("../data/kzis-occup-infodoradca.csv", colClasses = "character")
+
 hierachy[, dict := code %in% unique(official$code)]
 hierachy[, esco := code %in% unique(esco$code)]
 hierachy[, thes := code %in% unique(thes$code)]
@@ -23,4 +28,5 @@ hierachy[, info := code %in% unique(info$code)]
 hierachy[, lapply(.SD, mean), .SDcols = dict:info]
 
 ```
+
 
