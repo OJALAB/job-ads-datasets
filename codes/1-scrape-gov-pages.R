@@ -55,10 +55,36 @@ opisy_zawodow[strona %in% opisy_zawodow[opis == "Opis w opracowaniu"]$strona & k
 opisy_zawodow[koluma == "kod", zawod:=opis]
 opisy_zawodow[, zawod := na.omit(unique(zawod)), by=strona]
 opisy_zawodow_wide <- dcast(opisy_zawodow, zawod ~ koluma, value.var = "opis")
-opisy_zawodow_wide <- opisy_zawodow_wide[,.(zawod, nazwa, synteza, zadania_zawodowe, dodatkowe_zadania_zawodowe)]
-opisy_zawodow_wide <- opisy_zawodow_wide[order(zawod)]
+opisy_zawodow_wide <- opisy_zawodow_wide[,.(code=zawod, name=nazwa, synthesis=synteza, tasks1=zadania_zawodowe, tasks2=dodatkowe_zadania_zawodowe)]
+opisy_zawodow_wide <- opisy_zawodow_wide[order(code)]
 
+klucz <- read_excel("data-raw/ksiz_kody_2014_2022_klucz.xls", 
+                    col_names = c("zawod_old", "nazwa_old", "zawod_new", "nazwa_new"), skip = 1, col_types = "text")
+klucz <- setDT(klucz)
 
+opisy_zawodow_wide <- merge(x = opisy_zawodow_wide, 
+                            y = klucz[zawod_old != zawod_new][, .(code = zawod_old,  code_new = zawod_new)],
+                            all.x=T)
+
+opisy_zawodow_wide[is.na(code_new), code_new:=code]
+opisy_zawodow_wide[synthesis == "Opis w opracowaniu", synthesis:=""]
+opisy_zawodow_wide[tasks1 == "Opis w opracowaniu", tasks1:=""]
+opisy_zawodow_wide[tasks2 == "Opis w opracowaniu", tasks2:=""]
+
+setnames(opisy_zawodow_wide, "code", "code_old")
+setnames(opisy_zawodow_wide, "code_new", "code")
+
+opisy_zawodow_wide[, desc:= paste(name, synthesis)]
+opisy_zawodow_wide[nchar(tasks2) < 10, tasks2:=""]
+
+fwrite(opisy_zawodow_wide, "data/kzis-occup-dictionary.csv")
+
+opisy_zawodow_long <- melt(opisy_zawodow_wide[,.(code, desc, tasks1, tasks2)], id.vars = "code", value.name = "desc")
+opisy_zawodow_long <- opisy_zawodow_long[desc!=""] 
+
+fwrite(opisy_zawodow_long, "data/kzis-occup-dictionary-long.csv")
+
+## add old colde
 # more info from infodoradca+ ---------------------------------------------
 
 

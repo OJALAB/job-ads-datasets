@@ -40,6 +40,14 @@ esco_selected_long <- na.omit(esco_selected_long)
 setnames(esco_selected_long, c("codes", "var", "desc"))
 head(esco_selected_long, n=20)
 ```
+```{r}
+esco_selected_long<- merge(x = esco_selected_long,
+             y = klucz[zawod_old != zawod_new][, .(code_new=zawod_new, codes=zawod_old)],
+             all.x=T)
+
+esco_selected_long[!is.na(code_new), codes := code_new]
+esco_selected_long[, code_new:=NULL]
+```
 
 ```{r}
 fwrite(esco_selected_long, file = "../data/esco-kzis-selected.csv")
