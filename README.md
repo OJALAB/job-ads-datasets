@@ -13,4 +13,13 @@ Datasets for training and testing (folder `data/`)
 ## Coverage of codes
 
 + As of 2021-10-21 *519* codes did not have official description, in particular *158* codes that did not end with `90` ("Pozostali ...")
-+ 
+
+
+| dict|  esco|  thes|  info| kprm|  hand|  cbop|   all|
+|----:|-----:|-----:|-----:|----:|-----:|-----:|-----:|
+|  100| 19.16| 46.03| 34.16| 0.41| 35.71| 78.91| 90.95|
+
+
+Codes that are not covered in datasets
+
+

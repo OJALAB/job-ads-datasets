@@ -28,7 +28,7 @@ hierachy[, hand := code %in% unique(hand$code)] ## 1044 codes
 hierachy[, cbop:= code %in%  cbop] # 2295 codes / 1952
 
 hierachy[, all := esco + thes + info + kprm + hand + cbop > 0]
-hierachy[, lapply(.SD, mean), .SDcols = dict:all]
+hierachy[, lapply(.SD, function(x) round(mean(x)*100,2)), .SDcols = dict:all]
 ```
 
 Jakie kody nie są pokryte?
