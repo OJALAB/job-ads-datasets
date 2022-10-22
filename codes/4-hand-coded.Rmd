@@ -75,10 +75,62 @@ Multiple codes for one ad
 hand_selected[, possible_codes := paste(unlist(str_extract_all(uwagi, "\\d{6}")),  collapse=", "), id_row]
 hand_selected[possible_codes == "NA", possible_codes:=""]
 hand_selected[possible_codes !="", .(possible_codes)]
-write_xlsx(hand_selected, path="../data/hand-coded.xlsx")
+```
+
+Correct codes to 2022 if any
+
+```{r}
+klucz <- read_excel("../data-raw/ksiz_kody_2014_2022_klucz.xls", 
+                    col_names = c("zawod_old", "nazwa_old", "zawod_new", "nazwa_new"), skip = 1, col_types = "text")
+klucz <- setDT(klucz)
 ```
 
 ```{r}
-hand_selected[is.na(kod_zawodu_corrected)]
+hand_selected <- merge(x = hand_selected,
+                       y = klucz[zawod_old != zawod_new][, .(kod_zawodu_corrected = zawod_old,  kod_zawodu_corrected2 = zawod_new)],
+                       all.x=T)
+
+hand_selected[!is.na(kod_zawodu_corrected2), kod_zawodu_corrected:= kod_zawodu_corrected2]
+hand_selected[, kod_zawodu_corrected2:=NULL]
+
+hand_selected <- hand_selected[order(id_ogl, ekspert)]
+hand_selected[, id_ogl_times :=.N, id_ogl]
+hand_selected[id_ogl_times == 3, job.description := job.description[1], ekspert]
+
+
+```
+
+Long and to train
+
+```{r}
+posible_codes_v <- hand_selected[possible_codes != "" & !is.na(kod_zawodu_corrected),  
+                                 lapply(possible_codes, function(x) unlist(tstrsplit(x, ","))), 
+                                   by = id_row]
+
+hand_selected2 <- merge(x = hand_selected,
+                       y = posible_codes_v,
+                       by = "id_row")
+
+hand_selected2[, kod_zawodu_corrected:= V1]
+hand_selected2[, V1:= NULL]
+
+hand_final <- rbind(hand_selected,hand_selected2)
+
+write_xlsx(hand_final, path="../data-raw/hand-coded.xlsx")
+
+head(hand_final)
+```
+
+```{r}
+hand_final[is.na(employer) | employer == "", employer := ""]
+hand_final[is.na(position.level) | position.level == "", position.level := ""]
+hand_final[is.na(category) | category == "", category := ""]
+hand_final[is.na(contract.type) | contract.type == "", contract.type := ""]
+hand_final[is.na(job.description) | job.description == "", job.description := ""]
+
+fwrite(
+  hand_final[,.(code = kod_zawodu_corrected, desc = str_c(job.title, employer, position.level, category, job.description, sep =" "))],
+  "../data/hand-coded.csv"
+)
 ```
 
