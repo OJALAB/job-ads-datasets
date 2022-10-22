@@ -29,11 +29,4 @@ hierachy[, cbop:= code %in%  unique(cbop_train$kod_zawodu)] # 2295 codes / 1952
 hierachy[, all:=esco+thes+info+kprm+hand + cbop > 0]
 hierachy[, lapply(.SD, mean), .SDcols = dict:all]
 ```
-```{r}
-head(hierachy)
-```
-
-```{r}
-fwrite(x = official[str_detect(code, "90$") & variable == "desc", .(code, desc)], file = "../data-hidden/kody90.csv")
-```
 
