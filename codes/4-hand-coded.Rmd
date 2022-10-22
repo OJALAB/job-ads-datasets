@@ -5,96 +5,80 @@ output: html_notebook
 
 ```{r}
 library(readxl)
-library(writexl)
 library(data.table)
 library(stringr)
-library(cld3)
-```
-
-regex patterns
-```{r}
-emails <- "([_a-z0-9-]+(\\.[_a-z0-9-]+)*@[a-z0-9-]+(\\.[a-z0-9-]+)*(\\.[a-z]{2,4}))"
-phones1 <- "(\\d[.-])?\\(?\\d{3}\\)?[-. ]?\\d{3}[-. ]?\\d{3}\\b"
-phones2 <- "(\\d[.-])?\\(?\\d{3}\\)?[-. ]?\\d{2}[-. ]?\\d{2}[-. ]?\\d{2}\\b"
-
-## nazwiska
-nazwiska <- fread("../data-helpers/pesel-nazwiska-meskie.csv", col.names = c("nazwisko"), select = 1)
-nazwiska_kob <- fread("../data-helpers/pesel-nazwiska-zenskie.csv", col.names = c("nazwisko"), select = 1)
-nazwiska_all <- tolower(unique(c(nazwiska$nazwisko, nazwiska_kob$nazwisko)))
-length(nazwiska_all)
-```
-
-```{r}
-hand1 <- read_excel("../data-raw/kom1-new.xlsx", col_types = "text")
-hand1 <- setDT(hand1)
-hand1[, job.description:=gsub("([a-ząćęłńóśźż])([A-ZĆĘŁŃÓŚŹŻ])","\\1 \\2", job.description)]
-write_xlsx(hand1, path = "../data-raw/kom1-new-sep.xlsx")
-```
-
-after hand cleaning
-
-```{r}
-## read and replace emails
-hand1 <- read_excel("../data-raw/kom1-new-sep-done.xlsx") |> setDT()
-hand1[, job.description := str_replace_all(job.description, emails, " <<EMAIL>> ")]
-hand1[, job.description:=str_replace_all(job.description, phones1, " <<PHONE>>")]
-hand1[, job.description:=str_replace_all(job.description, phones2, " <<PHONE>>")]
-
-# for (i in 1:length(nazwiska_all)) {
-#   if (i %% 1000 == 0) {
-#     cat("i: ", i, "\n")
-#   }
-#   hand1[, nazwisko := str_replace_all(job.description, regex(nazwiska_all[i], ignore_case = T), " <<NAZW>> ")]
-# }
-# 
-# hand1[str_detect(nazwisko, "<<NAZW>>")]
-```
-
-```{r}
-hand2 <- read_excel("../data-raw/kom2-new.xlsx", col_types = "text")
-hand2 <- setDT(hand2)
-hand2[, job.description:=gsub("([a-ząćęłńóśźż])([A-ZĆĘŁŃÓŚŹŻ])","\\1 \\2", job.description)]
-write_xlsx(hand2, path = "../data-raw/kom2-new-sep.xlsx")
-
-## read and replace emails
-
-```
-
-after hand cleaning
-
-```{r}
-hand2 <- read_excel("../data-raw/kom2-new-sep-done.xlsx") |> setDT()
-hand2[, job.description := str_replace_all(job.description, emails, " <<EMAIL>> ")]
-hand2[, job.description:=str_replace_all(job.description, phones1, " <<PHONE>>")]
-hand2[, job.description:=str_replace_all(job.description, phones2, " <<PHONE>>")]
-
-```
-
-```{r}
-hand3 <- read_excel("../data-raw/kom3-new.xlsx", col_types = "text")
-hand3 <- setDT(hand3)
-hand3[, job.description:=gsub("([a-ząćęłńóśźż])([A-ZĆĘŁŃÓŚŹŻ])","\\1 \\2", job.description)]
-hand3[, job.description:=gsub("([1-9])([a-ząćęłńóśźżA-ZĆĘŁŃÓŚŹŻ])","\\1 \\2", job.description)]
-write_xlsx(hand3, path = "../data-raw/kom3-new-sep.xlsx")
-
-## read and replace emails
-
-```
-
-after hand cleaning
-
-```{r}
-hand3 <- read_excel("../data-raw/kom3-new-sep-done.xlsx") |> setDT()
-hand3[, job.description := str_replace_all(job.description, emails, " <<EMAIL>> ")]
-hand3[, job.description:=str_replace_all(job.description, phones1, " <<PHONE>>")]
-hand3[, job.description:=str_replace_all(job.description, phones2, " <<PHONE>>")]
-
-hand3[language.description == "en"]
 ```
 
 Merging and cleaning
 
 ```{r}
+hand <- dir(path = "../data-raw", pattern = "*done.xlsx", full.names = T)
+hand <- lapply(hand, read_excel, col_types = "text")
+hand <- rbindlist(hand, idcol = "ekspert", fill = T)
 
+hand_selected <- hand[language.description == "pl", .(ekspert, id_ogl=as.character(as.integer(ID_unit)), id_oferty=as.character(as.integer(id_oferty)), 
+                                                      language.description, job.title, employer, region, job.type, 
+                                                      position.level, category, contract.type, job.description, 
+                                                      kod_zawodu = as.character(as.integer(`kod zawodu`)), 
+                                                      kod_zawodu2 = as.character(as.integer(kod)),
+                                                      uwagi)]
+
+hand_selected[is.na(kod_zawodu), kod_zawodu  := kod_zawodu2 ]
+
+hand_selected[, kod_zawodu_corrected:= kod_zawodu]
+
+
+```
+Correcting after clerical review
+
+```{r}
+hand_selected[ekspert == 1 & id_ogl == "82487"   , kod_zawodu_corrected:= "331203"]
+hand_selected[ekspert == 1 & id_ogl == "186186"  , kod_zawodu_corrected:= "921490"]
+hand_selected[ekspert == 1 & id_ogl == "900451"  , kod_zawodu_corrected:= "251202"]
+hand_selected[ekspert == 1 & id_ogl == "190586"  , kod_zawodu_corrected:= "818990"]
+hand_selected[ekspert == 1 & id_ogl == "417578"  , kod_zawodu_corrected:= "244001"]
+hand_selected[ekspert == 1 & id_ogl == "831144"  , kod_zawodu_corrected:= "228203"]
+hand_selected[ekspert == 1 & id_ogl == "719310"  , kod_zawodu_corrected:= "721405"]
+hand_selected[ekspert == 1 & id_ogl == "972214"  , kod_zawodu_corrected:= "228203"]
+hand_selected[ekspert == 1 & id_ogl == "1076160" , kod_zawodu_corrected:= "251401"]
+hand_selected[ekspert == 1 & id_ogl == "630918"  , kod_zawodu_corrected:= "833202"]
+
+hand_selected[ekspert == 2 & id_ogl == "582803" ,  kod_zawodu_corrected := "242390"]
+hand_selected[ekspert == 2 & id_ogl == "1112497" , kod_zawodu_corrected := "242230"]
+hand_selected[ekspert == 2 & id_ogl == "1213454" , kod_zawodu_corrected := "817290"]
+hand_selected[ekspert == 2 & id_ogl == "1026821" , kod_zawodu_corrected := "311803"]
+hand_selected[ekspert == 2 & id_ogl == "82487" ,   kod_zawodu_corrected := "331203"]
+hand_selected[ekspert == 2 & id_ogl == "591501" ,  kod_zawodu_corrected := "121904"]
+hand_selected[ekspert == 2 & id_ogl == "1166129" , kod_zawodu_corrected := "933304"]
+hand_selected[ekspert == 2 & id_ogl == "792538" ,  kod_zawodu_corrected := "244001"]
+hand_selected[ekspert == 2 & id_ogl == "1251772" , kod_zawodu_corrected := "333401"]
+hand_selected[ekspert == 2 & id_ogl == "1237150" , kod_zawodu_corrected := "331201"]
+hand_selected[ekspert == 2 & id_ogl == "940614" ,  kod_zawodu_corrected := "818990"]
+hand_selected[ekspert == 2 & id_ogl == "483819" ,  kod_zawodu_corrected := "411090"]
+
+hand_selected[ekspert == 3 & id_ogl == "186186", kod_zawodu_corrected:=  "921401"]
+hand_selected[ekspert == 3 & id_ogl == "1097073", kod_zawodu_corrected:= "325512"]
+hand_selected[ekspert == 3 & id_ogl == "1388500", kod_zawodu_corrected:= "911207"]
+hand_selected[ekspert == 3 & id_ogl == "281182", kod_zawodu_corrected:=  "814209"]
+hand_selected[ekspert == 3 & id_ogl == "977073", kod_zawodu_corrected:=  "214102"]
+
+hand_selected[ekspert == 2	& id_ogl == "286087", kod_zawodu_corrected := "821103"]
+hand_selected[ekspert == 3	& id_ogl == "628828", kod_zawodu_corrected := "321401"]
+
+hand_selected[, id_row:=1:.N]
+```
+
+
+Multiple codes for one ad
+
+```{r}
+hand_selected[, possible_codes := paste(unlist(str_extract_all(uwagi, "\\d{6}")),  collapse=", "), id_row]
+hand_selected[possible_codes == "NA", possible_codes:=""]
+hand_selected[possible_codes !="", .(possible_codes)]
+write_xlsx(hand_selected, path="../data/hand-coded.xlsx")
+```
+
+```{r}
+hand_selected[is.na(kod_zawodu_corrected)]
 ```
 
