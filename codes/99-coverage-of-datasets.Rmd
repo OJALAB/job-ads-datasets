@@ -30,10 +30,14 @@ hierachy[, cbop:= code %in%  cbop$code] # 2295 codes / 1952
 hierachy[, all := esco + thes + info + kprm + hand + cbop > 0]
 hierachy[, lapply(.SD, function(x) round(mean(x)*100,2)), .SDcols = dict:all]
 ```
-Counts
 
 ```{r}
+all_data <- rbind(esco[, source:="esco"], thes[, source:="thes"], info[, source:="info"], kprm[, source:="kprm"], 
+                  hand[str_detect(code,  "\\d{6}")][, source:="hand"], zapis[,source:="cbop"], fill = T) 
 
+all_data[,.N, .(code, source)][, source_counts:=.N, code]|> 
+  dcast(code + source_counts ~ source, value.var = "N", fill = 0)  |>
+  subset(source_counts == 2)
 ```
 
 Jakie kody nie są pokryte?
