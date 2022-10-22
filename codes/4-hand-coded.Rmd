@@ -1,0 +1,49 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+```{r}
+library(readxl)
+library(writexl)
+library(data.table)
+library(stringr)
+```
+
+regex patterns
+```{r}
+emails <- "([_a-z0-9-]+(\\.[_a-z0-9-]+)*@[a-z0-9-]+(\\.[a-z0-9-]+)*(\\.[a-z]{2,4}))"
+phones1 <- "(\\d[.-])?\\(?\\d{3}\\)?[-. ]?\\d{3}[-. ]?\\d{3}\\b"
+phones2 <- "(\\d[.-])?\\(?\\d{3}\\)?[-. ]?\\d{2}[-. ]?\\d{2}[-. ]?\\d{2}\\b"
+```
+
+```{r}
+hand1 <- read_excel("../data-raw/kom1-new.xlsx", col_types = "text")
+hand1 <- setDT(hand1)
+hand1[, job.description:=gsub("([a-ząćęłńóśźż])([A-ZĆĘŁŃÓŚŹŻ])","\\1 \\2", job.description)]
+write_xlsx(hand1, path = "../data-raw/kom1-new-sep.xlsx")
+
+## read and replace emails
+
+```
+
+```{r}
+hand2 <- read_excel("../data-raw/kom2-new.xlsx", col_types = "text")
+hand2 <- setDT(hand2)
+hand2[, job.description:=gsub("([a-ząćęłńóśźż])([A-ZĆĘŁŃÓŚŹŻ])","\\1 \\2", job.description)]
+write_xlsx(hand2, path = "../data-raw/kom2-new-sep.xlsx")
+
+## read and replace emails
+
+```
+
+```{r}
+hand3 <- read_excel("../data-raw/kom3-new.xlsx", col_types = "text")
+hand3 <- setDT(hand2)
+hand3[, job.description:=gsub("([a-ząćęłńóśźż])([A-ZĆĘŁŃÓŚŹŻ])","\\1 \\2", job.description)]
+write_xlsx(hand3, path = "../data-raw/kom3-new-sep.xlsx")
+
+## read and replace emails
+
+```
+
