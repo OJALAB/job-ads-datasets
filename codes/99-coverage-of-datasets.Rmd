@@ -32,12 +32,19 @@ hierachy[, lapply(.SD, function(x) round(mean(x)*100,2)), .SDcols = dict:all]
 ```
 
 ```{r}
-all_data <- rbind(esco[, source:="esco"], thes[, source:="thes"], info[, source:="info"], kprm[, source:="kprm"], 
-                  hand[str_detect(code,  "\\d{6}")][, source:="hand"], zapis[,source:="cbop"], fill = T) 
+all_data <- rbind(esco[ , .N, .(code)][, source:="esco"], 
+                  thes[ , .N, .(code)][, source:="thes"], 
+                  info[,  .N, .(code)][, source:="info"], 
+                  kprm[,  .N, .(code)][, source:="kprm"], 
+                  hand[str_detect(code,  "\\d{6}")][, .N, .(code)][, source:="hand"], 
+                  cbop[, .(N=sum(as.numeric(count))), .(code)][, source:="cbop"], 
+                  fill = T) 
+all_data[, source_counts:=.N, code]
 
-all_data[,.N, .(code, source)][, source_counts:=.N, code]|> 
-  dcast(code + source_counts ~ source, value.var = "N", fill = 0)  |>
-  subset(source_counts == 2)
+dcast(all_data, code + source_counts ~ source, value.var = "N", fill = 0) 
+
+## no sampling: dict, esco, thes
+## sampling cbop, hand, info, kprm
 ```
 
 Jakie kody nie są pokryte?
