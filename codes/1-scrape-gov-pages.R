@@ -19,7 +19,7 @@ hierachy <- hierachy[order(code)]
 hierachy[nchar(code) == 5, code:=paste0("0", code)]
 hierachy[, dict:=NULL]
 #fwrite(hierachy, file = "../data/kzis-official-2022.csv")
-hierachy <- fread(file = "../data/kzis-official-2022.csv")
+hierachy <- fread(file = "data/kzis-official-2022.csv")
 
 # official dictionary -----------------------------------------------------
 
@@ -78,7 +78,7 @@ opisy_zawodow_wide <- opisy_zawodow_wide[,.(code=zawod, name=nazwa, synthesis=sy
 opisy_zawodow_wide <- opisy_zawodow_wide[order(code)]
 
 
-klucz <- read_excel("data-raw/ksiz_kody_2014_2022_klucz.xls", 
+klucz <- read_excel("data-raw/kzis_kody_2014_2022_klucz.xls", 
                     col_names = c("zawod_old", "nazwa_old", "zawod_new", "nazwa_new"), skip = 1, col_types = "text")
 klucz <- setDT(klucz)
 
@@ -102,7 +102,7 @@ fwrite(opisy_zawodow_wide, "data/kzis-occup-dictionary-new.csv")
 opisy_zawodow_long <- melt(opisy_zawodow_wide[,.(code, desc, tasks1, tasks2)], id.vars = "code", value.name = "desc")
 opisy_zawodow_long <- opisy_zawodow_long[desc!=""] 
 
-opisy_zawodow_long <- rbind(opisy_zawodow_long, hierachy[dict == FALSE, .(code, variable = "name", desc = name)])
+opisy_zawodow_long <- rbind(opisy_zawodow_long, hierachy[, .(code, variable = "name", desc = name)])
 
 fwrite(opisy_zawodow_long, "data/kzis-occup-dictionary-new-long.csv")
 
