@@ -17,23 +17,24 @@ cbop <- fread("../data/cbop-train-2020-2022-no-employer.tar.gz", colClasses = "c
 
 ```{r}
 set.seed(123)
-cbop <- cbop[order(code)]
-cbop[, nchar:=nchar(desc)]
-cbop[, prob:=nchar/sum(nchar), code]
-cbop[, strata:=ifelse(.N>=50, 50, .N), code]
-cbop_test <- cbop[, .SD[sample(.N, strata[1], prob = prob)], code]
-all_sources <- rbind(info[, source:="info"], kprm[, source:="kprm"], hand[, source:="hand"], cbop_test[, .(code, desc, source="cbop")])
+#cbop <- cbop[order(code)]
+#cbop[, nchar:=nchar(desc)]
+#cbop[, prob:=nchar/sum(nchar), code]
+#cbop[, strata:=ifelse(.N>=50, 50, .N), code]
+#cbop_test <- cbop[, .SD[sample(.N, strata[1], prob = prob)], code]
+all_sources <- rbind(info[, source:="info"], kprm[, source:="kprm"], hand[, source:="hand"], 
+                     cbop[, .(code, desc, source="cbop")])
 all_sources[, size := .N, code]
 all_sources[, size_test := round(size*0.7), code]
 all_sources[, id:=1:.N]
 train_data <- all_sources[, .SD[sample(.N, size_test[1])], code]
 test_data <- all_sources[!id %in% train_data$id]
 test_data <- rbind(test_data, all_sources[size == 1])
-dim(test_data)
+dim(train_data)
 ```
 
 ```{r}
-fwrite(x = test_data[, .(class=code, desc=desc)], file = "../data/test-data.tar.gz")
-fwrite(x = train_data[, .(class=code, desc=desc)], file = "../data/train-data.tar.gz")
+fwrite(x = test_data[, .(class=code, desc=desc, source)], file = "../data/test-data.tar.gz")
+fwrite(x = train_data[, .(class=code, desc=desc, source)], file = "../data/train-data.tar.gz")
 ```
 

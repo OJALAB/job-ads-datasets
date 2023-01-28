@@ -1781,26 +1781,34 @@ cbop &lt;- fread(&quot;../data/cbop-train-2020-2022-no-employer.tar.gz&quot;, co
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZGltKHRlc3RfZGF0YSlcblxuYGBgIn0= -->
-<pre class="r"><code>dim(test_data)
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZGltKHRyYWluX2RhdGEpXG5cbmBgYCJ9 -->
+<pre class="r"><code>dim(train_data)
 </code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDIyODI2ICAgICA2XG4ifQ== -->
-<pre><code>[1] 22826     6</code></pre>
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDI4NzY3MSAgICAgIDZcbiJ9 -->
+<pre><code>[1] 287671      6</code></pre>
 <!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZndyaXRlKHggPSB0ZXN0X2RhdGFbLCAuKGNsYXNzPWNvZGUsIGRlc2M9ZGVzYyldLCBmaWxlID0gXCIuLi9kYXRhL3Rlc3QtZGF0YS50YXIuZ3pcIilcbmZ3cml0ZSh4ID0gdHJhaW5fZGF0YVssIC4oY2xhc3M9Y29kZSwgZGVzYz1kZXNjKV0sIGZpbGUgPSBcIi4uL2RhdGEvdHJhaW4tZGF0YS50YXIuZ3pcIilcbmBgYCJ9 -->
-<pre class="r"><code>fwrite(x = test_data[, .(class=code, desc=desc)], file = &quot;../data/test-data.tar.gz&quot;)
-fwrite(x = train_data[, .(class=code, desc=desc)], file = &quot;../data/train-data.tar.gz&quot;)</code></pre>
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZndyaXRlKHggPSB0ZXN0X2RhdGFbLCAuKGNsYXNzPWNvZGUsIGRlc2M9ZGVzYywgc291cmNlKV0sIGZpbGUgPSBcIi4uL2RhdGEvdGVzdC1kYXRhLnRhci5nelwiKVxuZndyaXRlKHggPSB0cmFpbl9kYXRhWywgLihjbGFzcz1jb2RlLCBkZXNjPWRlc2MsIHNvdXJjZSldLCBmaWxlID0gXCIuLi9kYXRhL3RyYWluLWRhdGEudGFyLmd6XCIpXG5gYGAifQ== -->
+<pre class="r"><code>fwrite(x = test_data[, .(class=code, desc=desc, source)], file = &quot;../data/test-data.tar.gz&quot;)
+fwrite(x = train_data[, .(class=code, desc=desc, source)], file = &quot;../data/train-data.tar.gz&quot;)</code></pre>
 <!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiXG5Xcml0dGVuIDM3LjAlIG9mIDI4NzY3MSByb3dzIGluIDIgc2VjcyB1c2luZyAxIHRocmVhZC4gbWF4QnVmZlVzZWQ9MyUuIEVUQSAzIHNlY3MuICAgICAgXG5Xcml0dGVuIDUzLjQlIG9mIDI4NzY3MSByb3dzIGluIDMgc2VjcyB1c2luZyAxIHRocmVhZC4gbWF4QnVmZlVzZWQ9NCUuIEVUQSAyIHNlY3MuICAgICAgXG5Xcml0dGVuIDczLjIlIG9mIDI4NzY3MSByb3dzIGluIDQgc2VjcyB1c2luZyAxIHRocmVhZC4gbWF4QnVmZlVzZWQ9NCUuIEVUQSAxIHNlY3MuICAgICAgXG5Xcml0dGVuIDk4LjMlIG9mIDI4NzY3MSByb3dzIGluIDUgc2VjcyB1c2luZyAxIHRocmVhZC4gbWF4QnVmZlVzZWQ9NCUuIEVUQSAwIHNlY3MuICAgICAgXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgXG4ifQ== -->
+<pre><code>
+Written 37.0% of 287671 rows in 2 secs using 1 thread. maxBuffUsed=3%. ETA 3 secs.      
+Written 53.4% of 287671 rows in 3 secs using 1 thread. maxBuffUsed=4%. ETA 2 secs.      
+Written 73.2% of 287671 rows in 4 secs using 1 thread. maxBuffUsed=4%. ETA 1 secs.      
+Written 98.3% of 287671 rows in 5 secs using 1 thread. maxBuffUsed=4%. ETA 0 secs.      
+                                                                                                                                     </code></pre>
+<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 
-<div id="rmd-source-code">LS0tCnRpdGxlOiAiUiBOb3RlYm9vayIKb3V0cHV0OiBodG1sX25vdGVib29rCi0tLQoKYGBge3J9CmxpYnJhcnkoZGF0YS50YWJsZSkKbGlicmFyeShzYW1wbGluZykKYGBgCgpgYGB7cn0KaW5mbyA8LSBmcmVhZCgiLi4vZGF0YS9remlzLW9jY3VwLWluZm9kb3JhZGNhLmNzdiIsIGNvbENsYXNzZXMgPSAiY2hhcmFjdGVyIikKa3BybSA8LSBmcmVhZCgiLi4vZGF0YS9rcHJtLXNlbGVjdGVkLmNzdiIsIGNvbENsYXNzZXMgPSAiY2hhcmFjdGVyIikKaGFuZCA8LSBmcmVhZCgiLi4vZGF0YS9oYW5kLWNvZGVkLmNzdiIsIGNvbENsYXNzZXMgPSAiY2hhcmFjdGVyIikKY2JvcCA8LSBmcmVhZCgiLi4vZGF0YS9jYm9wLXRyYWluLTIwMjAtMjAyMi1uby1lbXBsb3llci50YXIuZ3oiLCBjb2xDbGFzc2VzID0gImNoYXJhY3RlciIpCmBgYAoKYGBge3J9CnNldC5zZWVkKDEyMykKY2JvcCA8LSBjYm9wW29yZGVyKGNvZGUpXQpjYm9wWywgbmNoYXI6PW5jaGFyKGRlc2MpXQpjYm9wWywgcHJvYjo9bmNoYXIvc3VtKG5jaGFyKSwgY29kZV0KY2JvcFssIHN0cmF0YTo9aWZlbHNlKC5OPj01MCwgNTAsIC5OKSwgY29kZV0KY2JvcF90ZXN0IDwtIGNib3BbLCAuU0Rbc2FtcGxlKC5OLCBzdHJhdGFbMV0sIHByb2IgPSBwcm9iKV0sIGNvZGVdCmFsbF9zb3VyY2VzIDwtIHJiaW5kKGluZm9bLCBzb3VyY2U6PSJpbmZvIl0sIGtwcm1bLCBzb3VyY2U6PSJrcHJtIl0sIGhhbmRbLCBzb3VyY2U6PSJoYW5kIl0sIGNib3BfdGVzdFssIC4oY29kZSwgZGVzYywgc291cmNlPSJjYm9wIildKQphbGxfc291cmNlc1ssIHNpemUgOj0gLk4sIGNvZGVdCmFsbF9zb3VyY2VzWywgc2l6ZV90ZXN0IDo9IHJvdW5kKHNpemUqMC43KSwgY29kZV0KYWxsX3NvdXJjZXNbLCBpZDo9MTouTl0KdHJhaW5fZGF0YSA8LSBhbGxfc291cmNlc1ssIC5TRFtzYW1wbGUoLk4sIHNpemVfdGVzdFsxXSldLCBjb2RlXQp0ZXN0X2RhdGEgPC0gYWxsX3NvdXJjZXNbIWlkICVpbiUgdHJhaW5fZGF0YSRpZF0KdGVzdF9kYXRhIDwtIHJiaW5kKHRlc3RfZGF0YSwgYWxsX3NvdXJjZXNbc2l6ZSA9PSAxXSkKZGltKHRlc3RfZGF0YSkKYGBgCgpgYGB7cn0KZndyaXRlKHggPSB0ZXN0X2RhdGFbLCAuKGNsYXNzPWNvZGUsIGRlc2M9ZGVzYyldLCBmaWxlID0gIi4uL2RhdGEvdGVzdC1kYXRhLnRhci5neiIpCmZ3cml0ZSh4ID0gdHJhaW5fZGF0YVssIC4oY2xhc3M9Y29kZSwgZGVzYz1kZXNjKV0sIGZpbGUgPSAiLi4vZGF0YS90cmFpbi1kYXRhLnRhci5neiIpCmBgYAoK</div>
+<div id="rmd-source-code">LS0tCnRpdGxlOiAiUiBOb3RlYm9vayIKb3V0cHV0OiBodG1sX25vdGVib29rCi0tLQoKYGBge3J9CmxpYnJhcnkoZGF0YS50YWJsZSkKbGlicmFyeShzYW1wbGluZykKYGBgCgpgYGB7cn0KaW5mbyA8LSBmcmVhZCgiLi4vZGF0YS9remlzLW9jY3VwLWluZm9kb3JhZGNhLmNzdiIsIGNvbENsYXNzZXMgPSAiY2hhcmFjdGVyIikKa3BybSA8LSBmcmVhZCgiLi4vZGF0YS9rcHJtLXNlbGVjdGVkLmNzdiIsIGNvbENsYXNzZXMgPSAiY2hhcmFjdGVyIikKaGFuZCA8LSBmcmVhZCgiLi4vZGF0YS9oYW5kLWNvZGVkLmNzdiIsIGNvbENsYXNzZXMgPSAiY2hhcmFjdGVyIikKY2JvcCA8LSBmcmVhZCgiLi4vZGF0YS9jYm9wLXRyYWluLTIwMjAtMjAyMi1uby1lbXBsb3llci50YXIuZ3oiLCBjb2xDbGFzc2VzID0gImNoYXJhY3RlciIpCmBgYAoKYGBge3J9CnNldC5zZWVkKDEyMykKI2Nib3AgPC0gY2JvcFtvcmRlcihjb2RlKV0KI2Nib3BbLCBuY2hhcjo9bmNoYXIoZGVzYyldCiNjYm9wWywgcHJvYjo9bmNoYXIvc3VtKG5jaGFyKSwgY29kZV0KI2Nib3BbLCBzdHJhdGE6PWlmZWxzZSguTj49NTAsIDUwLCAuTiksIGNvZGVdCiNjYm9wX3Rlc3QgPC0gY2JvcFssIC5TRFtzYW1wbGUoLk4sIHN0cmF0YVsxXSwgcHJvYiA9IHByb2IpXSwgY29kZV0KYWxsX3NvdXJjZXMgPC0gcmJpbmQoaW5mb1ssIHNvdXJjZTo9ImluZm8iXSwga3BybVssIHNvdXJjZTo9Imtwcm0iXSwgaGFuZFssIHNvdXJjZTo9ImhhbmQiXSwgCiAgICAgICAgICAgICAgICAgICAgIGNib3BbLCAuKGNvZGUsIGRlc2MsIHNvdXJjZT0iY2JvcCIpXSkKYWxsX3NvdXJjZXNbLCBzaXplIDo9IC5OLCBjb2RlXQphbGxfc291cmNlc1ssIHNpemVfdGVzdCA6PSByb3VuZChzaXplKjAuNyksIGNvZGVdCmFsbF9zb3VyY2VzWywgaWQ6PTE6Lk5dCnRyYWluX2RhdGEgPC0gYWxsX3NvdXJjZXNbLCAuU0Rbc2FtcGxlKC5OLCBzaXplX3Rlc3RbMV0pXSwgY29kZV0KdGVzdF9kYXRhIDwtIGFsbF9zb3VyY2VzWyFpZCAlaW4lIHRyYWluX2RhdGEkaWRdCnRlc3RfZGF0YSA8LSByYmluZCh0ZXN0X2RhdGEsIGFsbF9zb3VyY2VzW3NpemUgPT0gMV0pCmRpbSh0cmFpbl9kYXRhKQpgYGAKCmBgYHtyfQpmd3JpdGUoeCA9IHRlc3RfZGF0YVssIC4oY2xhc3M9Y29kZSwgZGVzYz1kZXNjLCBzb3VyY2UpXSwgZmlsZSA9ICIuLi9kYXRhL3Rlc3QtZGF0YS50YXIuZ3oiKQpmd3JpdGUoeCA9IHRyYWluX2RhdGFbLCAuKGNsYXNzPWNvZGUsIGRlc2M9ZGVzYywgc291cmNlKV0sIGZpbGUgPSAiLi4vZGF0YS90cmFpbi1kYXRhLnRhci5neiIpCmBgYAoK</div>
 
 
 
