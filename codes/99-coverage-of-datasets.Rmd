@@ -11,7 +11,7 @@ datasets
 
 ```{r}
 hierachy <- fread("../data/kzis-official-2022.csv", colClasses = "character")
-official <- fread("../data/kzis-occup-dictionary-long.csv", colClasses = "character")
+official <- fread("../data/kzis-occup-dictionary-new-long.csv", colClasses = "character")
 esco <- fread("../data/esco-kzis-selected.csv", colClasses = "character")
 thes <- fread("../data/gus-thesaurus.csv", colClasses = "character")
 
