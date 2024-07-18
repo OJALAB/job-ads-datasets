@@ -10,16 +10,30 @@ library(readxl)
 
 # official classification -------------------------------------------------
 
-hierachy <- read_excel("../data-raw/Alfabetyczny indeks zawodów KZiS z 2021 (Dz.U. poz. 2285)  (w. 10.01.2022).xlsx",
+#### 2022 --------------------------------------------------------------------
+
+hierachy <- read_excel("data-raw/Alfabetyczny indeks zawodów KZiS z 2021 (Dz.U. poz. 2285)  (w. 10.01.2022).xlsx",
                        skip = 7, col_names = c("code", "name"))
 hierachy <- setDT(hierachy)
 hierachy <- hierachy[!is.na(name)]
 hierachy <- hierachy[, name:=str_remove(name, "S$")]
 hierachy <- hierachy[order(code)]
 hierachy[nchar(code) == 5, code:=paste0("0", code)]
-hierachy[, dict:=NULL]
-#fwrite(hierachy, file = "../data/kzis-official-2022.csv")
+fwrite(hierachy, file = "data/kzis-official-2022.csv")
 hierachy <- fread(file = "data/kzis-official-2022.csv")
+
+#### 2023 --------------------------------------------------------------------
+
+hierachy <- read_excel("data-raw/Indeks alfabetyczny zawodów KZiS z 2018 r. wg. stanu na dzień 01.01.2023 r.xlsx",
+                       skip = 7, col_names = c("code", "name"))
+hierachy <- setDT(hierachy)
+hierachy <- hierachy[!is.na(name)]
+hierachy <- hierachy[, name:=str_remove(name, "S$")]
+hierachy <- hierachy[order(code)]
+hierachy[nchar(code) == 5, code:=paste0("0", code)]
+fwrite(hierachy, file = "data/kzis-official-2023.csv")
+hierachy <- fread(file = "data/kzis-official-2023.csv")
+
 
 # official dictionary -----------------------------------------------------
 
@@ -69,46 +83,45 @@ opisy_zawodow[strona %in% opisy_zawodow[opis == "Opis w opracowaniu"]$strona & k
 opisy_zawodow[koluma == "kod", zawod:=opis]
 opisy_zawodow[, zawod := na.omit(unique(zawod)), by=strona]
 opisy_zawodow_wide <- dcast(opisy_zawodow, zawod ~ koluma, value.var = "opis")
-saveRDS(opisy_zawodow_wide, "data-raw/slownik-2023-01-28.rds")
-
-opisy_zawodow_wide <- readRDS("data-raw/slownik-2023-01-28.rds")
-
 
 opisy_zawodow_wide <- opisy_zawodow_wide[,.(code=zawod, name=nazwa, synthesis=synteza, tasks1=zadania_zawodowe, tasks2=dodatkowe_zadania_zawodowe)]
 opisy_zawodow_wide <- opisy_zawodow_wide[order(code)]
 
-
-klucz <- read_excel("data-raw/kzis_kody_2014_2022_klucz.xls", 
-                    col_names = c("zawod_old", "nazwa_old", "zawod_new", "nazwa_new"), skip = 1, col_types = "text")
-klucz <- setDT(klucz)
-
-opisy_zawodow_wide <- merge(x = opisy_zawodow_wide, 
-                            y = klucz[zawod_old != zawod_new][, .(code = zawod_old,  code_new = zawod_new)],
-                            all.x=T)
-
-opisy_zawodow_wide[is.na(code_new), code_new:=code]
 opisy_zawodow_wide[synthesis == "Opis w opracowaniu", synthesis:=""]
 opisy_zawodow_wide[tasks1 == "Opis w opracowaniu", tasks1:=""]
 opisy_zawodow_wide[tasks2 == "Opis w opracowaniu", tasks2:=""]
+opisy_zawodow_wide[is.na(tasks2), tasks2:=""]
+opisy_zawodow_wide[tasks2 <=4, tasks2:=""]
 
-setnames(opisy_zawodow_wide, "code", "code_old")
-setnames(opisy_zawodow_wide, "code_new", "code")
+#saveRDS(opisy_zawodow_wide, "data-raw/slownik-2023-01-28.rds")
+saveRDS(opisy_zawodow_wide, "data-raw/slownik-2024-07-10.rds")
+
+opisy_zawodow_wide <- readRDS("data-raw/slownik-2024-07-10.rds")
+
+## for old data
+# klucz <- read_excel("data-raw/ksiz_kody_2014_2022_klucz.xls", 
+#                     col_names = c("zawod_old", "nazwa_old", "zawod_new", "nazwa_new"), skip = 1, col_types = "text")
+# klucz <- setDT(klucz)
+# 
+# opisy_zawodow_wide <- merge(x = opisy_zawodow_wide, 
+#                             y = klucz[zawod_old != zawod_new][, .(code = zawod_old,  code_new = zawod_new)],
+#                             all.x=T)
+# 
+# opisy_zawodow_wide[is.na(code_new), code_new:=code]
+# setnames(opisy_zawodow_wide, "code", "code_old")
+# setnames(opisy_zawodow_wide, "code_new", "code")
 
 opisy_zawodow_wide[, desc:= paste(name, synthesis)]
-opisy_zawodow_wide[nchar(tasks2) < 10, tasks2:=""]
 
-fwrite(opisy_zawodow_wide, "data/kzis-occup-dictionary-new.csv")
+fwrite(opisy_zawodow_wide, "data/kzis-occup-dictionary-2024.csv")
 
 opisy_zawodow_long <- melt(opisy_zawodow_wide[,.(code, desc, tasks1, tasks2)], id.vars = "code", value.name = "desc")
 opisy_zawodow_long <- opisy_zawodow_long[desc!=""] 
-
 opisy_zawodow_long <- rbind(opisy_zawodow_long, hierachy[, .(code, variable = "name", desc = name)])
 
-fwrite(opisy_zawodow_long, "data/kzis-occup-dictionary-new-long.csv")
+fwrite(opisy_zawodow_long, "data/kzis-occup-dictionary-long-2024.csv")
 
-## add old colde
 # more info from infodoradca+ ---------------------------------------------
-
 
 ## get links to infodoradca
 
@@ -120,9 +133,9 @@ more_info <- sapply(1:length(opisy_linki), function(x) {
     html_attr("href") 
 })
 
+## 994 instead of 1000 in 2024 (as of 17.07.2024)
 more_info_full <- na.omit(more_info)
 more_info_full <- paste0("https://psz.praca.gov.pl",more_info_full)
-
 
 opisy_1000 <- list()
 
@@ -145,7 +158,6 @@ for (i in more_info_full) {
 opisy_1000_df <- do.call('rbind',opisy_1000)
 opisy_1000_df <- as.data.frame(opisy_1000_df)
 opisy_1000_df <- setDT(opisy_1000_df)
-
 
 
 setnames(opisy_1000_df, 
@@ -178,5 +190,7 @@ opisy_1000_long <- melt(data = opisy_1000_df[,.(kod_zawodu, desc1,desc2,desc3,de
                         id.vars = "kod_zawodu",
                         measure.vars = paste0("desc", 1:7),
                         value.name = "desc")
+
 setnames(opisy_1000_long, "kod_zawodu", "class")
 
+fwrite(opisy_1000_long, "data/kzis-occup-infodoradca-2024.csv")
