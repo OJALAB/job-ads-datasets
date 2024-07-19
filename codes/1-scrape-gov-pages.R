@@ -194,3 +194,22 @@ opisy_1000_long <- melt(data = opisy_1000_df[,.(kod_zawodu, desc1,desc2,desc3,de
 setnames(opisy_1000_long, "kod_zawodu", "class")
 
 fwrite(opisy_1000_long, "data/kzis-occup-infodoradca-2024.csv")
+
+## correct codes in info
+
+klucz <- read_excel("data-raw/ksiz_kody_2014_2022_klucz.xls", 
+                    col_names = c("zawod_old", "nazwa_old", "zawod_new", "nazwa_new"), skip = 1, col_types = "text")
+klucz <- setDT(klucz)
+klucz <- klucz[zawod_old != zawod_new]
+
+infod <- fread("data/kzis-occup-infodoradca.csv", colClasses = "character")
+infod[klucz[, .(code=zawod_old, code_new=zawod_new)], on = "code", code_new:=i.code_new]
+infod[!is.na(code_new), code:=code_new]
+infod[, code_new:=NULL]
+
+infod2024 <- fread("data/kzis-occup-infodoradca-2024.csv", colClasses = "character")
+infod2024[!class %in% infod$code]
+
+fwrite(
+  x = rbind(infod[, .(class=code, desc)], infod2024[!class %in% infod$code, .(class, desc)]),
+  file = "data/kzis-occup-infodoradca-2024-updated.csv")

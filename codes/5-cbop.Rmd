@@ -47,3 +47,7 @@ cbop_sample <- cbop[, .SD[sample(.N, min(round(0.2*.N), .N))], .(code, desc_ncha
 fwrite(x = cbop_sample[, .(code, desc)], file = "../data/cbop-for-train-test.tar.gz", quote = T)
 ```
 
+```{r}
+fwrite(cbop[, .N, code], "../data-raw/cbop-codes-2024.csv")
+```
+
