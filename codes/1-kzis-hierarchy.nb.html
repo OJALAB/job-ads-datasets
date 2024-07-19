@@ -1754,26 +1754,29 @@ display: none;
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGlicmFyeShwZGZ0b29scylcbmxpYnJhcnkoc3RyaW5ncilcbmxpYnJhcnkoc3RyaW5naSlcbmBgYCJ9 -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGlicmFyeShwZGZ0b29scylcbmxpYnJhcnkoc3RyaW5ncilcbmBgYCJ9 -->
 <pre class="r"><code>library(pdftools)
-library(stringr)
-library(stringi)</code></pre>
+library(stringr)</code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
+<p>Official hierarchy is stored in a pdf file</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
+<p>Read and process, group 3433 has a missing number so I add by
+hand</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuaGllcmFjaHkgPC0gcGRmdG9vbHM6OnBkZl90ZXh0KGhpZXJhcmNoeV9wZGYpXG5oaWVyYWNoeSA8LSBsYXBwbHkoaGllcmFjaHksIFxcKHgpIHN0cl90cmltKHN0cl9zcGxpdCh4LCBcIlxcXFxuXCIpW1sxXV0pKVxuaGllcmFjaHkgPC0gdW5saXN0KGhpZXJhY2h5KVxuaGllcmFjaHkgPC0gaGllcmFjaHlbc3RyX2RldGVjdChoaWVyYWNoeSwgXCJeXFxcXGR7MSw2fVxcXFxzezEsfVwiKV1cbmhpZXJhY2h5IDwtIGhpZXJhY2h5WzE6KGxlbmd0aChoaWVyYWNoeSktMTQpXVxuaGllcmFjaHkgPC0gc3RyaV9yZXBsYWNlX2ZpcnN0X3JlZ2V4KGhpZXJhY2h5LCBcIlxcXFxzezEsfVwiLCBcIlxcdFwiKVxuaGllcmFjaHkgPC0gYyhcImNsYXNzXFx0bmFtZVwiLCBoaWVyYWNoeSlcbmBgYCJ9 -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuaGllcmFjaHkgPC0gcGRmdG9vbHM6OnBkZl90ZXh0KGhpZXJhcmNoeV9wZGYpXG5oaWVyYWNoeSA8LSBsYXBwbHkoaGllcmFjaHksIFxcKHgpIHN0cl90cmltKHN0cl9zcGxpdCh4LCBcIlxcXFxuXCIpW1sxXV0pKVxuaGllcmFjaHkgPC0gdW5saXN0KGhpZXJhY2h5KVxuaGllcmFjaHlbc3RyX2RldGVjdChoaWVyYWNoeSwgXCJQcmFjb3duaWN5IGJpYmxpb3RlaywgZ2FsZXJpaVwiKV0gPC0gXCIzNDMzICBQcmFjb3duaWN5IGJpYmxpb3RlaywgZ2FsZXJpaSwgbXV6ZcOzdywgaW5mb3JtYWNqaSBuYXVrb3dlaiBpIHBva3Jld25pXCJcbmhpZXJhY2h5IDwtIGhpZXJhY2h5W3N0cl9kZXRlY3QoaGllcmFjaHksIFwiXlxcXFxkezEsNn1cXFxcc3sxLH1cIildXG5oaWVyYWNoeSA8LSBoaWVyYWNoeVsxOihsZW5ndGgoaGllcmFjaHkpLTE0KV1cbmhpZXJhY2h5IDwtIHN0cl9yZXBsYWNlKGhpZXJhY2h5LCBcIlxcXFxzezEsfVwiLCBcIlxcdFwiKVxuaGllcmFjaHkgPC0gYyhcImNsYXNzXFx0bmFtZVwiLCBoaWVyYWNoeSlcbmBgYCJ9 -->
 <pre class="r"><code>hierachy &lt;- pdftools::pdf_text(hierarchy_pdf)
 hierachy &lt;- lapply(hierachy, \(x) str_trim(str_split(x, &quot;\\n&quot;)[[1]]))
 hierachy &lt;- unlist(hierachy)
+hierachy[str_detect(hierachy, &quot;Pracownicy bibliotek, galerii&quot;)] &lt;- &quot;3433  Pracownicy bibliotek, galerii, muzeów, informacji naukowej i pokrewni&quot;
 hierachy &lt;- hierachy[str_detect(hierachy, &quot;^\\d{1,6}\\s{1,}&quot;)]
 hierachy &lt;- hierachy[1:(length(hierachy)-14)]
-hierachy &lt;- stri_replace_first_regex(hierachy, &quot;\\s{1,}&quot;, &quot;\t&quot;)
+hierachy &lt;- str_replace(hierachy, &quot;\\s{1,}&quot;, &quot;\t&quot;)
 hierachy &lt;- c(&quot;class\tname&quot;, hierachy)</code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
@@ -2791,7 +2794,7 @@ hierachy &lt;- c(&quot;class\tname&quot;, hierachy)</code></pre>
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 
-<div id="rmd-source-code">LS0tCnRpdGxlOiAiUiBOb3RlYm9vayIKb3V0cHV0OiBodG1sX25vdGVib29rCi0tLQoKYGBge3J9CmxpYnJhcnkocGRmdG9vbHMpCmxpYnJhcnkoc3RyaW5ncikKbGlicmFyeShzdHJpbmdpKQpgYGAKCmBgYHtyfQpoaWVyYXJjaHlfcGRmIDwtICIuLi9kYXRhLXJhdy9rbGFzeWZpa2FjamEtaGllcmFyY2hpYS5wZGYiCmBgYAoKYGBge3J9CmhpZXJhY2h5IDwtIHBkZnRvb2xzOjpwZGZfdGV4dChoaWVyYXJjaHlfcGRmKQpoaWVyYWNoeSA8LSBsYXBwbHkoaGllcmFjaHksIFwoeCkgc3RyX3RyaW0oc3RyX3NwbGl0KHgsICJcXG4iKVtbMV1dKSkKaGllcmFjaHkgPC0gdW5saXN0KGhpZXJhY2h5KQpoaWVyYWNoeSA8LSBoaWVyYWNoeVtzdHJfZGV0ZWN0KGhpZXJhY2h5LCAiXlxcZHsxLDZ9XFxzezEsfSIpXQpoaWVyYWNoeSA8LSBoaWVyYWNoeVsxOihsZW5ndGgoaGllcmFjaHkpLTE0KV0KaGllcmFjaHkgPC0gc3RyaV9yZXBsYWNlX2ZpcnN0X3JlZ2V4KGhpZXJhY2h5LCAiXFxzezEsfSIsICJcdCIpCmhpZXJhY2h5IDwtIGMoImNsYXNzXHRuYW1lIiwgaGllcmFjaHkpCmBgYAoKYGBge3J9CndyaXRlTGluZXMoaGllcmFjaHksIGNvbiA9ICIuLi9kYXRhL2t6aXMtaGllcmFyY2h5LTIwMjMudHN2IikKYGBgCgoKCg==</div>
+<div id="rmd-source-code">LS0tCnRpdGxlOiAiUiBOb3RlYm9vayIKb3V0cHV0OiBodG1sX25vdGVib29rCi0tLQoKYGBge3J9CmxpYnJhcnkocGRmdG9vbHMpCmxpYnJhcnkoc3RyaW5ncikKYGBgCgpPZmZpY2lhbCBoaWVyYXJjaHkgaXMgc3RvcmVkIGluIGEgcGRmIGZpbGUKCmBgYHtyfQpoaWVyYXJjaHlfcGRmIDwtICIuLi9kYXRhLXJhdy9rbGFzeWZpa2FjamEtaGllcmFyY2hpYS5wZGYiCmBgYAoKUmVhZCBhbmQgcHJvY2VzcywgZ3JvdXAgMzQzMyBoYXMgYSBtaXNzaW5nIG51bWJlciBzbyBJIGFkZCBieSBoYW5kCgpgYGB7cn0KaGllcmFjaHkgPC0gcGRmdG9vbHM6OnBkZl90ZXh0KGhpZXJhcmNoeV9wZGYpCmhpZXJhY2h5IDwtIGxhcHBseShoaWVyYWNoeSwgXCh4KSBzdHJfdHJpbShzdHJfc3BsaXQoeCwgIlxcbiIpW1sxXV0pKQpoaWVyYWNoeSA8LSB1bmxpc3QoaGllcmFjaHkpCmhpZXJhY2h5W3N0cl9kZXRlY3QoaGllcmFjaHksICJQcmFjb3duaWN5IGJpYmxpb3RlaywgZ2FsZXJpaSIpXSA8LSAiMzQzMyAgUHJhY293bmljeSBiaWJsaW90ZWssIGdhbGVyaWksIG11emXDs3csIGluZm9ybWFjamkgbmF1a293ZWogaSBwb2tyZXduaSIKaGllcmFjaHkgPC0gaGllcmFjaHlbc3RyX2RldGVjdChoaWVyYWNoeSwgIl5cXGR7MSw2fVxcc3sxLH0iKV0KaGllcmFjaHkgPC0gaGllcmFjaHlbMToobGVuZ3RoKGhpZXJhY2h5KS0xNCldCmhpZXJhY2h5IDwtIHN0cl9yZXBsYWNlKGhpZXJhY2h5LCAiXFxzezEsfSIsICJcdCIpCmhpZXJhY2h5IDwtIGMoImNsYXNzXHRuYW1lIiwgaGllcmFjaHkpCmBgYAoKYGBge3J9CndyaXRlTGluZXMoaGllcmFjaHksIGNvbiA9ICIuLi9kYXRhL2t6aXMtaGllcmFyY2h5LTIwMjMudHN2IikKYGBgCgoKCg==</div>
 
 
 

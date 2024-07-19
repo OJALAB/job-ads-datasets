@@ -11,49 +11,37 @@ datasets
 
 ```{r}
 hierachy <- fread("../data/kzis-hierarchy-2023.tsv", colClasses = "character", sep = "\t")
-official <- fread("../data/kzis-occup-dictionary-new-long.csv", colClasses = "character")
+official <- fread("../data/kzis-occup-dictionary-long-2024.csv", colClasses = "character")
 esco <- fread("../data/esco-kzis-selected.csv", colClasses = "character")
 thes <- fread("../data/gus-thesaurus.csv", colClasses = "character")
 
-info <- fread("../data/kzis-occup-infodoradca.csv", colClasses = "character")
+info <- fread("../data/kzis-occup-infodoradca-2024-updated.csv", colClasses = "character")
 kprm <- fread("../data/kprm-selected.csv", colClasses = "character")
 hand <- fread("../data/hand-coded.csv", colClasses = "character")
 cbop <- fread("../data-raw/cbop-codes-2024.csv", colClasses = "character")
 
-hierachy[, dict := code %in% unique(official$code)]
-hierachy[, esco := code %in% unique(esco$code)] ## 557 codes
-hierachy[, thes := code %in% unique(thes$code)] ## 1338 codes
-hierachy[, info := code %in% unique(info$code)] ## 1000 codes
-hierachy[, kprm := code %in% unique(kprm$code)] ## 12 codes
-hierachy[, hand := code %in% unique(hand$code)] ## 1044 codes
-hierachy[, cbop:= code %in%  cbop$code] # 2295 codes / 1952
+hierachy[, dict := class %in% unique(official$code)]
+hierachy[, esco := class %in% unique(esco$code)] ## 557 codes
+hierachy[, thes := class %in% unique(thes$code)] ## 1338 codes
+hierachy[, info := class %in% unique(info$class)] ## 1000 codes
+hierachy[, kprm := class %in% unique(kprm$code)] ## 12 codes
+hierachy[, hand := class %in% unique(hand$code)] ## 1044 codes
+hierachy[, cbop:= class %in%  cbop$code] # 2295 codes / 1952
 
-hierachy[, all := esco + thes + info + kprm + hand + cbop > 0]
-hierachy[nchar(code) == 6, lapply(.SD, function(x) round(mean(x)*100,2)), .SDcols = dict:all]
+hierachy[, all := (esco + thes + info + kprm + hand + cbop) > 0]
+hierachy[nchar(class) == 6, lapply(.SD, function(x) round(mean(x)*100,2)), .SDcols = dict:all]
 ```
+
+By 1 digit
 
 ```{r}
-all_data <- rbind(esco[ , .N, .(code)][, source:="esco"], 
-                  thes[ , .N, .(code)][, source:="thes"], 
-                  info[,  .N, .(code)][, source:="info"], 
-                  kprm[,  .N, .(code)][, source:="kprm"], 
-                  hand[str_detect(code,  "\\d{6}")][, .N, .(code)][, source:="hand"], 
-                  cbop[, .(N=sum(as.numeric(count))), .(code)][, source:="cbop"], 
-                  fill = T) 
-
-all_data[, source_counts:=.N, code]
-
-all_data_wide <- dcast(all_data, code + source_counts ~ source, value.var = "N", fill = 0) 
-all_data_wide <- merge(x = all_data_wide, 
-                  y = hierachy[, .(code, name)],
-                  all.x=T,
-                  by = "code")
-all_data_wide[, count:=cbop+esco+hand+info+kprm+thes]
-## no sampling: dict, esco, thes
-## sampling cbop, hand, info, kprm
+hierachy[nchar(class) == 6, 
+         lapply(.SD, function(x) round(mean(x)*100,2)), 
+         keyby=.(digit1=substr(class,1,1)),
+         .SDcols = dict:all]
 ```
 
-Jakie kody nie są pokryte?
+Which are not covered
 
 ```{r}
 hierachy[all == FALSE, .(code, name)][order(code)]
