@@ -20,7 +20,7 @@ hierachy <- unlist(hierachy)
 hierachy <- hierachy[str_detect(hierachy, "^\\d{1,6}\\s{1,}")]
 hierachy <- hierachy[1:(length(hierachy)-14)]
 hierachy <- stri_replace_first_regex(hierachy, "\\s{1,}", "\t")
-hierachy <- c("code\tname", hierachy)
+hierachy <- c("class\tname", hierachy)
 ```
 
 ```{r}

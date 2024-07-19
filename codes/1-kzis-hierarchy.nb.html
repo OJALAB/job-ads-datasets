@@ -1767,14 +1767,14 @@ library(stringi)</code></pre>
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuaGllcmFjaHkgPC0gcGRmdG9vbHM6OnBkZl90ZXh0KGhpZXJhcmNoeV9wZGYpXG5oaWVyYWNoeSA8LSBsYXBwbHkoaGllcmFjaHksIFxcKHgpIHN0cl90cmltKHN0cl9zcGxpdCh4LCBcIlxcXFxuXCIpW1sxXV0pKVxuaGllcmFjaHkgPC0gdW5saXN0KGhpZXJhY2h5KVxuaGllcmFjaHkgPC0gaGllcmFjaHlbc3RyX2RldGVjdChoaWVyYWNoeSwgXCJeXFxcXGR7MSw2fVxcXFxzezEsfVwiKV1cbmhpZXJhY2h5IDwtIGhpZXJhY2h5WzE6KGxlbmd0aChoaWVyYWNoeSktMTQpXVxuaGllcmFjaHkgPC0gc3RyaV9yZXBsYWNlX2ZpcnN0X3JlZ2V4KGhpZXJhY2h5LCBcIlxcXFxzezEsfVwiLCBcIlxcdFwiKVxuaGllcmFjaHkgPC0gYyhcImNvZGVcXHRuYW1lXCIsIGhpZXJhY2h5KVxuYGBgIn0= -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuaGllcmFjaHkgPC0gcGRmdG9vbHM6OnBkZl90ZXh0KGhpZXJhcmNoeV9wZGYpXG5oaWVyYWNoeSA8LSBsYXBwbHkoaGllcmFjaHksIFxcKHgpIHN0cl90cmltKHN0cl9zcGxpdCh4LCBcIlxcXFxuXCIpW1sxXV0pKVxuaGllcmFjaHkgPC0gdW5saXN0KGhpZXJhY2h5KVxuaGllcmFjaHkgPC0gaGllcmFjaHlbc3RyX2RldGVjdChoaWVyYWNoeSwgXCJeXFxcXGR7MSw2fVxcXFxzezEsfVwiKV1cbmhpZXJhY2h5IDwtIGhpZXJhY2h5WzE6KGxlbmd0aChoaWVyYWNoeSktMTQpXVxuaGllcmFjaHkgPC0gc3RyaV9yZXBsYWNlX2ZpcnN0X3JlZ2V4KGhpZXJhY2h5LCBcIlxcXFxzezEsfVwiLCBcIlxcdFwiKVxuaGllcmFjaHkgPC0gYyhcImNsYXNzXFx0bmFtZVwiLCBoaWVyYWNoeSlcbmBgYCJ9 -->
 <pre class="r"><code>hierachy &lt;- pdftools::pdf_text(hierarchy_pdf)
 hierachy &lt;- lapply(hierachy, \(x) str_trim(str_split(x, &quot;\\n&quot;)[[1]]))
 hierachy &lt;- unlist(hierachy)
 hierachy &lt;- hierachy[str_detect(hierachy, &quot;^\\d{1,6}\\s{1,}&quot;)]
 hierachy &lt;- hierachy[1:(length(hierachy)-14)]
 hierachy &lt;- stri_replace_first_regex(hierachy, &quot;\\s{1,}&quot;, &quot;\t&quot;)
-hierachy &lt;- c(&quot;code\tname&quot;, hierachy)</code></pre>
+hierachy &lt;- c(&quot;class\tname&quot;, hierachy)</code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
@@ -2791,7 +2791,7 @@ hierachy &lt;- c(&quot;code\tname&quot;, hierachy)</code></pre>
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 
-<div id="rmd-source-code">LS0tCnRpdGxlOiAiUiBOb3RlYm9vayIKb3V0cHV0OiBodG1sX25vdGVib29rCi0tLQoKYGBge3J9CmxpYnJhcnkocGRmdG9vbHMpCmxpYnJhcnkoc3RyaW5ncikKbGlicmFyeShzdHJpbmdpKQpgYGAKCmBgYHtyfQpoaWVyYXJjaHlfcGRmIDwtICIuLi9kYXRhLXJhdy9rbGFzeWZpa2FjamEtaGllcmFyY2hpYS5wZGYiCmBgYAoKYGBge3J9CmhpZXJhY2h5IDwtIHBkZnRvb2xzOjpwZGZfdGV4dChoaWVyYXJjaHlfcGRmKQpoaWVyYWNoeSA8LSBsYXBwbHkoaGllcmFjaHksIFwoeCkgc3RyX3RyaW0oc3RyX3NwbGl0KHgsICJcXG4iKVtbMV1dKSkKaGllcmFjaHkgPC0gdW5saXN0KGhpZXJhY2h5KQpoaWVyYWNoeSA8LSBoaWVyYWNoeVtzdHJfZGV0ZWN0KGhpZXJhY2h5LCAiXlxcZHsxLDZ9XFxzezEsfSIpXQpoaWVyYWNoeSA8LSBoaWVyYWNoeVsxOihsZW5ndGgoaGllcmFjaHkpLTE0KV0KaGllcmFjaHkgPC0gc3RyaV9yZXBsYWNlX2ZpcnN0X3JlZ2V4KGhpZXJhY2h5LCAiXFxzezEsfSIsICJcdCIpCmhpZXJhY2h5IDwtIGMoImNvZGVcdG5hbWUiLCBoaWVyYWNoeSkKYGBgCgpgYGB7cn0Kd3JpdGVMaW5lcyhoaWVyYWNoeSwgY29uID0gIi4uL2RhdGEva3ppcy1oaWVyYXJjaHktMjAyMy50c3YiKQpgYGAKCgoK</div>
+<div id="rmd-source-code">LS0tCnRpdGxlOiAiUiBOb3RlYm9vayIKb3V0cHV0OiBodG1sX25vdGVib29rCi0tLQoKYGBge3J9CmxpYnJhcnkocGRmdG9vbHMpCmxpYnJhcnkoc3RyaW5ncikKbGlicmFyeShzdHJpbmdpKQpgYGAKCmBgYHtyfQpoaWVyYXJjaHlfcGRmIDwtICIuLi9kYXRhLXJhdy9rbGFzeWZpa2FjamEtaGllcmFyY2hpYS5wZGYiCmBgYAoKYGBge3J9CmhpZXJhY2h5IDwtIHBkZnRvb2xzOjpwZGZfdGV4dChoaWVyYXJjaHlfcGRmKQpoaWVyYWNoeSA8LSBsYXBwbHkoaGllcmFjaHksIFwoeCkgc3RyX3RyaW0oc3RyX3NwbGl0KHgsICJcXG4iKVtbMV1dKSkKaGllcmFjaHkgPC0gdW5saXN0KGhpZXJhY2h5KQpoaWVyYWNoeSA8LSBoaWVyYWNoeVtzdHJfZGV0ZWN0KGhpZXJhY2h5LCAiXlxcZHsxLDZ9XFxzezEsfSIpXQpoaWVyYWNoeSA8LSBoaWVyYWNoeVsxOihsZW5ndGgoaGllcmFjaHkpLTE0KV0KaGllcmFjaHkgPC0gc3RyaV9yZXBsYWNlX2ZpcnN0X3JlZ2V4KGhpZXJhY2h5LCAiXFxzezEsfSIsICJcdCIpCmhpZXJhY2h5IDwtIGMoImNsYXNzXHRuYW1lIiwgaGllcmFjaHkpCmBgYAoKYGBge3J9CndyaXRlTGluZXMoaGllcmFjaHksIGNvbiA9ICIuLi9kYXRhL2t6aXMtaGllcmFyY2h5LTIwMjMudHN2IikKYGBgCgoKCg==</div>
 
 
 
