@@ -13,7 +13,7 @@ library(readxl)
 #### 2022 --------------------------------------------------------------------
 
 hierachy <- read_excel("data-raw/Alfabetyczny indeks zawodów KZiS z 2021 (Dz.U. poz. 2285)  (w. 10.01.2022).xlsx",
-                       skip = 7, col_names = c("code", "name"))
+                       skip = 7, col_names = c("code", "name"), col_types = c("text", "text"))
 hierachy <- setDT(hierachy)
 hierachy <- hierachy[!is.na(name)]
 hierachy <- hierachy[, name:=str_remove(name, "S$")]
@@ -25,7 +25,7 @@ hierachy <- fread(file = "data/kzis-official-2022.csv")
 #### 2023 --------------------------------------------------------------------
 
 hierachy <- read_excel("data-raw/Indeks alfabetyczny zawodów KZiS z 2018 r. wg. stanu na dzień 01.01.2023 r.xlsx",
-                       skip = 7, col_names = c("code", "name"))
+                       skip = 7, col_names = c("code", "name"), col_types = c("text", "text"))
 hierachy <- setDT(hierachy)
 hierachy <- hierachy[!is.na(name)]
 hierachy <- hierachy[, name:=str_remove(name, "S$")]

@@ -7,6 +7,7 @@ output: html_notebook
 library(readxl)
 library(data.table)
 library(stringr)
+library(writexl)
 ```
 
 Merging and cleaning

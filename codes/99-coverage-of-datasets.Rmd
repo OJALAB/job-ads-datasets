@@ -10,7 +10,7 @@ library(data.table)
 datasets
 
 ```{r}
-hierachy <- fread("../data/kzis-official-2023.csv", colClasses = "character")
+hierachy <- fread("../data/kzis-hierarchy-2023.tsv", colClasses = "character", sep = "\t")
 official <- fread("../data/kzis-occup-dictionary-new-long.csv", colClasses = "character")
 esco <- fread("../data/esco-kzis-selected.csv", colClasses = "character")
 thes <- fread("../data/gus-thesaurus.csv", colClasses = "character")

@@ -1,0 +1,31 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+```{r}
+library(pdftools)
+library(stringr)
+library(stringi)
+```
+
+```{r}
+hierarchy_pdf <- "../data-raw/klasyfikacja-hierarchia.pdf"
+```
+
+```{r}
+hierachy <- pdftools::pdf_text(hierarchy_pdf)
+hierachy <- lapply(hierachy, \(x) str_trim(str_split(x, "\\n")[[1]]))
+hierachy <- unlist(hierachy)
+hierachy <- hierachy[str_detect(hierachy, "^\\d{1,6}\\s{1,}")]
+hierachy <- hierachy[1:(length(hierachy)-14)]
+hierachy <- stri_replace_first_regex(hierachy, "\\s{1,}", "\t")
+hierachy <- c("code\tname", hierachy)
+```
+
+```{r}
+writeLines(hierachy, con = "../data/kzis-hierarchy-2023.tsv")
+```
+
+
+
