@@ -13,7 +13,6 @@ Official hierarchy
 
 ```{r}
 hierachy <- fread("../data/kzis-hierarchy-2023.tsv", colClasses = "character", sep = "\t")
-
 ```
 
 For training only
@@ -67,5 +66,47 @@ test_data <- rbind(test_data, hand_1k[, source:="hand1k"], fill = T)
 ```{r}
 fwrite(x = test_data[, .(class, desc=desc, source)], file = "../data/train-test/test-data-2024.tar.gz")
 fwrite(x = train_data[, .(class, desc=desc, source)], file = "../data/train-test/train-data-2024.tar.gz")
+```
+
+
+Whole CBOP dataset
+
+```{r}
+cbop1 <- fread("../data/cbop-for-train-test-whole-1.tar.gz", colClasses = "character")
+cbop2 <- fread("../data/cbop-for-train-test-whole-2.tar.gz", colClasses = "character")
+cbop3 <- fread("../data/cbop-for-train-test-whole-3.tar.gz", colClasses = "character")
+cbop4 <- fread("../data/cbop-for-train-test-whole-4.tar.gz", colClasses = "character")
+```
+
+```{r}
+set.seed(123)
+
+all_sources <- rbind(info[, source:="info"], 
+                     kprm[, source:="kprm"][, .(class=code, desc, source)], 
+                     hand[, source:="hand"][, .(class=code, desc, source)], 
+                     esco[, source:="esco"][, .(class=code, desc, source)], 
+                     cbop1[, source:="cbop"][, .(class=code, desc, source)],
+                     cbop2[, source:="cbop"][, .(class=code, desc, source)],
+                     cbop3[, source:="cbop"][, .(class=code, desc, source)],
+                     cbop4[, source:="cbop"][, .(class=code, desc, source)])
+
+all_sources[, size := .N, class]
+all_sources[, size_test := round(size*0.7), class]
+all_sources[, id:=1:.N]
+
+train_data <- all_sources[, .SD[sample(.N, size_test[1])], class]
+test_data <- all_sources[!id %in% train_data$id]
+
+test_data <- rbind(test_data, all_sources[size == 1])
+
+train_data <- rbind(train_data, official[, source:="official"], thes[, source:="gus"], fill = T)
+test_data <- rbind(test_data, hand_1k[, source:="hand1k"], fill = T)
+
+```
+
+```{r}
+fwrite(x = test_data[, .(class, desc=desc, source)], file = "../data/train-test/test-data-whole-2024.tar.gz")
+fwrite(x = train_data[1:300000, .(class, desc=desc, source)], file = "../data/train-test/train-data-whole-2024-1.tar.gz")
+fwrite(x = train_data[300001:602307, .(class, desc=desc, source)], file = "../data/train-test/train-data-whole-2024-2.tar.gz")
 ```
 

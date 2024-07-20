@@ -47,6 +47,16 @@ cbop_sample <- cbop[, .SD[sample(.N, min(round(0.2*.N), .N))], .(code, desc_ncha
 fwrite(x = cbop_sample[, .(code, desc)], file = "../data/cbop-for-train-test.tar.gz", quote = T)
 ```
 
+Whole dataset
+
+```{r}
+fwrite(x = cbop[1:200000, .(code, desc)], file = "../data/cbop-for-train-test-whole-1.tar.gz", quote = T)
+fwrite(x = cbop[200001:400000, .(code, desc)], file = "../data/cbop-for-train-test-whole-2.tar.gz", quote = T)
+fwrite(x = cbop[400001:600000, .(code, desc)], file = "../data/cbop-for-train-test-whole-3.tar.gz", quote = T)
+fwrite(x = cbop[600000:823297, .(code, desc)], file = "../data/cbop-for-train-test-whole-4.tar.gz", quote = T)
+```
+
+
 ```{r}
 fwrite(cbop[, .N, code], "../data-raw/cbop-codes-2024.csv")
 ```
