@@ -39,6 +39,7 @@ esco <- fread("../data/esco-kzis-selected.csv", colClasses = "character")
 cbop <- fread("../data/cbop-for-train-test.tar.gz", colClasses = "character")
 ```
 
+## Sampling by class
 
 Create training and test data wit 20% of CBOP data
 
@@ -62,7 +63,6 @@ test_data <- rbind(test_data, all_sources[size == 1])
 
 train_data <- rbind(train_data, official[, source:="official"], thes[, source:="gus"], fill = T)
 test_data <- rbind(test_data, hand_1k[, source:="hand1k"], fill = T)
-
 ```
 
 ```{r}
@@ -108,6 +108,63 @@ test_data <- rbind(test_data, hand_1k[, source:="hand1k"], fill = T)
 ```{r}
 fwrite(x = test_data[, .(class, desc=desc, source)], file = "../data/train-test/test-data-whole-2024.tar.gz")
 fwrite(x = train_data[1:300000, .(class, desc=desc, source)], file = "../data/train-test/train-data-whole-2024-1.tar.gz")
-fwrite(x = train_data[300001:602307, .(class, desc=desc, source)], file = "../data/train-test/train-data-whole-2024-2.tar.gz")
+fwrite(x = train_data[300001:nrow(train_data), .(class, desc=desc, source)], file = "../data/train-test/train-data-whole-2024-2.tar.gz")
+fwrite(x = train_data[, .(class, desc=desc, source)], file = "../data/train-test/train-data-whole-2024.tar.gz")
+```
+
+## Simple random sample
+
+Limited CBOP data
+
+```{r}
+set.seed(123)
+all_sources <- rbind(info[, source:="info"], 
+                     kprm[, source:="kprm"][, .(class=code, desc, source)], 
+                     hand[, source:="hand"][, .(class=code, desc, source)], 
+                     esco[, source:="esco"][, .(class=code, desc, source)], 
+                     cbop[, source:="cbop"][, .(class=code, desc, source)])
+
+all_sources[, id:=1:.N]
+
+train_data <- all_sources[, .SD[sample(1:.N, round(.N*0.70))], source]
+test_data <- all_sources[!id %in% train_data$id]
+
+train_data <- rbind(train_data, official[, source:="official"], thes[, source:="gus"], fill = T)
+test_data <- rbind(test_data, hand_1k[, source:="hand1k"], fill = T)
+```
+
+```{r}
+fwrite(x = test_data[, .(class, desc=desc, source)], file = "../data/train-test/test-data-source-2024.tar.gz")
+fwrite(x = train_data[, .(class, desc=desc, source)], file = "../data/train-test/train-data-source-2024.tar.gz")
+```
+
+Whole CBOP data
+
+```{r}
+set.seed(123)
+
+all_sources <- rbind(info[, source:="info"], 
+                     kprm[, source:="kprm"][, .(class=code, desc, source)], 
+                     hand[, source:="hand"][, .(class=code, desc, source)], 
+                     esco[, source:="esco"][, .(class=code, desc, source)], 
+                     cbop1[, source:="cbop"][, .(class=code, desc, source)],
+                     cbop2[, source:="cbop"][, .(class=code, desc, source)],
+                     cbop3[, source:="cbop"][, .(class=code, desc, source)],
+                     cbop4[, source:="cbop"][, .(class=code, desc, source)])
+
+all_sources[, id:=1:.N]
+
+train_data <- all_sources[, .SD[sample(1:.N, round(.N*0.70))], source]
+test_data <- all_sources[!id %in% train_data$id]
+
+train_data <- rbind(train_data, official[, source:="official"], thes[, source:="gus"], fill = T)
+test_data <- rbind(test_data, hand_1k[, source:="hand1k"], fill = T)
+```
+
+```{r}
+fwrite(x = test_data[, .(class, desc=desc, source)], file = "../data/train-test/test-data-whole-source-2024.tar.gz")
+fwrite(x = train_data[1:300000, .(class, desc=desc, source)], file = "../data/train-test/train-data-whole-source-2024-1.tar.gz")
+fwrite(x = train_data[300001:nrow(train_data), .(class, desc=desc, source)], file = "../data/train-test/train-data-whole-source-2024-2.tar.gz")
+fwrite(x = train_data[, .(class, desc=desc, source)], file = "../data/train-test/train-data-whole-source-2024.tar.gz")
 ```
 
