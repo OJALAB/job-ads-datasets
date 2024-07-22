@@ -8,7 +8,7 @@ Datasets for training and testing (folder `data/`)
 4.  `kprm-selected.csv` -- selected occupations from KPRM (nabory.kprm.gov.pl, `kprm`)
 5.  `hand-coded.csv` -- 10k ads hand-coded by 3 experts (`hand`)
 6.  `hand-coded-1k.csv` -- additional 1k ads hand-codes by 1 expert
-7.  `gus-thesaurus.csv` -- official thesaurus from GUS (`thes`)
+7.  `gus-thesaurus.csv` -- official thesaurus from GUS (`gus`)
 8.  `esco-kzis-selected.csv` -- selected occupations connected with ESCO (`esco`)
 9.  `cbop-for-train-test.tar.gz` -- ads from CBOP coded by Public Employment Offices staff (20% sample of `cbop-train-2020-2022-no-employer.tar.gz` and `cbop-train-2022-2023-no-employer.tar.gz`, `cbop`)
 10. `cbop-for-train-test.-whole-{1,2,3,4}.tar.gz` -- ads from CBOP coded by Public Employment Offices staff (whole dataset)
@@ -47,6 +47,8 @@ Overall coverage of 6 digit codes aggregated at 1 digit groups
 | 7 Robotnicy przemysłowi i rzemieślnicy                            | 46.22 |  46.64 | 16.81 | 0.00 | 39.29 |   4.62 |  89.50 |  94.33 |
 | 8 Operatorzy i monterzy maszyn i urządzeń                         | 40.83 |  82.43 | 15.25 | 0.00 | 25.32 |   2.07 |  90.96 |  97.93 |
 | 9 Pracownicy wykonujący prace proste                              |  3.97 |  15.87 | 16.67 | 0.00 | 47.62 |   1.59 |  96.03 |  96.03 |
+
+**NOTE**: Codes that are not present in study datasets are listed [here](data/codes-not-coveted.csv).
 
 # How to cite
 
