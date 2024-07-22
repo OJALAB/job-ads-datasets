@@ -3,16 +3,16 @@
 Repository contains 8 datasets
 
 + 70% sample by code
-  + train-data-2024.tar.gz -- 140,985 rows and 3 columns
-  + test-data-2024.tar.gz --  56,989 rows and 3 columns
-  + train-data-whole-2024.tar.gz -- 602,307 rows and 3 columns
-  + test-data-whole-2024.tar.gz -- 254,698 and 3 columns
+  + train-data-2024.tar.gz -- 140,968 rows and 3 columns
+  + test-data-2024.tar.gz --  56,983 rows and 3 columns
+  + train-data-whole-2024.tar.gz -- 602,290 rows and 3 columns
+  + test-data-whole-2024.tar.gz -- 254,692 and 3 columns
 
 + 70% sample by source
- + train-data-source-2024.tar.gz -- 140,985 rows and 3 columns
- + test-data-source-2024.tar.gz --  56,989 rows and 3 columns
- + train-data-whole-source-2024.tar.gz -- 602,307 rows and 3 columns
- + test-data-whole-source-2024.tar.gz -- 254,698 and 3 columns
+ + train-data-source-2024.tar.gz -- 140,925 rows and 3 columns
+ + test-data-source-2024.tar.gz --  56,879 rows and 3 columns
+ + train-data-whole-source-2024.tar.gz -- 602,284 rows and 3 columns
+ + test-data-whole-source-2024.tar.gz -- 254,603 and 3 columns
 
 
 
@@ -29,7 +29,8 @@ Each dataset contains 3 columns:
       + gus -- thesaurus prepared by the Polish Statistical Office (https://stat.gov.pl/Klasyfikacje/doc/kzs/slownik.html).
       + esco -- selected codes related to ESCO (https://esco.ec.europa.eu/pl),
       + cbop -- job offers from CBOP (https://oferty.praca.gov.pl/portal/index.cbop#/dlaInt),
-      + hand -- hand coded offers from online job advertisement services (coded by 3 experts),
+      + hand -- 10k hand coded offers from online job advertisement services (coded by 3 experts),
+      + hand1k -- additional 1k hand coded offers from online job advertisement services (coded by 1 expert),
       + kprm -- selected job offers from KPRM (https://nabory.kprm.gov.pl),
       
 Detailed information about the data can be found here: https://github.com/OJALAB/job-ads-datasets
