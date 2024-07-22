@@ -1,0 +1,187 @@
+class,name
+111401,Zawodowy działacz organizacji komercyjnej / pracodawców
+111403,Zawodowy działacz organizacji pozarządowej
+111490,Pozostali zawodowi działacze organizacji członkowskich
+122107,Kierownik domu aukcyjnego
+132411,Kierownik do spraw transportu rurociągowego
+134206,Położna oddziałowa
+134916,Prezes / dyrektor sądu
+143103,Kierownik ogrodu zoologicznego
+143104,Kierownik zakładu bukmacherskiego / kolektury / loterii
+211203,Synoptyk
+213101,Botanik
+213109,Bioinformatyk
+213110,Fizjolog
+213208,Klasyfikator gruntów
+213209,Rzeczoznawca rolniczy
+214307,Inżynier systemów bezpieczeństwa jądrowego i ochrony radiologicznej
+214504,Inżynier dekontaminacji – skażenia promieniotwórcze
+214505,Inżynier postępowania z odpadami promieniotwórczymi
+214506,Inżynier inżynierii materiałów syntetycznych
+214507,Inżynier papiernictwa
+214601,Inżynier górnik – górnictwo otworowe
+214610,Inżynier geolog – hydrologia górnicza
+214904,Inżynier awionik
+214909,Inżynier poligrafii
+214928,Inżynier optyk
+214935,Rzeczoznawca do spraw zabezpieczeń przeciwpożarowych
+216202,Architekt zieleni wewnątrz budynków
+216306,Projektant wyrobów skórzanych
+216508,Kartograf
+221218,Lekarz – specjalista diagnostyki laboratoryjnej
+221232,Lekarz – specjalista medycyny nuklearnej
+221237,Lekarz – specjalista medycyny sądowej
+221239,Lekarz – specjalista medycyny transportu
+221240,Lekarz – specjalista mikrobiologii lekarskiej
+221273,Lekarz – specjalista intensywnej terapii
+221274,Lekarz – specjalista medycyny lotniczej
+221275,Lekarz – specjalista medycyny morskiej i tropikalnej
+221277,Lekarz – specjalista pediatrii metabolicznej
+223201,Położna – specjalista organizacji i zarządzania
+223202,Położna – specjalista pielęgniarstwa epidemiologicznego
+223203,Położna – specjalista pielęgniarstwa ginekologicznego
+223204,Położna – specjalista pielęgniarstwa neonatologicznego
+223207,Położna – specjalista promocji zdrowia i edukacji zdrowotnej
+225201,Lekarz weterynarii – specjalista chirurgii weterynaryjnej
+225203,Lekarz weterynarii – specjalista chorób koni
+225204,Lekarz weterynarii – specjalista chorób owadów użytkowych
+225207,Lekarz weterynarii – specjalista chorób ryb
+225209,Lekarz weterynarii – specjalista chorób zwierząt futerkowych
+225210,Lekarz weterynarii – specjalista chorób zwierząt nieudomowionych
+225216,Lekarz weterynarii – specjalista użytkowania i patologii zwierząt
+225217,Lekarz weterynarii – specjalista weterynaryjnej diagnostyki laboratoryjnej
+226203,Lekarz dentysta – specjalista epidemiologii
+226290,Pozostali lekarze dentyści specjaliści
+227204,Diagnosta laboratoryjny – specjalista laboratoryjnej genetyki sądowej
+227208,Diagnosta laboratoryjny – specjalista laboratoryjnej parazytologii medycznej
+227214,Diagnosta laboratoryjny – specjalista laboratoryjnej toksykologii sądowej
+228202,Farmaceuta – specjalista bromatologii
+228204,Farmaceuta – specjalista farmacji klinicznej
+228208,Farmaceuta – specjalista leku roślinnego
+228210,Farmaceuta – specjalista toksykologii
+228211,Farmaceuta – specjalista zdrowia publicznego
+228212,Farmaceuta – specjalista zdrowia środowiskowego
+229101,Inspektor dozoru jądrowego
+229106,Rzeczoznawca do spraw bezpieczeństwa i higieny pracy
+229401,Audiofonolog
+229490,Pozostali audiofonolodzy i logopedzi
+229909,Psychoonkolog
+229910,Psychotraumatolog
+229911,Specjalista radiofarmacji
+242103,Makler nadzorujący
+242114,Specjalista do spraw społecznej odpowiedzialności przedsiębiorstw
+242115,Specjalista do spraw przewozów intermodalnych
+242205,Doradca do spraw bezpieczeństwa w transporcie towarów niebezpiecznych
+242206,Ekspert w Urzędzie Patentowym RP
+243201,Specjalista etyki biznesu
+251203,Specjalista do spraw technologii blockchain
+251906,Inżynier internetu rzeczy
+251910,Specjalista do spraw wirtualnej rzeczywistości
+263402,Psycholog biznesu
+263408,Grafolog
+264103,Poeta
+264206,Krytyk kulinarny
+265205,Reżyser dźwięku
+265206,Muzykolog
+265207,Piosenkarz
+265401,Asystent reżysera filmowego
+265403,Producent filmowy
+265404,Producent teatralny
+265405,Producent telewizyjny
+265411,Producent muzyczny
+265490,"Pozostali producenci filmowi, reżyserzy i pokrewni"
+265602,Konferansjer
+265606,Spiker radiowy
+311217,Technik dróg kolejowych i obiektów inżynieryjnych
+311221,Technik dekarstwaS
+311223,Technik obsługi przemysłu targowo-wystawienniczegoS
+311607,Technik postępowania ze źródłami promieniotwórczymi
+311608,Technik izolacji przemysłowychS
+311709,Technik podziemnej eksploatacji kopalin innych niż węgiel kamiennyS
+311901,Cechowniczy
+311902,Monter urządzeń medycznych
+311912,Technik garbarzS
+311933,Stroiciel fortepianów i pianin
+311934,Technik budowy fortepianów i pianin
+311936,Technik procesów introligatorskichS
+311942,Technik budowy jednostek pływającychS
+311944,Technik ceramikS
+311945,Technik budowy i strojenia fortepianów i pianinS
+311947,Technik przemysłu jachtowegoS
+312102,Osoby dozoru ruchu w górnictwie otworowym
+312211,Mistrz produkcji w przemyśle odzieżowym
+315106,Technik elektroautomatyki okrętowejS
+315204,Kapitan portu morskiego
+315210,Obserwator radarowy żeglugi śródlądowej
+315212,Pilot żeglugi śródlądowej
+315216,Technik żeglugi śródlądowejS
+315309,Pilot sterowcowy zawodowy
+315312,Pilot wiatrakowcowy zawodowy
+315319,Pilot pionowzlotu
+331190,Pozostali dealerzy i maklerzy aktywów finansowych
+331501,Gemmolog
+334301,Akredytowany asystent parlamentarny
+335490,Pozostali urzędnicy organów udzielających licencji
+335501,Negocjator policyjny
+335503,Technik kryminalistyki
+335506,Policjant służby kontrterrorystycznej
+335507,Policjant służby spraw wewnętrznych
+342203,Menedżer dyscypliny sportu
+343503,Klaun (clown)
+343505,Komik
+343506,Treser zwierząt cyrkowych
+343507,Żongler
+343601,Aktor scen muzycznychS
+343908,Menedżer klubu muzycznego
+352107,Mikser dźwięku
+352108,Mikser obrazu
+352118,Realizator rekonstrukcji dźwięku
+352119,Technik dźwięku
+352123,Technik realizacji nagrańS
+421105,Kontroler pocztowy
+515205,Technik turystyki na obszarach wiejskichS
+516190,"Pozostali astrolodzy, wróżbici i pokrewni"
+516409,Fizjoterapeuta koni
+541313,Strażnik Straży Marszałkowskiej
+541902,Ratownik górniczy
+634001,Rybak pracujący na własne potrzeby
+721103,Ludwisarz
+721304,Blacharz lotniczy
+721305,Blacharz okrętowy
+722201,Eguterzysta
+723201,Mechanik płatowców
+723290,Pozostali mechanicy statków powietrznych i pokrewni
+731603,Giloszer szkła
+731604,Grawer szkła
+731607,Rzeźbiarz szkła
+731708,Trzciniarz
+731801,Arkadownik
+731807,Renowator tkanin unikatowych
+732101,Fotograf poligraficzny
+732102,Fotograf w drukarni filmowej
+732103,Giloszer poligraficzny
+732106,Moletownik
+732109,Operator fotoskładu
+732112,Rytownik
+751501,Grzyboznawca
+752103,Mygłowacz
+752104,Parzelniczy drewna
+752201,Bednarz
+752203,Kołodziej
+753701,Bandażysta ortopedyczny
+754101,Kierownik prac podwodnych
+754104,Operator systemów nurkowych
+754490,Pozostali robotnicy zwalczania szkodników i chwastów
+811112,Górnik podziemnej eksploatacji kopalin innych niż węgiel kamiennyS
+811113,Operator systemów odwadniających
+813113,Operator urządzeń do produkcji dezynfektantów
+821101,Monter aparatów i przyrządów optycznych
+821907,Składacz sprzętu spadochronowego
+831206,Manewrowy metra
+834308,Operator mostu zwodzonego
+835002,Latarnik
+921502,Pomocniczy robotnik w łowiectwie
+933101,Rykszarz
+933201,Dorożkarz
+951001,Czyściciel butów
+951004,Uliczny zmywacz szyb samochodowych

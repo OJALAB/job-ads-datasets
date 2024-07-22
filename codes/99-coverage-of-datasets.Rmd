@@ -10,35 +10,40 @@ library(data.table)
 datasets
 
 ```{r}
-hierachy <- fread("../data/kzis-hierarchy-2023.tsv", colClasses = "character", sep = "\t")
-official <- fread("../data/kzis-occup-dictionary-long-2024.csv", colClasses = "character")
-esco <- fread("../data/esco-kzis-selected.csv", colClasses = "character")
-thes <- fread("../data/gus-thesaurus.csv", colClasses = "character")
+hierachy <- fread("~/mac/nauka/oja-lab/job-ads-datasets/data/kzis-hierarchy-2023.tsv", colClasses = "character", sep = "\t")
+hierachy6 <- hierachy[str_detect(class, "\\d{6}")]
 
-info <- fread("../data/kzis-occup-infodoradca-2024-updated.csv", colClasses = "character")
-kprm <- fread("../data/kprm-selected.csv", colClasses = "character")
-hand <- fread("../data/hand-coded.csv", colClasses = "character")
-cbop <- fread("../data-raw/cbop-codes-2024.csv", colClasses = "character")
-
-hierachy[, dict := class %in% unique(official$code)]
-hierachy[, esco := class %in% unique(esco$code)] ## 557 codes
-hierachy[, thes := class %in% unique(thes$code)] ## 1338 codes
-hierachy[, info := class %in% unique(info$class)] ## 1000 codes
-hierachy[, kprm := class %in% unique(kprm$code)] ## 12 codes
-hierachy[, hand := class %in% unique(hand$code)] ## 1044 codes
-hierachy[, cbop:= class %in%  cbop$code] # 2295 codes / 1952
-
-hierachy[, all := (esco + thes + info + kprm + hand + cbop) > 0]
-hierachy[nchar(class) == 6, lapply(.SD, function(x) round(mean(x)*100,2)), .SDcols = dict:all]
+df_full <- rbind(
+  fread("~/mac/nauka/oja-lab/job-ads-datasets/data/train-test/train-data-whole-source-2024.tar.gz", colClasses = "character"),
+  fread("~/mac/nauka/oja-lab/job-ads-datasets/data/train-test/test-data-whole-source-2024.tar.gz", colClasses = "character")
+)
 ```
+
+```{r}
+hierachy6[, esco :=  class %in% unique(df_full$class[df_full$source == "esco"])]
+hierachy6[, gus :=  class %in% unique(df_full$class[df_full$source == "gus"])]
+hierachy6[, info :=  class %in% unique(df_full$class[df_full$source == "info"])]
+hierachy6[, kprm :=  class %in% unique(df_full$class[df_full$source == "kprm"])]
+hierachy6[, hand :=  class %in% unique(df_full$class[df_full$source == "hand"])]
+hierachy6[, hand1k :=  class %in% unique(df_full$class[df_full$source == "hand1k"])]
+hierachy6[, cbop:= class %in% unique(df_full$class[df_full$source == "cbop"])]
+
+hierachy6[, all := (esco + gus + info + kprm + hand + hand1k + cbop) > 0]
+
+setcolorder(hierachy6, c("class", "name", "info", "gus", "esco", "kprm", "hand", "hand1k", "cbop"))
+```
+
 
 By 1 digit
 
+```{r, results='asis'}
+hierachy6[, lapply(.SD, function(x) mean(x)*100), .SDcols = info:all] 
+```
+
+By 1 digit and source
+
 ```{r}
-hierachy[nchar(class) == 6, 
-         lapply(.SD, function(x) round(mean(x)*100,2)), 
-         keyby=.(digit1=substr(class,1,1)),
-         .SDcols = dict:all]
+hierachy6[, lapply(.SD, function(x) mean(x)*100),  keyby=.(digit1=substr(class,1,1)), .SDcols = info:all]
 ```
 
 Which are not covered
@@ -49,3 +54,7 @@ hierachy[, count:=esco+thes+info+kprm]
 all_data_wide[count == 1]
 ```
 
+```{r}
+hierachy6[all_f == FALSE][, .(class, name)][order(class)] |>
+  fwrite("~/mac/nauka/oja-lab/job-ads-datasets/data/codes-not-coveted.csv")
+```
