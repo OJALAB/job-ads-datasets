@@ -107,8 +107,6 @@ test_data <- rbind(test_data, hand_1k[, source:="hand1k"], fill = T)
 
 ```{r}
 fwrite(x = test_data[, .(class, desc=desc, source)], file = "../data/train-test/test-data-whole-2024.tar.gz")
-fwrite(x = train_data[1:300000, .(class, desc=desc, source)], file = "../data/train-test/train-data-whole-2024-1.tar.gz")
-fwrite(x = train_data[300001:nrow(train_data), .(class, desc=desc, source)], file = "../data/train-test/train-data-whole-2024-2.tar.gz")
 fwrite(x = train_data[, .(class, desc=desc, source)], file = "../data/train-test/train-data-whole-2024.tar.gz")
 ```
 
@@ -163,8 +161,6 @@ test_data <- rbind(test_data, hand_1k[, source:="hand1k"], fill = T)
 
 ```{r}
 fwrite(x = test_data[, .(class, desc=desc, source)], file = "../data/train-test/test-data-whole-source-2024.tar.gz")
-fwrite(x = train_data[1:300000, .(class, desc=desc, source)], file = "../data/train-test/train-data-whole-source-2024-1.tar.gz")
-fwrite(x = train_data[300001:nrow(train_data), .(class, desc=desc, source)], file = "../data/train-test/train-data-whole-source-2024-2.tar.gz")
 fwrite(x = train_data[, .(class, desc=desc, source)], file = "../data/train-test/train-data-whole-source-2024.tar.gz")
 ```
 
