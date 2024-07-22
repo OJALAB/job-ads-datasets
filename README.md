@@ -11,13 +11,17 @@ Datasets for training and testing (folder `data/`)
 7.  `gus-thesaurus.csv` -- official thesaurus from GUS (`thes`)
 8.  `esco-kzis-selected.csv` -- selected occupations connected with ESCO (`esco`)
 9.  `cbop-for-train-test.tar.gz` -- ads from CBOP coded by Public Employment Offices staff (20% sample of `cbop-train-2020-2022-no-employer.tar.gz` and `cbop-train-2022-2023-no-employer.tar.gz`, `cbop`)
+10.  `cbop-for-train-test.-whole-{1,2,3,4}.tar.gz` -- ads from CBOP coded by Public Employment Offices staff (whole dataset)
+
 
 Datasets for training and testing (folder `data/train-test`):
 
 -   `train-data-2024.tar.gz` -- file with train data for 2024 model
 -   `test-data-2024.tar.gz` -- file with test data for 2024 model
+-   `train-data-whole-2024-{1,2}.tar.gz` -- file with train data for 2024 model (whole CBOP dataset)
+-   `test-data-whole-2024.tar.gz` -- file with test data for 2024 model (whole CBOP dataset)
 
-Rest of the respository:
+Rest of the repository:
 
 + `data-raw` -- folder with input datasets 
 + `codes` -- codes to web-scrape and process the data for training and test

@@ -40,6 +40,8 @@ cbop <- fread("../data/cbop-for-train-test.tar.gz", colClasses = "character")
 ```
 
 
+Create training and test data wit 20% of CBOP data
+
 ```{r}
 set.seed(123)
 
@@ -69,7 +71,7 @@ fwrite(x = train_data[, .(class, desc=desc, source)], file = "../data/train-test
 ```
 
 
-Whole CBOP dataset
+Create training and test data wit whole CBOP data
 
 ```{r}
 cbop1 <- fread("../data/cbop-for-train-test-whole-1.tar.gz", colClasses = "character")
@@ -101,7 +103,6 @@ test_data <- rbind(test_data, all_sources[size == 1])
 
 train_data <- rbind(train_data, official[, source:="official"], thes[, source:="gus"], fill = T)
 test_data <- rbind(test_data, hand_1k[, source:="hand1k"], fill = T)
-
 ```
 
 ```{r}
