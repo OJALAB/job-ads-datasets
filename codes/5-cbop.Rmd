@@ -56,7 +56,6 @@ fwrite(x = cbop[400001:600000, .(code, desc)], file = "../data/cbop-for-train-te
 fwrite(x = cbop[600000:823297, .(code, desc)], file = "../data/cbop-for-train-test-whole-4.tar.gz", quote = T)
 ```
 
-
 ```{r}
 fwrite(cbop[, .N, code], "../data-raw/cbop-codes-2024.csv")
 ```

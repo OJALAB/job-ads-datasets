@@ -52,7 +52,11 @@ Overall coverage of 6 digit codes aggregated at 1 digit groups
 
 # How to cite
 
-If you plan to use the datasets prepared for training we kindly you ask to cite the following doi
+If you plan to use the datasets prepared for training we kindly you ask to cite the following repository (https://repod.icm.edu.pl/dataverse/uep)
+
+```
+TBA
+```
 
 # Funding
 
