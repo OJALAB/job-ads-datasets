@@ -1754,21 +1754,9 @@ display: none;
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGlicmFyeShkYXRhLnRhYmxlKVxuYGBgIn0= -->
-<pre class="r"><code>library(data.table)</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiUmVnaXN0ZXJlZCBTMyBtZXRob2Qgb3ZlcndyaXR0ZW4gYnkgJ2RhdGEudGFibGUnOlxuICBtZXRob2QgICAgICAgICAgIGZyb21cbiAgcHJpbnQuZGF0YS50YWJsZSAgICAgXG5kYXRhLnRhYmxlIDEuMTUuNCB1c2luZyAxIHRocmVhZHMgKHNlZSA/Z2V0RFR0aHJlYWRzKS4gIExhdGVzdCBuZXdzOiByLWRhdGF0YWJsZS5jb21cbioqKioqKioqKipcblRoaXMgaW5zdGFsbGF0aW9uIG9mIGRhdGEudGFibGUgaGFzIG5vdCBkZXRlY3RlZCBPcGVuTVAgc3VwcG9ydC4gSXQgc2hvdWxkIHN0aWxsIHdvcmsgYnV0IGluIHNpbmdsZS10aHJlYWRlZCBtb2RlLlxuVGhpcyBpcyBhIE1hYy4gUGxlYXNlIHJlYWQgaHR0cHM6Ly9tYWMuci1wcm9qZWN0Lm9yZy9vcGVubXAvLiBQbGVhc2UgZW5nYWdlIHdpdGggQXBwbGUgYW5kIGFzayB0aGVtIGZvciBzdXBwb3J0LiBDaGVjayByLWRhdGF0YWJsZS5jb20gZm9yIHVwZGF0ZXMsIGFuZCBvdXIgTWFjIGluc3RydWN0aW9ucyBoZXJlOiBodHRwczovL2dpdGh1Yi5jb20vUmRhdGF0YWJsZS9kYXRhLnRhYmxlL3dpa2kvSW5zdGFsbGF0aW9uLiBBZnRlciBzZXZlcmFsIHllYXJzIG9mIG1hbnkgcmVwb3J0cyBvZiBpbnN0YWxsYXRpb24gcHJvYmxlbXMgb24gTWFjLCBpdCdzIHRpbWUgdG8gZ2luZ2VybHkgcG9pbnQgb3V0IHRoYXQgdGhlcmUgaGF2ZSBiZWVuIG5vIHNpbWlsYXIgcHJvYmxlbXMgb24gV2luZG93cyBvciBMaW51eC5cbioqKioqKioqKipcbiJ9 -->
-<pre><code>Registered S3 method overwritten by &#39;data.table&#39;:
-  method           from
-  print.data.table     
-data.table 1.15.4 using 1 threads (see ?getDTthreads).  Latest news: r-datatable.com
-**********
-This installation of data.table has not detected OpenMP support. It should still work but in single-threaded mode.
-This is a Mac. Please read https://mac.r-project.org/openmp/. Please engage with Apple and ask them for support. Check r-datatable.com for updates, and our Mac instructions here: https://github.com/Rdatatable/data.table/wiki/Installation. After several years of many reports of installation problems on Mac, it&#39;s time to gingerly point out that there have been no similar problems on Windows or Linux.
-**********</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGlicmFyeShzdHJpbmdyKVxuYGBgIn0= -->
-<pre class="r"><code>library(stringr)</code></pre>
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGlicmFyeShkYXRhLnRhYmxlKVxubGlicmFyeShzdHJpbmdyKVxuYGBgIn0= -->
+<pre class="r"><code>library(data.table)
+library(stringr)</code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
@@ -1780,7 +1768,7 @@ This is a Mac. Please read https://mac.r-project.org/openmp/. Please engage with
 hierachy6 &lt;- hierachy[str_detect(class, &quot;\\d{6}&quot;)]
 head(hierachy6)</code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbImRhdGEudGFibGUiLCJkYXRhLmZyYW1lIl0sIm5yb3ciOjYsIm5jb2wiOjIsInN1bW1hcnkiOltdfSwicmRmIjoiSDRzSUFBQUFBQUFBQTIxU3NVN0RNQkExYlZwRUphQVNLNE5IUUcyQmRvRVZJZVlLZ1dBMXNRRVQxNDVzaCtCTXFJS1A0RHRZMmFBL3hVQTVwNGxvSWl6RnVmZDg3OW0rOC9ucDlhaHozVUVJTlZIUWJLQm1DMExVdXJ3NDZ4OGhGRFFBcktBQXJmbi9FeVJ0UWVESkxuenRZcUY5Q09QZ3NJS0dGVFJhUnNjSFMyaFkwUTFCVi9YdWpva1daTUtrSlRwenhwS0NINDZWNE5aRmVHZkNKVGVXNlI0MkxOTE01K0Y5SEN2NkIwRW1rMTFRZWVYSldHZU1BcFh5a0RPQjA5bVUwTXhoUXlaS1oxK3ZWS1hzQVd5Sk5obVpUVm5VODNxdFlPcGhUYWgwcFZOdnJESlBDNDdqaWljclRIR2MzQWdlWnRLRjk0Vm0rOHJOUGd4c2w4QmViMVR5Q01kazltSnNxbEpYNU96OWt5TkkrUG1lUmh4VEZ3czFJZGFCTFh1b3RXaE5xM1Fnb1Z3R3dMcHYxVE5NOC9uOHU1YllDZ1V4cHFoMVNYWW9zV1J3cTBGZlR5ODl1M243S3g0TEVNaGNoWDVxeWxVVlc2NGthQnRiZVZ1clc2N29HckdaU085RSsrRjlJcVArcUxiY2pPV2RQMmxPTGNaNkViZVg0c2JpRk1HOC9sS1p2T09TbFJjUTVJYUowcG15eHlMY2dDcm1GeDdFbWt0YlZnZFlNN0FLK2wweW9SSWxrOThjL2Z3Q1F1dXhEazhEQUFBPSJ9 -->
+<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbImRhdGEudGFibGUiLCJkYXRhLmZyYW1lIl0sIm5yb3ciOjYsIm5jb2wiOjIsInN1bW1hcnkiOnsiRGVzY3JpcHRpb24iOlsiZHQgWzYgw5cgMl0iXX19LCJyZGYiOiJINHNJQUFBQUFBQUFBMjFTc1U3RE1CQTFiVnBFSmFBU0s0TkhRRzJCc01DS0VIT0ZRTENhMklDSmEwZTJRM0FtaE9BaitBNVdOdWhQTVZET2FTS2FDRXR4N2ozZmU3YnZmSFp5ZGRDNzZpR0UyaWhvdDFDN0F5SHFYSnlmRGc4UkNsb0FsbENBVnZ6L0VaSTJJUEJrSDc1dXVkRGRoN0czWDBOaERSMHNvcU85QlJUV2RDSG82dDc5TWRHQ1RKaTBST2ZPV0ZMeTRWZ0pibDJNdHlaY2NtT1pIbUREWXMxOEh0N0ZpYUovRUdReTNRYVZWeDZQZGM0b1VCbVBPQk00bXo0VG1qdHN5RVRwL091VnFvemRneTNSSmlmVFp4WVB2RjRybUFaWUV5cGQ1VFFZcTl6VGd1T2s1c2xLVTV5azE0Skh1WFRSWGFuWnZIVFREd1BicGJEWEc1VTh4Z21admhpYnFjeVZPVHYvNUFnU2ZiNW5NY2ZVSlVKTmlIVmd5KzRiTFZyUktodEpLSmNCc09wYjlRVFRiRGI3YmlSMklrR01LV3Rka1QxS0xCbmRhTkEzMHl2UGZ0SCttc2NjQkxKUW9aK0djbGtsbGlzSjJ0WkcwZGI2bGt1NlFheW4wanZSWVhTWHluZ1lOcGJiaWJ6MUp5Mm8rVmd0NCs1QzNKcWZJcGcxWHlxVHQxeXk2Z0tDWEROUk9WUDJVSVpyVU1YaXdxTkVjMm1yNmdCclJsWkJ2eXNtVXFKaWlwdWpuMThmVzZwVVR3TUFBQT09In0= -->
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
 {"columns":[{"label":["class"],"name":[1],"type":["chr"],"align":["left"]},{"label":["name"],"name":[2],"type":["chr"],"align":["left"]}],"data":[{"1":"111101","2":"Parlamentarzysta"},{"1":"111102","2":"Polityk (minister, sekretarz / podsekretarz stanu)"},{"1":"111103","2":"Przedstawiciel władzy samorządowej (marszałek, starosta, radny)"},{"1":"111190","2":"Pozostali przedstawiciele władz publicznych"},{"1":"111201","2":"Wyższy urzędnik państwowy"},{"1":"111202","2":"Wyższy urzędnik placówki dyplomatycznej"}],"options":{"columns":{"min":{},"max":[10],"total":[2]},"rows":{"min":[10],"max":[10],"total":[6]},"pages":{}}}
@@ -1821,6 +1809,10 @@ hand &lt;- fread(&quot;../data/hand-coded.csv&quot;, colClasses = &quot;characte
 esco &lt;- fread(&quot;../data/esco-kzis-selected.csv&quot;, colClasses = &quot;character&quot;, col.names = c(&quot;class&quot;, &quot;var&quot;, &quot;desc&quot;))[, source:=&quot;esco&quot;]
 cbop &lt;- fread(&quot;../data/cbop-for-train-test.tar.gz&quot;, colClasses = &quot;character&quot;, col.names = c(&quot;class&quot;, &quot;desc&quot;))[, source:=&quot;cbop&quot;]</code></pre>
 <!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoifC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tfFxufD09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09fFxuIn0= -->
+<pre><code>|--------------------------------------------------|
+|==================================================|</code></pre>
+<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <div id="limited-data-source" class="section level2">
