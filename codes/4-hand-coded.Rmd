@@ -27,9 +27,7 @@ hand_selected <- hand[language.description == "pl", .(ekspert,
                                                       uwagi)]
 
 hand_selected[is.na(kod_zawodu), kod_zawodu  := kod_zawodu2 ]
-
 hand_selected[, kod_zawodu_corrected:= kod_zawodu]
-
 hand_selected
 ```
 

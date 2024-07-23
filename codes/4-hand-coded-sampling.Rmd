@@ -1,0 +1,89 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+```{r}
+library(sampling)
+library(stringi)
+library(data.table)
+library(fst)
+library(cld3)
+library(xtable)
+```
+
+```{r}
+oferty <- read.fst("../../_old_/oferty-pracy/oferty-kodowanie.fst",as.data.table = T)
+oferty[job.description %in% c("NA", "", "BRAK"), job.description := NA]
+oferty[, c_words := stri_count_words(job.description)]
+oferty[, c_characters := nchar(job.description)]
+oferty[, source_gr := ifelse(source %in% c("www.pracuj.pl", "www.praca.egospodarka.pl",
+                                              "www.praca.pl", "www.aplikuj.pl", "www.nuzle.pl",
+                                              "jobdesk.pl", "gratka.pl", "CBOP"), source, "inne")]
+
+oferty_bezopisu <- oferty[!is.na(job.description) & c_words >=1 & c_characters >= 5]
+oferty_bezopisu[is.na(language.title) & is.na(language.description), language_detect := detect_language(job.description)]
+oferty_bezopisu[, polski:= language.title == "pl" | language.description == "pl" | language_detect == "pl"]
+
+oferty_do_proby <- oferty_bezopisu[!is.na(polski)]
+oferty_do_proby[ , job.title:=tolower(job.title)]
+oferty_do_proby[ , warstwa_1 := fcase(stri_detect_regex(job.title, "sprzedawca|kasjer"), "sprzedawcy/kasjerzy",
+                                      stri_detect_regex(job.title, "doradca klient"), "doradcy klient",
+                                      stri_detect_regex(job.title, "magazynier"), "magazynier",
+                                      stri_detect_regex(job.title, "przedstawiciel"), "przedstawiciel",
+                                      stri_detect_regex(job.title, "pracownik produkcji"), "pracownik produkcji",
+                                      stri_detect_regex(job.title, "pomoc kuchenna|kucharz"), "pomoc kuchenna/kucharz",
+                                      stri_detect_regex(job.title, "biuro"), "biurowy",
+                                      stri_detect_regex(job.title, "sprzątacz|sprzatacz"), "sprzątacz",
+                                      stri_detect_regex(job.title, "specjalista"), "specjalista",
+                                      default = "inne")]
+oferty_do_proby[, warstwa_2 := cut(x = c_words, 
+                                   breaks = c(1, 10, 25, 50, 100, 150, 200, 300, Inf),
+                                   include.lowest = T,
+                                   right = TRUE)]
+
+oferty_do_proby[warstwa_1 == "sprzątacz" & warstwa_2 %in% c("(200,300]", "(300,Inf]"), warstwa_2:="(150,200]"]
+
+oferty_do_proby[, warstwa_los := paste(as.numeric(as.factor(warstwa_1)), as.numeric(warstwa_2), sep = "-")]
+
+oferty_do_proby <- oferty_do_proby[order(warstwa_los)]
+sizes <- table(oferty_do_proby$warstwa_los)
+sizes <- round(sizes/sum(sizes)*10000)
+
+oferty_do_proby[, prob_incl := max(c_characters) - c_characters + 1]
+oferty_do_proby[, pik:=inclusionprobabilities(prob_incl, 9000)]
+oferty_do_proby[,id := 1:.N]
+```
+
+```{r}
+set.seed(123)
+s <- strata(data = oferty_do_proby, stratanames = "warstwa_los", 
+            size = sizes,
+            pik = oferty_do_proby$c_characters, 
+            method = "systematic")
+sampled_ads <- getdata(oferty_do_proby, s)
+sampled_ads  <- setDT(sampled_ads)
+dim(sampled_ads)
+saveRDS(list("population" = oferty_do_proby, "sample"=s, "sample_data" = s),
+        file = "oferty-kodowanie-sample.rds")
+```
+
+```{r}
+set.seed(123)
+s1 <- sample(x = sampled_ads$id, size = 3233)
+s2 <- sample(x = sampled_ads[!sampled_ads$id %in% s1, ]$id, size = 3233)
+s3 <- sample(x = sampled_ads[!sampled_ads$id %in% c(s1,s2), ]$id, size = 3233)
+
+common <- sample(x = sampled_ads[!sampled_ads$id %in% c(s1,s2, s3), ]$id, size = 100)
+
+saveRDS(
+  object = list("proba1"=sampled_ads[sampled_ads$id %in% c(s1, common)][order(prob_incl)][, id_oferty:=1:.N],
+                "proba2"=sampled_ads[sampled_ads$id %in% c(s2, common)][order(prob_incl)][, id_oferty:=1:.N],
+                "proba3"=sampled_ads[sampled_ads$id %in% c(s3, common)][order(prob_incl)][, id_oferty:=1:.N]),
+  
+  file = "wylosowane.rds"
+)
+```
+
+
+
