@@ -3,17 +3,8 @@
 Repository contains 8 datasets
 
 + 70% sample stratified by code
-  + train-data-2024.tar.gz -- 140,968 rows and 3 columns
-  + test-data-2024.tar.gz --  56,983 rows and 3 columns
-  + train-data-whole-2024.tar.gz -- 602,290 rows and 3 columns
-  + test-data-whole-2024.tar.gz -- 254,692 and 3 columns
-
-+ 70% sample stratified by data source
- + train-data-source-2024.tar.gz -- 140,925 rows and 3 columns
- + test-data-source-2024.tar.gz --  56,879 rows and 3 columns
- + train-data-whole-source-2024.tar.gz -- 602,284 rows and 3 columns
- + test-data-whole-source-2024.tar.gz -- 254,603 and 3 columns
-
+  + train-data-2024.tar.gz -- 142,729 rows and 3 columns
+  + test-data-2024.tar.gz --  58,104 rows and 3 columns
 
 Each row is a textual data (in Polish) associated with a given code. It may be part of the official definition of a given code, a few synonyms or a job description taken from online services.
 
