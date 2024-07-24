@@ -29,31 +29,21 @@ cbop[klucz[, .(code = zawod_old, code_new = zawod_new)], on = "code", code_new:=
 cbop[!is.na(code_new), code := code_new]
 cbop[,code_new := NULL]
 cbop[, desc_nchars := nchar(desc)]
-cbop$desc_nchars |> summary()
 
 cbop[, desc_nchars_cit := cut(desc_nchars, c(0, 50, 100, 200, 300, 400, 500, Inf),
                               include.lowest = T,
                               right = T)]
 
 cbop[,.N, keyby=desc_nchars_cit]
-head(cbop)
+cbop[,.N, code]
 ```
 
-Distribution is very skewed so we will sample 25 examples or 10% from each 
+Distribution is very skewed so we will sample 1 examples or 20% from each 
 
 ```{r}
 set.seed(2024)
-cbop_sample <- cbop[, .SD[sample(.N, min(round(0.2*.N), .N))], .(code, desc_nchars_cit)]
+cbop_sample <- cbop[, .SD[sample(.N, max(1, round(0.2*.N)))], .(code, desc_nchars_cit)]
 fwrite(x = cbop_sample[, .(code, desc)], file = "../data/cbop-for-train-test.tar.gz", quote = T)
-```
-
-Whole dataset
-
-```{r}
-fwrite(x = cbop[1:200000, .(code, desc)], file = "../data/cbop-for-train-test-whole-1.tar.gz", quote = T)
-fwrite(x = cbop[200001:400000, .(code, desc)], file = "../data/cbop-for-train-test-whole-2.tar.gz", quote = T)
-fwrite(x = cbop[400001:600000, .(code, desc)], file = "../data/cbop-for-train-test-whole-3.tar.gz", quote = T)
-fwrite(x = cbop[600000:823297, .(code, desc)], file = "../data/cbop-for-train-test-whole-4.tar.gz", quote = T)
 ```
 
 ```{r}

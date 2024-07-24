@@ -52,79 +52,24 @@ Create training and test data wit 20% of CBOP data
 set.seed(123)
 all_sources <- rbind(info,kprm,  hand,  esco, cbop, fill = T)
 all_sources <- all_sources[class %in% hierachy6$class]
-all_sources[, size := .N, class]
+all_sources[, size := .N, .(class, source)]
 all_sources[, size_test := round(size*0.7), class]
 all_sources[, id:=1:.N]
-train_data <- all_sources[, .SD[sample(.N, size_test[1])], class]
-test_data <- all_sources[!id %in% train_data$id]
-test_data <- rbind(test_data, all_sources[size == 1])
+
+## with only one group (for testing because I will have each group in train)
+test_data_ones <- all_sources[size == 1]
+all_sources_rest <- all_sources[size > 1]
+
+## sampling by size (train data)
+train_data <- all_sources_rest[, .SD[sample(.N, size_test[1])], .(class, source)]
 train_data <- rbind(train_data, official, thes, fill = T)
-test_data <- rbind(test_data, hand_1k, fill = T)
-train_data <- train_data[class %in% hierachy6$class]
+
+## test data bind all
+test_data <- rbind(all_sources_rest[!id %in% train_data$id], test_data_ones, hand_1k, fill = T)
+
+train_data <- train_data[class %in% hierachy6$class] ## 6 
 test_data <- test_data[class %in% hierachy6$class]
+
 fwrite(x = test_data[, .(class, desc, source)], file = "../data/train-test/test-data-2024.tar.gz")
 fwrite(x = train_data[, .(class, desc, source)], file = "../data/train-test/train-data-2024.tar.gz")
 ```
-
-```{r}
-set.seed(123)
-all_sources <- rbind(info, kprm,  hand,  esco, cbop, fill = T)
-all_sources <- all_sources[class %in% hierachy6$class]
-all_sources[, id:=1:.N]
-train_data <- all_sources[, .SD[sample(1:.N, round(.N*0.70))], source]
-test_data <- all_sources[!id %in% train_data$id]
-train_data <- rbind(train_data, official, thes, fill = T)
-test_data <- rbind(test_data, hand_1k, fill = T)
-train_data <- train_data[class %in% hierachy6$class]
-test_data <- test_data[class %in% hierachy6$class]
-fwrite(x = test_data[, .(class, desc, source)], file = "../data/train-test/test-data-source-2024.tar.gz")
-fwrite(x = train_data[, .(class, desc, source)], file = "../data/train-test/train-data-source-2024.tar.gz")
-```
-
-## whole CBOP
-
-Create training and test data wit whole CBOP data
-
-```{r}
-cbop1 <- fread("../data/cbop-for-train-test-whole-1.tar.gz", colClasses = "character", col.names = c("class", "desc"))[, source:="cbop"]
-cbop2 <- fread("../data/cbop-for-train-test-whole-2.tar.gz", colClasses = "character", col.names = c("class", "desc"))[, source:="cbop"]
-cbop3 <- fread("../data/cbop-for-train-test-whole-3.tar.gz", colClasses = "character", col.names = c("class", "desc"))[, source:="cbop"]
-cbop4 <- fread("../data/cbop-for-train-test-whole-4.tar.gz", colClasses = "character", col.names = c("class", "desc"))[, source:="cbop"]
-cbop <- rbind(cbop1,cbop2,cbop3,cbop4)
-```
-
-```{r}
-set.seed(123)
-all_sources <- rbind(info,kprm,  hand,  esco, cbop, fill = T)
-all_sources <- all_sources[class %in% hierachy6$class]
-all_sources[, size := .N, class]
-all_sources[, size_test := round(size*0.7), class]
-all_sources[, id:=1:.N]
-train_data <- all_sources[, .SD[sample(.N, size_test[1])], class]
-test_data <- all_sources[!id %in% train_data$id]
-test_data <- rbind(test_data, all_sources[size == 1])
-train_data <- rbind(train_data, official, thes, fill = T)
-test_data <- rbind(test_data, hand_1k, fill = T)
-train_data <- train_data[class %in% hierachy6$class]
-test_data <- test_data[class %in% hierachy6$class]
-fwrite(x = test_data[, .(class, desc=desc, source)], file = "../data/train-test/test-data-whole-2024.tar.gz")
-fwrite(x = train_data[, .(class, desc=desc, source)], file = "../data/train-test/train-data-whole-2024.tar.gz")
-```
-
-```{r}
-set.seed(123)
-all_sources <- rbind(info,kprm,  hand,  esco, cbop, fill = T)
-all_sources <- all_sources[class %in% hierachy6$class]
-all_sources[, id:=1:.N]
-train_data <- all_sources[, .SD[sample(1:.N, round(.N*0.70))], source]
-test_data <- all_sources[!id %in% train_data$id]
-train_data <- rbind(train_data, official, thes, fill = T)
-test_data <- rbind(test_data, hand_1k, fill = T)
-train_data <- train_data[class %in% hierachy6$class]
-test_data <- test_data[class %in% hierachy6$class]
-fwrite(x = test_data[, .(class, desc=desc, source)], file = "../data/train-test/test-data-whole-source-2024.tar.gz")
-fwrite(x = train_data[, .(class, desc=desc, source)], file = "../data/train-test/train-data-whole-source-2024.tar.gz")
-```
-
-
-
