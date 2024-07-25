@@ -26,24 +26,24 @@ Rest of the repository:
 
 Overall coverage of 6 digit codes
 
-|  info|   gus|  esco| kprm|  hand| hand1k|  cbop|   all|
-|-----:|-----:|-----:|----:|-----:|------:|-----:|-----:|
-| 34.22| 45.96| 19.13| 0.41| 35.69|   7.63| 84.78| 93.61|
+|  info |   gus |  esco | kprm |  hand | hand1k |  cbop |   all |
+|------:|------:|------:|-----:|------:|-------:|------:|------:|
+| 34.22 | 45.96 | 19.13 | 0.41 | 35.69 |   7.63 | 84.78 | 93.61 |
 
 Overall coverage of 6 digit codes aggregated at 1 digit groups
 
 | Main groups (1 digit)                                             |  info |    gus |  esco | kprm |  hand | hand1k |   cbop |    all |
 |:-------|-------:|-------:|-------:|-------:|-------:|-------:|-------:|-------:|
-| 0 Siły zbrojne                                                    |   0.00| 100.00| 33.33| 0.00|  0.00|   0.00| 100.00| 100.00|
-| 1 Przedstawiciele władz publicznych, wyżsi urzędnicy i kierownicy |  6.44|  85.64| 19.80| 0.99| 42.08|  14.85|  79.70|  95.54|
-| 2 Specjaliści                                                     | 23.83|  25.98| 20.66| 0.63| 39.29|  14.45|  77.06|  89.35|
-| 3 Technicy i inny średni personel                                 | 35.74|  48.03| 20.00| 0.66| 29.67|   4.43|  83.61|  92.46|
-| 4 Pracownicy biurowi                                              | 53.93|  21.35| 20.22| 1.12| 53.93|   8.99|  95.51|  98.88|
-| 5 Pracownicy usług i sprzedawcy                                   | 61.45|  28.92| 27.11| 0.00| 37.95|   6.63|  89.16|  96.99|
-| 6 Rolnicy, ogrodnicy, leśnicy i rybacy                            | 69.84|  57.14| 12.70| 0.00| 11.11|   0.00|  85.71|  98.41|
-| 7 Robotnicy przemysłowi i rzemieślnicy                            | 46.22|  46.64| 16.81| 0.00| 39.29|   4.62|  89.50|  94.33|
-| 8 Operatorzy i monterzy maszyn i urządzeń                         | 40.83|  82.43| 15.25| 0.00| 25.32|   2.07|  90.96|  97.93|
-| 9 Pracownicy wykonujący prace proste                              |  3.97|  15.87| 16.67| 0.00| 47.62|   1.59|  96.03|  96.03|
+| 0 Siły zbrojne                                                    |  0.00 | 100.00 | 33.33 | 0.00 |  0.00 |   0.00 | 100.00 | 100.00 |
+| 1 Przedstawiciele władz publicznych, wyżsi urzędnicy i kierownicy |  6.44 |  85.64 | 19.80 | 0.99 | 42.08 |  14.85 |  79.70 |  95.54 |
+| 2 Specjaliści                                                     | 23.83 |  25.98 | 20.66 | 0.63 | 39.29 |  14.45 |  77.06 |  89.35 |
+| 3 Technicy i inny średni personel                                 | 35.74 |  48.03 | 20.00 | 0.66 | 29.67 |   4.43 |  83.61 |  92.46 |
+| 4 Pracownicy biurowi                                              | 53.93 |  21.35 | 20.22 | 1.12 | 53.93 |   8.99 |  95.51 |  98.88 |
+| 5 Pracownicy usług i sprzedawcy                                   | 61.45 |  28.92 | 27.11 | 0.00 | 37.95 |   6.63 |  89.16 |  96.99 |
+| 6 Rolnicy, ogrodnicy, leśnicy i rybacy                            | 69.84 |  57.14 | 12.70 | 0.00 | 11.11 |   0.00 |  85.71 |  98.41 |
+| 7 Robotnicy przemysłowi i rzemieślnicy                            | 46.22 |  46.64 | 16.81 | 0.00 | 39.29 |   4.62 |  89.50 |  94.33 |
+| 8 Operatorzy i monterzy maszyn i urządzeń                         | 40.83 |  82.43 | 15.25 | 0.00 | 25.32 |   2.07 |  90.96 |  97.93 |
+| 9 Pracownicy wykonujący prace proste                              |  3.97 |  15.87 | 16.67 | 0.00 | 47.62 |   1.59 |  96.03 |  96.03 |
 
 **NOTE**: Codes that are not present in study datasets are listed [here](data/codes-not-coveted.csv).
 

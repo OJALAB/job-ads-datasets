@@ -1,10 +1,10 @@
 # Information on datasets
 
-Repository contains 8 datasets
+Repository contains 3 datasets
 
-+ 70% sample stratified by code
-  + train-data-2024.tar.gz -- 142,729 rows and 3 columns
-  + test-data-2024.tar.gz --  58,104 rows and 3 columns
+  + kzis-hierarchy-2023.tsv -- hierarchy of the KZiS 2023 classification (tab separated)
+  + train-data-2024.tar.gz -- 142,729 rows and 3 columns (CSV)
+  + test-data-2024.tar.gz --  58,104 rows and 3 columns (CSV)
 
 Each row is a textual data (in Polish) associated with a given code. It may be part of the official definition of a given code, a few synonyms or a job description taken from online services.
 
@@ -22,4 +22,32 @@ Each dataset contains 3 columns:
       + hand1k -- additional 1k hand coded offers from online job advertisement services (coded by 1 expert),
       + kprm -- selected job offers from KPRM (https://nabory.kprm.gov.pl),
       
+
+Information about codes and sources:
+
+  + codes: 2,911 unique codes in train, 2,625 unique codes in test data.
+  
+  + sources -- train
+  
+|source   |       N|
+|:--------|-------:|
+|cbop     | 116,879|
+|official |   9,200|
+|hand     |   6,720|
+|info     |   4,999|
+|kprm     |   2,058|
+|esco     |   1,531|
+|gus      |   1,342|
+  
+  + source -- test
+  
+|source |      N|
+|:------|------:|
+|cbop   | 50,365|
+|hand   |  3,272|
+|info   |  2,001|
+|hand1k |  1,000|
+|kprm   |    883|
+|esco   |    583|
+
 Detailed information about the data can be found here: https://github.com/OJALAB/job-ads-datasets
