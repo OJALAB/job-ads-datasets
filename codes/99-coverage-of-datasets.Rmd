@@ -14,8 +14,8 @@ hierachy <- fread("~/mac/nauka/oja-lab/job-ads-datasets/data/kzis-hierarchy-2023
 hierachy6 <- hierachy[str_detect(class, "\\d{6}")]
 
 df_full <- rbind(
-  fread("~/mac/nauka/oja-lab/job-ads-datasets/data/train-test/train-data-whole-source-2024.tar.gz", colClasses = "character"),
-  fread("~/mac/nauka/oja-lab/job-ads-datasets/data/train-test/test-data-whole-source-2024.tar.gz", colClasses = "character")
+  fread("~/mac/nauka/oja-lab/job-ads-datasets/data/train-test/train-data-2024.tar.gz", colClasses = "character"),
+  fread("~/mac/nauka/oja-lab/job-ads-datasets/data/train-test/test-data-2024.tar.gz", colClasses = "character")
 )
 ```
 
@@ -48,13 +48,8 @@ hierachy6[, lapply(.SD, function(x) mean(x)*100),  keyby=.(digit1=substr(class,1
 
 Which are not covered
 
-```{r}
-hierachy[all == FALSE, .(code, name)][order(code)]
-hierachy[, count:=esco+thes+info+kprm]
-all_data_wide[count == 1]
-```
 
 ```{r}
-hierachy6[all_f == FALSE][, .(class, name)][order(class)] |>
+hierachy6[all == FALSE][, .(class, name)][order(class)] |>
   fwrite("~/mac/nauka/oja-lab/job-ads-datasets/data/codes-not-coveted.csv")
 ```
