@@ -2,9 +2,9 @@
 
 Repository contains 3 datasets
 
-  + kzis-hierarchy-2023.tsv -- hierarchy of the KZiS 2023 classification (tab separated)
-  + train-data-2024.tar.gz -- 142,729 rows and 3 columns (CSV)
-  + test-data-2024.tar.gz --  58,104 rows and 3 columns (CSV)
+  + kzis-hierarchy-2023.tsv -- hierarchy of the KZiS 2023 classification
+  + train-data-2024.csv -- 142,729 rows and 3 columns
+  + test-data-2024.csv --  58,104 rows and 3 columns
 
 Each row is a textual data (in Polish) associated with a given code. It may be part of the official definition of a given code, a few synonyms or a job description taken from online services.
 

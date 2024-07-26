@@ -19,7 +19,7 @@ Datasets for training and testing (folder `data/train-test`):
 
 Rest of the repository:
 
--   `data-raw` -- folder with input datasets
+-   `data-raw/` -- folder with input datasets
 -   `codes` -- codes to web-scrape and process the data for training and test
 
 ## Coverage of codes (as of 2024-07-19)
@@ -49,10 +49,24 @@ Overall coverage of 6 digit codes aggregated at 1 digit groups
 
 # How to cite
 
-If you plan to use the datasets prepared for training we kindly you ask to cite the following repository (<https://repod.icm.edu.pl/dataverse/uep>)
+If you plan to use the datasets prepared for training we kindly ask to cite the following repository (<https://repod.icm.edu.pl/dataset.xhtml?persistentId=doi:10.18150/SX0E7G>).
 
 ```         
-TBA
+Beręsewicz, Maciej; Pater, Robert, 2024, "Zbiór uczący i testowy na potrzeby budowy klasyfikatora ofert pracy do KZiS 2023", https://doi.org/10.18150/SX0E7G, RepOD, V1
+```
+
+We recommend to use BibTeX
+
+``` tex
+@data{SX0E7G_2024,
+author = {Beręsewicz, Maciej and Pater, Robert},
+publisher = {RepOD},
+title = "{Zbiór uczący i testowy na potrzeby budowy klasyfikatora ofert pracy do KZiS 2023}",
+year = {2024},
+version = {V1},
+doi = {10.18150/SX0E7G},
+url = {https://doi.org/10.18150/SX0E7G}
+}
 ```
 
 # Funding
