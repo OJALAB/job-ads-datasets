@@ -61,7 +61,7 @@ We recommend to use BibTeX
 @data{SX0E7G_2024,
 author = {Beręsewicz, Maciej and Pater, Robert},
 publisher = {RepOD},
-title = "{Zbiór uczący i testowy na potrzeby budowy klasyfikatora ofert pracy do KZiS 2023}",
+title = {Zbiór uczący i testowy na potrzeby budowy klasyfikatora ofert pracy do KZiS 2023},
 year = {2024},
 version = {V1},
 doi = {10.18150/SX0E7G},
