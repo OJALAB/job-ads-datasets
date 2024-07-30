@@ -136,3 +136,30 @@ fwrite(
 )
 ```
 
+Processing 1k ads
+
+```{r}
+hand1k <- read_excel("../data-raw/hand-coded-1k.xlsx", 
+                     col_names = c("id", "desc", "class", "name", "details", "del1", "del2"),
+                     skip = 1) |> setDT()
+hand1k <- hand1k[, .SD, .SDcols = id:details]
+hand1k[, class:=substr(class,1,6)]
+
+hand1k_no_add <- hand1k[is.na(details)]
+hand1k_add <- hand1k[!is.na(details)]
+hand1k_add[, class2:=paste0(str_extract_all(details, "\\d{6}")[[1]], collapse = ","), by = id]
+hand1k_add_long <- hand1k_add[, .(class2 = unlist(tstrsplit(class2, ",", type.convert = TRUE))), by = .(id, desc, class, name, details)]
+
+hand1k_add_long[, .(id, desc, class, class2)] |>
+  melt(id.vars = c("id", "desc"), value.name = "class") |>
+  {\(x) unique(x[, .(id, class, desc)])}() -> hand1k_add_long
+
+hand1k_processed <- rbind(hand1k_no_add[,.(id, class, desc)], hand1k_add_long[, .(id, class, desc)])
+hand1k_processed
+```
+
+
+```{r}
+fwrite(x = hand1k_processed[, .(class, desc)], file = "../data/hand-coded-1k.csv", quote = T)
+```
+

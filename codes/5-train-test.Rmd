@@ -27,19 +27,13 @@ thes <- fread("../data/gus-thesaurus.csv", colClasses = "character", col.names =
 thes[, source:="gus"]
 ```
 
-For testing only
-
-```{r}
-hand_1k <- fread("../data/hand-coded-1k.csv", colClasses = "character")
-hand_1k[, source:="hand1k"]
-```
-
 For both
 
 ```{r}
 info <- fread("../data/kzis-occup-infodoradca-2024-updated.csv", colClasses = "character")[, source:="info"]
 kprm <- fread("../data/kprm-selected.csv", colClasses = "character", col.names = c("class", "desc"))[, source:="kprm"]
 hand <- fread("../data/hand-coded.csv", colClasses = "character", col.names = c("class", "desc"))[, source:="hand"]
+hand_1k <- fread("../data/hand-coded-1k.csv", colClasses = "character")[, source:="hand1k"]
 esco <- fread("../data/esco-kzis-selected.csv", colClasses = "character", col.names = c("class", "var", "desc"))[, source:="esco"]
 cbop <- fread("../data/cbop-for-train-test.tar.gz", colClasses = "character", col.names = c("class", "desc"))[, source:="cbop"]
 ```
@@ -50,7 +44,7 @@ Create training and test data wit 20% of CBOP data
 
 ```{r}
 set.seed(123)
-all_sources <- rbind(info,kprm,  hand,  esco, cbop, fill = T)
+all_sources <- rbind(info, kprm,  hand, hand_1k, esco, cbop, fill = T)
 all_sources <- all_sources[class %in% hierachy6$class]
 all_sources[, size := .N, .(class, source)]
 all_sources[, size_test := round(size*0.7), class]
@@ -65,7 +59,7 @@ train_data <- all_sources_rest[, .SD[sample(.N, size_test[1])], .(class, source)
 train_data <- rbind(train_data, official, thes, fill = T)
 
 ## test data bind all
-test_data <- rbind(all_sources_rest[!id %in% train_data$id], test_data_ones, hand_1k, fill = T)
+test_data <- rbind(all_sources_rest[!id %in% train_data$id], test_data_ones, fill = T)
 
 train_data <- train_data[class %in% hierachy6$class] ## 6 
 test_data <- test_data[class %in% hierachy6$class]
