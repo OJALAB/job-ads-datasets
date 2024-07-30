@@ -40,12 +40,13 @@ cbop <- fread("../data/cbop-for-train-test.tar.gz", colClasses = "character", co
 
 ## Limited data source
 
+
 Create training and test data wit 20% of CBOP data
 
 ```{r}
 set.seed(123)
 all_sources <- rbind(info, kprm,  hand, hand_1k, esco, cbop, fill = T)
-all_sources <- all_sources[class %in% hierachy6$class]
+all_sources <- all_sources[class %in% hierachy6$class] ## 8 wrong
 all_sources[, size := .N, .(class, source)]
 all_sources[, size_test := round(size*0.7), class]
 all_sources[, id:=1:.N]

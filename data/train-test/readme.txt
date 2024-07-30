@@ -3,8 +3,8 @@
 Repository contains 3 datasets
 
   + kzis-hierarchy-2023.tsv -- hierarchy of the KZiS 2023 classification
-  + train-data-2024.csv -- 143,348 rows and 3 columns
-  + test-data-2024.csv --  57,502 rows and 3 columns
+  + train-data-2024.csv -- 143,366 rows and 3 columns
+  + test-data-2024.csv --  57,509 rows and 3 columns
 
 Each row is a textual data (in Polish) associated with a given code. It may be part of the official definition of a given code, a few synonyms or a job description taken from online services.
 
@@ -34,11 +34,11 @@ Information about codes and sources:
 |cbop     | 116,879|
 |official |   9,200|
 |hand     |   6,720|
-|info     |   4,999|
+|info     |   5,004|
 |kprm     |   2,058|
 |esco     |   1,531|
 |gus      |   1,342|
-|hand1k   |     619|
+|hand1k   |     632|
   
   + source -- test
   
@@ -46,9 +46,9 @@ Information about codes and sources:
 |:------|------:|
 |cbop   | 50,365|
 |hand   |  3,272|
-|info   |  2,001|
+|info   |  2,003|
 |kprm   |    883|
 |esco   |    583|
-|hand1k |    398|
+|hand1k |    403|
 
 Detailed information about the data can be found here: https://github.com/OJALAB/job-ads-datasets

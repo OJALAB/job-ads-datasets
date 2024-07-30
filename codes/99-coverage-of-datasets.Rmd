@@ -10,12 +10,12 @@ library(data.table)
 datasets
 
 ```{r}
-hierachy <- fread("~/mac/nauka/oja-lab/job-ads-datasets/data/kzis-hierarchy-2023.tsv", colClasses = "character", sep = "\t")
+hierachy <- fread("../data/kzis-hierarchy-2023.tsv", colClasses = "character", sep = "\t")
 hierachy6 <- hierachy[str_detect(class, "\\d{6}")]
 
 df_full <- rbind(
-  fread("~/mac/nauka/oja-lab/job-ads-datasets/data/train-test/train-data-2024.tar.gz", colClasses = "character"),
-  fread("~/mac/nauka/oja-lab/job-ads-datasets/data/train-test/test-data-2024.tar.gz", colClasses = "character")
+  fread("../data/train-test/train-data-2024.tar.gz", colClasses = "character"),
+  fread("../data/train-test/test-data-2024.tar.gz", colClasses = "character")
 )
 ```
 

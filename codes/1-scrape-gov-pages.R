@@ -213,3 +213,9 @@ infod2024[!class %in% infod$code]
 fwrite(
   x = rbind(infod[, .(class=code, desc)], infod2024[!class %in% infod$code, .(class, desc)]),
   file = "data/kzis-occup-infodoradca-2024-updated.csv")
+
+#
+info <- fread("data/kzis-occup-infodoradca-2024-updated.csv", colClasses = "character")
+info[class == "514201", class := "343918"]
+
+fwrite(x = info, file = "../data/kzis-occup-infodoradca-2024-updated.csv", quote = T)

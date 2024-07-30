@@ -155,6 +155,8 @@ hand1k_add_long[, .(id, desc, class, class2)] |>
   {\(x) unique(x[, .(id, class, desc)])}() -> hand1k_add_long
 
 hand1k_processed <- rbind(hand1k_no_add[,.(id, class, desc)], hand1k_add_long[, .(id, class, desc)])
+hand1k_processed[class == "250102", class := "252102"]
+hand1k_processed[class == "250902", class := "252902"]
 hand1k_processed
 ```
 
