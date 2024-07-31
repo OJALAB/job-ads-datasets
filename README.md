@@ -55,7 +55,7 @@ If you plan to use the datasets prepared for training we kindly ask to cite the 
 Beręsewicz, Maciej; Pater, Robert, 2024, "Zbiór uczący i testowy na potrzeby budowy klasyfikatora ofert pracy do KZiS 2023", https://doi.org/10.18150/SX0E7G, RepOD, V1
 ```
 
-We recommend to use BibTeX
+We recommend to use BibTeX (note that `version` may change)
 
 ``` tex
 @data{SX0E7G_2024,
@@ -63,7 +63,7 @@ author = {Beręsewicz, Maciej and Pater, Robert},
 publisher = {RepOD},
 title = {Zbiór uczący i testowy na potrzeby budowy klasyfikatora ofert pracy do KZiS 2023},
 year = {2024},
-version = {V1},
+version = {V2},
 doi = {10.18150/SX0E7G},
 url = {https://doi.org/10.18150/SX0E7G}
 }
