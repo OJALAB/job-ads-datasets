@@ -52,7 +52,7 @@ Overall coverage of 6 digit codes aggregated at 1 digit groups
 If you plan to use the datasets prepared for training we kindly ask to cite the following repository (<https://repod.icm.edu.pl/dataset.xhtml?persistentId=doi:10.18150/SX0E7G>).
 
 ```         
-Beręsewicz, Maciej; Pater, Robert, 2024, "Zbiór uczący i testowy na potrzeby budowy klasyfikatora ofert pracy do KZiS 2023", https://doi.org/10.18150/SX0E7G, RepOD, V1
+Beręsewicz, Maciej; Pater, Robert, 2024, "Zbiór uczący i testowy na potrzeby budowy klasyfikatora ofert pracy według KZiS 2023", https://doi.org/10.18150/SX0E7G, RepOD, V2
 ```
 
 We recommend to use BibTeX (note that `version` may change)
@@ -61,7 +61,7 @@ We recommend to use BibTeX (note that `version` may change)
 @data{SX0E7G_2024,
 author = {Beręsewicz, Maciej and Pater, Robert},
 publisher = {RepOD},
-title = {Zbiór uczący i testowy na potrzeby budowy klasyfikatora ofert pracy do KZiS 2023},
+title = {Zbiór uczący i testowy na potrzeby budowy klasyfikatora ofert pracy według KZiS 2023},
 year = {2024},
 version = {V2},
 doi = {10.18150/SX0E7G},

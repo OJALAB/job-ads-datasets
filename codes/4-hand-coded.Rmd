@@ -13,11 +13,12 @@ library(writexl)
 Merging and cleaning
 
 ```{r}
-hand <- dir(path = "../data-raw", pattern = "*done.xlsx", full.names = T)
+hand <- dir(path = "../data-raw/hand-coded", pattern = "*done.xlsx", full.names = T)
 hand <- lapply(hand, read_excel, col_types = "text")
 hand <- rbindlist(hand, idcol = "ekspert", fill = T)
 
 hand_selected <- hand[language.description == "pl", .(ekspert, 
+                                                      source,
                                                       id_ogl=as.character(as.integer(ID_unit)), 
                                                       id_oferty=as.character(as.integer(id_oferty)), 
                                                       language.description, job.title, employer, region, job.type, 
@@ -97,8 +98,7 @@ hand_selected[, kod_zawodu_corrected2:=NULL]
 
 hand_selected <- hand_selected[order(id_ogl, ekspert)]
 hand_selected[, id_ogl_times :=.N, id_ogl]
-hand_selected[id_ogl_times == 3, job.description := job.description[1], ekspert]
-
+hand_selected[id_ogl_times == 3, job.description := job.description[1], id_ogl]
 
 ```
 
@@ -119,8 +119,6 @@ hand_selected2[, V1:= NULL]
 hand_final <- rbind(hand_selected,hand_selected2)
 
 write_xlsx(hand_final, path="../data-raw/hand-coded.xlsx")
-
-head(hand_final)
 ```
 
 ```{r}

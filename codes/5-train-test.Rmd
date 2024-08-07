@@ -68,7 +68,7 @@ test_data <- test_data[class %in% hierachy6$class]
 fwrite(x = test_data[, .(class, desc, source)], file = "../data/train-test/test-data-2024.tar.gz")
 fwrite(x = train_data[, .(class, desc, source)], file = "../data/train-test/train-data-2024.tar.gz")
 
-fwrite(x = test_data[, .(class, desc, source)], file = "../data/train-test/test-data-2024.csv", quote = T, encoding = "UTF-8")
-fwrite(x = train_data[, .(class, desc, source)], file = "../data/train-test/train-data-2024.csv", quote = T, encoding = "UTF-8")
+#fwrite(x = test_data[, .(class, desc, source)], file = "../data/train-test/test-data-2024.csv", quote = T, encoding = "UTF-8")
+#fwrite(x = train_data[, .(class, desc, source)], file = "../data/train-test/train-data-2024.csv", quote = T, encoding = "UTF-8")
 
 ```

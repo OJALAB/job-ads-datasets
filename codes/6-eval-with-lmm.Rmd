@@ -1,0 +1,58 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+```{r}
+library(data.table)
+library(readxl)
+```
+
+Master prompt
+
+```
+Załączone pliki przedstawiają oficjalną klasyfikację zawodów i specjalności w 2023 (więcej znajdziesz tutaj https://psz.praca.gov.pl/rynek-pracy/bazy-danych/klasyfikacja-zawodow-i-specjalnosci). Plik kzis-hiearchy-2023 przedstawia kody zawodów (od 1 do 6 cyfr) według układu hierarchicznego. To są kody, które mnie interesują przy klasyfikacji zawodów. Plik KZis-desc-level-2 określa definicję 2 cyfrowych kodów. Wykorzystaj tę wiedzę przy klasyfikacji ofert pracy do kodów zawodów. Przy odpowiedziach skorzystaj też z oficjalnego słownika dostępnego tutaj: https://psz.praca.gov.pl/rynek-pracy/bazy-danych/klasyfikacja-zawodow-i-specjalnosci/wyszukiwarka-opisow-zawodow/?p_p_id=jobclassificationportlet_WAR_nnkportlet&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&p_p_col_id=column-1&p_p_col_count=1
+```
+
+Prompt dla 100
+
+```
+Na podstawie wiedzy z projektu (project knowledge) oraz opisu, który tam podałem dotyczącego klasyfikacji zawodów i specjalności 2023 dla każdego rekordu w załączonym pliku zapisz 3 najbardziej prawdopodobne 6 cyfrowe kody zawodu (struktura: kolumna id_ogl, kod1, kod2, kod3). Wynik ma być w postaci pliku csv gdzie każdy wiersz odpowiada wierszowi z załączonego pliku (sample-100-for-lmm)
+```
+
+
+```{r}
+dict <- fread("../data/kzis-occup-dictionary-2024.csv", colClasses = "character")
+head(dict)
+```
+
+
+Handcoded 
+
+```{r}
+hand <- read_excel("../data-raw/hand-coded.xlsx") |> setDT()
+```
+
+```{r}
+hand[id_ogl %in% common100$id_unit, .(id_ogl, job.title, job.description)] |> 
+  unique() -> for_eval
+
+
+
+```
+
+```{r}
+evals <- fread("../data-raw/llm/sample-100-for-lmm-evaluated.csv", colClasses = "character")
+
+evals[id_ogl %in% evals$id_ogl]
+```
+
+CBOP
+
+```{r}
+hand[source == "CBOP", .(id_ogl, job.title, job.description)] |> 
+  unique() -> for_eval_cbop
+
+fwrite(x = for_eval_cbop, file = "../data-raw/llm/sample-cbop-for-lmm.csv")
+```
+
